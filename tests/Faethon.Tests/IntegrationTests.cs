@@ -27,15 +27,15 @@ public sealed class IntegrationTests
             var product=new Record{Kind="product",Key="requirements",Data=Json.Write(new Product{ErpCode="1-111-1-111",Active=true,RecipeCode="requirements",Brands=["1"],SmallLabelWeight="carton",Fields=new(){{"Συντομογραφία","TEST"}}})};
             db.Records.Add(product);db.Records.Add(new(){Kind="recipe",Key="requirements",Data=Json.Write(new Recipe{Code="requirements",Name="Test",Family="10"})});await db.SaveChangesAsync();
             var small=await resolver.Resolve(new Production{ProductId=product.Id,TemplateKey="thermal-small",Languages=["el"],CartonWeight=5});
-            Assert.Equal("carton",small.Production.Mode);Assert.Equal(82,small.Template.HeightMm);Assert.DoesNotContain(small.Issues,i=>i.Contains("βάρος προϊόντος")||i.Contains("τεμάχια"));
+            Assert.Equal("carton",small.Production.Mode);Assert.Equal(80,small.Template.HeightMm);Assert.DoesNotContain(small.Issues,i=>i.Contains("βάρος προϊόντος")||i.Contains("τεμάχια"));
             var large=await resolver.Resolve(new Production{ProductId=product.Id,Languages=["el"]});Assert.Contains(large.Issues,i=>i.Contains("ελληνικά και αγγλικά"));
             var blank=await resolver.Resolve(new Production{TemplateKey="sample-blank",Mode="blank",Languages=["el"],FreeText="Customer"});Assert.DoesNotContain(blank.Issues,i=>i.Contains("Επιλέξτε προϊόν"));
             var renderer=scope.ServiceProvider.GetRequiredService<Rendering>();
             await LegacyAssets.Import(db,scope.ServiceProvider.GetRequiredService<AssetStore>(),Path.GetFullPath("../../../../../legacy",AppContext.BaseDirectory));
             Assert.DoesNotContain(renderer.Render(blank).Issues,i=>i.Contains("αντιστοίχιση")||i.Contains("Λείπει"));
             var butcher=await resolver.Resolve(new Production{TemplateKey="butcher-a4",Mode="blank",Languages=["el"]});Assert.Empty(renderer.Render(butcher).Issues);
-            var row=await db.Records.SingleAsync(r=>r.Kind=="template"&&r.Key=="thermal-small");row.Data=Json.Write(row.As<Template>() with{HeightMm=80,Validated=true});await db.SaveChangesAsync();
-            await Seed.Run(db);Assert.Equal(80,row.As<Template>().HeightMm);Assert.True(await db.Records.AnyAsync(r=>r.Key=="abbreviation:TEST"));
+            var row=await db.Records.SingleAsync(r=>r.Kind=="template"&&r.Key=="thermal-small");row.Data=Json.Write(row.As<Template>() with{HeightMm=82,Validated=true});await db.SaveChangesAsync();
+            await Seed.Run(db);Assert.Equal(82,row.As<Template>().HeightMm);Assert.True(await db.Records.AnyAsync(r=>r.Key=="abbreviation:TEST"));
             var imports=scope.ServiceProvider.GetRequiredService<ImportService>();
             product.Data=Json.Write(product.As<Product>() with{Butcher=true});await db.SaveChangesAsync();
             var imported=await imports.Stage([new("product",product.Key,Json.Write(product.As<Product>() with{Butcher=false,SmallLabelWeight="product"}),1)],"test");await imports.Commit(imported.Id,"test");Assert.True(product.As<Product>().Butcher);Assert.Equal("carton",product.As<Product>().SmallLabelWeight);

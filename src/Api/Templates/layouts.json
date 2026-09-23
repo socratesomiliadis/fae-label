@@ -25,7 +25,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Line",
@@ -71,7 +73,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -94,7 +98,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -117,7 +124,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -140,7 +150,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -163,7 +174,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "OptionGroup",
@@ -209,7 +221,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "OptionGroup",
@@ -255,7 +268,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -278,7 +292,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -301,7 +317,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -324,7 +342,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -347,7 +367,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -370,7 +392,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -393,7 +416,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -416,7 +440,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -439,7 +465,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -462,7 +490,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -485,7 +516,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -508,7 +541,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -531,7 +567,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -554,7 +592,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -577,7 +617,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -599,7 +641,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -646,7 +688,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -669,7 +713,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -715,7 +761,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -738,7 +786,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -784,7 +834,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -807,7 +859,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -853,7 +907,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -876,7 +932,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -922,7 +980,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -945,7 +1005,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -991,7 +1053,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1014,7 +1078,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1060,7 +1126,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1083,7 +1151,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1105,7 +1175,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -1128,8 +1198,9 @@
         "visible": true,
         "background": null,
         "foreground": 0,
-        "border": false,
-        "rich": true
+        "border": true,
+        "rich": true,
+        "fontWeight": 300
       },
       {
         "type": "TextBox",
@@ -1151,8 +1222,9 @@
         "visible": true,
         "background": null,
         "foreground": 0,
-        "border": false,
-        "rich": true
+        "border": true,
+        "rich": true,
+        "fontWeight": 300
       },
       {
         "type": "Line",
@@ -1198,7 +1270,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -1221,7 +1294,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1244,7 +1318,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1267,7 +1342,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -1313,7 +1390,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1336,7 +1414,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Image",
@@ -1359,7 +1439,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1382,7 +1463,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1405,7 +1487,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1428,7 +1511,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1451,7 +1535,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1474,7 +1560,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -1497,7 +1585,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date",
+        "condition": "frozen"
       },
       {
         "type": "Label",
@@ -1520,7 +1611,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -1543,7 +1635,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1566,7 +1659,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -1589,7 +1684,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1612,7 +1708,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1635,7 +1732,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -1658,7 +1756,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1681,7 +1780,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -1704,7 +1806,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -1727,7 +1830,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -1750,7 +1854,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1773,7 +1878,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -1796,7 +1903,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -1819,7 +1928,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -1842,7 +1952,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -1865,7 +1976,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -1888,7 +2000,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   },
@@ -1918,7 +2031,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Line",
@@ -1964,7 +2079,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -1987,7 +2104,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -2010,7 +2130,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -2033,7 +2156,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2056,7 +2180,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "OptionGroup",
@@ -2102,7 +2227,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "OptionGroup",
@@ -2148,7 +2274,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -2171,7 +2298,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2194,7 +2323,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2217,7 +2348,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2240,7 +2373,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2263,7 +2398,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2286,7 +2422,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2309,7 +2446,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2332,7 +2471,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -2355,7 +2496,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -2378,7 +2522,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -2401,7 +2547,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -2424,7 +2573,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -2447,7 +2598,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2470,7 +2623,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -2492,7 +2647,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -2539,7 +2694,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2562,7 +2719,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2608,7 +2767,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2631,7 +2792,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2677,7 +2840,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2700,7 +2865,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2746,7 +2913,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2769,7 +2938,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2815,7 +2986,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2838,7 +3011,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2884,7 +3059,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2907,7 +3084,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2953,7 +3132,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -2976,7 +3157,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -2998,7 +3181,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -3021,8 +3204,9 @@
         "visible": true,
         "background": null,
         "foreground": 0,
-        "border": false,
-        "rich": true
+        "border": true,
+        "rich": true,
+        "fontWeight": 300
       },
       {
         "type": "TextBox",
@@ -3044,8 +3228,9 @@
         "visible": true,
         "background": null,
         "foreground": 0,
-        "border": false,
-        "rich": true
+        "border": true,
+        "rich": true,
+        "fontWeight": 300
       },
       {
         "type": "Line",
@@ -3091,7 +3276,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -3114,7 +3300,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3137,7 +3324,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3160,7 +3348,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -3206,7 +3396,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3229,7 +3420,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Image",
@@ -3252,7 +3445,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3275,7 +3469,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3298,7 +3493,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -3321,7 +3517,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3344,7 +3541,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -3367,7 +3566,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -3390,7 +3591,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date",
+        "condition": "frozen"
       },
       {
         "type": "Label",
@@ -3413,7 +3617,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -3436,7 +3641,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3459,7 +3665,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -3482,7 +3690,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -3505,7 +3714,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3528,7 +3738,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -3551,7 +3762,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3574,7 +3786,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -3597,7 +3812,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -3620,7 +3836,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -3643,7 +3860,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3666,7 +3884,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3689,7 +3909,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -3712,7 +3934,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -3735,7 +3958,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -3758,7 +3982,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -3781,7 +4006,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3804,7 +4030,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "General Number",
+        "decimalPlaces": 2
       },
       {
         "type": "TextBox",
@@ -3827,7 +4056,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -3850,7 +4082,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -3873,7 +4106,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       }
     ]
   },
@@ -3903,7 +4137,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Image",
@@ -3926,7 +4162,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -3949,7 +4186,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -3972,7 +4211,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "OptionGroup",
@@ -4018,7 +4259,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -4041,7 +4283,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -4064,7 +4308,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -4087,7 +4333,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Label",
@@ -4110,7 +4358,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -4133,7 +4383,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -4156,7 +4408,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -4179,7 +4433,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -4201,7 +4457,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -4248,7 +4504,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4271,7 +4528,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4317,7 +4575,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4340,7 +4599,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4386,7 +4646,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4409,7 +4670,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4455,7 +4717,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4478,7 +4741,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4524,7 +4788,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4547,7 +4812,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4593,7 +4859,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4616,7 +4883,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4662,7 +4930,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -4685,7 +4954,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4707,7 +4977,7 @@
         "visible": true,
         "background": 0,
         "foreground": 16777215,
-        "border": false,
+        "border": true,
         "rich": false
       },
       {
@@ -4730,7 +5000,7 @@
         "visible": true,
         "background": null,
         "foreground": 0,
-        "border": false,
+        "border": true,
         "rich": true
       },
       {
@@ -4754,7 +5024,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4777,7 +5048,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -4800,7 +5072,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -4823,7 +5097,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Image",
@@ -4846,7 +5121,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -4915,7 +5191,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -4938,7 +5215,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -4961,7 +5240,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date",
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -4984,7 +5266,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -5007,7 +5290,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -5030,7 +5314,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -5053,7 +5339,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -5076,7 +5363,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -5099,7 +5389,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -5122,7 +5413,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -5145,7 +5437,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -5168,7 +5461,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -5191,7 +5485,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -5214,7 +5509,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5237,7 +5533,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -5260,7 +5558,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   },
@@ -5290,7 +5589,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -5313,7 +5614,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -5336,7 +5640,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -5359,7 +5665,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Image",
@@ -5382,7 +5691,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -5405,7 +5715,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -5428,7 +5739,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -5451,7 +5763,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -5474,7 +5787,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5497,7 +5811,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5520,7 +5836,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "OptionGroup",
@@ -5566,7 +5884,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "OptionGroup",
@@ -5612,7 +5931,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -5635,7 +5955,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5658,7 +5980,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5681,7 +6005,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5704,7 +6030,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5727,7 +6055,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5750,7 +6080,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5773,7 +6105,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5796,7 +6129,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5819,7 +6153,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5842,7 +6178,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5865,7 +6203,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5888,7 +6227,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -5911,7 +6252,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -5934,7 +6276,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -5957,7 +6300,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -5980,7 +6325,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -6003,7 +6350,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -6026,7 +6376,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -6049,7 +6401,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -6072,7 +6426,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -6095,7 +6451,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -6118,7 +6477,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -6141,7 +6502,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6164,7 +6526,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6187,7 +6550,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "fontWeight": 300,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -6210,7 +6575,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6233,7 +6599,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Line",
@@ -6302,7 +6669,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -6325,7 +6693,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6348,7 +6717,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6371,7 +6741,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6394,7 +6765,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -6417,7 +6789,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Rectangle",
@@ -6440,7 +6813,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 1.7638888888888888
       },
       {
         "type": "Label",
@@ -6463,7 +6838,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -6486,7 +6862,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -6509,7 +6886,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -6532,7 +6910,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6555,7 +6934,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "frozen"
       },
       {
         "type": "Label",
@@ -6578,7 +6959,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6601,7 +6983,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -6624,7 +7007,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -6647,7 +7032,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date",
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -6670,7 +7058,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -6693,7 +7083,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "General Number"
       },
       {
         "type": "Label",
@@ -6716,7 +7108,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6739,7 +7132,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -6762,7 +7156,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -6785,7 +7182,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6808,7 +7206,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -6831,7 +7230,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 1
       },
       {
         "type": "TextBox",
@@ -6854,7 +7256,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -6877,7 +7282,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6900,7 +7306,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -6923,7 +7330,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       }
     ]
   },
@@ -6953,7 +7361,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -6976,7 +7385,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -6999,7 +7409,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -7022,7 +7433,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7045,7 +7457,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -7068,7 +7482,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -7091,7 +7507,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -7114,7 +7532,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -7137,7 +7557,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -7160,7 +7582,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "OptionGroup",
@@ -7206,7 +7630,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Image",
@@ -7229,7 +7654,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -7252,7 +7678,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -7275,7 +7702,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "Label",
@@ -7298,7 +7727,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -7321,7 +7752,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -7344,7 +7777,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "condition": "beef"
       },
       {
         "type": "TextBox",
@@ -7367,7 +7802,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7390,7 +7826,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -7413,7 +7850,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -7436,7 +7874,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711,
+        "condition": "frozen"
       },
       {
         "type": "Label",
@@ -7459,7 +7899,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -7482,7 +7923,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -7505,7 +7947,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -7528,7 +7971,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -7551,7 +7996,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date",
+        "condition": "frozen"
       },
       {
         "type": "TextBox",
@@ -7574,7 +8022,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -7597,7 +8047,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 3
       },
       {
         "type": "Label",
@@ -7620,7 +8073,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -7643,7 +8097,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7666,7 +8121,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7689,7 +8145,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "OptionGroup",
@@ -7735,7 +8192,8 @@
         "background": 16777215,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "OptionGroup",
@@ -7827,7 +8285,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -7850,7 +8309,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -7873,7 +8333,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7896,7 +8357,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -7919,7 +8381,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -7942,7 +8405,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -7965,7 +8429,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -7988,7 +8453,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -8011,7 +8477,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       }
     ]
   },
@@ -8041,7 +8509,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -8064,7 +8533,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -8087,7 +8557,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true
       }
     ]
   },
@@ -8117,7 +8590,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -8140,7 +8614,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -8163,7 +8638,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true
       }
     ]
   },
@@ -8193,7 +8671,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8216,7 +8698,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8239,7 +8725,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8262,7 +8752,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8285,7 +8779,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8308,7 +8806,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "TextBox",
@@ -8331,7 +8833,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "Image",
@@ -8354,7 +8860,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   },
@@ -8384,7 +8891,11 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "canGrow": true,
+        "canShrink": true,
+        "decimalPlaces": 0
       },
       {
         "type": "Image",
@@ -8407,7 +8918,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Rectangle",
@@ -8430,7 +8942,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 855309
       },
       {
         "type": "Label",
@@ -8453,7 +8966,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -8476,7 +8990,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       }
     ]
   },
@@ -8506,7 +9021,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 1.7638888888888888
       },
       {
         "type": "Image",
@@ -8529,7 +9046,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -8552,7 +9070,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 1.7638888888888888
       },
       {
         "type": "Label",
@@ -8575,7 +9095,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -8598,7 +9119,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -8621,7 +9143,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Rectangle",
@@ -8644,7 +9167,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 1.7638888888888888
       },
       {
         "type": "Image",
@@ -8667,7 +9192,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -8690,7 +9216,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 1.7638888888888888
       },
       {
         "type": "Label",
@@ -8713,7 +9241,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -8736,7 +9265,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -8759,7 +9289,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -8782,7 +9313,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -8805,7 +9337,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   },
@@ -8835,7 +9368,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -8858,7 +9392,8 @@
         "background": null,
         "foreground": 4210752,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -8881,7 +9416,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -8904,7 +9441,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -8927,7 +9466,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "TextBox",
@@ -8950,7 +9492,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -8973,7 +9516,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "TextBox",
@@ -8996,7 +9542,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "TextBox",
@@ -9019,7 +9568,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": true
+        "rich": true,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -9042,7 +9592,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -9065,7 +9617,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Rectangle",
@@ -9088,7 +9641,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9111,7 +9666,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9134,7 +9690,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9157,7 +9714,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Line",
@@ -9180,7 +9738,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9203,7 +9763,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9226,7 +9787,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -9249,7 +9811,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -9272,7 +9835,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -9295,7 +9859,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -9318,7 +9883,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -9341,7 +9907,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Line",
@@ -9364,7 +9931,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9387,7 +9956,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9410,7 +9980,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9433,7 +10004,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Line",
@@ -9456,7 +10028,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9479,7 +10053,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9502,7 +10077,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9525,7 +10101,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9548,7 +10125,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9571,7 +10149,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9594,7 +10173,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Rectangle",
@@ -9617,7 +10197,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9640,7 +10222,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9663,7 +10246,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9686,7 +10270,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9709,7 +10294,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9732,7 +10318,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9755,7 +10342,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Line",
@@ -9778,7 +10366,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Line",
@@ -9801,7 +10391,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -9824,7 +10416,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9847,7 +10440,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Image",
@@ -9870,7 +10464,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -9893,7 +10488,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -9916,7 +10512,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "PageBreak",
@@ -9962,7 +10559,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -9985,7 +10583,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10008,7 +10607,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Rectangle",
@@ -10031,7 +10631,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "borderWidth": 0.7055555555555555
       },
       {
         "type": "Label",
@@ -10054,7 +10656,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10077,7 +10680,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10100,7 +10704,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10123,7 +10728,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10146,7 +10752,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10169,7 +10776,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10192,7 +10800,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10215,7 +10824,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10238,7 +10848,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -10261,7 +10872,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -10284,7 +10896,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10307,7 +10920,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10330,7 +10944,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10353,7 +10968,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10376,7 +10992,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10399,7 +11016,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10422,7 +11040,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10445,7 +11064,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10468,7 +11088,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10491,7 +11112,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -10514,7 +11136,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 1
       },
       {
         "type": "TextBox",
@@ -10537,7 +11162,10 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Fixed",
+        "decimalPlaces": 2
       },
       {
         "type": "Label",
@@ -10560,7 +11188,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10583,7 +11212,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10606,7 +11236,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10629,7 +11260,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -10652,7 +11284,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -10675,7 +11308,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10698,7 +11332,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10721,7 +11356,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10744,7 +11380,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10767,7 +11404,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10790,7 +11428,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10813,7 +11452,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10836,7 +11476,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -10859,7 +11500,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -10882,7 +11525,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10905,7 +11549,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10928,7 +11573,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -10951,7 +11597,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -10974,7 +11621,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -10997,7 +11646,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11020,7 +11670,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11043,7 +11694,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11066,7 +11718,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11089,7 +11742,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11112,7 +11766,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11135,7 +11790,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11158,7 +11814,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11181,7 +11838,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11204,7 +11862,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11227,7 +11886,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11250,7 +11910,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11273,7 +11934,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11296,7 +11958,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11319,7 +11982,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11342,7 +12006,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11365,7 +12030,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11388,7 +12054,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11411,7 +12078,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11434,7 +12102,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11457,7 +12126,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11480,7 +12150,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11503,7 +12174,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11526,7 +12198,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11549,7 +12222,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11572,7 +12246,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11595,7 +12270,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11618,7 +12294,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11641,7 +12318,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -11664,7 +12342,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -11687,7 +12366,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -11710,7 +12390,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -11733,7 +12414,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -11756,7 +12438,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -11779,7 +12462,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11802,7 +12486,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11825,7 +12510,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11848,7 +12534,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11871,7 +12558,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -11894,7 +12582,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Line",
@@ -11917,7 +12606,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -11940,7 +12630,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -11963,7 +12655,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -11986,7 +12680,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12009,7 +12705,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12032,7 +12730,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12055,7 +12755,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12078,7 +12780,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12101,7 +12805,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12124,7 +12830,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12147,7 +12855,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12170,7 +12880,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12193,7 +12905,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12216,7 +12930,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12239,7 +12955,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12262,7 +12980,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12285,7 +13005,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12308,7 +13030,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -12331,7 +13055,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -12354,7 +13079,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12377,7 +13103,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12400,7 +13128,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12423,7 +13153,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12446,7 +13178,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -12469,7 +13203,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -12492,7 +13227,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -12515,7 +13251,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -12538,7 +13275,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12561,7 +13299,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12584,7 +13324,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12607,7 +13349,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12630,7 +13374,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12653,7 +13399,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -12676,7 +13424,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -12699,7 +13448,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -12722,7 +13472,8 @@
         "background": null,
         "foreground": 4210752,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   },
@@ -12752,7 +13503,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -12775,7 +13527,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12798,7 +13551,8 @@
         "background": null,
         "foreground": 4210752,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -12821,7 +13575,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12844,7 +13599,8 @@
         "background": null,
         "foreground": 4210752,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -12867,7 +13623,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12890,7 +13647,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -12913,7 +13671,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12936,7 +13695,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -12959,7 +13719,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -12982,7 +13743,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "TextBox",
@@ -13005,7 +13767,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -13027,8 +13790,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "Label",
@@ -13050,8 +13815,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "Label",
@@ -13073,8 +13840,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "Label",
@@ -13096,8 +13865,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "Label",
@@ -13119,8 +13890,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13143,7 +13916,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -13166,7 +13940,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -13189,7 +13964,9 @@
         "background": null,
         "foreground": 4210752,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "decimalPlaces": 0
       },
       {
         "type": "Label",
@@ -13212,7 +13989,8 @@
         "background": null,
         "foreground": 6710886,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13235,7 +14013,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13258,7 +14037,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13281,7 +14061,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13304,7 +14085,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13327,7 +14109,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13350,7 +14133,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13373,7 +14157,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Label",
@@ -13395,8 +14180,10 @@
         "visible": true,
         "background": 1512260,
         "foreground": 16777215,
-        "border": false,
-        "rich": false
+        "border": true,
+        "rich": false,
+        "borderColor": 16777215,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13419,7 +14206,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13442,7 +14230,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13465,7 +14254,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775,
+        "format": "Short Date"
       },
       {
         "type": "TextBox",
@@ -13488,7 +14279,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13511,7 +14303,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13534,7 +14327,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderWidth": 0.35277777777777775
       },
       {
         "type": "TextBox",
@@ -13557,7 +14351,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Label",
@@ -13580,7 +14375,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Image",
@@ -13603,7 +14399,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "sizeMode": 0
       },
       {
         "type": "Label",
@@ -13626,7 +14424,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "TextBox",
@@ -13649,7 +14448,9 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638,
+        "format": "Short Date"
       },
       {
         "type": "Label",
@@ -13672,7 +14473,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 8355711
       },
       {
         "type": "Image",
@@ -13695,7 +14497,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -13718,7 +14521,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       },
       {
         "type": "Image",
@@ -13741,7 +14545,8 @@
         "background": null,
         "foreground": 0,
         "border": false,
-        "rich": false
+        "rich": false,
+        "borderColor": 10921638
       }
     ]
   }

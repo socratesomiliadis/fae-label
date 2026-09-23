@@ -131,6 +131,7 @@ public sealed record Recipe
 public sealed record RecipeText(string Ingredients = "", string Allergens = "", string Nutrition = "", TextRun[]? Runs = null);
 public sealed record ReferenceData
 {
+    public Dictionary<string, string> Names { get; init; } = [];
     public string LegacyBrand { get; init; } = "";
     public string PostalCode { get; init; } = "";
     public string Name { get; init; } = "";

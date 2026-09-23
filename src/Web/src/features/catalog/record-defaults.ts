@@ -62,6 +62,7 @@ export const defaults: Record<string, Data> = {
     nutrition: {},
   },
   brand: {
+    names: { el: "", en: "" },
     legacyBrand: "",
     name: "",
     group: "brand",

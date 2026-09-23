@@ -7,7 +7,7 @@ using ZXing;
 namespace Faethon;
 
 public sealed record Geometry(string Source,float WidthMm,float HeightMm,LayoutNode[] Nodes);
-public sealed record LayoutNode(string Type,string Name,float X,float Y,float Width,float Height,string Font,float FontSize,bool Bold,bool Italic,int Align,string Binding,int Slot,string CaptionKey,string Image,string ImageName,bool Visible,long? Background,long Foreground,bool Border,bool Rich,string Caption="",string Section="",string Condition="");
+public sealed record LayoutNode(string Type,string Name,float X,float Y,float Width,float Height,string Font,float FontSize,bool Bold,bool Italic,int Align,string Binding,int Slot,string CaptionKey,string Image,string ImageName,bool Visible,long? Background,long Foreground,bool Border,bool Rich,string Caption="",string Section="",string Condition="",int FontWeight=0,bool Underline=false,long BorderColor=0,float BorderWidth=.12f,int SizeMode=3,int PictureAlignment=2,bool CanGrow=false,bool CanShrink=false,string Format="",int DecimalPlaces=255,float ImageDpiX=96,float ImageDpiY=96);
 public static class SharedLayout
 {
     public static readonly Dictionary<string,Geometry> Layouts=Load<Dictionary<string,Geometry>>("layouts.json");
@@ -27,8 +27,9 @@ public static class SharedLayout
         if(clear)canvas.Clear(SKColors.White);
         var p=s.Production;bool beef=s.Recipe?.Family is "20" or "25" or "26" or "27";
         string L(LayoutNode n)=>p.Languages[Math.Min(n.Slot,p.Languages.Length-1)];
-        foreach(var n in layout!.Nodes)
+        foreach(var original in PaintOrder(layout!.Nodes))
         {
+            var n=original;
             if(s.Template.Family=="butcher"&&s.Template.Profile=="small"&&n.X>=100)continue;
             if(n.Condition=="beef"&&!beef||n.Condition=="frozen"&&s.Product?.Frozen!=true)continue;
             if(!n.Visible||n.Width==0&&n.Type!="Line")continue;
@@ -42,30 +43,36 @@ public static class SharedLayout
             if(n.CaptionKey.Length>0&&caption.Length==0){issues.Add($"Λείπει μετάφραση επικεφαλίδας {lang}: {n.CaptionKey}");continue;}
             if(!beef&&(caption.Contains("Κωδ.Ζώου")||caption.Contains("Αρ.Εγκρ")||caption.Contains("Animal Code")||caption.Contains("Slaughterhouse")))continue;
             if(s.Product?.Frozen!=true&&(caption.Contains("Κατάψυξης")||caption.Contains("Freeze Date")))continue;
+            string text=n.Type is "TextBox" or "Label"?(caption.Length>0?caption:Resolve(b,lang,s,issues,n)):"";
+            if(n.CanGrow||n.CanShrink)
+            {
+                using var measurePaint=new SKPaint();
+                float available=GrowthLimit(n,layout.Nodes,s.Template.HeightMm);
+                n=n with{Height=Math.Min(available,LabelText.Draw(null,text,n,measurePaint,[],available))};
+            }
             if(n.Y+n.Height>s.Template.HeightMm+.5||n.X+n.Width>s.Template.WidthMm+.5){issues.Add("Η γεωμετρία του προτύπου υπερβαίνει τη σελίδα.");}
             using var paint=new SKPaint{Color=Color(n.Foreground),IsAntialias=true};
             if(n.Background.HasValue){using var bg=new SKPaint{Color=Color(n.Background.Value)};canvas.DrawRect(n.X,n.Y,n.Width,n.Height,bg);}
-            if(n.Type=="Line"){using var line=new SKPaint{Color=SKColors.Black,StrokeWidth=.12f};canvas.DrawLine(n.X,n.Y,n.X+n.Width,n.Y+n.Height,line);continue;}
-            if(n.Type is "Rectangle" or "OptionGroup"||n.Border){using var border=new SKPaint{Color=SKColors.Black,Style=SKPaintStyle.Stroke,StrokeWidth=.12f};canvas.DrawRect(n.X,n.Y,n.Width,n.Height,border);if(n.Type is "Rectangle" or "OptionGroup")continue;}
+            if(n.Type=="Line"){using var line=new SKPaint{Color=Color(n.BorderColor),StrokeWidth=n.BorderWidth};canvas.DrawLine(n.X,n.Y,n.X+n.Width,n.Y+n.Height,line);continue;}
+            if(n.Type is "Rectangle" or "OptionGroup"||n.Border){using var border=new SKPaint{Color=Color(n.BorderColor),Style=SKPaintStyle.Stroke,StrokeWidth=n.BorderWidth};canvas.DrawRect(n.X,n.Y,n.Width,n.Height,border);if(n.Type is "Rectangle" or "OptionGroup")continue;}
             if(n.Type=="Image")
             {
                 if(!exact&&p.BrandKey!="1"&&n.ImageName.Contains("QR",StringComparison.OrdinalIgnoreCase))continue;
                 if(!exact&&p.BrandKey!="1"&&string.IsNullOrEmpty(s.Brand?.LogoAsset)&&(n.ImageName.Contains("LOGO",StringComparison.OrdinalIgnoreCase)||n.ImageName.Contains("FAETHON",StringComparison.OrdinalIgnoreCase))){issues.Add("Δεν υπάρχει αντιστοίχιση λογοτύπου για την επωνυμία.");continue;}
-                var hash=n.Image;
-                if(n.ImageName.Contains("LOGO",StringComparison.OrdinalIgnoreCase)&&!string.IsNullOrEmpty(s.Brand?.LogoAsset))hash=s.Brand.LogoAsset;
+                var hash=LogoHash(n,s.Brand);
                 if(hash.Length==0){issues.Add("Λείπει εικόνα: "+n.ImageName);continue;}
-                try{using var image=SKBitmap.Decode(assets.Read(hash));if(image!=null){float scale=Math.Min(n.Width/image.Width,n.Height/image.Height);float width=image.Width*scale,height=image.Height*scale;canvas.DrawBitmap(image,new SKRect(n.X+(n.Width-width)/2,n.Y+(n.Height-height)/2,n.X+(n.Width+width)/2,n.Y+(n.Height+height)/2));}}
+                try{using var image=SKBitmap.Decode(assets.Read(hash));if(image!=null){DrawImage(canvas,image,n);}}
                 catch(IOException){issues.Add("Λείπει αρχείο εικόνας: "+n.ImageName);}continue;
             }
             if(n.Type is not ("TextBox" or "Label"))continue;
-            string text=caption.Length>0?caption:Resolve(b,lang,s,issues);
             if(b.Contains("BARCODE"))
             {
                 if(text.Length==0)continue;
                 try{var barcode=new MultiFormatWriter().encode(text,s.Template.BarcodeFormat=="ean13"?BarcodeFormat.EAN_13:BarcodeFormat.CODE_39,0,0);float unit=n.Width/barcode.Width;using var bars=new SKPaint{Color=SKColors.Black,IsAntialias=false};for(int x=0;x<barcode.Width;x++)if(barcode[x,0])canvas.DrawRect(n.X+x*unit,n.Y,unit,n.Height*.75f,bars);Text(canvas,text,n with{Y=n.Y+n.Height*.76f,Height=n.Height*.24f,Font="Calibri",FontSize=4.5f,Align=2},paint,issues);}
                 catch(ArgumentException){issues.Add("Μη έγκυρο barcode.");}continue;
             }
-            Text(canvas,text,n,paint,issues);
+            if(DrawNutritionHeader(canvas,text,n,layout.Nodes,paint,issues))continue;
+            LabelText.Draw(canvas,text,n,paint,issues,GrowthLimit(n,layout.Nodes,s.Template.HeightMm));
         }
         if(exact&&s.Template.Family=="sample"&&p.Mode=="blank"&&!string.IsNullOrWhiteSpace(p.FreeText))
         {
@@ -76,36 +83,36 @@ public static class SharedLayout
     }
     public static void DrawDocumentNodes(SKCanvas canvas,IEnumerable<LayoutNode> nodes,AssetStore assets,List<string> issues)
     {
-        foreach(var n in nodes.Where(n=>n.Visible))
+        foreach(var n in PaintOrder(nodes).Where(n=>n.Visible))
         {
             using var paint=new SKPaint{Color=Color(n.Foreground),IsAntialias=true};
             if(n.Background is {} color){using var bg=new SKPaint{Color=Color(color)};canvas.DrawRect(n.X,n.Y,n.Width,n.Height,bg);}
-            using var rule=new SKPaint{Color=SKColors.Black,Style=SKPaintStyle.Stroke,StrokeWidth=.15f};
+            using var rule=new SKPaint{Color=Color(n.BorderColor),Style=SKPaintStyle.Stroke,StrokeWidth=n.BorderWidth};
             if(n.Type=="Line"){canvas.DrawLine(n.X,n.Y,n.X+n.Width,n.Y+n.Height,rule);continue;}
             if(n.Type=="Rectangle"||n.Border)canvas.DrawRect(n.X,n.Y,n.Width,n.Height,rule);
             if(n.Type=="Image")
             {
-                try{using var image=SKBitmap.Decode(assets.Read(n.Image));if(image is null){issues.Add("Μη έγκυρη εικόνα: "+n.ImageName);continue;}float scale=Math.Min(n.Width/image.Width,n.Height/image.Height);float w=image.Width*scale,h=image.Height*scale;canvas.DrawBitmap(image,new SKRect(n.X+(n.Width-w)/2,n.Y+(n.Height-h)/2,n.X+(n.Width+w)/2,n.Y+(n.Height+h)/2));}
+                try{using var image=SKBitmap.Decode(assets.Read(n.Image));if(image is null){issues.Add("Μη έγκυρη εικόνα: "+n.ImageName);continue;}DrawImage(canvas,image,n);}
                 catch(IOException){issues.Add("Λείπει αρχείο εικόνας: "+n.ImageName);}continue;
             }
             if(n.Type is "Label" or "TextBox")Text(canvas,n.Caption,n,paint,issues);
         }
     }
     private static SKColor Color(long value)=>value<0?SKColors.Black:new((byte)(value&255),(byte)((value>>8)&255),(byte)((value>>16)&255));
-    private static string Resolve(string b,string lang,Snapshot s,List<string> issues)
+    private static string Resolve(string b,string lang,Snapshot s,List<string> issues,LayoutNode n)
     {
         var p=s.Production;var product=s.Product;var recipe=s.Recipe;
-        string Date(DateOnly? d)=>d?.ToString("d/M/yyyy",CultureInfo.InvariantCulture)??"";
-        string Num(decimal? d)=>d?.ToString("0.###",CultureInfo.InvariantCulture)??"";
+        string Date(DateOnly? d)=>d?.ToString(n.Format=="Long Date"?"D":"d/M/yyyy",n.Format=="Long Date"?CultureInfo.GetCultureInfo(lang):CultureInfo.InvariantCulture)??"";
+        string Num(decimal? d)=>d?.ToString(n.Format=="Fixed"?"F"+(n.DecimalPlaces==255?2:Math.Clamp(n.DecimalPlaces,0,10)):"0.###",CultureInfo.InvariantCulture)??"";
         var rt=recipe?.Translations.GetValueOrDefault(lang);
         string Required(string value,string label){if(string.IsNullOrWhiteSpace(value))issues.Add("Συμπληρώστε το ειδικό πεδίο ετικέτας: "+label);return value;}
         var value=b switch
         {
-            "EPONYMIES.EPONYMIA"=>s.Brand?.Name??"",
+            "EPONYMIES.EPONYMIA"=>BrandName(s.Brand,lang,issues),
             "EPONYMIES.STOIXEIA"=>s.Brand?.Texts.GetValueOrDefault(lang)??"",
             "EPONYMIES.SXOLIO1"=>s.Brand?.Manufacturer.GetValueOrDefault(lang)??"",
             "PROIONTA.PROION"=>s.Template.Family=="butcher"&&!string.IsNullOrWhiteSpace(p.FreeText)?p.FreeText:product?.Names.GetValueOrDefault(lang)??"",
-            "SYNTAGES.SYSTATIKA" or "SYSTATIKA"=>rt?.Ingredients??"",
+            "SYNTAGES.SYSTATIKA" or "SYSTATIKA"=>Ingredients(rt,n.Rich),
             "SYNTAGES.ALLERGIOGONA"=>rt?.Allergens??"",
             "SYNTAGES.DIATHREPTIKH" or "DIATROFIKH"=>rt?.Nutrition??"",
             "EKTROFES.EKTROFH"=>s.Origins.GetValueOrDefault(lang)??"",
@@ -149,20 +156,72 @@ public static class SharedLayout
         foreach(var pair in columns)if(nutrient.StartsWith(pair.Key+"_")){var suffix=nutrient.EndsWith("PPA")?" %ΠΠΑ":" ανά 100gr";return recipe?.Nutrition.GetValueOrDefault(pair.Value+suffix)??"";}
         issues.Add("Απαιτείται αντιστοίχιση πεδίου προτύπου: "+b);return "";
     }
-    private static void Text(SKCanvas canvas,string text,LayoutNode n,SKPaint paint,List<string> issues)
+    private static bool DrawNutritionHeader(SKCanvas canvas,string text,LayoutNode node,LayoutNode[] nodes,SKPaint paint,List<string> issues)
     {
-        if(string.IsNullOrEmpty(text))return;
-        using var typeface=LabelFonts.Resolve(n.Font,n.Bold);
-        // Coordinates are millimetres. Pixel hinting rounds these tiny logical sizes
-        // before the canvas scale, making perfectly fitting source captions disappear.
-        using var font=new SKFont(typeface,n.FontSize*25.4f/72){Subpixel=true,LinearMetrics=true,Hinting=SKFontHinting.None};using var shaper=new SKShaper(typeface);
-        using var measureFont=new SKFont(typeface,font.Size*100){Subpixel=true,LinearMetrics=true,Hinting=SKFontHinting.None};
-        float Measure(string value)=>measureFont.MeasureText(value)/100;
-        text=System.Net.WebUtility.HtmlDecode(Regex.Replace(text,"<[^>]+>",""));
-        float leading=font.Size*1.05f;float y=n.Y;var line="";
-        bool overflow=false;
-        void Flush(){var value=line.TrimEnd();float width=measureFont.MeasureText(value,out var bounds)/100;if(y+bounds.Height/100>n.Y+n.Height+.15f||width>n.Width+.15f){overflow=true;line="";return;}float x=n.X+(n.Align==2?(n.Width-width)/2:n.Align==3?n.Width-width:0);canvas.DrawShapedText(shaper,value,x,y-bounds.Top/100,SKTextAlign.Left,font,paint);y+=leading;line="";}
-        foreach(var paragraph in text.Replace("\r","").Split('\n')){foreach(var word in Regex.Split(paragraph,"(?<=\\s)")){if(Measure((line+word).TrimEnd())>n.Width&&line.Length>0)Flush();line+=word;}if(line.Length>0)Flush();else y+=leading;}
-        if(overflow)issues.Add("Υπερχείλιση κειμένου στο πεδίο "+n.Name+".");
+        if(!text.Contains("NUTRITION FACTS"))return false;
+        var captions=Regex.Split(text.Trim(),@"\s{4,}");
+        var energy=nodes.FirstOrDefault(n=>n.Binding.Contains("ENERGEIA_ANA_100GR"));
+        var ri=nodes.FirstOrDefault(n=>n.Binding.Contains("ENERGEIA_PPA"));
+        if(captions.Length!=3||energy is null||ri is null)return false;
+        float center=energy.X+energy.Width/2,riCenter=ri.X+ri.Width/2;
+        float half=(riCenter-center)/2;
+        if(half<=0)return false;
+        // Align heading cells to their actual data columns, independent of spaces/font metrics.
+        var cells=new[]{node with{Width=center-half-node.X,Align=1},
+            node with{X=center-half,Width=half*2,Align=2},
+            node with{X=riCenter-half,Width=Math.Min(half*2,node.X+node.Width-(riCenter-half)),Align=2}};
+        for(int i=0;i<cells.Length;i++)LabelText.Draw(canvas,captions[i],cells[i],paint,issues,singleLine:true);
+        return true;
+    }
+    private static void Text(SKCanvas canvas,string text,LayoutNode n,SKPaint paint,List<string> issues)
+        =>LabelText.Draw(canvas,text,n,paint,issues);
+
+    // Keep source stacking except for backed captions overlapped by opaque images.
+    // Their legend must stay visible without moving every logo behind unrelated backgrounds.
+    private static IEnumerable<LayoutNode> PaintOrder(IEnumerable<LayoutNode> nodes)
+    {
+        var all=nodes.ToArray();
+        return all.OrderBy(n=>n.Type=="Label"&&n.Background.HasValue&&all.Any(image=>
+            image.Visible&&image.Type=="Image"&&image.X<n.X+n.Width&&image.X+image.Width>n.X&&
+            image.Y<n.Y+n.Height&&image.Y+image.Height>n.Y)?1:0);
+    }
+
+    public static string LogoHash(LayoutNode node,ReferenceData? brand)
+    {
+        if(!node.ImageName.Contains("LOGO",StringComparison.OrdinalIgnoreCase)||string.IsNullOrEmpty(brand?.LogoAsset))return node.Image;
+        var seededLogo=LegacyLayouts["MEGALH_ETIKETA_FAETHON_GR_EN"].Nodes.First(n=>n.ImageName=="LOGO 4").Image;
+        // LegacyAssets seeded LOGO 4 automatically. It is not an uploaded override.
+        return brand.LogoAsset==seededLogo?node.Image:brand.LogoAsset;
+    }
+    public static string BrandName(ReferenceData? brand,string language,List<string> issues)
+    {
+        if(brand is null)return "";
+        if(brand.Names.TryGetValue(language,out var name)&&!string.IsNullOrWhiteSpace(name))return name;
+        if(language=="el")return brand.Name;
+        issues.Add("Λείπει μετάφραση επωνυμίας " + language + ".");
+        return "";
+    }
+    private static string Ingredients(RecipeText? text,bool rich)
+    {
+        if(text is null)return "";
+        // Ignore stale Excel runs after an operator edits the ingredient text.
+        if(!rich||text.Runs is not {Length:>0}||string.Concat(text.Runs.Select(r=>r.Text)).Trim()!=text.Ingredients.Trim())return text.Ingredients;
+        return string.Concat(text.Runs.Select(r=>(r.Bold?"<b>":"")+(r.Italic?"<i>":"")+System.Net.WebUtility.HtmlEncode(r.Text)+(r.Italic?"</i>":"")+(r.Bold?"</b>":"")));
+    }
+    private static float GrowthLimit(LayoutNode node,IEnumerable<LayoutNode> nodes,float pageHeight)
+    {
+        if(!node.CanGrow)return node.Height;
+        float bottom=nodes.Where(n=>n.Visible&&n.Name!=node.Name&&(n.Type is "TextBox" or "Label" or "Image")&&n.Y>=node.Y+node.Height-.1f&&n.X<node.X+node.Width&&n.X+n.Width>node.X)
+            .Select(n=>n.Y).DefaultIfEmpty(pageHeight).Min();
+        return Math.Max(node.Height,Math.Min(pageHeight,bottom)-node.Y);
+    }
+    private static void DrawImage(SKCanvas canvas,SKBitmap image,LayoutNode node)
+    {
+        float scale=Math.Min(node.Width/image.Width,node.Height/image.Height);
+        float w=node.SizeMode==1?node.Width:node.SizeMode==0?image.Width*25.4f/node.ImageDpiX:image.Width*scale;
+        float h=node.SizeMode==1?node.Height:node.SizeMode==0?image.Height*25.4f/node.ImageDpiY:image.Height*scale;
+        float x=node.X+(node.Width-w)/2,y=node.Y+(node.Height-h)/2;
+        canvas.Save();canvas.ClipRect(new(node.X,node.Y,node.X+node.Width,node.Y+node.Height));
+        canvas.DrawBitmap(image,new SKRect(x,y,x+w,y+h));canvas.Restore();
     }
 }

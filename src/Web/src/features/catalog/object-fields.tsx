@@ -24,7 +24,7 @@ export function ObjectFields({
       {Object.entries(data)
         .filter(([k]) => !["legacyProduction", "runs", "expiry"].includes(k))
         .map(([k, v]) => {
-          const label = labels[k] || k;
+          const label = k === "names" && data.group === "brand" ? "Επωνυμία ανά γλώσσα" : labels[k] || k;
           if (v !== null && typeof v === "object" && !Array.isArray(v))
             return (
               <details

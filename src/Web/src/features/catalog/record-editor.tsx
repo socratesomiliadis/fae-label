@@ -26,7 +26,7 @@ export function RecordEditor({
   onSaved: () => void;
 }) {
   const [data, setData] = useState<Data>(() =>
-      structuredClone({ ...defaults[kind], ...row?.data }),
+      structuredClone({ ...defaults[kind], ...row?.data, ...(kind === "brand" ? { names: { el: "", en: "", ...row?.data?.names } } : {}) }),
     ),
     [key, setKey] = useState(row?.key || ""),
     [error, setError] = useState(""),
