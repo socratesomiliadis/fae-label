@@ -7,6 +7,48 @@ using Xunit;
 namespace Faethon.Tests;
 public sealed class LegacyTemplateTests
 {
+    [Fact] public void RulesRetainAccessGeometryAndWeightAcrossEveryReport()
+    {
+        int checkedRules=0;
+        foreach(var (report,layout) in SharedLayout.LegacyLayouts)
+        {
+            string source=File.ReadAllText(Path.Combine(TestEnvironment.Root,"legacy/definitions",report+".txt"));
+            foreach(Match block in Regex.Matches(source,@"Begin Line\s+(.*?)\r?\n\s*End",RegexOptions.Singleline))
+            {
+                string name=Regex.Match(block.Value,"Name =\"([^\"]+)\"").Groups[1].Value;
+                if(name.Length==0)continue;
+                float Value(string key){var m=Regex.Match(block.Value,@"(?m)^\s*"+key+@" =([0-9]+)");return m.Success?float.Parse(m.Groups[1].Value,System.Globalization.CultureInfo.InvariantCulture):0;}
+                var rule=layout.Nodes.Single(n=>n.Name==name);
+                float mm=25.4f/1440;
+                Assert.True(rule.Visible,$"{report}/{name} hidden");
+                Assert.InRange(Math.Abs(Value("Top")*mm-rule.Y),0,.001f);
+                Assert.InRange(Math.Abs(Value("Width")*mm-rule.Width),0,.001f);
+                Assert.InRange(Math.Abs(Value("Height")*mm-rule.Height),0,.001f);
+                // Only vertical joins may reconcile a source offset below one hairline.
+                Assert.InRange(Math.Abs(Value("Left")*mm-rule.X),0,rule.Width==0?.15f:.001f);
+                float weight=Value("BorderWidth");
+                Assert.Equal(weight>0?weight*25.4f/72:.12f,rule.BorderWidth,3);
+                checkedRules++;
+            }
+        }
+        Assert.True(checkedRules>100);
+    }
+    [Fact] public void ReferenceFooterJoinsAreClosedAndTextClearsTheThickRule()
+    {
+        var nodes=SharedLayout.LegacyLayouts["MEGALH_ETIKETA_FAETHON_GR_EN"].Nodes;
+        var rule=nodes.Single(n=>n.Name=="Γραμμή48");
+        Assert.True(rule.Visible);
+        Assert.Equal(4665*25.4f/1440,rule.Y,3);
+        Assert.Equal(2*25.4f/72,rule.BorderWidth,3);
+        var right=nodes.Single(n=>n.Name=="Πλαίσιο14");
+        foreach(var name in new[]{"Γραμμή47","Γραμμή30"})Assert.Equal(right.X,nodes.Single(n=>n.Name==name).X);
+        var instructions=nodes.Where(n=>n.Binding.StartsWith("ODHGIES_XRHSHS.OD_XRHSHS")).OrderBy(n=>n.X).ToArray();
+        Assert.All(instructions,n=>Assert.True(n.Border));
+        Assert.Equal(right.X,instructions[0].X+instructions[0].Width,3);
+        Assert.Equal(right.X,instructions[1].X);
+        foreach(var name in new[]{"Ετικέτα28","PROIONTA.KOD_PROIONTOS"})
+            Assert.True(nodes.Single(n=>n.Name==name).Y>=rule.Y+rule.BorderWidth/2+.14f);
+    }
     [Theory]
     [InlineData("Regular")]
     [InlineData("Bold")]

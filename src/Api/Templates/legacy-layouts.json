@@ -2006,7 +2006,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -2192,7 +2192,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -2211,7 +2211,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -2243,7 +2245,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -2262,16 +2264,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -2289,16 +2293,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -2316,7 +2321,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -3251,7 +3257,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -3269,15 +3275,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -3295,13 +3305,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -3327,7 +3341,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -3353,9 +3367,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -3379,9 +3393,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -3405,9 +3419,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -3985,7 +3999,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -4005,14 +4019,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -4032,7 +4048,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -4190,7 +4208,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -4376,7 +4394,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -4395,7 +4413,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -4427,7 +4447,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -4446,16 +4466,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -4473,16 +4495,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -4500,7 +4523,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -5435,7 +5459,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -5453,15 +5477,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -5479,13 +5507,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -5511,7 +5543,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -5537,9 +5569,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -5563,9 +5595,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -5589,9 +5621,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -6169,7 +6201,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -6189,14 +6221,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -6216,7 +6250,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -6374,7 +6410,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -6560,7 +6596,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -6579,7 +6615,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -6611,7 +6649,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -6630,16 +6668,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -6657,16 +6697,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -6684,7 +6725,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -7619,7 +7661,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -7637,15 +7679,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -7663,13 +7709,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -7695,7 +7745,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -7721,9 +7771,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -7747,9 +7797,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -7773,9 +7823,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -8353,7 +8403,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -8373,14 +8423,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -8400,7 +8452,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -8610,7 +8664,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -8796,7 +8850,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -8815,7 +8869,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -8847,7 +8903,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -8866,16 +8922,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -8893,16 +8951,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -8920,7 +8979,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -9855,7 +9915,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -9873,15 +9933,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -9899,13 +9963,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -9931,7 +9999,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -9957,9 +10025,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -9983,9 +10051,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -10009,9 +10077,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -10589,7 +10657,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -10609,14 +10677,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -10636,7 +10706,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -16715,7 +16787,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -16901,7 +16973,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -16920,7 +16992,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -16952,7 +17026,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -16971,16 +17045,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -16998,16 +17074,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -17025,7 +17102,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -17960,7 +18038,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -17978,15 +18056,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -18004,13 +18086,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -18036,7 +18122,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -18062,9 +18148,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -18088,9 +18174,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -18114,9 +18200,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -18694,7 +18780,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -18714,14 +18800,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -18741,7 +18829,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -19599,7 +19689,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -19785,7 +19875,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -19804,7 +19894,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -19836,7 +19928,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -19855,16 +19947,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -19882,16 +19976,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -19909,7 +20004,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -20844,7 +20940,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -20862,15 +20958,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -20888,13 +20988,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -20972,7 +21076,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -20998,9 +21102,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -21024,9 +21128,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -21050,9 +21154,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -21630,7 +21734,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -21650,14 +21754,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -21677,7 +21783,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -21686,7 +21794,7 @@
         "x": 2.38125,
         "y": 0.26458333333333334,
         "width": 19.38513888888889,
-        "height": 17.215555555555554,
+        "height": 15.939444444444446,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -21712,7 +21820,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -22122,7 +22230,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -22141,16 +22249,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -22168,7 +22278,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -22917,7 +23028,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -23759,9 +23874,9 @@
         "name": "Κείμενο6",
         "section": "Section",
         "x": 15.345833333333333,
-        "y": 26.722916666666666,
+        "y": 28.21347222222222,
         "width": 46.65486111111111,
-        "height": 16.121944444444445,
+        "height": 14.631388888888893,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -23779,7 +23894,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -23865,7 +23981,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 15.998472222222222,
-        "y": 24.659166666666664,
+        "y": 24.888472222222223,
         "width": 11.1125,
         "height": 3.175,
         "font": "Calibri",
@@ -23884,7 +24000,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 26.47597222222222,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -24070,7 +24188,11 @@
         "foreground": 0,
         "border": false,
         "rich": true,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.8056944444444497
       },
       {
         "type": "TextBox",
@@ -24103,9 +24225,9 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 15.08125,
-        "y": 62.97083333333333,
+        "y": 63.03972222222222,
         "width": 20.108333333333334,
-        "height": 3.439583333333333,
+        "height": 3.3706944444444478,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -24227,16 +24349,17 @@
         "foreground": 0,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "PROIONTA.HMER_PARAGOGHS",
         "section": "Section",
         "x": 33.86666666666667,
-        "y": 62.97083333333333,
+        "y": 63.03972222222222,
         "width": 15.204722222222221,
-        "height": 3.7041666666666666,
+        "height": 3.635277777777781,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -24389,7 +24512,8 @@
         "foreground": 0,
         "border": false,
         "rich": false,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
@@ -24422,9 +24546,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 71.17291666666667,
-        "y": 62.44166666666667,
+        "y": 63.03972222222222,
         "width": 22.86,
-        "height": 2.910416666666667,
+        "height": 2.31236111111112,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -24574,9 +24698,9 @@
         "name": "Ετικέτα31",
         "section": "Section",
         "x": 51.470277777777774,
-        "y": 62.97083333333333,
+        "y": 63.03972222222222,
         "width": 12.964583333333334,
-        "height": 3.175,
+        "height": 3.1061111111111144,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -24678,9 +24802,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 66.93958333333333,
-        "y": 62.97083333333333,
+        "y": 63.03972222222222,
         "width": 3.2808333333333333,
-        "height": 2.910416666666667,
+        "height": 2.8415277777777814,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -25042,7 +25166,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.294305555555555,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -25061,16 +25185,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -25088,7 +25214,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -25864,7 +25991,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -26989,7 +27120,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.505972222222221,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -27008,16 +27139,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -27035,7 +27168,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -27811,7 +27945,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -28602,7 +28740,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -28621,16 +28759,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -28648,7 +28788,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -29424,7 +29565,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -30215,7 +30360,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.505972222222221,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -30234,16 +30379,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -30261,7 +30408,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -31037,7 +31185,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -33811,7 +33963,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -33830,16 +33982,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -33857,7 +34011,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -34633,7 +34788,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -36114,7 +36273,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -36133,16 +36292,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -36160,7 +36321,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -36936,7 +37098,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -37621,7 +37787,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -37640,16 +37806,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -37667,7 +37835,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -38443,7 +38612,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -42779,7 +42952,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -42798,16 +42971,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -42825,7 +43000,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -43601,7 +43777,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -44445,7 +44625,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -44464,16 +44644,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -44491,7 +44673,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -45267,7 +45450,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -46032,7 +46219,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -46051,16 +46238,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -46078,7 +46267,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -46854,7 +47044,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -47591,7 +47785,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -47610,16 +47804,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -47637,7 +47833,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -48413,7 +48610,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -49123,7 +49324,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -49309,7 +49510,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -49328,7 +49529,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -49360,7 +49563,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -49379,16 +49582,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -49406,16 +49611,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -49433,7 +49639,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -50368,7 +50575,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -50386,15 +50593,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -50412,13 +50623,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -50496,7 +50711,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -50522,9 +50737,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -50548,9 +50763,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -50574,9 +50789,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -51154,7 +51369,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -51174,14 +51389,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -51201,7 +51418,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -51236,7 +51455,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -51467,7 +51686,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -51653,7 +51872,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -51672,7 +51891,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -51704,7 +51925,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -51723,16 +51944,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -51750,16 +51973,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -51777,7 +52001,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -52712,7 +52937,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -52730,15 +52955,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -52756,13 +52985,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -52788,7 +53021,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -52814,9 +53047,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -52840,9 +53073,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -52866,9 +53099,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -53446,7 +53679,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -53466,14 +53699,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -53493,7 +53728,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -53811,7 +54048,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -53997,7 +54234,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -54016,7 +54253,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -54048,7 +54287,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -54067,16 +54306,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -54094,16 +54335,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -54121,7 +54363,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -55056,7 +55299,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -55074,15 +55317,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -55100,13 +55347,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -55132,7 +55383,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -55158,9 +55409,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -55184,9 +55435,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -55210,9 +55461,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -55790,7 +56041,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -55810,14 +56061,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -55837,7 +56090,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -56103,7 +56358,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -56289,7 +56544,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -56308,7 +56563,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -56340,7 +56597,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -56359,16 +56616,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -56386,16 +56645,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -56413,7 +56673,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -57348,7 +57609,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -57366,15 +57627,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -57392,13 +57657,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -57476,7 +57745,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -57502,9 +57771,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -57528,9 +57797,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -57554,9 +57823,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -58134,7 +58403,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -58154,14 +58423,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -58181,7 +58452,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -58190,7 +58463,7 @@
         "x": 2.38125,
         "y": 0.26458333333333334,
         "width": 19.38513888888889,
-        "height": 17.215555555555554,
+        "height": 15.939444444444446,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -58216,7 +58489,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -58447,7 +58720,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -58633,7 +58906,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -58652,7 +58925,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -58684,7 +58959,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -58703,16 +58978,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -58730,16 +59007,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -58757,7 +59035,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -59692,7 +59971,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -59710,15 +59989,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -59736,13 +60019,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -59768,7 +60055,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -59794,9 +60081,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -59820,9 +60107,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -59846,9 +60133,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -60426,7 +60713,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -60446,14 +60733,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -60473,7 +60762,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -60791,7 +61082,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -60977,7 +61268,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -60996,7 +61287,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -61028,7 +61321,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -61047,16 +61340,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -61074,16 +61369,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -61101,7 +61397,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -62036,7 +62333,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -62054,15 +62351,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -62080,13 +62381,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -62112,7 +62417,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -62138,9 +62443,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -62164,9 +62469,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -62190,9 +62495,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -62770,7 +63075,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -62790,14 +63095,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -62817,7 +63124,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -62852,7 +63161,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -63135,7 +63444,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -63321,7 +63630,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -63340,7 +63649,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -63372,7 +63683,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -63391,16 +63702,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -63418,16 +63731,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -63445,7 +63759,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -64380,7 +64695,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -64398,15 +64713,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -64424,13 +64743,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -64456,7 +64779,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -64482,9 +64805,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -64508,9 +64831,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -64534,9 +64857,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -65114,7 +65437,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -65134,14 +65457,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -65161,7 +65486,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -65479,7 +65806,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -65665,7 +65992,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -65684,7 +66011,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -65716,7 +66045,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -65735,16 +66064,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -65762,16 +66093,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -65789,7 +66121,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -66672,7 +67005,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -66690,15 +67023,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -66716,13 +67053,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -66748,7 +67089,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -66774,9 +67115,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -66800,9 +67141,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -66826,9 +67167,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -67406,7 +67747,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -67426,14 +67767,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -67453,7 +67796,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -67849,7 +68194,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -68035,7 +68380,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -68054,7 +68399,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -68086,7 +68433,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -68105,16 +68452,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -68132,16 +68481,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -68159,7 +68509,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -69094,7 +69445,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -69112,15 +69463,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -69138,13 +69493,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -69170,7 +69529,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -69196,9 +69555,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -69222,9 +69581,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -69248,9 +69607,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -69828,7 +70187,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -69848,14 +70207,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -69875,7 +70236,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -70898,7 +71261,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -71084,7 +71447,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -71103,7 +71466,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -71135,7 +71500,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -71154,16 +71519,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -71181,16 +71548,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -71208,7 +71576,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -72143,7 +72512,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -72161,15 +72530,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -72187,13 +72560,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -72219,7 +72596,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -72245,9 +72622,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -72271,9 +72648,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -72297,9 +72674,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -72877,7 +73254,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -72897,14 +73274,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -72924,7 +73303,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -74200,7 +74581,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -74219,16 +74600,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -74246,7 +74629,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -75022,7 +75406,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -75813,7 +76201,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -75832,16 +76220,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -75859,7 +76249,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -76635,7 +77026,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -87542,7 +87937,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -87561,16 +87956,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -87588,7 +87985,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -88364,7 +88762,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -93009,7 +93411,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -93195,7 +93597,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -93214,7 +93616,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -93246,7 +93650,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -93265,16 +93669,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -93292,16 +93698,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -93319,7 +93726,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -94254,7 +94662,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -94272,15 +94680,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -94298,13 +94710,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -94330,7 +94746,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -94356,9 +94772,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -94382,9 +94798,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -94408,9 +94824,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -94988,7 +95404,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -95008,14 +95424,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -95035,7 +95453,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -95070,7 +95490,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -95245,7 +95665,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -95431,7 +95851,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -95450,7 +95870,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -95482,7 +95904,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -95501,16 +95923,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -95528,16 +95952,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -95555,7 +95980,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -96490,7 +96916,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -96508,15 +96934,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -96534,13 +96964,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -96566,7 +97000,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -96592,9 +97026,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -96618,9 +97052,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -96644,9 +97078,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -97224,7 +97658,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -97244,14 +97678,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -97271,7 +97707,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -97481,7 +97919,7 @@
         "type": "Line",
         "name": "Γραμμή47",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 0.5291666666666667,
         "width": 0,
         "height": 18.009305555555553,
@@ -97667,7 +98105,7 @@
         "name": "Ετικέτα13",
         "section": "Section",
         "x": 4.850694444444445,
-        "y": 16.704027777777778,
+        "y": 17.268472222222222,
         "width": 11.006666666666666,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -97686,7 +98124,9 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "OptionGroup",
@@ -97718,7 +98158,7 @@
         "name": "Ετικέτα15",
         "section": "Section",
         "x": 133.06777777777776,
-        "y": 16.721666666666664,
+        "y": 17.268472222222222,
         "width": 11.377083333333331,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -97737,16 +98177,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_EN",
         "section": "Section",
         "x": 75.40625,
-        "y": 19.05,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.051944444444445,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -97764,16 +98206,17 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
         "name": "SYNTAGES.SYSTATIKA_GR",
         "section": "Section",
         "x": 3.439583333333333,
-        "y": 19.085277777777776,
+        "y": 19.99375,
         "width": 70.00874999999999,
-        "height": 21.995694444444442,
+        "height": 21.08722222222222,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -97791,7 +98234,8 @@
         "border": false,
         "rich": true,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -98726,7 +99170,7 @@
         "section": "Section",
         "x": 2.6458333333333335,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -98744,15 +99188,19 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
         "name": "ODHGIES_XRHSHS.OD_XRHSHS_EN",
         "section": "Section",
-        "x": 74.45375,
+        "x": 74.47138888888888,
         "y": 73.81875,
-        "width": 71.84319444444444,
+        "width": 71.82555555555555,
         "height": 8.889999999999999,
         "font": "Calibri",
         "fontSize": 5,
@@ -98770,13 +99218,17 @@
         "foreground": 0,
         "border": true,
         "rich": true,
-        "fontWeight": 300
+        "fontWeight": 300,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "Line",
         "name": "Γραμμή30",
         "section": "Section",
-        "x": 74.34791666666666,
+        "x": 74.47138888888888,
         "y": 76.46458333333334,
         "width": 0,
         "height": 23.00111111111111,
@@ -98854,7 +99306,7 @@
         "name": "Γραμμή48",
         "section": "Section",
         "x": 2.681111111111111,
-        "y": 81.78263888888888,
+        "y": 82.28541666666666,
         "width": 143.52763888888887,
         "height": 0.05291666666666666,
         "font": "Calibri",
@@ -98880,9 +99332,9 @@
         "name": "Ετικέτα28",
         "section": "Section",
         "x": 76.2,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 26.19375,
-        "height": 3.7041666666666666,
+        "height": 3.2013888888888866,
         "font": "Calibri",
         "fontSize": 7,
         "bold": true,
@@ -98906,9 +99358,9 @@
         "name": "PROIONTA.KOD_PROIONTOS",
         "section": "Section",
         "x": 104.24583333333334,
-        "y": 82.28541666666666,
+        "y": 82.78819444444444,
         "width": 42.17458333333333,
-        "height": 3.96875,
+        "height": 3.46597222222222,
         "font": "Calibri",
         "fontSize": 9,
         "bold": true,
@@ -98932,9 +99384,9 @@
         "name": "SYNTAGES.OIKOGENEIA",
         "section": "Section",
         "x": 104.51041666666667,
-        "y": 82.55,
+        "y": 82.78819444444444,
         "width": 4.074583333333333,
-        "height": 2.910416666666667,
+        "height": 2.672222222222221,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -99512,7 +99964,7 @@
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_EN",
         "section": "Section",
         "x": 76.2,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -99532,14 +99984,16 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "KATHGORIES.PERIGRAFH_KATHGORIAS_GR",
         "section": "Section",
         "x": 32.80833333333333,
-        "y": 16.933333333333334,
+        "y": 17.197916666666664,
         "width": 40.004999999999995,
         "height": 2.6458333333333335,
         "font": "Calibri",
@@ -99559,7 +100013,9 @@
         "border": false,
         "rich": false,
         "fontWeight": 300,
-        "borderColor": 10921638
+        "borderColor": 10921638,
+        "textCenterY": 18.520833333333332,
+        "paintLayer": 1
       },
       {
         "type": "Image",
@@ -99594,7 +100050,7 @@
         "x": 129.11666666666667,
         "y": 8.995833333333334,
         "width": 12.611805555555556,
-        "height": 7.22583333333333,
+        "height": 7.208194444444445,
         "font": "Calibri",
         "fontSize": 6,
         "bold": false,
@@ -99823,7 +100279,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -99842,16 +100298,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -99869,7 +100327,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -100645,7 +101104,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -101489,7 +101952,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -101508,16 +101971,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -101535,7 +102000,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -102311,7 +102777,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -103102,7 +103572,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -103121,16 +103591,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -103148,7 +103620,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -103924,7 +104397,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -104715,7 +105192,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -104734,16 +105211,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -104761,7 +105240,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -105537,7 +106017,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -106328,7 +106812,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -106347,16 +106831,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -106374,7 +106860,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -107150,7 +107637,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -107941,7 +108432,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.505972222222221,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -107960,16 +108451,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -107987,7 +108480,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -108763,7 +109257,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -109554,7 +110052,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -109573,16 +110071,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -109600,7 +110100,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -110376,7 +110877,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -111167,7 +111672,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -111186,16 +111691,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -111213,7 +111720,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -111989,7 +112497,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -112780,7 +113292,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -112799,16 +113311,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -112826,7 +113340,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -113602,7 +114117,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -114393,7 +114912,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -114412,16 +114931,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -114439,7 +114960,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -115215,7 +115737,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -116006,7 +116532,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -116025,16 +116551,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -116052,7 +116580,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -116828,7 +117357,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -117539,7 +118072,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -117558,16 +118091,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -117585,7 +118120,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -118334,7 +118870,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -119256,7 +119796,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -119275,16 +119815,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -119302,7 +119844,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -120078,7 +120621,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -120869,7 +121416,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -120888,16 +121435,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -120915,7 +121464,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -121691,7 +122241,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -122428,7 +122982,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -122447,16 +123001,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -122474,7 +123030,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -123250,7 +123807,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -124120,7 +124681,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -124139,16 +124700,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -124166,7 +124729,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -124942,7 +125506,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -125785,7 +126353,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -125804,16 +126372,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -125831,7 +126401,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -126607,7 +127178,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -127424,7 +127999,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -127443,16 +128018,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -127470,7 +128047,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -128246,7 +128824,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -129037,7 +129619,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -129056,16 +129638,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -129083,7 +129667,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -129859,7 +130444,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -130650,7 +131239,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -130669,16 +131258,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -130696,7 +131287,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -131472,7 +132064,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -132263,7 +132859,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.505972222222221,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -132282,16 +132878,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -132309,7 +132907,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -133085,7 +133684,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -133876,7 +134479,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -133895,16 +134498,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -133922,7 +134527,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -134698,7 +135304,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -135489,7 +136099,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -135508,16 +136118,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -135535,7 +136147,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -136311,7 +136924,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -137102,7 +137719,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 12.294305555555555,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -137121,16 +137738,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -137148,7 +137767,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -137924,7 +138544,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -138715,7 +139339,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -138734,16 +139358,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -138761,7 +139387,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -139537,7 +140164,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -140328,7 +140959,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.1125,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -140347,16 +140978,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -140374,7 +141007,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -141150,7 +141784,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -141941,7 +142579,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -141960,16 +142598,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -141987,7 +142627,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -142763,7 +143404,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",
@@ -143554,7 +144199,7 @@
         "name": "Ετικέτα10",
         "section": "Section",
         "x": 1.9755555555555553,
-        "y": 15.66333333333333,
+        "y": 16.227777777777778,
         "width": 11.994444444444444,
         "height": 2.504722222222222,
         "font": "Calibri",
@@ -143573,16 +144218,18 @@
         "foreground": 6710886,
         "border": false,
         "rich": false,
-        "borderColor": 8355711
+        "borderColor": 8355711,
+        "textCenterY": 17.480138888888888,
+        "paintLayer": 1
       },
       {
         "type": "TextBox",
         "name": "Κείμενο6",
         "section": "Section",
         "x": 1.3229166666666667,
-        "y": 17.727083333333333,
+        "y": 18.882499999999997,
         "width": 97.01388888888889,
-        "height": 15.998472222222222,
+        "height": 14.843055555555559,
         "font": "Calibri",
         "fontSize": 5,
         "bold": false,
@@ -143600,7 +144247,8 @@
         "border": false,
         "rich": true,
         "borderColor": 10921638,
-        "decimalPlaces": 0
+        "decimalPlaces": 0,
+        "paintLayer": 2
       },
       {
         "type": "TextBox",
@@ -144376,7 +145024,11 @@
         "background": 16777215,
         "foreground": 0,
         "border": true,
-        "rich": true
+        "rich": true,
+        "paddingLeft": 0.7,
+        "paddingRight": 0.7,
+        "paddingTop": 0.4,
+        "paddingBottom": 0.4
       },
       {
         "type": "TextBox",

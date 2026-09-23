@@ -91,6 +91,66 @@ public sealed class LayoutFidelityTests
         SharedLayout.DrawDocumentNodes(canvas,[caption,image],store,[]);
         Assert.Equal(SKColors.White,bitmap.GetPixel(10,10));Assert.Equal(SKColors.Red,bitmap.GetPixel(10,25));
     }
+    [Fact] public void IngredientLegendInkIsCenteredOnTheRule()
+    {
+        using var bitmap=new SKBitmap(500,200);using var canvas=new SKCanvas(bitmap);
+        canvas.Clear(SKColors.White);canvas.Scale(10);
+        using var paint=new SKPaint{Color=SKColors.Black};
+        var node=Node with{Y=8,Height=4,TextCenterY=10,FontSize=8};
+        LabelText.Draw(canvas,"Ingredients:",node,paint,[]);
+        var rows=Enumerable.Range(0,200).Where(y=>Enumerable.Range(0,500).Any(x=>bitmap.GetPixel(x,y).Red<100)).ToArray();
+        Assert.NotEmpty(rows);
+        Assert.InRange((rows.First()+rows.Last())/20f,9.85f,10.15f);
+    }
+    [Fact] public void IngredientTextPaintsAboveLateOpaqueHeadingsAndPanelBordersRemainClosed()
+    {
+        using var bitmap=new SKBitmap(200,200);using var canvas=new SKCanvas(bitmap);
+        canvas.Clear(SKColors.White);canvas.Scale(10);
+        var store=new AssetStore(new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string,string?>{{"Storage",Path.Combine(Path.GetTempPath(),"fae-order-test")}}).Build());
+        var body=Node with{Caption="",X=1,Y=1,Width=10,Height=4,Background=255,PaintLayer=2};
+        var heading=body with{Background=16777215,PaintLayer=1};
+        var panel=Node with{Caption="",X=1,Y=10,Width=10,Height=5,Border=true,BorderWidth=.3f};
+        SharedLayout.DrawDocumentNodes(canvas,[body,heading,panel],store,[]);
+        Assert.Equal(SKColors.Red,bitmap.GetPixel(20,20));
+        Assert.Equal(SKColors.Black,bitmap.GetPixel(50,100));
+        Assert.Equal(SKColors.Black,bitmap.GetPixel(50,150));
+
+    }
+    [Fact] public void PaddingInsetsRichTextWithoutMovingTheBorder()
+    {
+        using var bitmap=new SKBitmap(500,300);using var canvas=new SKCanvas(bitmap);
+        canvas.Clear(SKColors.White);canvas.Scale(20);
+        var store=new AssetStore(new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string,string?>{{"Storage",Path.Combine(Path.GetTempPath(),"fae-padding-test")}}).Build());
+        var panel=Node with{X=1,Y=1,Width=20,Height=10,FontSize=7,Border=true,BorderWidth=.2f,
+            Foreground=255,Caption="<b>Way of use:</b> Cook before eating. Keep refrigerated.",
+            PaddingLeft=.7f,PaddingRight=.7f,PaddingTop=.4f,PaddingBottom=.4f};
+        var issues=new List<string>();SharedLayout.DrawDocumentNodes(canvas,[panel],store,issues);
+        Assert.Empty(issues);
+        Assert.Equal(SKColors.Black,bitmap.GetPixel(20,100));
+        Assert.Equal(SKColors.Black,bitmap.GetPixel(200,220));
+        var ink=(from x in Enumerable.Range(0,500) from y in Enumerable.Range(0,300)
+            let c=bitmap.GetPixel(x,y) where c.Red>150&&c.Green<100&&c.Blue<100 select (x,y)).ToArray();
+        Assert.NotEmpty(ink);
+        Assert.All(ink,p=>{Assert.InRange(p.x,34,405);Assert.InRange(p.y,28,211);});
+        using var paint=new SKPaint();
+        var plain=panel with{PaddingLeft=0,PaddingRight=0,PaddingTop=0,PaddingBottom=0,CanShrink=true};
+        float measured=LabelText.Draw(null,"One",plain with{PaddingTop=.4f,PaddingBottom=.4f},paint,[]);
+        Assert.Equal(LabelText.Draw(null,"One",plain,paint,[])+.8f,measured,3);
+    }
+    [Fact] public void SampleLotSurvivesTheLateBarcodeBackground()
+    {
+        var nodes=SharedLayout.LegacyLayouts["DEIGMA_ETIKETA_GR"].Nodes;
+        var lot=nodes.Single(n=>n.Binding=="LOT");
+        var barcode=nodes.Single(n=>n.Binding=="PROIONTA.BARCODE");
+        using var bitmap=new SKBitmap(800,80);using var canvas=new SKCanvas(bitmap);
+        canvas.Clear(SKColors.White);canvas.Scale(20);canvas.Translate(-65,-72);
+        var store=new AssetStore(new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string,string?>{{"Storage",Path.Combine(Path.GetTempPath(),"fae-lot-test")}}).Build());
+        // Isolate the two source controls in their original (LOT then barcode) order.
+        SharedLayout.DrawDocumentNodes(canvas,[lot with{Caption="LOT TEST",Foreground=255},barcode with{Caption=""}],store,[]);
+        Assert.True(Enumerable.Range(0,800).Any(x=>Enumerable.Range(20,21).Any(y=>{
+            var c=bitmap.GetPixel(x,y);return c.Red>150&&c.Green<100&&c.Blue<100;
+        })),"The top of the LOT text was erased by the barcode background.");
+    }
     [Fact] public async Task EveryLabelVariantRendersRichIngredientsWithoutOverflow()
     {
         var store=new AssetStore(new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string,string?>{{"Storage",Path.Combine(Path.GetTempPath(),"fae-all-layouts-"+Guid.NewGuid())}}).Build());
@@ -101,7 +161,9 @@ public sealed class LayoutFidelityTests
         {
             bool a4=report.Profile=="a4"||report.Family=="butcher";
             var template=new Template{GeometryKey=report.Report,Family=report.Family,Profile=report.Family=="butcher"?"a4":report.Profile,WidthMm=a4?(report.Family=="pallet"?297:210):report.Profile=="large"?148:100,HeightMm=a4?(report.Family=="pallet"?210:297):report.Profile=="large"?100:report.Family=="thermal"?80:82};
-            var snapshot=new Snapshot{Template=template,Product=product,Recipe=recipe,Production=new(){ProductionDate=new(2026,9,23),FreezeDate=new(2026,9,23),PackagingDate=new(2026,9,23),ShelfLife=365,Languages=report.Languages,BrandKey=report.Brand,Mode=report.Mode,Weight=5.125m,CartonWeight=10.25m,Pieces=2,CustomerProductCode="42",CustomerOrigin="EU",LabelComment="QA",FreeText=report.Family is "custom" or "production"?"QA SAMPLE":""},Lot="39/26/10/11091000/0"};
+            var snapshot=new Snapshot{Template=template,Product=product,Recipe=recipe,
+                Instructions=WorkbookReader.Languages.ToDictionary(l=>l,l=>report.Brand=="ZLATHS"?"Cook before eating. Keep refrigerated.":"<b><u>Way of use:</u></b> To be consumed after heat treatment.<br><b><u>Preservation:</u></b> Preserve frozen &lt; -18°C / Preserve raw &lt; 2°C. Refreezing if defrosted is forbidden. After defrosting the product may have a maximum shelf life of 2 days under 2°C."),
+                Production=new(){ProductionDate=new(2026,9,23),FreezeDate=new(2026,9,23),PackagingDate=new(2026,9,23),ShelfLife=365,Languages=report.Languages,BrandKey=report.Brand,Mode=report.Mode,Weight=5.125m,CartonWeight=10.25m,Pieces=2,CustomerProductCode="42",CustomerOrigin="EU",LabelComment="QA",FreeText=report.Family is "custom" or "production"?"QA SAMPLE":""},Lot="39/26/10/11091000/0"};
             var result=new Rendering(store).Render(snapshot);
             Assert.True(result.Issues.Length==0,report.Report+": "+string.Join("; ",result.Issues));
         }

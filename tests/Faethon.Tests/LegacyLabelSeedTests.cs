@@ -56,7 +56,8 @@ public sealed class LegacyLabelSeedTests
         var nodes=SharedLayout.LegacyLayouts["MEGALH_ETIKETA_FAETHON_GR_EN"].Nodes;
         Assert.All(nodes.Where(n=>n.Binding.StartsWith("PROIONTA.PROION_")),n=>Assert.Equal(16777215L,n.Background));
         Assert.Null(nodes.Single(n=>n.Binding=="EPONYMIES.STOIXEIA_GR").Background); // explicit transparent control
-        foreach(var legend in nodes.Where(n=>n.Caption is "Συστατικά:" or "Ingredients:"))
-            Assert.All(nodes.Where(n=>n.Type=="Image"&&n.Y<legend.Y&&n.X<legend.X+legend.Width&&n.X+n.Width>legend.X),image=>Assert.True(image.Y+image.Height<=legend.Y-.49f));
+        foreach(var layout in SharedLayout.LegacyLayouts.Values)
+        foreach(var legend in layout.Nodes.Where(n=>n.Type=="Label"&&n.TextCenterY.HasValue))
+            Assert.All(layout.Nodes.Where(n=>n.Type=="Image"&&n.Y<legend.Y&&n.X<legend.X+legend.Width&&n.X+n.Width>legend.X),image=>Assert.True(image.Y+image.Height<=legend.Y-.49f,layout.Source));
     }
 }

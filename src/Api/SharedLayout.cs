@@ -7,7 +7,7 @@ using ZXing;
 namespace Faethon;
 
 public sealed record Geometry(string Source,float WidthMm,float HeightMm,LayoutNode[] Nodes);
-public sealed record LayoutNode(string Type,string Name,float X,float Y,float Width,float Height,string Font,float FontSize,bool Bold,bool Italic,int Align,string Binding,int Slot,string CaptionKey,string Image,string ImageName,bool Visible,long? Background,long Foreground,bool Border,bool Rich,string Caption="",string Section="",string Condition="",int FontWeight=0,bool Underline=false,long BorderColor=0,float BorderWidth=.12f,int SizeMode=3,int PictureAlignment=2,bool CanGrow=false,bool CanShrink=false,string Format="",int DecimalPlaces=255,float ImageDpiX=96,float ImageDpiY=96);
+public sealed record LayoutNode(string Type,string Name,float X,float Y,float Width,float Height,string Font,float FontSize,bool Bold,bool Italic,int Align,string Binding,int Slot,string CaptionKey,string Image,string ImageName,bool Visible,long? Background,long Foreground,bool Border,bool Rich,string Caption="",string Section="",string Condition="",int FontWeight=0,bool Underline=false,long BorderColor=0,float BorderWidth=.12f,int SizeMode=3,int PictureAlignment=2,bool CanGrow=false,bool CanShrink=false,string Format="",int DecimalPlaces=255,float ImageDpiX=96,float ImageDpiY=96,float? TextCenterY=null,int PaintLayer=0,float PaddingLeft=0,float PaddingTop=0,float PaddingRight=0,float PaddingBottom=0);
 public static class SharedLayout
 {
     public static readonly Dictionary<string,Geometry> Layouts=Load<Dictionary<string,Geometry>>("layouts.json");
@@ -176,12 +176,12 @@ public static class SharedLayout
     private static void Text(SKCanvas canvas,string text,LayoutNode n,SKPaint paint,List<string> issues)
         =>LabelText.Draw(canvas,text,n,paint,issues);
 
-    // Keep source stacking except for backed captions overlapped by opaque images.
-    // Their legend must stay visible without moving every logo behind unrelated backgrounds.
+    // Preserve source stacking unless a control needs an explicit layer to keep
+    // its text above an overlapping background (ingredient legends/body or LOT).
     private static IEnumerable<LayoutNode> PaintOrder(IEnumerable<LayoutNode> nodes)
     {
         var all=nodes.ToArray();
-        return all.OrderBy(n=>n.Type=="Label"&&n.Background.HasValue&&all.Any(image=>
+        return all.OrderBy(n=>n.PaintLayer>0?n.PaintLayer:n.Type=="Label"&&n.Background.HasValue&&all.Any(image=>
             image.Visible&&image.Type=="Image"&&image.X<n.X+n.Width&&image.X+image.Width>n.X&&
             image.Y<n.Y+n.Height&&image.Y+image.Height>n.Y)?1:0);
     }

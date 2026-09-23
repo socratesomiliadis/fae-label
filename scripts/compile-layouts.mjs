@@ -92,6 +92,7 @@ for(const [key,report] of Object.entries(baseReports)){
   const picture=assets.find(a=>a.name===c.Picture)||assets.find(a=>a.name.toLowerCase()===String(c.Picture||'').toLowerCase());
   return {type:c.type,name:c.Name,x:(c.Left||0)*25.4/1440,y:(c.Top||0)*25.4/1440,width:(c.Width||0)*25.4/1440,height:(c.Height||0)*25.4/1440,font:c.FontName||'Calibri',fontSize:c.FontSize||6,bold:(c.FontWeight||400)>=700,italic:c.FontItalic==='NotDefault',align:c.TextAlign||1,binding,slot,captionKey:c.Caption!==undefined?captionKey:'',image:picture?.hash||'',imageName:c.Picture||'',visible:c.Visible!=='NotDefault'&&c.Visible!==0,background:(c.BackStyle??(c.type==='TextBox'?1:0))===1?(c.BackColor??16777215):null,foreground:c.ForeColor??0,border:c.BorderStyle!==0&&c.BorderStyle!==undefined,rich:c.TextFormat===1,...presentation(c,entry),...(c.SizeMode===0&&picture?imageResolution(picture.file):{})};
  })};
+ adjustLegacyLayout(report,layouts[key]);
  // Small-label translations use the same source control identity, not copied layouts.
  if(key==='thermal-small')for(const lang of Object.keys(langMap)){
   const variant=all.find(r=>r.report===`MIKRH_ETIKETA_FAETHON_${lang}`);if(!variant)continue;resources[langMap[lang]]??={};

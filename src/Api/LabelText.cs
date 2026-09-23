@@ -73,6 +73,18 @@ public static class LabelText
     public static float Draw(SKCanvas? canvas, string text, LayoutNode node, SKPaint paint, List<string> issues, float? availableHeight = null, bool singleLine = false)
     {
         if (string.IsNullOrEmpty(text)) return node.CanShrink ? 0 : node.Height;
+        // Borders/backgrounds use the original control box. Wrap, fit and clip
+        // text against its inset content box, including grow/shrink measurement.
+        float horizontal=node.PaddingLeft+node.PaddingRight;
+        float vertical=node.PaddingTop+node.PaddingBottom;
+        if(horizontal>0||vertical>0)
+        {
+            var inner=node with{X=node.X+node.PaddingLeft,Y=node.Y+node.PaddingTop,
+                Width=Math.Max(.01f,node.Width-horizontal),Height=Math.Max(.01f,node.Height-vertical),
+                PaddingLeft=0,PaddingTop=0,PaddingRight=0,PaddingBottom=0};
+            return Draw(canvas,text,inner,paint,issues,availableHeight is {} available?Math.Max(.01f,available-vertical):null,singleLine)+vertical;
+        }
+
         var runs = Parse(FormatValue(text,node), node);
         var faces = new Dictionary<(int, bool), Face>();
         float size = node.FontSize * 25.4f / 72 * 100;
@@ -127,7 +139,18 @@ public static class LabelText
             if(canvas is null)return node.CanShrink ? actualHeight : Math.Max(node.Height, actualHeight);
             canvas.Save();
             canvas.ClipRect(new(node.X, node.Y, node.X + node.Width, node.Y + limit / 100));
-            canvas.Translate(node.X, node.Y);
+            float originY=node.Y;
+            if(node.TextCenterY is {} center && lines.Count==1)
+            {
+                float top=0,bottom=0;
+                foreach(var piece in lines[0].Pieces)
+                {
+                    Get(piece.Run).Font.MeasureText(piece.Text,out var bounds);
+                    top=Math.Min(top,bounds.Top);bottom=Math.Max(bottom,bounds.Bottom);
+                }
+                originY=center-(ascent+(top+bottom)/2)*scale/100;
+            }
+            canvas.Translate(node.X, originY);
             canvas.Scale(scale / 100);
             float lineWidth = width / scale;
             for (int i = 0; i < lines.Count; i++)
