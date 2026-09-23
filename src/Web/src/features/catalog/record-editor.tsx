@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { BusinessFields } from "@/features/catalog/business-fields";
+import { BrandFields } from "./brand-fields";
 import { ObjectFields } from "@/features/catalog/object-fields";
 import { defaults } from "@/features/catalog/record-defaults";
 import { api } from "@/lib/api";
@@ -26,7 +27,13 @@ export function RecordEditor({
   onSaved: () => void;
 }) {
   const [data, setData] = useState<Data>(() =>
-      structuredClone({ ...defaults[kind], ...row?.data, ...(kind === "brand" ? { names: { el: "", en: "", ...row?.data?.names } } : {}) }),
+      structuredClone({
+        ...defaults[kind],
+        ...row?.data,
+        ...(kind === "brand"
+          ? { names: { el: "", en: "", ...row?.data?.names } }
+          : {}),
+      }),
     ),
     [key, setKey] = useState(row?.key || ""),
     [error, setError] = useState(""),
@@ -98,7 +105,13 @@ export function RecordEditor({
                 />
               </Field>
             )}
-            {["product", "recipe", "reference"].includes(kind) ? (
+            {kind === "brand" ? (
+              <BrandFields
+                data={data}
+                onChange={setData}
+                disabled={!editable}
+              />
+            ) : ["product", "recipe", "reference"].includes(kind) ? (
               <BusinessFields
                 kind={kind}
                 data={data}

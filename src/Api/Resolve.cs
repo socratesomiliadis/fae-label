@@ -41,6 +41,7 @@ public sealed class Resolver(AppDb db)
         if(!template.Validated)issues.Add("Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.");
         if(template.Profile=="small"&&p.Languages.Length!=1)issues.Add("Η μικρή ετικέτα απαιτεί μία γλώσσα.");
         var brand=Find("brand",p.BrandKey)?.As<ReferenceData>();
+        if(!LabelCompatibility.Supports(template,p,brand))issues.Add("Δεν υποστηρίζεται αυτός ο συνδυασμός μορφής, επωνυμίας, περιεχομένου και γλωσσών. Επιλέξτε διαθέσιμη μορφή ετικέτας.");
         var source=LegacyTemplates.Select(template,p,brand);
         if(source!=null)
         {

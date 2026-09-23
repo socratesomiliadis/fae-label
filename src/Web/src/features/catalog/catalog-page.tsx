@@ -91,6 +91,12 @@ export function Catalog({
           </Button>
         )}
       </Heading>
+      {kind === "brand" && (
+        <p className="mb-5 text-sm text-muted-foreground">
+          Εταιρική περιγραφή, στοιχεία επικοινωνίας και λογότυπο για τη ΦΑΕΘΩΝ
+          και κάθε επωνυμία private label.
+        </p>
+      )}
       <Notice text={error} />
       <section className="mb-6 min-w-0 overflow-hidden rounded-xl border bg-card">
         <div className="flex flex-wrap items-center gap-4 border-b p-4 sm:px-5 [&>[data-slot=native-select-wrapper]]:w-48">

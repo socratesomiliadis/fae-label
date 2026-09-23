@@ -3,6 +3,7 @@ import { Notice } from "@/components/feedback/notice";
 import { AppHeader } from "@/components/layout/app-header";
 import { AppSidebar } from "@/components/layout/app-sidebar";
 import { Login } from "@/features/auth/login-page";
+import { LabelContentPage } from "@/features/catalog/label-content-page";
 import { Catalog } from "@/features/catalog/catalog-page";
 import { Dashboard } from "@/features/dashboard/dashboard-page";
 import { useSession } from "@/features/auth/use-session";
@@ -84,7 +85,14 @@ export function App() {
                   "butcher",
                   "production-label",
                 ].includes(page) ? (
-                <ProductionPage key={page} initial={selected} workflow={page} />
+                <ProductionPage
+                  key={page + (selected?.id || "")}
+                  initial={selected}
+                  workflow={page}
+                  admin={user.role === "admin"}
+                />
+              ) : page === "label-content" ? (
+                <LabelContentPage admin={user.role === "admin"} />
               ) : page === "daily" ? (
                 <Daily />
               ) : page === "history" ? (

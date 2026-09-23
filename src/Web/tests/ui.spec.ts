@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
-const root = path.resolve("../Api/wwwroot");
+const root = path.resolve(process.env.FAETHON_UI_DIST || "../Api/wwwroot");
 const product = {
   id: "b0fe1200-32de-42b6-9018-a01652639333",
   kind: "product",
@@ -158,7 +158,7 @@ test("Greek workspace, search and print preparation work without a dev server", 
     page.getByRole("heading", { name: "Έκδοση ετικετών" }),
   ).toBeVisible();
   await expect(
-    page.locator("summary").filter({ hasText: product.data.names.el }),
+    page.getByRole("heading", { name: product.data.names.el, exact: true }),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Αποστολή για εκτύπωση" }),
@@ -230,7 +230,7 @@ test("active label list filters products and opens live production values", asyn
     page.getByLabel("Βάρος κιβωτίου (kg)", { exact: true }),
   ).toHaveCount(0);
   await page
-    .getByRole("button", { name: "Κιβώτιο GR/EN", exact: true })
+    .getByRole("button", { name: "Κιβώτιο 148 × 100 mm", exact: true })
     .click();
   await expect(
     page.getByLabel("Βάρος κιβωτίου (kg)", { exact: true }),
@@ -326,8 +326,28 @@ test("label size selects its configured printer", async ({ page }) => {
   await page.route("**/api/records/printer", (route) =>
     route.fulfill({
       json: [
-        { id: "large-printer", key: "zebra-large", data: { name: "Zebra A" } },
-        { id: "small-printer", key: "zebra-small", data: { name: "Zebra B" } },
+        {
+          id: "large-printer",
+          key: "zebra-large",
+          data: {
+            name: "Zebra A",
+            widthMm: 108,
+            heightMm: 148,
+            rotation: 90,
+            validated: true,
+          },
+        },
+        {
+          id: "small-printer",
+          key: "zebra-small",
+          data: {
+            name: "Zebra B",
+            widthMm: 100,
+            heightMm: 82,
+            rotation: 0,
+            validated: true,
+          },
+        },
       ],
     }),
   );
@@ -340,7 +360,9 @@ test("label size selects its configured printer", async ({ page }) => {
   await expect(
     page.getByRole("combobox", { name: "Εκτυπωτής", exact: true }),
   ).toHaveValue("large-printer");
-  await page.getByRole("button", { name: "Μικρή", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Μικρή 100 × 82 mm", exact: true })
+    .click();
   await expect(
     page.getByRole("combobox", { name: "Εκτυπωτής", exact: true }),
   ).toHaveValue("small-printer");
@@ -410,7 +432,19 @@ test("late preview responses cannot enable printing an edited draft", async ({
 }) => {
   await page.route("**/api/records/printer", (route) =>
     route.fulfill({
-      json: [{ id: "printer", key: "zebra-large", data: { name: "Zebra" } }],
+      json: [
+        {
+          id: "printer",
+          key: "zebra-large",
+          data: {
+            name: "Zebra",
+            widthMm: 108,
+            heightMm: 148,
+            rotation: 90,
+            validated: true,
+          },
+        },
+      ],
     }),
   );
   let releasePreview: () => void = () => {};
@@ -451,4 +485,408 @@ test("late preview responses cannot enable printing an edited draft", async ({
   await expect(
     page.getByRole("button", { name: "Αποστολή για εκτύπωση" }),
   ).toBeDisabled();
+});
+
+async function openProduct(page: import("@playwright/test").Page) {
+  await page
+    .getByRole("button", { name: "Έκδοση ετικετών", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Έκδοση ετικέτας", exact: true })
+    .click();
+}
+const extraTemplates = [
+  ["pallet-a4", "Παλέτα Α4", "pallet", "a4", 297, 210],
+  ["sample-small", "Δείγμα", "sample", "small", 100, 82],
+  ["sample-blank", "Δείγμα · στοιχεία πελάτη", "sample", "small", 100, 82],
+  ["butcher-a4", "Ταμπελάκια κρεοπωλείου Α4", "butcher", "a4", 210, 297],
+].map(([key, name, family, profile, widthMm, heightMm]) => ({
+  ...template,
+  id: String(key),
+  key,
+  data: { name, family, profile, widthMm, heightMm, geometryKey: key },
+}));
+
+async function allFormats(page: import("@playwright/test").Page) {
+  await page.route("**/api/records/template", (r) =>
+    r.fulfill({
+      json: [
+        template,
+        {
+          ...template,
+          id: "small",
+          key: "thermal-small",
+          data: {
+            ...template.data,
+            profile: "small",
+            widthMm: 100,
+            heightMm: 80,
+          },
+        },
+        ...extraTemplates,
+      ],
+    }),
+  );
+}
+
+test("output choices prevent unsupported languages and preserve production details across formats", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await openProduct(page);
+  await page
+    .getByLabel("Ημερομηνία παραγωγής", { exact: true })
+    .fill("2026-10-01");
+  await page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }).fill("3.5");
+  await expect(page.getByLabel("Δεύτερη γλώσσα", { exact: true })).toHaveCount(
+    0,
+  );
+  await page
+    .getByRole("button", { name: "Μικρή 100 × 80 mm", exact: true })
+    .click();
+  await page.getByLabel("Γλώσσα ετικέτας", { exact: true }).selectOption("de");
+  await expect(
+    page.getByLabel("Γλώσσα ετικέτας", { exact: true }).locator("option"),
+  ).toHaveCount(16);
+  await page
+    .getByRole("button", { name: "Παλέτα Α4 297 × 210 mm", exact: true })
+    .click();
+  await expect(page.getByLabel("Γλώσσα ετικέτας", { exact: true })).toHaveCount(
+    0,
+  );
+  await expect(page.getByLabel("Περιεχόμενο", { exact: true })).toHaveCount(0);
+  await expect(
+    page.getByLabel("Ημερομηνία παραγωγής", { exact: true }),
+  ).toHaveValue("2026-10-01");
+  await expect(
+    page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }),
+  ).toHaveValue("3.5");
+  let request: any;
+  await page.route("**/api/preview", (r) => {
+    request = r.request().postDataJSON();
+    return r.fulfill({
+      json: { id: "preview", issues: [], imageUrl: "/brand/faethon-logo.svg" },
+    });
+  });
+  await page
+    .getByRole("button", { name: "Προεπισκόπηση", exact: true })
+    .click();
+  await expect.poll(() => request?.languages).toEqual(["el", "en"]);
+  expect(request.mode).toBe("product");
+  expect(request.weight).toBe(3.5);
+  await page.screenshot({
+    path: "../../artifacts/ux-output-workspace.png",
+    fullPage: true,
+  });
+});
+
+test("private-label languages follow each brand and preserve supported bilingual variants", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await page.route("**/api/records/product", (r) =>
+    r.fulfill({
+      json: [
+        {
+          ...product,
+          data: { ...product.data, brands: ["1", "IONIC", "METEORA"] },
+        },
+      ],
+    }),
+  );
+  await page.route("**/api/records/brand", (r) =>
+    r.fulfill({
+      json: ["1", "IONIC", "METEORA"].map((key) => ({
+        id: key,
+        key,
+        kind: "brand",
+        data: {
+          name: key === "1" ? "ΦΑΕΘΩΝ" : key,
+          legacyBrand: key === "1" ? "FAETHON" : key,
+        },
+      })),
+    }),
+  );
+  await openProduct(page);
+  await page.getByLabel("Επωνυμία στην ετικέτα").selectOption("IONIC");
+  await page
+    .getByRole("button", { name: "Μικρή 100 × 80 mm", exact: true })
+    .click();
+  await expect(
+    page.getByLabel("Γλώσσα ετικέτας").locator("option"),
+  ).toHaveCount(2);
+  await expect(
+    page.getByLabel("Γλώσσα ετικέτας").locator('option[value="de"]'),
+  ).toHaveCount(0);
+  await page.getByLabel("Επωνυμία στην ετικέτα").selectOption("METEORA");
+  await page
+    .getByRole("button", { name: "Μεγάλη 148 × 100 mm", exact: true })
+    .click();
+  await page.getByLabel("Γλώσσα ετικέτας").selectOption("ro/en");
+  await page.getByLabel("Επωνυμία στην ετικέτα").selectOption("1");
+  await expect(page.getByLabel("Γλώσσα ετικέτας")).toHaveCount(0);
+  await expect(
+    page.getByText("Ελληνικά + English", { exact: false }),
+  ).toBeVisible();
+});
+
+test("blank samples hide product fields and cannot submit a retained product", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await openProduct(page);
+  await page
+    .getByRole("button", {
+      name: "Δείγμα · στοιχεία πελάτη 100 × 82 mm",
+      exact: true,
+    })
+    .click();
+  await expect(
+    page.getByLabel("Ημερομηνία παραγωγής", { exact: true }),
+  ).toHaveCount(0);
+  await expect(page.getByLabel("Κωδικός ζώου")).toHaveCount(0);
+  await expect(page.getByLabel("Πελάτης", { exact: true })).toBeVisible();
+  await page.getByLabel("Γλώσσα ετικέτας").selectOption("en");
+  let request: any;
+  await page.route("**/api/preview", (r) => {
+    request = r.request().postDataJSON();
+    return r.fulfill({
+      json: { id: "blank", issues: [], imageUrl: "/brand/faethon-logo.svg" },
+    });
+  });
+  await page
+    .getByRole("button", { name: "Προεπισκόπηση", exact: true })
+    .click();
+  await expect.poll(() => request?.mode).toBe("blank");
+  expect(request.productId).toBeNull();
+  expect(request.languages).toEqual(["en"]);
+  await page
+    .getByRole("button", { name: "Μεγάλη 148 × 100 mm", exact: true })
+    .click();
+  await expect(
+    page.getByLabel("Ημερομηνία παραγωγής", { exact: true }),
+  ).toBeVisible();
+});
+
+test("company content opens beside the draft and operators only get read access", async ({
+  page,
+}) => {
+  await openProduct(page);
+  await page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }).fill("7.25");
+  await page
+    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .click();
+  await expect(
+    page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
+  ).toBeVisible();
+  await page.getByRole("tab", { name: "English", exact: true }).click();
+  await page
+    .getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας")
+    .fill("Company details");
+  await page.screenshot({
+    path: "../../artifacts/ux-company-editor.png",
+    fullPage: true,
+  });
+  await page.keyboard.press("Escape");
+  await expect(
+    page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }),
+  ).toHaveValue("7.25");
+  await page
+    .getByRole("button", { name: "Περιεχόμενο ετικέτας", exact: true })
+    .click();
+  await expect(
+    page.getByRole("tab", { name: "Οδηγίες & κοινά κείμενα" }),
+  ).toBeVisible();
+  await page.screenshot({
+    path: "../../artifacts/ux-content-hub.png",
+    fullPage: true,
+  });
+  await page.route("**/api/me", (r) =>
+    r.fulfill({ json: { name: "Operator", role: "operator" } }),
+  );
+  await page.reload();
+  await openProduct(page);
+  await page
+    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .click();
+  await expect(
+    page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
+  ).toBeDisabled();
+  await expect(
+    page
+      .getByRole("dialog")
+      .getByRole("button", { name: "Αποθήκευση", exact: true }),
+  ).toHaveCount(0);
+});
+
+test("old saved drafts are normalized to one language and retain carton quantities", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await page.route("**/api/records/draft", (r) =>
+    r.fulfill({
+      json: [
+        {
+          id: "saved",
+          key: "saved",
+          kind: "draft",
+          version: 1,
+          data: {
+            name: "Saved small label",
+            productId: product.id,
+            templateKey: "thermal-small",
+            mode: "carton",
+            languages: ["el", "en"],
+            brandKey: "1",
+            productionDate: "2026-10-01",
+            shelfLife: 365,
+            weight: 3,
+            cartonWeight: 12,
+            pieces: 4,
+            freeText: "",
+          },
+        },
+      ],
+    }),
+  );
+  await page
+    .getByRole("button", { name: "Έκδοση ετικετών", exact: true })
+    .click();
+  await page.getByLabel("Αποθηκευμένη προετοιμασία").selectOption("saved");
+  await expect(page.getByLabel("Γλώσσα ετικέτας")).toHaveValue("el");
+  await page
+    .getByRole("button", { name: "Κιβώτιο 148 × 100 mm", exact: true })
+    .click();
+  await expect(page.getByLabel("Βάρος κιβωτίου (kg)")).toHaveValue("12");
+  await expect(page.getByLabel("Τεμάχια / κιβώτιο")).toHaveValue("4");
+});
+
+test("small labels use the product carton-weight preference and filter incompatible printers", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await page.route("**/api/records/product", (r) =>
+    r.fulfill({
+      json: [
+        { ...product, data: { ...product.data, smallLabelWeight: "carton" } },
+      ],
+    }),
+  );
+  await page.route("**/api/records/printer", (r) =>
+    r.fulfill({
+      json: [
+        {
+          id: "s",
+          key: "zebra-small",
+          data: {
+            name: "Small",
+            widthMm: 100,
+            heightMm: 80,
+            rotation: 0,
+            validated: true,
+          },
+        },
+        {
+          id: "l",
+          key: "zebra-large",
+          data: {
+            name: "Large",
+            widthMm: 108,
+            heightMm: 148,
+            rotation: 90,
+            validated: true,
+          },
+        },
+        {
+          id: "a",
+          key: "kyocera-a4",
+          data: {
+            name: "A4",
+            widthMm: 210,
+            heightMm: 297,
+            rotation: 0,
+            validated: true,
+          },
+        },
+      ],
+    }),
+  );
+  await openProduct(page);
+  await expect(
+    page.getByLabel("Εκτυπωτής", { exact: true }).locator('option[value="s"]'),
+  ).toHaveCount(0);
+  await page
+    .getByRole("button", { name: "Μικρή 100 × 80 mm", exact: true })
+    .click();
+  await expect(
+    page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }),
+  ).toHaveCount(0);
+  await expect(page.getByLabel("Βάρος κιβωτίου (kg)")).toBeVisible();
+  await expect(page.getByLabel("Τεμάχια / κιβώτιο")).toHaveCount(0);
+  await expect(page.getByLabel("Εκτυπωτής", { exact: true })).toHaveValue("s");
+  await page
+    .getByRole("button", { name: "Παλέτα Α4 297 × 210 mm", exact: true })
+    .click();
+  await expect(page.getByLabel("Εκτυπωτής", { exact: true })).toHaveValue("a");
+  await expect(
+    page.getByLabel("Εκτυπωτής", { exact: true }).locator("option"),
+  ).toHaveCount(2);
+});
+
+test("invalid dates and fractional carton counts are explained before preview", async ({
+  page,
+}) => {
+  await openProduct(page);
+  await page.getByLabel("Χειροκίνητη ημερομηνία λήξης").fill("2020-01-01");
+  await expect(
+    page.getByText("Η λήξη δεν μπορεί να προηγείται της παραγωγής."),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Προεπισκόπηση", exact: true }),
+  ).toBeDisabled();
+  await page.getByLabel("Χειροκίνητη ημερομηνία λήξης").fill("");
+  await page
+    .getByRole("button", { name: "Κιβώτιο 148 × 100 mm", exact: true })
+    .click();
+  await page.getByLabel("Τεμάχια / κιβώτιο").fill("1.5");
+  await expect(
+    page.getByText("Τα τεμάχια πρέπει να είναι ακέραιος αριθμός."),
+  ).toBeVisible();
+  await page.getByLabel("Τεμάχια / κιβώτιο").fill("2");
+  await expect(
+    page.getByRole("button", { name: "Προεπισκόπηση", exact: true }),
+  ).toBeEnabled();
+});
+
+test("product workspace and content drawer fit a narrow viewport", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await openProduct(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+  await page
+    .getByRole("button", { name: "Μικρή 100 × 80 mm", exact: true })
+    .click();
+  await page.screenshot({
+    path: "../../artifacts/ux-workspace-mobile.png",
+    fullPage: true,
+  });
+  await page
+    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .click();
+  await expect(
+    page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
+  ).toBeVisible();
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog")).toHaveCount(0);
 });

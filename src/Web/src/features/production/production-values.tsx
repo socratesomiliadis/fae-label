@@ -50,12 +50,22 @@ export function ProductionValues({ model }: { model: ProductionModel }) {
             .filter(
               ([k]) =>
                 k === "shelfLife" ||
-                k === "weight" ||
+                (k === "weight" &&
+                  !(
+                    selectedTemplate?.data.family === "thermal" &&
+                    (draft.mode === "carton" ||
+                      (selectedTemplate?.data.profile === "small" &&
+                        selected?.data.smallLabelWeight === "carton"))
+                  )) ||
                 (k === "palletWeight" &&
                   selectedTemplate?.data.family === "pallet") ||
                 (["pieces", "cartonWeight"].includes(k) &&
+                  !(
+                    k === "pieces" && selectedTemplate?.data.profile === "small"
+                  ) &&
                   (draft.mode === "carton" ||
-                    selected?.data.smallLabelWeight === "carton" ||
+                    (selectedTemplate?.data.profile === "small" &&
+                      selected?.data.smallLabelWeight === "carton") ||
                     selectedTemplate?.data.family === "pallet")),
             )
             .map(([k, l]) => (

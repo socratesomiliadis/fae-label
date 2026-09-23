@@ -2,8 +2,9 @@ import { Field } from "@/components/forms/field";
 import { Input } from "@/components/ui/input";
 import { NativeSelect } from "@/components/ui/native-select";
 import { Textarea } from "@/components/ui/textarea";
-import type { ProductionModel } from "@/features/production/use-production";
+import type { ProductionModel } from "./use-production";
 import { nameOf } from "@/lib/records";
+
 export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
   const {
     customers,
@@ -12,66 +13,86 @@ export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
     draft,
     set,
     selected,
+    selectedTemplate,
     productNeeded,
   } = model;
+  const family = selectedTemplate?.data.family;
+  const beef = ["20", "25", "26", "27"].includes(
+    recipes.rows.find((r) => r.key === selected?.data.recipeCode)?.data.family,
+  );
+  const ionic =
+    model.brands.rows.find((b) => b.key === draft.brandKey)?.data
+      .legacyBrand === "IONIC";
   return (
-    <details
-      className="col-span-full my-2 mb-4 rounded-lg border p-3 [&>summary]:flex [&>summary]:cursor-pointer [&>summary]:justify-between [&>summary]:py-1 [&>summary]:text-sm [&>summary]:text-muted-foreground [&[open]>summary]:mb-4"
-      open={
-        !productNeeded ||
-        ["20", "25", "26", "27"].includes(
-          recipes.rows.find((r) => r.key === selected?.data.recipeCode)?.data
-            .family,
-        )
-      }
-    >
-      <summary>
-        {productNeeded ? "Ιχνηλασιμότητα" : "Περιεχόμενο ετικέτας"}
-      </summary>
-      <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2">
-        {[
-          ["animalCode", "Κωδικός ζώου"],
-          ["slaughterhouse", "Αρ. έγκρισης σφαγείου"],
-          ["supplier", "Προμηθευτής"],
-          ["customerProductCode", "Κωδικός προϊόντος πελάτη (IONIC)"],
-          ["customerOrigin", "Προέλευση πελάτη (IONIC)"],
-          ["labelComment", "Σχόλιο επωνυμίας"],
-        ].map(([k, l]) => (
-          <Field key={k} label={l}>
-            <Input
-              list={k + "-options"}
-              value={draft[k] || ""}
-              onChange={(e) => set(k, e.target.value)}
-            />
-          </Field>
-        ))}
-        <Field label="Ημερομηνία συσκευασίας">
-          <Input
-            type="date"
-            value={draft.packagingDate || ""}
-            onChange={(e) => set("packagingDate", e.target.value || null)}
-          />
-        </Field>
-        {[
-          ["slaughterhouse", "slaughterhouse"],
-          ["supplier", "supplier"],
-        ].map(([key, group]) => (
-          <datalist key={key} id={key + "-options"}>
-            {references.rows
-              .filter((r) => r.data.group === group)
-              .map((r) => (
-                <option key={r.id} value={r.key.replace(group + ":", "")}>
-                  {nameOf(r)}
-                </option>
-              ))}
-          </datalist>
-        ))}
+    <>
+      {productNeeded && (
+        <details
+          key={String(beef)}
+          open={beef}
+          className="my-3 rounded-lg border p-3 [&>summary]:cursor-pointer [&>summary]:text-sm"
+        >
+          <summary>
+            Ιχνηλασιμότητα
+            {beef ? " · απαιτούνται ζώο και σφαγείο" : " και πρόσθετα στοιχεία"}
+          </summary>
+          <div className="mt-4 grid gap-x-4 sm:grid-cols-2">
+            {[
+              ...(beef
+                ? [
+                    ["animalCode", "Κωδικός ζώου"],
+                    ["slaughterhouse", "Αρ. έγκρισης σφαγείου"],
+                  ]
+                : []),
+              ["supplier", "Προμηθευτής"],
+              ...(ionic
+                ? [
+                    ["customerProductCode", "Κωδικός προϊόντος πελάτη (IONIC)"],
+                    ["customerOrigin", "Προέλευση πελάτη (IONIC)"],
+                  ]
+                : []),
+              ["labelComment", "Σχόλιο επωνυμίας"],
+            ].map(([k, l]) => (
+              <Field key={k} label={l}>
+                <Input
+                  list={k + "-options"}
+                  value={draft[k] || ""}
+                  onChange={(e) => set(k, e.target.value)}
+                />
+              </Field>
+            ))}
+            <Field label="Ημερομηνία συσκευασίας">
+              <Input
+                type="date"
+                value={draft.packagingDate || ""}
+                onChange={(e) => set("packagingDate", e.target.value || null)}
+              />
+            </Field>
+            {["slaughterhouse", "supplier"].map((group) => (
+              <datalist key={group} id={group + "-options"}>
+                {references.rows
+                  .filter((r) => r.data.group === group)
+                  .map((r) => (
+                    <option key={r.id} value={r.key.replace(group + ":", "")}>
+                      {nameOf(r)}
+                    </option>
+                  ))}
+              </datalist>
+            ))}
+          </div>
+        </details>
+      )}
+      {(family === "address" ||
+        (family === "sample" && draft.mode === "blank")) && (
         <Field label="Πελάτης">
           <NativeSelect
             value={draft.customerId || ""}
             onChange={(e) => set("customerId", e.target.value || null)}
           >
-            <option value="">Επιλέξτε…</option>
+            <option value="">
+              {family === "address"
+                ? "Επιλέξτε πελάτη…"
+                : "Χωρίς πελάτη · κενό πλαίσιο"}
+            </option>
             {customers.rows.map((c) => (
               <option key={c.id} value={c.id}>
                 {nameOf(c)}
@@ -79,14 +100,25 @@ export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
             ))}
           </NativeSelect>
         </Field>
-      </div>
-      <Field label="Ελεύθερο κείμενο / τίτλος">
-        <Textarea
-          value={draft.freeText}
-          rows={4}
-          onChange={(e) => set("freeText", e.target.value)}
-        />
-      </Field>
-    </details>
+      )}
+      {["custom", "production", "butcher"].includes(family) && (
+        <Field label="Ελεύθερο κείμενο / τίτλος">
+          <Textarea
+            rows={5}
+            value={draft.freeText}
+            onChange={(e) => set("freeText", e.target.value)}
+          />
+        </Field>
+      )}
+      {family === "production" && (
+        <Field label="Ημερομηνία παραγωγής">
+          <Input
+            type="date"
+            value={draft.productionDate}
+            onChange={(e) => set("productionDate", e.target.value)}
+          />
+        </Field>
+      )}
+    </>
   );
 }

@@ -1,3 +1,6 @@
+import { LanguageTabs } from "@/components/forms/language-tabs";
+import { TabsContent } from "@/components/ui/tabs";
+import { Textarea } from "@/components/ui/textarea";
 import { Field } from "@/components/forms/field";
 import { Checkbox } from "@/components/ui/checkbox";
 import { NativeSelect } from "@/components/ui/native-select";
@@ -15,7 +18,7 @@ export function ReferenceFields({
   disabled,
   extra,
 }: BusinessFieldsProps & { model: BusinessFieldsModel }) {
-  const { set } = model;
+  const { set, language, languageKeys, languageRows } = model;
   return (
     <>
       <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2">
@@ -53,9 +56,26 @@ export function ReferenceFields({
           Κατεψυγμένο (LOT με κατάληξη 0)
         </label>
       )}
+      <LanguageTabs
+        languages={[
+          ...new Set([...languageKeys, ...Object.keys(data.texts || {})]),
+        ]}
+        rows={languageRows}
+      />
+      <TabsContent value={language}>
+        <Field label="Κείμενο στην ετικέτα">
+          <Textarea
+            rows={6}
+            disabled={disabled}
+            value={data.texts?.[language] || ""}
+            onChange={(e) =>
+              set("texts", { ...data.texts, [language]: e.target.value })
+            }
+          />
+        </Field>
+      </TabsContent>
       {extra(
         {
-          texts: data.texts || { el: "", en: "" },
           complete: data.complete || false,
         },
         (d) => onChange({ ...data, ...d }),

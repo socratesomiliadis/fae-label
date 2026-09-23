@@ -29,6 +29,10 @@ public sealed class IntegrationTests
             var small=await resolver.Resolve(new Production{ProductId=product.Id,TemplateKey="thermal-small",Languages=["el"],CartonWeight=5});
             Assert.Equal("carton",small.Production.Mode);Assert.Equal(80,small.Template.HeightMm);Assert.DoesNotContain(small.Issues,i=>i.Contains("βάρος προϊόντος")||i.Contains("τεμάχια"));
             var large=await resolver.Resolve(new Production{ProductId=product.Id,Languages=["el"]});Assert.Contains(large.Issues,i=>i.Contains("ελληνικά και αγγλικά"));
+            var invalidPallet=await resolver.Resolve(new Production{ProductId=product.Id,TemplateKey="pallet-a4",Mode="carton",Languages=["el","en"]});
+            Assert.Contains(invalidPallet.Issues,i=>i.Contains("Δεν υποστηρίζεται αυτός ο συνδυασμός"));
+            var invalidButcher=await resolver.Resolve(new Production{TemplateKey="butcher-a4",Mode="blank",Languages=["el","en"]});
+            Assert.Contains(invalidButcher.Issues,i=>i.Contains("Δεν υποστηρίζεται αυτός ο συνδυασμός"));
             var blank=await resolver.Resolve(new Production{TemplateKey="sample-blank",Mode="blank",Languages=["el"],FreeText="Customer"});Assert.DoesNotContain(blank.Issues,i=>i.Contains("Επιλέξτε προϊόν"));
             var renderer=scope.ServiceProvider.GetRequiredService<Rendering>();
             await LegacyAssets.Import(db,scope.ServiceProvider.GetRequiredService<AssetStore>(),Path.GetFullPath("../../../../../legacy",AppContext.BaseDirectory));

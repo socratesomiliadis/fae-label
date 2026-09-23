@@ -8,12 +8,13 @@ import {
   AlertTriangle,
   ArrowUpRight,
   Check,
+  Eye,
   Printer,
   Tags,
 } from "lucide-react";
 export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
   const {
-    printers,
+    availablePrinters,
     preview,
     printer,
     setPrinter,
@@ -25,25 +26,39 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
     selectedTemplate,
   } = model;
   return (
-    <section className="mb-6 min-w-0 overflow-hidden rounded-xl border bg-card xl:sticky xl:top-5">
+    <section className="mb-6 min-w-0 overflow-hidden rounded-xl border bg-card ">
       <div className="flex items-center justify-between gap-4 border-b px-5 py-4 [&_h2]:mb-0 [&_h2]:flex [&_h2]:items-center [&_h2]:gap-2 [&_h2]:text-base">
-        <h2>Εκτύπωση</h2>
+        <h2>Προεπισκόπηση & εκτύπωση</h2>
         <span className="ml-auto whitespace-nowrap text-xs text-muted-foreground">
           {selectedTemplate?.data.widthMm} × {selectedTemplate?.data.heightMm}{" "}
           mm
         </span>
       </div>
-      <div className="flex min-h-80 items-center justify-center bg-muted p-6 [&_img]:w-full [&_img]:shadow-md">
+      <div className="flex min-h-48 items-center justify-center bg-muted p-6 [&_img]:max-h-[520px] [&_img]:w-full [&_img]:object-contain [&_img]:shadow-md">
         {preview ? (
           <img src={preview.imageUrl} alt="Προεπισκόπηση ετικέτας" />
         ) : (
           <div className="max-w-64 text-center text-muted-foreground [&_svg]:mx-auto [&_svg]:mb-4">
             <Tags size={40} />
-            <p>Επιλέξτε «Προεπισκόπηση».</p>
+            <p>Ελέγξτε την ετικέτα πριν την εκτύπωση.</p>
           </div>
         )}
       </div>
       <div className="p-5">
+        {model.formIssue && (
+          <p role="status" className="mb-3 text-sm text-amber-800">
+            {model.formIssue}
+          </p>
+        )}
+        <Button
+          className="mb-4 w-full"
+          variant={preview ? "outline" : "default"}
+          disabled={model.busy || !!model.formIssue}
+          onClick={model.makePreview}
+        >
+          <Eye size={16} />
+          {model.busy ? "Προετοιμασία…" : "Προεπισκόπηση"}
+        </Button>
         {preview && (
           <>
             {(preview.pageCount || 1) > 1 && (
@@ -81,7 +96,7 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
               onChange={(e) => setPrinter(e.target.value)}
             >
               <option value="">Επιλέξτε εκτυπωτή…</option>
-              {printers.rows.map((p) => (
+              {availablePrinters.map((p) => (
                 <option key={p.id} value={p.id}>
                   {nameOf(p)}
                   {!p.data.validated ? " · προς επικύρωση" : ""}
@@ -99,6 +114,20 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
             />
           </Field>
         </div>
+        {!availablePrinters.length && (
+          <p className="mb-3 text-xs text-muted-foreground">
+            Δεν έχει ρυθμιστεί εκτυπωτής για αυτή τη διάσταση. Η προεπισκόπηση
+            και το PDF παραμένουν διαθέσιμα.
+          </p>
+        )}
+        {!!printer &&
+          availablePrinters.some(
+            (p) => p.id === printer && !p.data.validated,
+          ) && (
+            <p className="mb-3 text-xs text-amber-800">
+              Ο επιλεγμένος εκτυπωτής χρειάζεται επικύρωση από τον διαχειριστή.
+            </p>
+          )}
         <Button
           variant="default"
           type="submit"
