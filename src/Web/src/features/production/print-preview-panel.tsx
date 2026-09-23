@@ -46,6 +46,12 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
       <div className="p-5">
         {preview && (
           <>
+            {(preview.pageCount || 1) > 1 && (
+              <p className="mb-3 text-sm text-muted-foreground">
+                Προεπισκόπηση σελίδας 1 από {preview.pageCount}. Ανοίξτε το PDF
+                για προβολή και εκτύπωση όλων των σελίδων.
+              </p>
+            )}
             <div className="flex justify-between gap-2.5 pb-4 text-xs [&_b]:mt-1 [&_b]:block [&_b]:font-mono [&_b]:text-sm [&_a]:flex [&_a]:items-center [&_a]:gap-1">
               <span>
                 LOT <b>{preview.lot || "—"}</b>

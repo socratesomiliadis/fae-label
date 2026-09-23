@@ -10,3 +10,10 @@ legacy/working/
 *.user
 *.log
 .env
+# Generated QA exports stay local; compact reports and manifests remain reviewable.
+output/**/*.pdf
+output/**/*.png
+output/**/*.jpg
+output/**/*.jpeg
+output/**/*.zip
+tmp/

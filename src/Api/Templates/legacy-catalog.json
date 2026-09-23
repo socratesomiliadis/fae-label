@@ -1,0 +1,1406 @@
+[
+  {
+    "family": "pallet",
+    "definitionSha256": "D7E5C207D5806D381C2FD2635A056CCD7C54CED514B210ABCBCC0DA68D0AC793",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_SUFRO_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "01993DAD4B046959A75A8F3B15508B92227C21FCB01A736AA4D03C1034977F42",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_FAETHON_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "21F80B24259B017FFBC6BE1999BA80A1FB90A00F0A202A690BE6DE4F66AFF220",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "ED25B75EF2E7A1F43752F90B7657EAFD5825705C85D191824895FACFC87047C2",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "79F987C16369F3754551C0D5FBA4BE205459C181725DB3B3B42B065CFE4ACA5B",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "IONIC",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_IONIC_GR_EN"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "0C89B05EB033F87633A70981EAC81F3C6320E05C595BFA7C11D9BE38FDFD1DBF",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_MAVROUDIS_GR_EN"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "EC71F9F6C106FF636504D9A72C2951A0D5856D55F40B0B9AFC37E6097A86D27B",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_FAETHON_GR_EN"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "20F42C5D63C0E4CE5CD59A67BEBFA9EC105C5A4A66E827FEAD0CBB09B937689B",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "5042D68DA17FB9EBCA1C969253280C12061593C06E6B167AC910634BA83BECEE",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "PASSIAS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_PASSIAS_GR_EN"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "96ABF9E2D1A06C1840D7F9130819E0480E6800BEBD7E99C353FD7DFEFB36570C",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_DIARKEIA_ZOHS_PROIONTON"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "E60B3D160412484CD3A4CEF18927CEB099483E25A0B1D323DB5A785E7140315F",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_ODHGIES_XRHSHS"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "BD0D6C695F085B942C29D702FD2E2A127EE696683D4DC17C96EBB9DAC9951A16",
+    "languages": [
+      "ro",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_METEORA_RO_EN"
+  },
+  {
+    "family": "custom",
+    "definitionSha256": "6B67E3BC6CDA1E68DAA358B66067E58B2D5D328953AB715A81BC72A50B0C865B",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "CUSTOM_MEGALH_ETIKETA_LOGO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "50D6809EE03C15009FC6EEBF0D3DA305C0B5EB08BA4722FBCCBCC17D4381A77C",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "IONIC",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_IONIC_EN"
+  },
+  {
+    "family": "sample",
+    "definitionSha256": "A9179A7A483CEB23A7C73B8B14373ADF1EC196E6F5A106611EC45EB69440549C",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "DEIGMA_ETIKETA_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "619C6C20B8A9C8275D7DF4BFC430AAEB3728182CC15F5C1B5719639365FD30B8",
+    "languages": [
+      "nl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_HL"
+  },
+  {
+    "family": "sample",
+    "definitionSha256": "BF6584B9A7B45A647A9A2063741F47E710A50E5AB1D168541ECFE58561778215",
+    "languages": [
+      "el"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "DEIGMA_KENO_ETIKETA_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "FDC64CAF5D0BB303A998165ADBEBEBF5123C4130DBCC9A38FB8F48D9D8F9478C",
+    "languages": [
+      "pt"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_PO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "18D773B59B707CEC8E2BB7F8DEE48119C6436EEB858036CEC51703A2D840CBE5",
+    "languages": [
+      "pl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_PL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "0E6EC09D389FD1E2716F8DD7001BDA79C2AF767A90E005E04A8495520B7CF752",
+    "languages": [
+      "pt"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_PO"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "91EC72D2041704931583E3999F3CE9CA7691C0CD93FF0483627A801122D664DB",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_METEORA_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "B69779140E5629558CE3CC091BFA978203EA1F95250C5A2CB23440C466EC453E",
+    "languages": [
+      "ro"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_RO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "A0780BD06A10368B3A9BA3E08A0E1B9EEE41987F8E414BE8E0AEF7865FD915CF",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_GR"
+  },
+  {
+    "family": "address",
+    "definitionSha256": "21B20D45D3F281F156C54F5B3FC51E02F27A39D1BDF38B4EF8B9230CC56672A4",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "ETIKETES_PELATES"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "4A4F8548CCEF1DBCB4C78D712AE33424381691EDE330C828D476B65B5FCA3514",
+    "languages": [
+      "hu"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_HU"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "F0EA51FFD2F45424DE49053DDBAB088099AA2D8CA41BAD7F056F232D6B127703",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_SUFRO_GR"
+  },
+  {
+    "family": "butcher",
+    "definitionSha256": "C7EC2B7215F79B00DA54FEA461023A49422C91BEE70776ACB4FAE6D7330C1A21",
+    "languages": [
+      "el"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "TABELAKIA_EIDON_KREOPOLEIOY_KENO"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "297DE8C9540B7039BC9067439F44C7FC2DA6BA8AE8A9447ABAB061AE008DC272",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "PASSIAS",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_PASSIAS_GR_EN"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "1D0E65D3E3866DB503F51CC3CED1CA9564B1E8C17E95C4C238DD3973000AB4CF",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_SYNTOMOGRAFIES"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "A3BA88663B715A54710420A9F0FD37290132050A7D2873763E3350649EF89D36",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "599F01A104460FF1B9E0011078AB73E24FC3E89DBB3060086086D29634A12860",
+    "languages": [
+      "hr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_CR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "FF3FC3FE370CE00AC20B2D655D495D15A44EA21174EA3BE8A2B95624D6ECD546",
+    "languages": [
+      "ro"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_SUFRO_RO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "28681D9C01BB5BA2A7BF21CAFBF644475841E8CFF590CC575E58AE4FDF7E4F49",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "BC13E8D367229826E4AF27F9767A002FD557860CD04B8E1A3EBF7D01519FFB89",
+    "languages": [
+      "ro",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "D0B226FD489917EA67A996B22DB220A941BA2B4F03B66324F1DB82859359315B",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "3270102BD76F8E4109FF01AAF04DD7249A2D24798E789D5720006DEB8D94A378",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "DE8A0F714DDB86DAE2CAB6E438066557C260093B291E4FE65838C2017C58EAEB",
+    "languages": [
+      "ro",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "E790AEAA76CE315488A24C5B90BD26A5467B7EDCD6E5DE8E7B75E6FD8CFD7B78",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "830C6B3951C6A23C0698C8628AB03975A20B537BDBAD7E058C7579EC6A2184EF",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "63510FD936AFDD7540412913BED1CA7CEF15B35D3867193635FB3789D6BFA861",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "A1E470F768D65148D2B4419611405A897652FB8EF7BC745B9DBB86690406EB2B",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "IONIC",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "BEBAAD779D0803381E415D96643947533BCFF0B511DDB7595387CD6B609AA9CC",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "carton",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO"
+  },
+  {
+    "family": "custom",
+    "definitionSha256": "CC2B6F7C029903AFF828318E09A797C402E8F6A316CE2CCC9C72E968F9ECD9DB",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": false,
+    "report": "CUSTOM_ETIKETA_MIKRH_NOLOGO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "CB19203CCFC3A3F79A40DBDA2672CECAE8743BBA485D76CE69153F1A4590511F",
+    "languages": [
+      "fr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_FR"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "9BCC6C0D088BE67F830AE063E21DA260DC5274FF6C7B214E1E376BF34AD10F88",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_KATHGORION"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "22B069AF43DE2A17DEC8C8B5A3E15C47F7A69522143A54A0057027240608D141",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_METEORA_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "7C88F2EE601F805DB084764D64231F520EA6D6AB7A278669D4D0833C95A0AFAB",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "29AD40211676BA877948C389526967311D7E4FE38EF3C4FAE5F3DDC6CEF370E0",
+    "languages": [
+      "nl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_HL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "6DD67A7572D81969E402A7CF77B19BA553F15BDD477013DF5FB1FCC60E2E0A50",
+    "languages": [
+      "sq"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_AL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "6F7F610E46D4919E674B4C19FED20B646ECF082C322106F5DC2C0464A6F4D15B",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_METEORA_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "38297FF453D5C68F3F2CA9C6B3E99BEA9B4807F01CC44A289A443DAA13BCE99B",
+    "languages": [
+      "pl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_PL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "3CCF79F7524B6F6FF1DFB2E465B7570C89E27BAACD7B825E6CAFF0B19BFE21E1",
+    "languages": [
+      "ro"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_RO"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "858B5E69B9C19671F6C6B420842DC7D4A8456EC94D55B5F8EAE6613F8DA5A6EA",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_SYNTAGON"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "A72B70ED19DBD89A26DC53DBF3E36D469CDEF9F2D1A4D1FA934C1B96E090CB74",
+    "languages": [
+      "pt"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_PO"
+  },
+  {
+    "family": "reference-list",
+    "definitionSha256": "311F175D0B33852F4C8B97D1C08F0C80F29BD9ECF9EB52670996861D928EE52E",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "LISTA_OIKOGENEIES"
+  },
+  {
+    "family": "certificate-bg",
+    "definitionSha256": "61A8518EDE73569A1737FE9D2C9514384ACCFBF709E9A9D823430FDE5F650B0C",
+    "languages": [
+      "bg"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "PISTOPOIHTIKA_BG"
+  },
+  {
+    "family": "production",
+    "definitionSha256": "6EA7EB5E934A4704D3AB6CA8739CE9ED7C77D7FBB7DBBAFE00DF5FEF5FB1A35F",
+    "languages": [
+      "el"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "ETIKETES_KENES_PROS_PARAGOGH"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "DCCAEFB4BA61DDC84B4BDBF738B2B2836CE3F53CB527C232762359B7F71B71AE",
+    "languages": [
+      "de"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_GE"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "C2E375C359B29A718E292F05E54F0E02CEB06A771B329138A3BA29361EB6935D",
+    "languages": [
+      "bg"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_BG"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "786C12DB9ED4E5134D9905F3598305F9C23045BCF5093FEF78ED6EB0993AB00A",
+    "languages": [
+      "it"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_IT"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "4C8EF6F4AB3D5016CFE0064E1D7668D0B8978E5D63E768EB1663BDADEFA8DA9A",
+    "languages": [
+      "es"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_ES"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "205D28706E7E565030D02FB4090D0340C54B684EAAF3A57A4E9FBC30045DD1E2",
+    "languages": [
+      "cs"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_CH"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "2B0DADF9DDA4E0CE1222735D56FF7D1DBCE6BD41580DAEAE90E2E987ED57B5F5",
+    "languages": [
+      "sv"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_SW"
+  },
+  {
+    "family": "butcher",
+    "definitionSha256": "A4509F15705ECDB4D5CEF9BFA4F021DF30EE8673A0A6EA2A835BAC84129F12BD",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "TABELAKIA_EIDON_KREOPOLEIOY"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "7D178A3F35C47714E7785A516B98E9C3B3A25BDB4133F72CB0904E180502DDBE",
+    "languages": [
+      "hu"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_HU"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "A19099BC20520C3229DFC28EA47B197DC4FC39EC7FA95187EFCEA76E369B40A7",
+    "languages": [
+      "hr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_CR"
+  },
+  {
+    "family": "pallet",
+    "definitionSha256": "7DCD26D202E90B695579297FA8F7B70B9255C6017AE06966039A76DFF592F864",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "IONIC",
+    "logo": true,
+    "report": "ETIKETA_PALETA_A4_IONIC_GR_EN"
+  },
+  {
+    "family": "sample",
+    "definitionSha256": "68454BA7AAC0461F8FC65217A9F4424169791D61C12D46041528D6FBF7FB7312",
+    "languages": [
+      "en"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "DEIGMA_KENO_ETIKETA_EN"
+  },
+  {
+    "family": "sample",
+    "definitionSha256": "A2E3AE9AA32897EE9FB397A0C7C651FB231A5D8644DD25D4B7857E351608362E",
+    "languages": [
+      "de"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "DEIGMA_KENO_ETIKETA_GE"
+  },
+  {
+    "family": "sample",
+    "definitionSha256": "2866CC61C1A9995883E517CB11776D1F9B8F5619E7BCD3B2A84EBF55EB7BF95A",
+    "languages": [
+      "bg"
+    ],
+    "mode": "blank",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "DEIGMA_KENO_ETIKETA_BG"
+  },
+  {
+    "family": "custom",
+    "definitionSha256": "4E4492C79D5CF698A23C760A831FC19B5354888E8E7680C81E77C08FD25E8AFD",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "CUSTOM_ETIKETA_MIKRH_LOGO"
+  },
+  {
+    "family": "custom",
+    "definitionSha256": "0D50ADF6096CBFE7EDD225D06776E5F34C4A3C8FA81DC68623FB70CCD3D35F3F",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "FAETHON",
+    "logo": false,
+    "report": "CUSTOM_MEGALH_ETIKETA_NOLOGO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "38A2085F2D41F89393E28A88A48BF332F64C31B597D902418CB1DDB6D9D43638",
+    "languages": [
+      "hr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_CR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "990F05C7C17CB557BB8843BCCE344C62AB7478A981E0A289EE4D07C8AAF5D4DA",
+    "languages": [
+      "sq"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "ZLATHS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_ZLATHS_AL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "EACFE373E9232D1702FCFFFD11BF62ACBB516EE1A3CB080C2526E9A659C0AD9D",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "5B6BA1A6BA5EC46B7A9659561F7B3227ECFD52F7AD9BF17E746642D5848AB5B8",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_SUFRO_GR_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "4A07727871F202F2F90BBAF385E2F21734804374A78D6DCEDA589E63A7BEB03D",
+    "languages": [
+      "ro",
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "large",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MEGALH_ETIKETA_SUFRO_RO_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "F949D59F93C356D0B51E5D0ED047F3356CC3AABDB1645F3D34AC2C5FE4FE8C29",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "799C2A60DF5B4B925D02D63F25C8806D8978A31B2FFFA0A9A448898466848E75",
+    "languages": [
+      "sq"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_AL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "C0BD83F52C9952ED933625C468DFC303EF05D761272A6E8E4A53449DC377F633",
+    "languages": [
+      "bg"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_BG"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "B88044B957BD4C88FD6AF0575D80D1EDAAE2E9307963C811EFA346F64ADCB3D6",
+    "languages": [
+      "cs"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_CH"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "E737BF7E6D0079C66FD0DBA987A7405FACBDC87B56094DA88102D74BBAF36C29",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "83A8F031C94F514BB3F1ECEE65D53F2BC4A8712A31504A6B85D9A1248D0FAC72",
+    "languages": [
+      "es"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_ES"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "7CE051BF59E1FF4748A8FF7C42CFCC327A68469E4E6D3FE9B0802546A30DC4CD",
+    "languages": [
+      "fr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_FR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "39135E9958ACF5506639E1C23632EADCB1F3CEBE209667CF5AD6D19963637BBC",
+    "languages": [
+      "de"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_GE"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "0F81D9E31A4725AA17193C84FAA3FA650075B6A9658879034C5F0172AB84F467",
+    "languages": [
+      "hu"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_HU"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "81CA6B2CEA5F88471C399A51D27B3C6C87C4EFCC6648322FB1F1C40FBC9F8BFF",
+    "languages": [
+      "it"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_IT"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "6163CEA0B646C3F9A7F0D636EAC66DCCE3C98FA9CB3B50B5981AFEC8D6056E7F",
+    "languages": [
+      "sv"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_FAETHON_SW"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "B2A94E5CBA77890F1B90CFEF90A83FD9305FE463A71B09ECD4770AD177E04711",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "IONIC",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_IONIC_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "360AB0C7B4B4C169F81980454265C9AF53A5644BDB156B1328A312C8FC86517C",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "DD0A043F74973F4C3C24F840BFF7CD960664B5EF67073F41825078D02BB3DB83",
+    "languages": [
+      "de"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "MAVROUDIS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_GE"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "8C7D2ACB6F0547D8E5EC43DD72C63E432C87BA9343C94E1CD634D3B2750DE33D",
+    "languages": [
+      "el"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_METEORA_GR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "2E9EB0BD2D553873DB4540A015B0992AB9EE1BF4E9164A0A35A6F5C0A63BAF50",
+    "languages": [
+      "ro"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "METEORA",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_METEORA_RO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "DE3E94E48876E4DBD6EF182B97816EE22B708431678862F3372F764F8CBF8965",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "SUFRO",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_SUFRO_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "59882C399FE179B3D7D66434D9567FE7042A120E600C77450883F634C764DB51",
+    "languages": [
+      "bg"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_BG"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "ABAA2DD94970FFA41ED44562B47E8BFFEA30C354D7B3F64E65FE31D26F5FE141",
+    "languages": [
+      "cs"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_CH"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "EB2B7BC94A6C1E8030E98FA28B4EDFB5BF622469C8AE01E38A5B7CBD6FA09885",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_EN"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "71AFA57C063497AAB17BFE9BF1A2D10086107048B6CCE0F19F8A2F7BD674315A",
+    "languages": [
+      "es"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_ES"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "9540487885366701337987D8F1D77A39F170591FD6C85C0BC731FC0702E2FC90",
+    "languages": [
+      "fr"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_FR"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "4330750CBFEC6F0D1E8BF79A1FD219420D27BD3F677A75C74B6B6C2A348EA3B0",
+    "languages": [
+      "de"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_GE"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "61CD7EA214223ABFAE0A6B3904152EFDAA03A164EF99724DF8D7DE5649519CBA",
+    "languages": [
+      "nl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_HL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "F8DC3BF6A6BE2B24F1167C40624EFD62A754200FAB49C1384C383500F4596AB2",
+    "languages": [
+      "it"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_IT"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "94BDE7FB51922E91AF9C60F793A3BCB0B264718AAB03902E01229BDA8834A888",
+    "languages": [
+      "pl"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_PL"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "BD074D5E4B22930DDF20068393B0A5C8DEED4379FF0954A8DD90BC25B067F318",
+    "languages": [
+      "ro"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_RO"
+  },
+  {
+    "family": "thermal",
+    "definitionSha256": "1CFE6FBC3DCCCE7CC799E8F776875B7574BD01035E20E977721240A55E4A7DE5",
+    "languages": [
+      "sv"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "small",
+    "brand": "PAPADOPOULOS",
+    "logo": true,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_SW"
+  },
+  {
+    "family": "certificate-conformance",
+    "definitionSha256": "5CD526C4CD447F851E009DF1E142FEE48101ED09725CE48FFA231318C6356DE7",
+    "languages": [
+      "en"
+    ],
+    "mode": "product",
+    "status": "unvalidated",
+    "profile": "a4",
+    "brand": "FAETHON",
+    "logo": true,
+    "report": "CERTIFICATE_OF_CONFORMANCE_FULL"
+  }
+]

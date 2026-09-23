@@ -1,0 +1,642 @@
+{
+  "fictional": true,
+  "results": [
+    {
+      "name": "certificate-conformance",
+      "request": {
+        "name": "QA SAMPLE - NOT FOR SHIPMENT",
+        "customerId": "fb9ad834-b5dd-4f1a-a12c-edb5fa174cf2",
+        "vehicle": "QA-TRUCK",
+        "trailer": "QA-TRAILER",
+        "shipmentDate": "2026-09-23",
+        "notes": "FICTIONAL QA SAMPLE - NOT FOR SHIPMENT",
+        "templateKey": "certificate-conformance",
+        "languages": [
+          "en"
+        ],
+        "lines": [
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 50,
+            "cartons": 10,
+            "lot": "QA-100-1",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 50,
+            "cartons": 10,
+            "lot": "QA-110-1",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          }
+        ]
+      },
+      "id": "da0444ef-ade7-4f2e-a602-f09e337ed15c",
+      "pdfUrl": "/api/previews/da0444ef-ade7-4f2e-a602-f09e337ed15c/pdf",
+      "imageUrl": "/api/previews/da0444ef-ade7-4f2e-a602-f09e337ed15c/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "sourceReport": "CERTIFICATE_OF_CONFORMANCE_FULL",
+      "pageCount": 1
+    },
+    {
+      "name": "certificate-conformance-30-lines",
+      "request": {
+        "name": "QA SAMPLE - NOT FOR SHIPMENT",
+        "customerId": "fb9ad834-b5dd-4f1a-a12c-edb5fa174cf2",
+        "vehicle": "QA-TRUCK",
+        "trailer": "QA-TRAILER",
+        "shipmentDate": "2026-09-23",
+        "notes": "FICTIONAL QA SAMPLE - NOT FOR SHIPMENT",
+        "templateKey": "certificate-conformance",
+        "languages": [
+          "en"
+        ],
+        "lines": [
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 50,
+            "cartons": 10,
+            "lot": "QA-110-1",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 51,
+            "cartons": 10,
+            "lot": "QA-100-2",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 52,
+            "cartons": 10,
+            "lot": "QA-110-3",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 53,
+            "cartons": 10,
+            "lot": "QA-100-4",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 54,
+            "cartons": 10,
+            "lot": "QA-110-5",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 55,
+            "cartons": 10,
+            "lot": "QA-100-6",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 56,
+            "cartons": 10,
+            "lot": "QA-110-7",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 57,
+            "cartons": 10,
+            "lot": "QA-100-8",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 58,
+            "cartons": 10,
+            "lot": "QA-110-9",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 59,
+            "cartons": 10,
+            "lot": "QA-100-10",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 60,
+            "cartons": 10,
+            "lot": "QA-110-11",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 61,
+            "cartons": 10,
+            "lot": "QA-100-12",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 62,
+            "cartons": 10,
+            "lot": "QA-110-13",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 63,
+            "cartons": 10,
+            "lot": "QA-100-14",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 64,
+            "cartons": 10,
+            "lot": "QA-110-15",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 65,
+            "cartons": 10,
+            "lot": "QA-100-16",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 66,
+            "cartons": 10,
+            "lot": "QA-110-17",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 67,
+            "cartons": 10,
+            "lot": "QA-100-18",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 68,
+            "cartons": 10,
+            "lot": "QA-110-19",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 69,
+            "cartons": 10,
+            "lot": "QA-100-20",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 70,
+            "cartons": 10,
+            "lot": "QA-110-21",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 71,
+            "cartons": 10,
+            "lot": "QA-100-22",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 72,
+            "cartons": 10,
+            "lot": "QA-110-23",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 73,
+            "cartons": 10,
+            "lot": "QA-100-24",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 74,
+            "cartons": 10,
+            "lot": "QA-110-25",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 75,
+            "cartons": 10,
+            "lot": "QA-100-26",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 76,
+            "cartons": 10,
+            "lot": "QA-110-27",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 77,
+            "cartons": 10,
+            "lot": "QA-100-28",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 78,
+            "cartons": 10,
+            "lot": "QA-110-29",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          },
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 79,
+            "cartons": 10,
+            "lot": "QA-100-30",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          }
+        ]
+      },
+      "id": "157e57a7-56c2-4477-b4cc-345e0e2a2b55",
+      "pdfUrl": "/api/previews/157e57a7-56c2-4477-b4cc-345e0e2a2b55/pdf",
+      "imageUrl": "/api/previews/157e57a7-56c2-4477-b4cc-345e0e2a2b55/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "sourceReport": "CERTIFICATE_OF_CONFORMANCE_FULL",
+      "pageCount": 6
+    },
+    {
+      "name": "certificate-bg-fresh-and-frozen",
+      "request": {
+        "name": "QA SAMPLE - NOT FOR SHIPMENT",
+        "customerId": "fb9ad834-b5dd-4f1a-a12c-edb5fa174cf2",
+        "vehicle": "QA-TRUCK",
+        "trailer": "QA-TRAILER",
+        "shipmentDate": "2026-09-23",
+        "notes": "FICTIONAL QA SAMPLE - NOT FOR SHIPMENT",
+        "templateKey": "certificate-bg",
+        "languages": [
+          "bg"
+        ],
+        "lines": [
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 50,
+            "cartons": 10,
+            "lot": "QA-100-1",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          },
+          {
+            "productId": "b3f66638-49c9-4597-b9cc-b07550da7390",
+            "weight": 50,
+            "cartons": 10,
+            "lot": "QA-110-1",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2027-09-23",
+            "freezeDate": "2026-09-23"
+          }
+        ]
+      },
+      "id": "7a39d6af-ee15-4478-9e57-ee60b2347343",
+      "pdfUrl": "/api/previews/7a39d6af-ee15-4478-9e57-ee60b2347343/pdf",
+      "imageUrl": "/api/previews/7a39d6af-ee15-4478-9e57-ee60b2347343/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "sourceReport": "PISTOPOIHTIKA_BG",
+      "pageCount": 4
+    },
+    {
+      "name": "private-label-1-large",
+      "request": {
+        "productId": "e6c4c2ee-a465-4aa8-9749-d93b1416308d",
+        "brandKey": "QA-1790171933569-brand-1",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "thermal-large",
+        "languages": [
+          "el",
+          "en"
+        ]
+      },
+      "id": "ca77828d-f31d-4ca2-a8dc-700231a9b1b8",
+      "pdfUrl": "/api/previews/ca77828d-f31d-4ca2-a8dc-700231a9b1b8/pdf",
+      "imageUrl": "/api/previews/ca77828d-f31d-4ca2-a8dc-700231a9b1b8/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "thermal-large",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-1-small",
+      "request": {
+        "productId": "e6c4c2ee-a465-4aa8-9749-d93b1416308d",
+        "brandKey": "QA-1790171933569-brand-1",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "thermal-small",
+        "languages": [
+          "el"
+        ]
+      },
+      "id": "94748130-c816-4e3f-a616-1050dba723a7",
+      "pdfUrl": "/api/previews/94748130-c816-4e3f-a616-1050dba723a7/pdf",
+      "imageUrl": "/api/previews/94748130-c816-4e3f-a616-1050dba723a7/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "thermal-small",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-1-custom",
+      "request": {
+        "productId": "e6c4c2ee-a465-4aa8-9749-d93b1416308d",
+        "brandKey": "QA-1790171933569-brand-1",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "custom-large",
+        "languages": [
+          "el"
+        ],
+        "freeText": "NORTHSTAR QA\nQA DEMO Northstar Foods\n10 Fictional Avenue, Sofia\nFICTIONAL QA SAMPLE"
+      },
+      "id": "a58a67db-c008-40ee-8718-e0af60b64dc6",
+      "pdfUrl": "/api/previews/a58a67db-c008-40ee-8718-e0af60b64dc6/pdf",
+      "imageUrl": "/api/previews/a58a67db-c008-40ee-8718-e0af60b64dc6/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "CUSTOM_MEGALH_ETIKETA_LOGO",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-2-large",
+      "request": {
+        "productId": "41ca4e54-5812-47dc-abcc-34e6ddce5435",
+        "brandKey": "QA-1790171933569-brand-2",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "thermal-large",
+        "languages": [
+          "el",
+          "en"
+        ]
+      },
+      "id": "55f72a6f-eb52-4e42-993d-56c418c97a65",
+      "pdfUrl": "/api/previews/55f72a6f-eb52-4e42-993d-56c418c97a65/pdf",
+      "imageUrl": "/api/previews/55f72a6f-eb52-4e42-993d-56c418c97a65/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "thermal-large",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-2-small",
+      "request": {
+        "productId": "41ca4e54-5812-47dc-abcc-34e6ddce5435",
+        "brandKey": "QA-1790171933569-brand-2",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "thermal-small",
+        "languages": [
+          "el"
+        ]
+      },
+      "id": "83566cc5-65f2-49c7-82c0-bf2923f86db8",
+      "pdfUrl": "/api/previews/83566cc5-65f2-49c7-82c0-bf2923f86db8/pdf",
+      "imageUrl": "/api/previews/83566cc5-65f2-49c7-82c0-bf2923f86db8/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "thermal-small",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-2-custom",
+      "request": {
+        "productId": "41ca4e54-5812-47dc-abcc-34e6ddce5435",
+        "brandKey": "QA-1790171933569-brand-2",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "mode": "product",
+        "templateKey": "custom-large",
+        "languages": [
+          "el"
+        ],
+        "freeText": "HELIOS QA\nQA DEMO Northstar Foods\n10 Fictional Avenue, Sofia\nFICTIONAL QA SAMPLE"
+      },
+      "id": "bf7c1c3c-e2dc-4e53-88fe-6e2bedeb9157",
+      "pdfUrl": "/api/previews/bf7c1c3c-e2dc-4e53-88fe-6e2bedeb9157/pdf",
+      "imageUrl": "/api/previews/bf7c1c3c-e2dc-4e53-88fe-6e2bedeb9157/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "sourceReport": "CUSTOM_MEGALH_ETIKETA_LOGO",
+      "pageCount": 1
+    },
+    {
+      "name": "private-label-customer-address",
+      "request": {
+        "templateKey": "address-small",
+        "customerId": "3db68771-70b1-4652-b5fc-cf7562dc5ca7",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product"
+      },
+      "id": "2b66b282-cd67-43fe-ac87-c01b4e7e18a6",
+      "pdfUrl": "/api/previews/2b66b282-cd67-43fe-ac87-c01b4e7e18a6/pdf",
+      "imageUrl": "/api/previews/2b66b282-cd67-43fe-ac87-c01b4e7e18a6/image",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "sourceReport": "ETIKETES_PELATES",
+      "pageCount": 1
+    }
+  ],
+  "cleanup": [
+    {
+      "kind": "product",
+      "key": "QA-1790171933569-product-2",
+      "archived": true
+    },
+    {
+      "kind": "brand",
+      "key": "QA-1790171933569-brand-2",
+      "archived": true
+    },
+    {
+      "kind": "product",
+      "key": "QA-1790171933569-product-1",
+      "archived": true
+    },
+    {
+      "kind": "brand",
+      "key": "QA-1790171933569-brand-1",
+      "archived": true
+    },
+    {
+      "kind": "customer",
+      "key": "QA-1790171933569-customer",
+      "archived": true
+    },
+    {
+      "kind": "certificate-customer",
+      "key": "QA-1790171933569-certificate-customer",
+      "archived": true
+    }
+  ]
+}

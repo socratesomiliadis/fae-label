@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { adjustLegacyLayout } from './legacy-layout-adjustments.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const dir=path.join(root,'legacy/definitions');
 const coverage=JSON.parse(fs.readFileSync(path.join(root,'legacy/coverage.json'),'utf8').replace(/^\uFEFF/,''));
@@ -14,15 +15,15 @@ function parse(name){
   else if(/^\w+ = Begin$/.test(s)){const n={type:'Binary',props:{key:s.split(' ')[0]},children:[]};parent().children.push(n);stack.push(n);lastProp='';}
   else if(s==='End'){if(stack.length>1)stack.pop();lastProp='';}
   else if(parent().type!=='Binary'){
-   const m=s.match(/^(\w+) =(.+)$/);if(m){lastProp=m[1];parent().props[lastProp]=m[2].startsWith('"')?m[2].slice(1,-1).replace(/""/g,'"'):isNaN(Number(m[2]))?m[2]:Number(m[2]);}
+   const m=s.match(/^(\w+) =(.+)$/);if(m){lastProp=m[1];const value=m[2].trim();parent().props[lastProp]=value.startsWith('"')?value.slice(1,-1).replace(/""/g,'"'):isNaN(Number(value))?value:Number(value);}
    else if(s.startsWith('"')&&lastProp){parent().props[lastProp]+=s.slice(1,-1).replace(/""/g,'"');}
   }
  }
  const report=root.children.find(n=>n.type==='Report');if(!report)throw Error(name);
  const defaults={};const controls=[];const sections=[];
- function walk(node,inSection=false){if(['PageHeader','PageFooter','Section','GroupHeader','GroupFooter'].includes(node.type)){inSection=true;sections.push(node.props)}if(['TextBox','Label','Line','Rectangle','OptionGroup','Image','BoundObjectFrame','UnboundObjectFrame','Subform'].includes(node.type)){if(inSection&&node.props.Name){controls.push({...defaults[node.type],...node.props,type:node.type})}else if(!inSection)defaults[node.type]=node.props;}for(const child of node.children)walk(child,inSection);}
+ function walk(node,section=''){if(['PageHeader','PageFooter','Section','GroupHeader','GroupFooter','ReportHeader','ReportFooter','FormHeader','FormFooter','BreakHeader','BreakFooter'].includes(node.type)){section=node.type;sections.push({type:section,...node.props})}if(['TextBox','Label','Line','Rectangle','OptionGroup','Image','BoundObjectFrame','UnboundObjectFrame','Subform','PageBreak'].includes(node.type)){if(section&&node.props.Name){controls.push({...defaults[node.type],...node.props,type:node.type,section})}else if(!section)defaults[node.type]=node.props;}for(const child of node.children)walk(child,section);}
  walk(report);
- return {name,widthMm:(report.props.Width||0)*25.4/1440,heightMm:Math.max(...sections.map(s=>s.Height||0))*25.4/1440,controls};
+ return {name,widthMm:(report.props.Width||0)*25.4/1440,heightMm:Math.max(...sections.map(s=>s.Height||0))*25.4/1440,controls,sections:sections.map(s=>({type:s.type,heightMm:(s.Height||0)*25.4/1440})),recordSource:report.props.RecordSource};
 }
 const all=coverage.map(c=>({...c,layout:parse(c.report)}));
 const baseReports={
@@ -41,6 +42,17 @@ const baseReports={
 };
 const assets=fs.readdirSync(path.join(root,'legacy/assets')).map(file=>{const bytes=fs.readFileSync(path.join(root,'legacy/assets',file));return{file,name:file.replace(/^\d+_/,'').replace(/\.[^.]+$/,''),hash:crypto.createHash('sha256').update(bytes).digest('hex')}});
 const resources={};const layouts={};
+// Keep each source report's captions, images, control identities and sections.
+// A shared family is a selection convenience, not permission to discard variants.
+const variants={};
+for(const entry of all){
+ variants[entry.report]={source:entry.report,widthMm:entry.layout.widthMm,heightMm:entry.layout.heightMm,sections:entry.layout.sections,nodes:entry.layout.controls.map(c=>{
+  const suffix=String(c.ControlSource||'').match(/_(GR|EN|GE|BG|RO|FR|IT|ES|PL|HL|PO|CH|SW|HU|CR|AL)$/)?.[1];
+  const picture=assets.find(a=>a.name===c.Picture)||assets.find(a=>a.name.toLowerCase()===String(c.Picture||'').replace(/^\d+_/,'').toLowerCase());
+  return {type:c.type,name:c.Name,section:c.section,x:(c.Left||0)*25.4/1440,y:(c.Top||0)*25.4/1440,width:(c.Width||0)*25.4/1440,height:(c.Height||0)*25.4/1440,font:c.FontName||'Calibri',fontSize:c.FontSize||6,bold:(c.FontWeight||400)>=700,italic:c.FontItalic==='NotDefault',align:c.TextAlign||1,binding:c.ControlSource||'',slot:suffix?Math.max(0,entry.languages.indexOf(langMap[suffix])):0,caption:String(c.Caption??'').replace(/\\"/g,'"'),captionKey:'',image:picture?.hash||'',imageName:c.Picture||'',visible:c.Visible!=='NotDefault'&&c.Visible!==0,background:c.BackStyle===1?(c.BackColor??16777215):null,foreground:c.ForeColor??0,border:c.BorderStyle!==0&&c.BorderStyle!==undefined,rich:c.TextFormat===1};
+ })};
+ adjustLegacyLayout(entry.report,variants[entry.report]);
+}
 for(const [key,report] of Object.entries(baseReports)){
  const entry=all.find(r=>r.report===report);const controls=entry.layout.controls;
  const sourceLangs=entry.languages;
@@ -59,6 +71,8 @@ for(const [key,report] of Object.entries(baseReports)){
 fs.mkdirSync(path.join(root,'src/Api/Templates'),{recursive:true});
 fs.writeFileSync(path.join(root,'src/Api/Templates/layouts.json'),JSON.stringify(layouts,null,2));
 fs.writeFileSync(path.join(root,'src/Api/Templates/captions.json'),JSON.stringify(resources,null,2));
+fs.writeFileSync(path.join(root,'src/Api/Templates/legacy-layouts.json'),JSON.stringify(variants,null,2));
+fs.writeFileSync(path.join(root,'src/Api/Templates/legacy-catalog.json'),JSON.stringify(coverage,null,2));
 fs.writeFileSync(path.join(root,'legacy/asset-manifest.json'),JSON.stringify(assets,null,2));
 fs.writeFileSync(path.join(root,'legacy/control-inventory.json'),JSON.stringify(all.map(e=>({report:e.report,widthMm:e.layout.widthMm,heightMm:e.layout.heightMm,controls:e.layout.controls.length,sources:e.layout.controls.filter(c=>c.ControlSource).map(c=>c.ControlSource)})),null,2));
 console.log(`Compiled ${Object.keys(layouts).length} shared geometry profiles from ${all.length} fresh reports; ${assets.length} fresh assets.`);

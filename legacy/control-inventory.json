@@ -465,8 +465,8 @@
   {
     "report": "LISTA_DIARKEIA_ZOHS_PROIONTON",
     "widthMm": 197.30861111111108,
-    "heightMm": 13.987638888888887,
-    "controls": 10,
+    "heightMm": 16.139583333333334,
+    "controls": 13,
     "sources": [
       "AA",
       "PROION",
@@ -479,8 +479,8 @@
   {
     "report": "LISTA_ODHGIES_XRHSHS",
     "widthMm": 205.47541666666666,
-    "heightMm": 15.998472222222222,
-    "controls": 6,
+    "heightMm": 16.139583333333334,
+    "controls": 9,
     "sources": [
       "KOD_ODHG_XRHSHS",
       "OD_XRHSHS_GR",
@@ -1071,8 +1071,8 @@
   {
     "report": "LISTA_SYNTOMOGRAFIES",
     "widthMm": 197.30861111111108,
-    "heightMm": 7.990416666666666,
-    "controls": 10,
+    "heightMm": 15.08125,
+    "controls": 13,
     "sources": [
       "SYNTOMOGRAFIA_GR",
       "PERIGRAFH_GR",
@@ -1799,8 +1799,8 @@
   {
     "report": "LISTA_KATHGORION",
     "widthMm": 197.30861111111108,
-    "heightMm": 9.8425,
-    "controls": 6,
+    "heightMm": 15.08125,
+    "controls": 9,
     "sources": [
       "KOD_KATHGORIAS",
       "PERIGRAFH_KATHGORIAS_GR",
@@ -2018,8 +2018,8 @@
   {
     "report": "LISTA_SYNTAGON",
     "widthMm": 196.3561111111111,
-    "heightMm": 7.990416666666666,
-    "controls": 10,
+    "heightMm": 15.08125,
+    "controls": 13,
     "sources": [
       "KOD_SYNTAGIS",
       "PERIGRAFH_EIDOUS_GR",
@@ -2048,8 +2048,8 @@
   {
     "report": "LISTA_OIKOGENEIES",
     "widthMm": 197.30861111111108,
-    "heightMm": 9.8425,
-    "controls": 6,
+    "heightMm": 15.08125,
+    "controls": 9,
     "sources": [
       "KODIKOS_OIK_PROION",
       "PERIGRAFH",
@@ -2061,7 +2061,7 @@
     "report": "PISTOPOIHTIKA_BG",
     "widthMm": 195.98569444444442,
     "heightMm": 465.9841666666666,
-    "controls": 169,
+    "controls": 170,
     "sources": [
       "KOD_PISTOPOIHTIKOY",
       "HMER_PARAGOGHS",
@@ -3792,8 +3792,16 @@
     "report": "CERTIFICATE_OF_CONFORMANCE_FULL",
     "widthMm": 196.85,
     "heightMm": 111.38958333333333,
-    "controls": 16,
+    "controls": 44,
     "sources": [
+      "KOD_PELATH_EX",
+      "DIAKR_TITLOS",
+      "EPONYMIA",
+      "DIEYTHINSH",
+      "POLH",
+      "XORA",
+      "VAT",
+      "CERTIFICATE_OF_CONFORMANCE_FULL_CODE_COC",
       "AA",
       "INTRASTAT",
       "HMER_LHXHS",

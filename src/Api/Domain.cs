@@ -131,6 +131,8 @@ public sealed record Recipe
 public sealed record RecipeText(string Ingredients = "", string Allergens = "", string Nutrition = "", TextRun[]? Runs = null);
 public sealed record ReferenceData
 {
+    public string LegacyBrand { get; init; } = "";
+    public string PostalCode { get; init; } = "";
     public string Name { get; init; } = "";
     public string Group { get; init; } = "";
     public bool Frozen { get; init; }
@@ -151,6 +153,7 @@ public sealed record ReferenceData
 public sealed record Language(string Name, Dictionary<string, string> Headings, bool Complete = false);
 public sealed record Template
 {
+    public string LegacyReport { get; init; } = "";
     public string GeometryKey { get; init; } = "";
     public string BarcodeFormat { get; init; } = "code39";
     public string Name { get; init; } = "";
@@ -182,6 +185,10 @@ public sealed record Printer
 }
 public sealed record Production
 {
+    public DateOnly? PackagingDate { get; init; }
+    public string LabelComment { get; init; } = "";
+    public string CustomerProductCode { get; init; } = "";
+    public string CustomerOrigin { get; init; } = "";
     public Guid? ProductId { get; init; }
     public string Name { get; init; } = "";
     public DateOnly ProductionDate { get; init; } = Rules.Today();
@@ -228,7 +235,7 @@ public static partial class Rules
     [GeneratedRegex("^[0-9]-[0-9]{3}-[0-9]-[0-9]{3}$")] public static partial Regex ErpPattern();
     public static void ValidateProduction(Production p)
     {
-        if (p.ShelfLife is < 0 or > 9999 || p.Expiry < p.ProductionDate || p.FreezeDate < p.ProductionDate || p.FreezeDate > p.Expiry)
+        if (p.ShelfLife is < 0 or > 9999 || p.Expiry < p.ProductionDate || p.FreezeDate < p.ProductionDate || p.FreezeDate > p.Expiry || p.PackagingDate < p.ProductionDate || p.PackagingDate > p.Expiry)
             throw new InvalidOperationException("Ελέγξτε ημερομηνίες και ημέρες λήξης (0–9999).");
         if (p.Weight < 0 || p.CartonWeight < 0 || p.PalletWeight < 0 || p.Pieces < 0) throw new InvalidOperationException("Τα βάρη και τα τεμάχια δεν μπορούν να είναι αρνητικά.");
         if (p.Languages.Length is < 1 or > 2 || p.Languages.Distinct().Count() != p.Languages.Length) throw new InvalidOperationException("Επιλέξτε μία ή δύο διαφορετικές γλώσσες.");

@@ -33,15 +33,25 @@ export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
           ["animalCode", "Κωδικός ζώου"],
           ["slaughterhouse", "Αρ. έγκρισης σφαγείου"],
           ["supplier", "Προμηθευτής"],
+          ["customerProductCode", "Κωδικός προϊόντος πελάτη (IONIC)"],
+          ["customerOrigin", "Προέλευση πελάτη (IONIC)"],
+          ["labelComment", "Σχόλιο επωνυμίας"],
         ].map(([k, l]) => (
           <Field key={k} label={l}>
             <Input
               list={k + "-options"}
-              value={draft[k]}
+              value={draft[k] || ""}
               onChange={(e) => set(k, e.target.value)}
             />
           </Field>
         ))}
+        <Field label="Ημερομηνία συσκευασίας">
+          <Input
+            type="date"
+            value={draft.packagingDate || ""}
+            onChange={(e) => set("packagingDate", e.target.value || null)}
+          />
+        </Field>
         {[
           ["slaughterhouse", "slaughterhouse"],
           ["supplier", "supplier"],

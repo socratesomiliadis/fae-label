@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageFont
@@ -12,7 +13,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'output/pdf/qa-2026-09-23'
+OUT = Path(sys.argv[1]).resolve() if len(sys.argv)>1 else ROOT / 'output/pdf/qa-2026-09-23'
 manifest = json.loads((OUT / 'manifest.json').read_text(encoding='utf-8'))
 reports = manifest['results']
 render_dir = OUT / 'pdf-renders'
@@ -84,6 +85,32 @@ lines = [
     'See manifest.json and QA-REPORT.md for mappings and individual issues.',
     'No printer jobs were submitted. No configurations were marked validated.',
 ]
+if OUT.name == 'qa-template-fixes':
+    lines = [
+        '23 September 2026 | 106 regenerated application reports',
+        '',
+        'Template repairs: zero unmapped-field or overflow warnings in this sample set.',
+        'These remain diagnostic samples, not approved production labels.',
+        '',
+        'Source: all 106 Access definitions; original files remain unchanged.',
+        '22 selectable templates; report variants preserve source artwork and captions.',
+        'No-logo layouts, translated blank samples, A4 butcher cards, and six lists added.',
+        'Lists now include imported data and paginate. Certificates also paginate.',
+        '',
+        'Sample product: CODE 100; ERP 3-100-2-041.',
+        'Production: 2026-09-23; weight 5 kg; carton 10 kg; 2 pieces; pallet 500 kg.',
+        'Dates, weights, vehicle IDs and free text are synthetic QA inputs.',
+        '',
+        'Still required:',
+        '- Complete brand contacts, origins, translations and customer data.',
+        '- Supply Ionic customer code/origin and Zlaths packing date/comment.',
+        '- Reconstruct and compare the two original certificate document layouts.',
+        '- Physical print and barcode acceptance; all templates remain unvalidated.',
+        '',
+        'Bookmarks identify each report. PDF pages retain their native sizes.',
+        'Multi-page PDF previews show only their first page in the app image.',
+        'See QA-REPORT.md and manifest.json for exact requests and remaining warnings.',
+    ]
 for n, line in enumerate(lines):
     c.drawString(42, 742-n*22, line)
 c.save()
@@ -92,6 +119,7 @@ writer.append(cover)
 for report in reports:
     writer.append(OUT / report['pdf'], outline_item=f"{report['number']:03d} {report['report']}")
 writer.add_metadata({'/Title':'106 legacy report diagnostic samples', '/Subject':'QA failures preserved; not production approved'})
+writer.compress_identical_objects(remove_identicals=True, remove_orphans=True)
 with (OUT / 'all-106-legacy-report-samples.pdf').open('wb') as stream:
     writer.write(stream)
 with (OUT / 'report-index.csv').open('w', encoding='utf-8-sig', newline='') as stream:

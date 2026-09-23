@@ -1,0 +1,5945 @@
+{
+  "sampleProduct": {
+    "id": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+    "key": "100",
+    "erp": "3-100-2-041",
+    "name": "ΓΥΡΟΣ ΧΟΙΡΙΝΟΣ CLASSIC 5kg, ΝΩΠΟΣ"
+  },
+  "sampleInputs": "Synthetic QA weights, dates, vehicle, and free text; actual imported product and recipe content.",
+  "results": [
+    {
+      "number": 1,
+      "family": "pallet",
+      "definitionSha256": "D7E5C207D5806D381C2FD2635A056CCD7C54CED514B210ABCBCC0DA68D0AC793",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_SUFRO_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "SUFRO",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "94878087-631b-444b-a590-fcc864d8c9a0",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_SUFRO_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_SUFRO_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_SUFRO_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 2,
+      "family": "thermal",
+      "definitionSha256": "01993DAD4B046959A75A8F3B15508B92227C21FCB01A736AA4D03C1034977F42",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_FAETHON_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "1",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "eb01d372-db52-47b4-85dc-023f0ec840c6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_FAETHON_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_FAETHON_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_FAETHON_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 3,
+      "family": "thermal",
+      "definitionSha256": "21F80B24259B017FFBC6BE1999BA80A1FB90A00F0A202A690BE6DE4F66AFF220",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "905b0512-0f4c-4b84-b229-9591a2c7f9bd",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_PAPADOPOULOS_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_PAPADOPOULOS_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 4,
+      "family": "thermal",
+      "definitionSha256": "ED25B75EF2E7A1F43752F90B7657EAFD5825705C85D191824895FACFC87047C2",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "5f6e55d4-49aa-47c1-b55b-aac236732deb",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_MAVROUDIS_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_MAVROUDIS_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_MAVROUDIS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 5,
+      "family": "thermal",
+      "definitionSha256": "79F987C16369F3754551C0D5FBA4BE205459C181725DB3B3B42B065CFE4ACA5B",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "IONIC",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_IONIC_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "IONIC",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand IONIC is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "6d133925-0d36-4555-90f1-f2e27a124a1a",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: προέλευση πελάτη (IONIC)",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: κωδικός προϊόντος πελάτη (IONIC)"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_IONIC_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_IONIC_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_IONIC_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 6,
+      "family": "pallet",
+      "definitionSha256": "0C89B05EB033F87633A70981EAC81F3C6320E05C595BFA7C11D9BE38FDFD1DBF",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_MAVROUDIS_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "4d92d1ed-1fe5-4ee6-8ca5-12f228475acd",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_MAVROUDIS_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_MAVROUDIS_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_MAVROUDIS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 7,
+      "family": "pallet",
+      "definitionSha256": "EC71F9F6C106FF636504D9A72C2951A0D5856D55F40B0B9AFC37E6097A86D27B",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_FAETHON_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "1",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "c8eeea7e-2fc9-48cc-b9dd-65be68b93911",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_FAETHON_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_FAETHON_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_FAETHON_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 8,
+      "family": "pallet",
+      "definitionSha256": "20F42C5D63C0E4CE5CD59A67BEBFA9EC105C5A4A66E827FEAD0CBB09B937689B",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "22b159dc-fce1-4625-b423-2310ac6da27a",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 9,
+      "family": "thermal",
+      "definitionSha256": "5042D68DA17FB9EBCA1C969253280C12061593C06E6B167AC910634BA83BECEE",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "PASSIAS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_PASSIAS_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "PASSIAS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PASSIAS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "9c2916b2-7246-4a6d-b402-7c55a9aae769",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_PASSIAS_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_PASSIAS_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_PASSIAS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 10,
+      "family": "reference-list",
+      "definitionSha256": "96ABF9E2D1A06C1840D7F9130819E0480E6800BEBD7E99C353FD7DFEFB36570C",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_DIARKEIA_ZOHS_PROIONTON",
+      "templateKey": "list-shelf-life",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-shelf-life",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "405966c8-de34-4a37-8885-c9873b3d0922",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_DIARKEIA_ZOHS_PROIONTON.pdf",
+      "png": "samples/LISTA_DIARKEIA_ZOHS_PROIONTON.png",
+      "sourceReport": "LISTA_DIARKEIA_ZOHS_PROIONTON",
+      "pageCount": 39
+    },
+    {
+      "number": 11,
+      "family": "reference-list",
+      "definitionSha256": "E60B3D160412484CD3A4CEF18927CEB099483E25A0B1D323DB5A785E7140315F",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_ODHGIES_XRHSHS",
+      "templateKey": "list-instructions",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-instructions",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "ed3bb8a2-accc-41c6-96c0-85ef2debd94a",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_ODHGIES_XRHSHS.pdf",
+      "png": "samples/LISTA_ODHGIES_XRHSHS.png",
+      "sourceReport": "LISTA_ODHGIES_XRHSHS",
+      "pageCount": 1
+    },
+    {
+      "number": 12,
+      "family": "thermal",
+      "definitionSha256": "BD0D6C695F085B942C29D702FD2E2A127EE696683D4DC17C96EBB9DAC9951A16",
+      "languages": [
+        "ro",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_METEORA_RO_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "METEORA",
+        "languages": [
+          "ro",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "a1747034-fc3a-4279-b593-270ba5a77ae0",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_METEORA_RO_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_METEORA_RO_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_METEORA_RO_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 13,
+      "family": "custom",
+      "definitionSha256": "6B67E3BC6CDA1E68DAA358B66067E58B2D5D328953AB715A81BC72A50B0C865B",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "CUSTOM_MEGALH_ETIKETA_LOGO",
+      "templateKey": "custom-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "custom-large",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE / ΔΕΙΓΜΑ - 23/09/2026",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "5c953ffb-a085-47a1-96a6-59c61b2ee132",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/CUSTOM_MEGALH_ETIKETA_LOGO.pdf",
+      "png": "samples/CUSTOM_MEGALH_ETIKETA_LOGO.png",
+      "sourceReport": "CUSTOM_MEGALH_ETIKETA_LOGO",
+      "pageCount": 1
+    },
+    {
+      "number": 14,
+      "family": "thermal",
+      "definitionSha256": "50D6809EE03C15009FC6EEBF0D3DA305C0B5EB08BA4722FBCCBCC17D4381A77C",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "IONIC",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_IONIC_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "IONIC",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand IONIC is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "919601d7-4aab-4039-b65d-a1e42031a411",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: προέλευση πελάτη (IONIC)",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: κωδικός προϊόντος πελάτη (IONIC)"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_IONIC_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_IONIC_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_IONIC_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 15,
+      "family": "sample",
+      "definitionSha256": "A9179A7A483CEB23A7C73B8B14373ADF1EC196E6F5A106611EC45EB69440549C",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "DEIGMA_ETIKETA_GR",
+      "templateKey": "sample-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "sample-small",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "1edb5519-3d0e-4cfe-84a3-abfc8a12bfe5",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/DEIGMA_ETIKETA_GR.pdf",
+      "png": "samples/DEIGMA_ETIKETA_GR.png",
+      "sourceReport": "DEIGMA_ETIKETA_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 16,
+      "family": "thermal",
+      "definitionSha256": "619C6C20B8A9C8275D7DF4BFC430AAEB3728182CC15F5C1B5719639365FD30B8",
+      "languages": [
+        "nl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_HL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "nl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "3796491a-c734-4f21-a340-9d5674c02ee1",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας nl.",
+        "Λείπει προέλευση nl.",
+        "Λείπουν οδηγίες χρήσης nl.",
+        "Λείπει μετάφραση συσκευασίας nl.",
+        "Λείπει μετάφραση κατηγορίας nl."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_HL.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_HL.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_HL",
+      "pageCount": 1
+    },
+    {
+      "number": 17,
+      "family": "sample",
+      "definitionSha256": "BF6584B9A7B45A647A9A2063741F47E710A50E5AB1D168541ECFE58561778215",
+      "languages": [
+        "el"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "DEIGMA_KENO_ETIKETA_GR",
+      "templateKey": "sample-blank",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "sample-blank",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE CUSTOMER",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "ef3f619d-2466-41c3-8977-331a1aacd24c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/DEIGMA_KENO_ETIKETA_GR.pdf",
+      "png": "samples/DEIGMA_KENO_ETIKETA_GR.png",
+      "sourceReport": "DEIGMA_KENO_ETIKETA_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 18,
+      "family": "thermal",
+      "definitionSha256": "FDC64CAF5D0BB303A998165ADBEBEBF5123C4130DBCC9A38FB8F48D9D8F9478C",
+      "languages": [
+        "pt"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_PO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "pt"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "ed52ef99-a0f5-4574-9af3-0f65ab620055",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pt.",
+        "Λείπει προέλευση pt.",
+        "Λείπουν οδηγίες χρήσης pt.",
+        "Λείπει μετάφραση συσκευασίας pt.",
+        "Λείπει μετάφραση κατηγορίας pt."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_PO.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_PO.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_PO",
+      "pageCount": 1
+    },
+    {
+      "number": 19,
+      "family": "thermal",
+      "definitionSha256": "18D773B59B707CEC8E2BB7F8DEE48119C6436EEB858036CEC51703A2D840CBE5",
+      "languages": [
+        "pl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_PL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "pl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "746cf812-c20e-4352-9ee4-4628d6419ed3",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pl.",
+        "Λείπει προέλευση pl.",
+        "Λείπουν οδηγίες χρήσης pl.",
+        "Λείπει μετάφραση συσκευασίας pl.",
+        "Λείπει μετάφραση κατηγορίας pl."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_PL.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_PL.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_PL",
+      "pageCount": 1
+    },
+    {
+      "number": 20,
+      "family": "thermal",
+      "definitionSha256": "0E6EC09D389FD1E2716F8DD7001BDA79C2AF767A90E005E04A8495520B7CF752",
+      "languages": [
+        "pt"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_PO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "pt"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "b8fd896b-4aa1-40b0-a584-e91cf096c829",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pt.",
+        "Λείπει προέλευση pt.",
+        "Λείπουν οδηγίες χρήσης pt.",
+        "Λείπει μετάφραση συσκευασίας pt.",
+        "Λείπει μετάφραση κατηγορίας pt."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_PO.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_PO.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_PO",
+      "pageCount": 1
+    },
+    {
+      "number": 21,
+      "family": "pallet",
+      "definitionSha256": "91EC72D2041704931583E3999F3CE9CA7691C0CD93FF0483627A801122D664DB",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_METEORA_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "METEORA",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "e4ef90f8-3025-4aa1-90c3-ddaa430eaabb",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_METEORA_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_METEORA_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_METEORA_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 22,
+      "family": "thermal",
+      "definitionSha256": "B69779140E5629558CE3CC091BFA978203EA1F95250C5A2CB23440C466EC453E",
+      "languages": [
+        "ro"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_RO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "ro"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "7f462b5f-2030-47f4-9b53-0e8526293e14",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_RO.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_RO.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_RO",
+      "pageCount": 1
+    },
+    {
+      "number": 23,
+      "family": "thermal",
+      "definitionSha256": "A0780BD06A10368B3A9BA3E08A0E1B9EEE41987F8E414BE8E0AEF7865FD915CF",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "142524d5-4058-41d0-9537-2b434bc3d170",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / el",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 24,
+      "family": "address",
+      "definitionSha256": "21B20D45D3F281F156C54F5B3FC51E02F27A39D1BDF38B4EF8B9230CC56672A4",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "ETIKETES_PELATES",
+      "templateKey": "address-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "address-small",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "7951e22f-d379-4958-b95c-369a5c10c4b6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Επιλέξτε πελάτη."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETES_PELATES.pdf",
+      "png": "samples/ETIKETES_PELATES.png",
+      "sourceReport": "ETIKETES_PELATES",
+      "pageCount": 1
+    },
+    {
+      "number": 25,
+      "family": "thermal",
+      "definitionSha256": "4A4F8548CCEF1DBCB4C78D712AE33424381691EDE330C828D476B65B5FCA3514",
+      "languages": [
+        "hu"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_HU",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "hu"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "c7938111-4107-4971-86e2-064bc85717a8",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hu.",
+        "Λείπει προέλευση hu.",
+        "Λείπουν οδηγίες χρήσης hu.",
+        "Λείπει μετάφραση συσκευασίας hu.",
+        "Λείπει μετάφραση κατηγορίας hu."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_HU.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_HU.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_HU",
+      "pageCount": 1
+    },
+    {
+      "number": 26,
+      "family": "thermal",
+      "definitionSha256": "F0EA51FFD2F45424DE49053DDBAB088099AA2D8CA41BAD7F056F232D6B127703",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_SUFRO_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "SUFRO",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "4efdd91a-5157-453a-a09e-38e5656124e6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_SUFRO_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_SUFRO_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_SUFRO_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 27,
+      "family": "butcher",
+      "definitionSha256": "C7EC2B7215F79B00DA54FEA461023A49422C91BEE70776ACB4FAE6D7330C1A21",
+      "languages": [
+        "el"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "TABELAKIA_EIDON_KREOPOLEIOY_KENO",
+      "templateKey": "butcher-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "butcher-a4",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "bc036966-a441-40b3-bb1e-8fb317d7c29b",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/TABELAKIA_EIDON_KREOPOLEIOY_KENO.pdf",
+      "png": "samples/TABELAKIA_EIDON_KREOPOLEIOY_KENO.png",
+      "sourceReport": "TABELAKIA_EIDON_KREOPOLEIOY_KENO",
+      "pageCount": 1
+    },
+    {
+      "number": 28,
+      "family": "pallet",
+      "definitionSha256": "297DE8C9540B7039BC9067439F44C7FC2DA6BA8AE8A9447ABAB061AE008DC272",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "PASSIAS",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_PASSIAS_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "PASSIAS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PASSIAS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "16f77253-5e57-40bc-b064-6aa13f5da42f",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_PASSIAS_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_PASSIAS_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_PASSIAS_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 29,
+      "family": "reference-list",
+      "definitionSha256": "1D0E65D3E3866DB503F51CC3CED1CA9564B1E8C17E95C4C238DD3973000AB4CF",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_SYNTOMOGRAFIES",
+      "templateKey": "list-abbreviations",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-abbreviations",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "8f606a81-3f45-4ee8-9419-6921218d5f32",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_SYNTOMOGRAFIES.pdf",
+      "png": "samples/LISTA_SYNTOMOGRAFIES.png",
+      "sourceReport": "LISTA_SYNTOMOGRAFIES",
+      "pageCount": 1
+    },
+    {
+      "number": 30,
+      "family": "thermal",
+      "definitionSha256": "A3BA88663B715A54710420A9F0FD37290132050A7D2873763E3350649EF89D36",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "4071d7cb-6315-40d4-822f-2f1a1ca08d60",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 31,
+      "family": "thermal",
+      "definitionSha256": "599F01A104460FF1B9E0011078AB73E24FC3E89DBB3060086086D29634A12860",
+      "languages": [
+        "hr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_CR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "hr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "f2a47ba5-5abe-4899-aaca-db5a4d745228",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hr.",
+        "Λείπει προέλευση hr.",
+        "Λείπουν οδηγίες χρήσης hr.",
+        "Λείπει μετάφραση συσκευασίας hr.",
+        "Λείπει μετάφραση κατηγορίας hr."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_CR.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_CR.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_CR",
+      "pageCount": 1
+    },
+    {
+      "number": 32,
+      "family": "thermal",
+      "definitionSha256": "FF3FC3FE370CE00AC20B2D655D495D15A44EA21174EA3BE8A2B95624D6ECD546",
+      "languages": [
+        "ro"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_SUFRO_RO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "SUFRO",
+        "languages": [
+          "ro"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "293912b1-5a89-4721-9c7c-15f1f2cb24f2",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_SUFRO_RO.pdf",
+      "png": "samples/MIKRH_ETIKETA_SUFRO_RO.png",
+      "sourceReport": "MIKRH_ETIKETA_SUFRO_RO",
+      "pageCount": 1
+    },
+    {
+      "number": 33,
+      "family": "thermal",
+      "definitionSha256": "28681D9C01BB5BA2A7BF21CAFBF644475841E8CFF590CC575E58AE4FDF7E4F49",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_MAVROUDIS_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "7ecdbd0c-6bf2-4412-964b-40007ca1afd2",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_MAVROUDIS_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_MAVROUDIS_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_MAVROUDIS_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 34,
+      "family": "thermal",
+      "definitionSha256": "BC13E8D367229826E4AF27F9767A002FD557860CD04B8E1A3EBF7D01519FFB89",
+      "languages": [
+        "ro",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "SUFRO",
+        "languages": [
+          "ro",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "bd62e296-a214-4f11-8a1f-158617f0892c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 35,
+      "family": "thermal",
+      "definitionSha256": "D0B226FD489917EA67A996B22DB220A941BA2B4F03B66324F1DB82859359315B",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "SUFRO",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "3ed96fc4-662a-49a1-9f79-73025d430019",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 36,
+      "family": "thermal",
+      "definitionSha256": "3270102BD76F8E4109FF01AAF04DD7249A2D24798E789D5720006DEB8D94A378",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "8b07dcf8-7755-4388-a4ce-b9dfc9e1eee3",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 37,
+      "family": "thermal",
+      "definitionSha256": "DE8A0F714DDB86DAE2CAB6E438066557C260093B291E4FE65838C2017C58EAEB",
+      "languages": [
+        "ro",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "METEORA",
+        "languages": [
+          "ro",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "826965a5-54c5-42bc-a443-3ca844bff8a1",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 38,
+      "family": "thermal",
+      "definitionSha256": "E790AEAA76CE315488A24C5B90BD26A5467B7EDCD6E5DE8E7B75E6FD8CFD7B78",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "METEORA",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "b4c46b54-b99e-4469-a7e8-20d27b034893",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 39,
+      "family": "thermal",
+      "definitionSha256": "830C6B3951C6A23C0698C8628AB03975A20B537BDBAD7E058C7579EC6A2184EF",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "de",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "27056df7-2877-4c08-a1b5-f352df9fbdcd",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 40,
+      "family": "thermal",
+      "definitionSha256": "63510FD936AFDD7540412913BED1CA7CEF15B35D3867193635FB3789D6BFA861",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "f84a6d02-d98b-475f-9834-f5de4041dc95",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 41,
+      "family": "thermal",
+      "definitionSha256": "A1E470F768D65148D2B4419611405A897652FB8EF7BC745B9DBB86690406EB2B",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "IONIC",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "IONIC",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand IONIC is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "415db3c7-22c0-44ce-a75c-96a18346e348",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: προέλευση πελάτη (IONIC)",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: κωδικός προϊόντος πελάτη (IONIC)"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 42,
+      "family": "thermal",
+      "definitionSha256": "BEBAAD779D0803381E415D96643947533BCFF0B511DDB7595387CD6B609AA9CC",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "carton",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "1",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "carton",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "252ecd07-4e60-44bd-8998-548c21f7cdb3",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO.pdf",
+      "png": "samples/MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO.png",
+      "sourceReport": "MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO",
+      "pageCount": 1
+    },
+    {
+      "number": 43,
+      "family": "custom",
+      "definitionSha256": "CC2B6F7C029903AFF828318E09A797C402E8F6A316CE2CCC9C72E968F9ECD9DB",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": false,
+      "report": "CUSTOM_ETIKETA_MIKRH_NOLOGO",
+      "templateKey": "custom-small-no-logo",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "custom-small-no-logo",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE / ΔΕΙΓΜΑ - 23/09/2026",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "34b5c8ad-1605-447d-8cb6-1bc9b2481235",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/CUSTOM_ETIKETA_MIKRH_NOLOGO.pdf",
+      "png": "samples/CUSTOM_ETIKETA_MIKRH_NOLOGO.png",
+      "sourceReport": "CUSTOM_ETIKETA_MIKRH_NOLOGO",
+      "pageCount": 1
+    },
+    {
+      "number": 44,
+      "family": "thermal",
+      "definitionSha256": "CB19203CCFC3A3F79A40DBDA2672CECAE8743BBA485D76CE69153F1A4590511F",
+      "languages": [
+        "fr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_FR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "fr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "60df6404-d4f1-4434-8991-d43c38d24bb3",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας fr.",
+        "Λείπει προέλευση fr.",
+        "Λείπουν οδηγίες χρήσης fr.",
+        "Λείπει μετάφραση συσκευασίας fr.",
+        "Λείπει μετάφραση κατηγορίας fr.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / fr",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_FR.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_FR.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_FR",
+      "pageCount": 1
+    },
+    {
+      "number": 45,
+      "family": "reference-list",
+      "definitionSha256": "9BCC6C0D088BE67F830AE063E21DA260DC5274FF6C7B214E1E376BF34AD10F88",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_KATHGORION",
+      "templateKey": "list-categories",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-categories",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "487adf44-8d18-42af-8c2c-9680970cc348",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_KATHGORION.pdf",
+      "png": "samples/LISTA_KATHGORION.png",
+      "sourceReport": "LISTA_KATHGORION",
+      "pageCount": 1
+    },
+    {
+      "number": 46,
+      "family": "thermal",
+      "definitionSha256": "22B069AF43DE2A17DEC8C8B5A3E15C47F7A69522143A54A0057027240608D141",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_METEORA_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "METEORA",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "eb8ac28a-efc8-4c01-8848-9d70311417aa",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_METEORA_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_METEORA_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_METEORA_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 47,
+      "family": "thermal",
+      "definitionSha256": "7C88F2EE601F805DB084764D64231F520EA6D6AB7A278669D4D0833C95A0AFAB",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "570d1cab-144c-4d36-9367-efa54642cc8c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / en",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 48,
+      "family": "thermal",
+      "definitionSha256": "29AD40211676BA877948C389526967311D7E4FE38EF3C4FAE5F3DDC6CEF370E0",
+      "languages": [
+        "nl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_HL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "nl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "96c45d41-5ad4-42d3-874b-cdbf52bc9ee6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας nl.",
+        "Λείπει προέλευση nl.",
+        "Λείπουν οδηγίες χρήσης nl.",
+        "Λείπει μετάφραση συσκευασίας nl.",
+        "Λείπει μετάφραση κατηγορίας nl.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / nl",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_HL.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_HL.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_HL",
+      "pageCount": 1
+    },
+    {
+      "number": 49,
+      "family": "thermal",
+      "definitionSha256": "6DD67A7572D81969E402A7CF77B19BA553F15BDD477013DF5FB1FCC60E2E0A50",
+      "languages": [
+        "sq"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_AL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "sq"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "a051f95e-99ba-4300-85fe-f311a80bb585",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sq.",
+        "Λείπει προέλευση sq.",
+        "Λείπουν οδηγίες χρήσης sq.",
+        "Λείπει μετάφραση συσκευασίας sq.",
+        "Λείπει μετάφραση κατηγορίας sq."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_AL.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_AL.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_AL",
+      "pageCount": 1
+    },
+    {
+      "number": 50,
+      "family": "thermal",
+      "definitionSha256": "6F7F610E46D4919E674B4C19FED20B646ECF082C322106F5DC2C0464A6F4D15B",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_METEORA_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "METEORA",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "734d9911-3a3c-4a19-a5ce-8549ca09f9d7",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_METEORA_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_METEORA_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_METEORA_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 51,
+      "family": "thermal",
+      "definitionSha256": "38297FF453D5C68F3F2CA9C6B3E99BEA9B4807F01CC44A289A443DAA13BCE99B",
+      "languages": [
+        "pl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_PL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "pl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "6e6047b2-5b2c-470e-9436-3142e9bf70ec",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pl.",
+        "Λείπει προέλευση pl.",
+        "Λείπουν οδηγίες χρήσης pl.",
+        "Λείπει μετάφραση συσκευασίας pl.",
+        "Λείπει μετάφραση κατηγορίας pl.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / pl",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_PL.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_PL.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_PL",
+      "pageCount": 1
+    },
+    {
+      "number": 52,
+      "family": "thermal",
+      "definitionSha256": "3CCF79F7524B6F6FF1DFB2E465B7570C89E27BAACD7B825E6CAFF0B19BFE21E1",
+      "languages": [
+        "ro"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_RO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "ro"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "177504e9-312a-4b7f-8419-40ad9847bb82",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / ro",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_RO.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_RO.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_RO",
+      "pageCount": 1
+    },
+    {
+      "number": 53,
+      "family": "reference-list",
+      "definitionSha256": "858B5E69B9C19671F6C6B420842DC7D4A8456EC94D55B5F8EAE6613F8DA5A6EA",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_SYNTAGON",
+      "templateKey": "list-recipes",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-recipes",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "20e15e5e-b35d-48e3-a724-1e88602d3ad5",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_SYNTAGON.pdf",
+      "png": "samples/LISTA_SYNTAGON.png",
+      "sourceReport": "LISTA_SYNTAGON",
+      "pageCount": 9
+    },
+    {
+      "number": 54,
+      "family": "thermal",
+      "definitionSha256": "A72B70ED19DBD89A26DC53DBF3E36D469CDEF9F2D1A4D1FA934C1B96E090CB74",
+      "languages": [
+        "pt"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_PO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "pt"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "9d90d81e-71ec-4a96-a600-cd8d1acd030f",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pt.",
+        "Λείπει προέλευση pt.",
+        "Λείπουν οδηγίες χρήσης pt.",
+        "Λείπει μετάφραση συσκευασίας pt.",
+        "Λείπει μετάφραση κατηγορίας pt.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / pt",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_PO.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_PO.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_PO",
+      "pageCount": 1
+    },
+    {
+      "number": 55,
+      "family": "reference-list",
+      "definitionSha256": "311F175D0B33852F4C8B97D1C08F0C80F29BD9ECF9EB52670996861D928EE52E",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "LISTA_OIKOGENEIES",
+      "templateKey": "list-families",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "list-families",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "fe0624b2-f3e9-4931-9469-67c610779577",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/LISTA_OIKOGENEIES.pdf",
+      "png": "samples/LISTA_OIKOGENEIES.png",
+      "sourceReport": "LISTA_OIKOGENEIES",
+      "pageCount": 1
+    },
+    {
+      "number": 56,
+      "family": "certificate-bg",
+      "definitionSha256": "61A8518EDE73569A1737FE9D2C9514384ACCFBF709E9A9D823430FDE5F650B0C",
+      "languages": [
+        "bg"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "PISTOPOIHTIKA_BG",
+      "templateKey": "certificate-bg",
+      "request": {
+        "templateKey": "certificate-bg",
+        "languages": [
+          "bg"
+        ],
+        "customerId": "00000000-0000-0000-0000-000000000000",
+        "vehicle": "QA-VEHICLE",
+        "trailer": "QA-TRAILER",
+        "shipmentDate": "2026-09-23",
+        "notes": "QA SAMPLE - NOT FOR PRODUCTION",
+        "lines": [
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 10,
+            "cartons": 2,
+            "lot": "QA-20260923",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          }
+        ]
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "f9724e77-78e9-44d7-b94e-abbd1709d337",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Δεν έχουν συμπληρωθεί οι επικεφαλίδες bg.",
+        "Λείπει πελάτης πιστοποιητικού."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "pdf": "samples/PISTOPOIHTIKA_BG.pdf",
+      "png": "samples/PISTOPOIHTIKA_BG.png",
+      "sourceReport": "certificate-bg",
+      "pageCount": 1
+    },
+    {
+      "number": 57,
+      "family": "production",
+      "definitionSha256": "6EA7EB5E934A4704D3AB6CA8739CE9ED7C77D7FBB7DBBAFE00DF5FEF5FB1A35F",
+      "languages": [
+        "el"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "ETIKETES_KENES_PROS_PARAGOGH",
+      "templateKey": "production-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "production-small",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE / ΔΕΙΓΜΑ - 23/09/2026",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "fcf725c8-801f-45a6-bfc0-9ef1cee73d61",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETES_KENES_PROS_PARAGOGH.pdf",
+      "png": "samples/ETIKETES_KENES_PROS_PARAGOGH.png",
+      "sourceReport": "ETIKETES_KENES_PROS_PARAGOGH",
+      "pageCount": 1
+    },
+    {
+      "number": 58,
+      "family": "thermal",
+      "definitionSha256": "DCCAEFB4BA61DDC84B4BDBF738B2B2836CE3F53CB527C232762359B7F71B71AE",
+      "languages": [
+        "de"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_GE",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "de"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "c21dbce9-8fba-48c5-96ec-61bf29eac874",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / de",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_GE.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_GE.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_GE",
+      "pageCount": 1
+    },
+    {
+      "number": 59,
+      "family": "thermal",
+      "definitionSha256": "C2E375C359B29A718E292F05E54F0E02CEB06A771B329138A3BA29361EB6935D",
+      "languages": [
+        "bg"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_BG",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "bg"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "90f6172c-cf8d-4b4d-8f66-0b6d54aa9d4b",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας bg.",
+        "Λείπει προέλευση bg.",
+        "Λείπουν οδηγίες χρήσης bg.",
+        "Λείπει μετάφραση συσκευασίας bg.",
+        "Λείπει μετάφραση κατηγορίας bg.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / bg",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_BG.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_BG.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_BG",
+      "pageCount": 1
+    },
+    {
+      "number": 60,
+      "family": "thermal",
+      "definitionSha256": "786C12DB9ED4E5134D9905F3598305F9C23045BCF5093FEF78ED6EB0993AB00A",
+      "languages": [
+        "it"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_IT",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "it"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "5706e6e2-33cd-4f8c-aee1-a8bb32774148",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας it.",
+        "Λείπει προέλευση it.",
+        "Λείπουν οδηγίες χρήσης it.",
+        "Λείπει μετάφραση συσκευασίας it.",
+        "Λείπει μετάφραση κατηγορίας it.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / it",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_IT.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_IT.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_IT",
+      "pageCount": 1
+    },
+    {
+      "number": 61,
+      "family": "thermal",
+      "definitionSha256": "4C8EF6F4AB3D5016CFE0064E1D7668D0B8978E5D63E768EB1663BDADEFA8DA9A",
+      "languages": [
+        "es"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_ES",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "es"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "9a65267f-9546-4a5d-bdf1-8a9608d8638c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας es.",
+        "Λείπει προέλευση es.",
+        "Λείπουν οδηγίες χρήσης es.",
+        "Λείπει μετάφραση συσκευασίας es.",
+        "Λείπει μετάφραση κατηγορίας es.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / es",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_ES.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_ES.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_ES",
+      "pageCount": 1
+    },
+    {
+      "number": 62,
+      "family": "thermal",
+      "definitionSha256": "205D28706E7E565030D02FB4090D0340C54B684EAAF3A57A4E9FBC30045DD1E2",
+      "languages": [
+        "cs"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_CH",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "cs"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "633871f5-1969-463e-a22a-bd9367fb04b6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας cs.",
+        "Λείπει προέλευση cs.",
+        "Λείπουν οδηγίες χρήσης cs.",
+        "Λείπει μετάφραση συσκευασίας cs.",
+        "Λείπει μετάφραση κατηγορίας cs.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / cs",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_CH.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_CH.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_CH",
+      "pageCount": 1
+    },
+    {
+      "number": 63,
+      "family": "thermal",
+      "definitionSha256": "2B0DADF9DDA4E0CE1222735D56FF7D1DBCE6BD41580DAEAE90E2E987ED57B5F5",
+      "languages": [
+        "sv"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_SW",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "sv"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "59b3fa4f-92f2-4179-86fe-56b4ea46949d",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sv.",
+        "Λείπει προέλευση sv.",
+        "Λείπουν οδηγίες χρήσης sv.",
+        "Λείπει μετάφραση συσκευασίας sv.",
+        "Λείπει μετάφραση κατηγορίας sv.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / sv",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_SW.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_SW.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_SW",
+      "pageCount": 1
+    },
+    {
+      "number": 64,
+      "family": "butcher",
+      "definitionSha256": "A4509F15705ECDB4D5CEF9BFA4F021DF30EE8673A0A6EA2A835BAC84129F12BD",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "TABELAKIA_EIDON_KREOPOLEIOY",
+      "templateKey": "butcher-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "butcher-a4",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "31493945-4d86-4c4d-926c-be5a9c271bd9",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/TABELAKIA_EIDON_KREOPOLEIOY.pdf",
+      "png": "samples/TABELAKIA_EIDON_KREOPOLEIOY.png",
+      "sourceReport": "TABELAKIA_EIDON_KREOPOLEIOY",
+      "pageCount": 1
+    },
+    {
+      "number": 65,
+      "family": "thermal",
+      "definitionSha256": "7D178A3F35C47714E7785A516B98E9C3B3A25BDB4133F72CB0904E180502DDBE",
+      "languages": [
+        "hu"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_HU",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "hu"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "d9ec09e9-512a-4e76-b339-47f7f90f22bb",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hu.",
+        "Λείπει προέλευση hu.",
+        "Λείπουν οδηγίες χρήσης hu.",
+        "Λείπει μετάφραση συσκευασίας hu.",
+        "Λείπει μετάφραση κατηγορίας hu.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / hu",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_HU.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_HU.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_HU",
+      "pageCount": 1
+    },
+    {
+      "number": 66,
+      "family": "thermal",
+      "definitionSha256": "A19099BC20520C3229DFC28EA47B197DC4FC39EC7FA95187EFCEA76E369B40A7",
+      "languages": [
+        "hr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_CR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "hr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "8a083449-2239-4d76-b6f5-c5637116f027",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hr.",
+        "Λείπει προέλευση hr.",
+        "Λείπουν οδηγίες χρήσης hr.",
+        "Λείπει μετάφραση συσκευασίας hr.",
+        "Λείπει μετάφραση κατηγορίας hr."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_CR.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_CR.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_CR",
+      "pageCount": 1
+    },
+    {
+      "number": 67,
+      "family": "pallet",
+      "definitionSha256": "7DCD26D202E90B695579297FA8F7B70B9255C6017AE06966039A76DFF592F864",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "IONIC",
+      "logo": true,
+      "report": "ETIKETA_PALETA_A4_IONIC_GR_EN",
+      "templateKey": "pallet-a4",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "pallet-a4",
+        "brandKey": "IONIC",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand IONIC is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "578d81e0-8456-4d91-8776-b52b030049e7",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: προέλευση πελάτη (IONIC)",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: κωδικός προϊόντος πελάτη (IONIC)"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/ETIKETA_PALETA_A4_IONIC_GR_EN.pdf",
+      "png": "samples/ETIKETA_PALETA_A4_IONIC_GR_EN.png",
+      "sourceReport": "ETIKETA_PALETA_A4_IONIC_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 68,
+      "family": "sample",
+      "definitionSha256": "68454BA7AAC0461F8FC65217A9F4424169791D61C12D46041528D6FBF7FB7312",
+      "languages": [
+        "en"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "DEIGMA_KENO_ETIKETA_EN",
+      "templateKey": "sample-blank",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "sample-blank",
+        "brandKey": "1",
+        "languages": [
+          "en"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE CUSTOMER",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "db3c194e-9ca1-4eb6-9e6b-cc16d2dfbf9a",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/DEIGMA_KENO_ETIKETA_EN.pdf",
+      "png": "samples/DEIGMA_KENO_ETIKETA_EN.png",
+      "sourceReport": "DEIGMA_KENO_ETIKETA_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 69,
+      "family": "sample",
+      "definitionSha256": "A2E3AE9AA32897EE9FB397A0C7C651FB231A5D8644DD25D4B7857E351608362E",
+      "languages": [
+        "de"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "DEIGMA_KENO_ETIKETA_GE",
+      "templateKey": "sample-blank",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "sample-blank",
+        "brandKey": "1",
+        "languages": [
+          "de"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE CUSTOMER",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "f3255cc1-5dad-491b-9c3c-a4d6a4b5378c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/DEIGMA_KENO_ETIKETA_GE.pdf",
+      "png": "samples/DEIGMA_KENO_ETIKETA_GE.png",
+      "sourceReport": "DEIGMA_KENO_ETIKETA_GE",
+      "pageCount": 1
+    },
+    {
+      "number": 70,
+      "family": "sample",
+      "definitionSha256": "2866CC61C1A9995883E517CB11776D1F9B8F5619E7BCD3B2A84EBF55EB7BF95A",
+      "languages": [
+        "bg"
+      ],
+      "mode": "blank",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "DEIGMA_KENO_ETIKETA_BG",
+      "templateKey": "sample-blank",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "sample-blank",
+        "brandKey": "1",
+        "languages": [
+          "bg"
+        ],
+        "mode": "blank",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE CUSTOMER",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "e51b5e0e-fb4e-4a3c-ae22-11cf7816c29b",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/DEIGMA_KENO_ETIKETA_BG.pdf",
+      "png": "samples/DEIGMA_KENO_ETIKETA_BG.png",
+      "sourceReport": "DEIGMA_KENO_ETIKETA_BG",
+      "pageCount": 1
+    },
+    {
+      "number": 71,
+      "family": "custom",
+      "definitionSha256": "4E4492C79D5CF698A23C760A831FC19B5354888E8E7680C81E77C08FD25E8AFD",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "CUSTOM_ETIKETA_MIKRH_LOGO",
+      "templateKey": "custom-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "custom-small",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE / ΔΕΙΓΜΑ - 23/09/2026",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "d7523b4c-d2a8-43a4-adda-fe3fbe3ce915",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/CUSTOM_ETIKETA_MIKRH_LOGO.pdf",
+      "png": "samples/CUSTOM_ETIKETA_MIKRH_LOGO.png",
+      "sourceReport": "CUSTOM_ETIKETA_MIKRH_LOGO",
+      "pageCount": 1
+    },
+    {
+      "number": 72,
+      "family": "custom",
+      "definitionSha256": "0D50ADF6096CBFE7EDD225D06776E5F34C4A3C8FA81DC68623FB70CCD3D35F3F",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "FAETHON",
+      "logo": false,
+      "report": "CUSTOM_MEGALH_ETIKETA_NOLOGO",
+      "templateKey": "custom-large-no-logo",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "custom-large-no-logo",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "QA SAMPLE / ΔΕΙΓΜΑ - 23/09/2026",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "50fad863-4d67-49e2-bde8-015a24542f01",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/CUSTOM_MEGALH_ETIKETA_NOLOGO.pdf",
+      "png": "samples/CUSTOM_MEGALH_ETIKETA_NOLOGO.png",
+      "sourceReport": "CUSTOM_MEGALH_ETIKETA_NOLOGO",
+      "pageCount": 1
+    },
+    {
+      "number": 73,
+      "family": "thermal",
+      "definitionSha256": "38A2085F2D41F89393E28A88A48BF332F64C31B597D902418CB1DDB6D9D43638",
+      "languages": [
+        "hr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_CR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "hr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "0d82debb-d3f3-42cc-b5cb-be6532dcf2e6",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hr.",
+        "Λείπει προέλευση hr.",
+        "Λείπουν οδηγίες χρήσης hr.",
+        "Λείπει μετάφραση συσκευασίας hr.",
+        "Λείπει μετάφραση κατηγορίας hr.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / hr",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_CR.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_CR.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_CR",
+      "pageCount": 1
+    },
+    {
+      "number": 74,
+      "family": "thermal",
+      "definitionSha256": "990F05C7C17CB557BB8843BCCE344C62AB7478A981E0A289EE4D07C8AAF5D4DA",
+      "languages": [
+        "sq"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "ZLATHS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_ZLATHS_AL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "ZLATHS",
+        "languages": [
+          "sq"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "1e160f64-0c90-46a0-bc7b-89821ddbbf17",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sq.",
+        "Λείπει προέλευση sq.",
+        "Λείπουν οδηγίες χρήσης sq.",
+        "Λείπει μετάφραση συσκευασίας sq.",
+        "Λείπει μετάφραση κατηγορίας sq.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: σχόλιο επωνυμίας / sq",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: ημερομηνία συσκευασίας"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_ZLATHS_AL.pdf",
+      "png": "samples/MIKRH_ETIKETA_ZLATHS_AL.png",
+      "sourceReport": "MIKRH_ETIKETA_ZLATHS_AL",
+      "pageCount": 1
+    },
+    {
+      "number": 75,
+      "family": "thermal",
+      "definitionSha256": "EACFE373E9232D1702FCFFFD11BF62ACBB516EE1A3CB080C2526E9A659C0AD9D",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "de",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "dd66ea94-ec33-4478-b53b-9609bd15a5ca",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_MAVROUDIS_GE_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_MAVROUDIS_GE_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_MAVROUDIS_GE_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 76,
+      "family": "thermal",
+      "definitionSha256": "5B6BA1A6BA5EC46B7A9659561F7B3227ECFD52F7AD9BF17E746642D5848AB5B8",
+      "languages": [
+        "el",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_SUFRO_GR_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "SUFRO",
+        "languages": [
+          "el",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "45de84e7-95d2-49a3-a2e0-d4d9306a828f",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_SUFRO_GR_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_SUFRO_GR_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_SUFRO_GR_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 77,
+      "family": "thermal",
+      "definitionSha256": "4A07727871F202F2F90BBAF385E2F21734804374A78D6DCEDA589E63A7BEB03D",
+      "languages": [
+        "ro",
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "large",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MEGALH_ETIKETA_SUFRO_RO_EN",
+      "templateKey": "thermal-large",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-large",
+        "brandKey": "SUFRO",
+        "languages": [
+          "ro",
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "6229d4c7-8ec8-465c-8c69-827e34cbc168",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MEGALH_ETIKETA_SUFRO_RO_EN.pdf",
+      "png": "samples/MEGALH_ETIKETA_SUFRO_RO_EN.png",
+      "sourceReport": "MEGALH_ETIKETA_SUFRO_RO_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 78,
+      "family": "thermal",
+      "definitionSha256": "F949D59F93C356D0B51E5D0ED047F3356CC3AABDB1645F3D34AC2C5FE4FE8C29",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "d832fd94-10c2-480b-87df-1ad8f9dc5895",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 79,
+      "family": "thermal",
+      "definitionSha256": "799C2A60DF5B4B925D02D63F25C8806D8978A31B2FFFA0A9A448898466848E75",
+      "languages": [
+        "sq"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_AL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "sq"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "30631c1c-7749-46dc-8963-e4bc494f0869",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sq.",
+        "Λείπει προέλευση sq.",
+        "Λείπουν οδηγίες χρήσης sq.",
+        "Λείπει μετάφραση συσκευασίας sq.",
+        "Λείπει μετάφραση κατηγορίας sq."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_AL.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_AL.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_AL",
+      "pageCount": 1
+    },
+    {
+      "number": 80,
+      "family": "thermal",
+      "definitionSha256": "C0BD83F52C9952ED933625C468DFC303EF05D761272A6E8E4A53449DC377F633",
+      "languages": [
+        "bg"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_BG",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "bg"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "7bc439bd-7c81-4fdb-9b7a-deb2778d3fd1",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας bg.",
+        "Λείπει προέλευση bg.",
+        "Λείπουν οδηγίες χρήσης bg.",
+        "Λείπει μετάφραση συσκευασίας bg.",
+        "Λείπει μετάφραση κατηγορίας bg."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_BG.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_BG.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_BG",
+      "pageCount": 1
+    },
+    {
+      "number": 81,
+      "family": "thermal",
+      "definitionSha256": "B88044B957BD4C88FD6AF0575D80D1EDAAE2E9307963C811EFA346F64ADCB3D6",
+      "languages": [
+        "cs"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_CH",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "cs"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "1c5756ec-7090-4875-aa85-741a5c501cd3",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας cs.",
+        "Λείπει προέλευση cs.",
+        "Λείπουν οδηγίες χρήσης cs.",
+        "Λείπει μετάφραση συσκευασίας cs.",
+        "Λείπει μετάφραση κατηγορίας cs."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_CH.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_CH.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_CH",
+      "pageCount": 1
+    },
+    {
+      "number": 82,
+      "family": "thermal",
+      "definitionSha256": "E737BF7E6D0079C66FD0DBA987A7405FACBDC87B56094DA88102D74BBAF36C29",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "2fbc590d-d624-4c07-ac4e-5427c4e02235",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 83,
+      "family": "thermal",
+      "definitionSha256": "83A8F031C94F514BB3F1ECEE65D53F2BC4A8712A31504A6B85D9A1248D0FAC72",
+      "languages": [
+        "es"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_ES",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "es"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "e7a25b0b-1b94-4d00-9c02-72696ca35c80",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας es.",
+        "Λείπει προέλευση es.",
+        "Λείπουν οδηγίες χρήσης es.",
+        "Λείπει μετάφραση συσκευασίας es.",
+        "Λείπει μετάφραση κατηγορίας es."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_ES.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_ES.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_ES",
+      "pageCount": 1
+    },
+    {
+      "number": 84,
+      "family": "thermal",
+      "definitionSha256": "7CE051BF59E1FF4748A8FF7C42CFCC327A68469E4E6D3FE9B0802546A30DC4CD",
+      "languages": [
+        "fr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_FR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "fr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "79e0c2b3-8a1a-4a7e-a16f-b54bc9009ff9",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας fr.",
+        "Λείπει προέλευση fr.",
+        "Λείπουν οδηγίες χρήσης fr.",
+        "Λείπει μετάφραση συσκευασίας fr.",
+        "Λείπει μετάφραση κατηγορίας fr."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_FR.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_FR.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_FR",
+      "pageCount": 1
+    },
+    {
+      "number": 85,
+      "family": "thermal",
+      "definitionSha256": "39135E9958ACF5506639E1C23632EADCB1F3CEBE209667CF5AD6D19963637BBC",
+      "languages": [
+        "de"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_GE",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "de"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "f0b5b2b3-f36b-45a0-87a1-cef4e1e671c0",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_GE.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_GE.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_GE",
+      "pageCount": 1
+    },
+    {
+      "number": 86,
+      "family": "thermal",
+      "definitionSha256": "0F81D9E31A4725AA17193C84FAA3FA650075B6A9658879034C5F0172AB84F467",
+      "languages": [
+        "hu"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_HU",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "hu"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "f4d1a367-fa5b-454b-9288-999654fb3b4c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας hu.",
+        "Λείπει προέλευση hu.",
+        "Λείπουν οδηγίες χρήσης hu.",
+        "Λείπει μετάφραση συσκευασίας hu.",
+        "Λείπει μετάφραση κατηγορίας hu."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_HU.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_HU.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_HU",
+      "pageCount": 1
+    },
+    {
+      "number": 87,
+      "family": "thermal",
+      "definitionSha256": "81CA6B2CEA5F88471C399A51D27B3C6C87C4EFCC6648322FB1F1C40FBC9F8BFF",
+      "languages": [
+        "it"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_IT",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "it"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "0c749d0c-34af-45b1-b21a-e72cff08fd1e",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας it.",
+        "Λείπει προέλευση it.",
+        "Λείπουν οδηγίες χρήσης it.",
+        "Λείπει μετάφραση συσκευασίας it.",
+        "Λείπει μετάφραση κατηγορίας it."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_IT.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_IT.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_IT",
+      "pageCount": 1
+    },
+    {
+      "number": 88,
+      "family": "thermal",
+      "definitionSha256": "6163CEA0B646C3F9A7F0D636EAC66DCCE3C98FA9CB3B50B5981AFEC8D6056E7F",
+      "languages": [
+        "sv"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_FAETHON_SW",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "1",
+        "languages": [
+          "sv"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "a716cd2d-2d85-47bd-8eae-d4609c88a419",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sv.",
+        "Λείπει προέλευση sv.",
+        "Λείπουν οδηγίες χρήσης sv.",
+        "Λείπει μετάφραση συσκευασίας sv.",
+        "Λείπει μετάφραση κατηγορίας sv."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_FAETHON_SW.pdf",
+      "png": "samples/MIKRH_ETIKETA_FAETHON_SW.png",
+      "sourceReport": "MIKRH_ETIKETA_FAETHON_SW",
+      "pageCount": 1
+    },
+    {
+      "number": 89,
+      "family": "thermal",
+      "definitionSha256": "B2A94E5CBA77890F1B90CFEF90A83FD9305FE463A71B09ECD4770AD177E04711",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "IONIC",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_IONIC_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "IONIC",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand IONIC is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "9ce5a34c-27ae-4dde-a636-a25b476fac6d",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el.",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: προέλευση πελάτη (IONIC)",
+        "Συμπληρώστε το ειδικό πεδίο ετικέτας: κωδικός προϊόντος πελάτη (IONIC)"
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_IONIC_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_IONIC_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_IONIC_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 90,
+      "family": "thermal",
+      "definitionSha256": "360AB0C7B4B4C169F81980454265C9AF53A5644BDB156B1328A312C8FC86517C",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_MAVROUDIS_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "022de445-0c6e-4c65-8c58-018c34a4c76c",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_MAVROUDIS_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_MAVROUDIS_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_MAVROUDIS_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 91,
+      "family": "thermal",
+      "definitionSha256": "DD0A043F74973F4C3C24F840BFF7CD960664B5EF67073F41825078D02BB3DB83",
+      "languages": [
+        "de"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "MAVROUDIS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_MAVROUDIS_GE",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "MAVROUDIS",
+        "languages": [
+          "de"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "0fbd05a4-d1d5-46d9-8293-f86391b15ed4",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_MAVROUDIS_GE.pdf",
+      "png": "samples/MIKRH_ETIKETA_MAVROUDIS_GE.png",
+      "sourceReport": "MIKRH_ETIKETA_MAVROUDIS_GE",
+      "pageCount": 1
+    },
+    {
+      "number": 92,
+      "family": "thermal",
+      "definitionSha256": "8C7D2ACB6F0547D8E5EC43DD72C63E432C87BA9343C94E1CD634D3B2750DE33D",
+      "languages": [
+        "el"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_METEORA_GR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "METEORA",
+        "languages": [
+          "el"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "79d406be-b47d-41c0-8c5f-8f1ca82ffe9f",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας el.",
+        "Λείπει προέλευση el.",
+        "Λείπουν οδηγίες χρήσης el.",
+        "Λείπει μετάφραση συσκευασίας el.",
+        "Λείπει μετάφραση κατηγορίας el."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_METEORA_GR.pdf",
+      "png": "samples/MIKRH_ETIKETA_METEORA_GR.png",
+      "sourceReport": "MIKRH_ETIKETA_METEORA_GR",
+      "pageCount": 1
+    },
+    {
+      "number": 93,
+      "family": "thermal",
+      "definitionSha256": "2E9EB0BD2D553873DB4540A015B0992AB9EE1BF4E9164A0A35A6F5C0A63BAF50",
+      "languages": [
+        "ro"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "METEORA",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_METEORA_RO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "METEORA",
+        "languages": [
+          "ro"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand METEORA is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "b606a1db-e372-4b46-a17c-e879a0df04ef",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_METEORA_RO.pdf",
+      "png": "samples/MIKRH_ETIKETA_METEORA_RO.png",
+      "sourceReport": "MIKRH_ETIKETA_METEORA_RO",
+      "pageCount": 1
+    },
+    {
+      "number": 94,
+      "family": "thermal",
+      "definitionSha256": "DE3E94E48876E4DBD6EF182B97816EE22B708431678862F3372F764F8CBF8965",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "SUFRO",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_SUFRO_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "SUFRO",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "4d8257dc-62cc-4357-91cd-d2cc6804e937",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_SUFRO_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_SUFRO_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_SUFRO_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 95,
+      "family": "thermal",
+      "definitionSha256": "59882C399FE179B3D7D66434D9567FE7042A120E600C77450883F634C764DB51",
+      "languages": [
+        "bg"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_BG",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "bg"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "7a66120f-51e2-4db7-b1d2-5f4009a91d65",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας bg.",
+        "Λείπει προέλευση bg.",
+        "Λείπουν οδηγίες χρήσης bg.",
+        "Λείπει μετάφραση συσκευασίας bg.",
+        "Λείπει μετάφραση κατηγορίας bg."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_BG.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_BG.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_BG",
+      "pageCount": 1
+    },
+    {
+      "number": 96,
+      "family": "thermal",
+      "definitionSha256": "ABAA2DD94970FFA41ED44562B47E8BFFEA30C354D7B3F64E65FE31D26F5FE141",
+      "languages": [
+        "cs"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_CH",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "cs"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "7b80d90c-c9e8-42e0-ae1b-b7e9ed731cb5",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας cs.",
+        "Λείπει προέλευση cs.",
+        "Λείπουν οδηγίες χρήσης cs.",
+        "Λείπει μετάφραση συσκευασίας cs.",
+        "Λείπει μετάφραση κατηγορίας cs."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_CH.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_CH.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_CH",
+      "pageCount": 1
+    },
+    {
+      "number": 97,
+      "family": "thermal",
+      "definitionSha256": "EB2B7BC94A6C1E8030E98FA28B4EDFB5BF622469C8AE01E38A5B7CBD6FA09885",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_EN",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "en"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "efef8c27-9303-4f07-a06d-497142993b16",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας en.",
+        "Λείπει προέλευση en.",
+        "Λείπουν οδηγίες χρήσης en.",
+        "Λείπει μετάφραση συσκευασίας en.",
+        "Λείπει μετάφραση κατηγορίας en."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_EN.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_EN.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_EN",
+      "pageCount": 1
+    },
+    {
+      "number": 98,
+      "family": "thermal",
+      "definitionSha256": "71AFA57C063497AAB17BFE9BF1A2D10086107048B6CCE0F19F8A2F7BD674315A",
+      "languages": [
+        "es"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_ES",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "es"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "8edc72a2-1fe8-4c21-805e-aee9cc1dee4f",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας es.",
+        "Λείπει προέλευση es.",
+        "Λείπουν οδηγίες χρήσης es.",
+        "Λείπει μετάφραση συσκευασίας es.",
+        "Λείπει μετάφραση κατηγορίας es."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_ES.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_ES.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_ES",
+      "pageCount": 1
+    },
+    {
+      "number": 99,
+      "family": "thermal",
+      "definitionSha256": "9540487885366701337987D8F1D77A39F170591FD6C85C0BC731FC0702E2FC90",
+      "languages": [
+        "fr"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_FR",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "fr"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "7eaf36ec-39e2-4946-a68a-5c024acdcf9d",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας fr.",
+        "Λείπει προέλευση fr.",
+        "Λείπουν οδηγίες χρήσης fr.",
+        "Λείπει μετάφραση συσκευασίας fr.",
+        "Λείπει μετάφραση κατηγορίας fr."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_FR.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_FR.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_FR",
+      "pageCount": 1
+    },
+    {
+      "number": 100,
+      "family": "thermal",
+      "definitionSha256": "4330750CBFEC6F0D1E8BF79A1FD219420D27BD3F677A75C74B6B6C2A348EA3B0",
+      "languages": [
+        "de"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_GE",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "de"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "2b4b0bde-e7ba-4d73-9c99-16a39f3238ac",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας de.",
+        "Λείπει προέλευση de.",
+        "Λείπουν οδηγίες χρήσης de.",
+        "Λείπει μετάφραση συσκευασίας de.",
+        "Λείπει μετάφραση κατηγορίας de."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_GE.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_GE.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_GE",
+      "pageCount": 1
+    },
+    {
+      "number": 101,
+      "family": "thermal",
+      "definitionSha256": "61CD7EA214223ABFAE0A6B3904152EFDAA03A164EF99724DF8D7DE5649519CBA",
+      "languages": [
+        "nl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_HL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "nl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "3c7b0fd0-b54e-4732-8d39-2b3f2cbeb3a1",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας nl.",
+        "Λείπει προέλευση nl.",
+        "Λείπουν οδηγίες χρήσης nl.",
+        "Λείπει μετάφραση συσκευασίας nl.",
+        "Λείπει μετάφραση κατηγορίας nl."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_HL.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_HL.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_HL",
+      "pageCount": 1
+    },
+    {
+      "number": 102,
+      "family": "thermal",
+      "definitionSha256": "F8DC3BF6A6BE2B24F1167C40624EFD62A754200FAB49C1384C383500F4596AB2",
+      "languages": [
+        "it"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_IT",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "it"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "3d2a183f-4121-4bdf-ae2d-789570309090",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας it.",
+        "Λείπει προέλευση it.",
+        "Λείπουν οδηγίες χρήσης it.",
+        "Λείπει μετάφραση συσκευασίας it.",
+        "Λείπει μετάφραση κατηγορίας it."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_IT.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_IT.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_IT",
+      "pageCount": 1
+    },
+    {
+      "number": 103,
+      "family": "thermal",
+      "definitionSha256": "94BDE7FB51922E91AF9C60F793A3BCB0B264718AAB03902E01229BDA8834A888",
+      "languages": [
+        "pl"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_PL",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "pl"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "6b563258-12d2-46e6-8ea7-16955b8cf03b",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας pl.",
+        "Λείπει προέλευση pl.",
+        "Λείπουν οδηγίες χρήσης pl.",
+        "Λείπει μετάφραση συσκευασίας pl.",
+        "Λείπει μετάφραση κατηγορίας pl."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_PL.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_PL.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_PL",
+      "pageCount": 1
+    },
+    {
+      "number": 104,
+      "family": "thermal",
+      "definitionSha256": "BD074D5E4B22930DDF20068393B0A5C8DEED4379FF0954A8DD90BC25B067F318",
+      "languages": [
+        "ro"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_RO",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "ro"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "e3f73adf-5334-4465-a557-2858e43c679e",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας ro.",
+        "Λείπει προέλευση ro.",
+        "Λείπουν οδηγίες χρήσης ro.",
+        "Λείπει μετάφραση συσκευασίας ro.",
+        "Λείπει μετάφραση κατηγορίας ro."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_RO.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_RO.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_RO",
+      "pageCount": 1
+    },
+    {
+      "number": 105,
+      "family": "thermal",
+      "definitionSha256": "1CFE6FBC3DCCCE7CC799E8F776875B7574BD01035E20E977721240A55E4A7DE5",
+      "languages": [
+        "sv"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "small",
+      "brand": "PAPADOPOULOS",
+      "logo": true,
+      "report": "MIKRH_ETIKETA_PAPADOPOULOS_SW",
+      "templateKey": "thermal-small",
+      "request": {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "templateKey": "thermal-small",
+        "brandKey": "PAPADOPOULOS",
+        "languages": [
+          "sv"
+        ],
+        "mode": "product",
+        "productionDate": "2026-09-23",
+        "shelfLife": 3,
+        "freezeDate": null,
+        "weight": 5,
+        "cartonWeight": 10,
+        "pieces": 2,
+        "palletWeight": 500,
+        "freeText": "",
+        "animalCode": "QA-ANIMAL",
+        "slaughterhouse": "QA-SLAUGHTERHOUSE",
+        "supplier": "QA-SUPPLIER"
+      },
+      "mappingIssues": [
+        "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+      ],
+      "httpStatus": 200,
+      "previewId": "c567621d-a338-460d-8881-5714df186538",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Η επωνυμία δεν έχει συνδεθεί με το προϊόν.",
+        "Συμπληρώστε τα στοιχεία επωνυμίας.",
+        "Λείπουν στοιχεία επωνυμίας sv.",
+        "Λείπει προέλευση sv.",
+        "Λείπουν οδηγίες χρήσης sv.",
+        "Λείπει μετάφραση συσκευασίας sv.",
+        "Λείπει μετάφραση κατηγορίας sv."
+      ],
+      "lot": "39/26/10/31002041/4",
+      "expiry": "2026-09-26",
+      "pdf": "samples/MIKRH_ETIKETA_PAPADOPOULOS_SW.pdf",
+      "png": "samples/MIKRH_ETIKETA_PAPADOPOULOS_SW.png",
+      "sourceReport": "MIKRH_ETIKETA_PAPADOPOULOS_SW",
+      "pageCount": 1
+    },
+    {
+      "number": 106,
+      "family": "certificate-conformance",
+      "definitionSha256": "5CD526C4CD447F851E009DF1E142FEE48101ED09725CE48FFA231318C6356DE7",
+      "languages": [
+        "en"
+      ],
+      "mode": "product",
+      "status": "unvalidated",
+      "profile": "a4",
+      "brand": "FAETHON",
+      "logo": true,
+      "report": "CERTIFICATE_OF_CONFORMANCE_FULL",
+      "templateKey": "certificate-conformance",
+      "request": {
+        "templateKey": "certificate-conformance",
+        "languages": [
+          "en"
+        ],
+        "customerId": "00000000-0000-0000-0000-000000000000",
+        "vehicle": "QA-VEHICLE",
+        "trailer": "QA-TRAILER",
+        "shipmentDate": "2026-09-23",
+        "notes": "QA SAMPLE - NOT FOR PRODUCTION",
+        "lines": [
+          {
+            "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+            "weight": 10,
+            "cartons": 2,
+            "lot": "QA-20260923",
+            "productionDate": "2026-09-23",
+            "expiryDate": "2026-09-26",
+            "freezeDate": null
+          }
+        ]
+      },
+      "mappingIssues": [],
+      "httpStatus": 200,
+      "previewId": "dcae4959-3b92-4884-84c6-47fe6be18c2d",
+      "issues": [
+        "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+        "Λείπει πελάτης πιστοποιητικού."
+      ],
+      "lot": "",
+      "expiry": "2026-09-23",
+      "pdf": "samples/CERTIFICATE_OF_CONFORMANCE_FULL.pdf",
+      "png": "samples/CERTIFICATE_OF_CONFORMANCE_FULL.png",
+      "sourceReport": "certificate-conformance",
+      "pageCount": 1
+    }
+  ]
+}

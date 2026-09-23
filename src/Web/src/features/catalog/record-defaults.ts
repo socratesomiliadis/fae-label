@@ -6,6 +6,7 @@ export const defaults: Record<string, Data> = {
     family: "thermal",
     profile: "small",
     geometryKey: "",
+    legacyReport: "",
     barcodeFormat: "code39",
     widthMm: 100,
     heightMm: 82,
@@ -61,6 +62,7 @@ export const defaults: Record<string, Data> = {
     nutrition: {},
   },
   brand: {
+    legacyBrand: "",
     name: "",
     group: "brand",
     texts: { el: "", en: "" },
@@ -75,6 +77,7 @@ export const defaults: Record<string, Data> = {
     complete: false,
   },
   customer: {
+    postalCode: "",
     name: "",
     tradeName: "",
     phone: "",

@@ -1370,6 +1370,13 @@ export interface components {
             issues: string[];
             lot: string;
             expiry: string;
+            /** @default  */
+            sourceReport: string;
+            /**
+             * Format: int32
+             * @default 1
+             */
+            pageCount: number | string;
         };
         PrintJob: {
             /** Format: uuid */
@@ -1397,6 +1404,11 @@ export interface components {
             version?: number | string;
         };
         Production: {
+            /** Format: date */
+            packagingDate?: null | string;
+            labelComment?: string;
+            customerProductCode?: string;
+            customerOrigin?: string;
             /** Format: uuid */
             productId?: null | string;
             name?: string;

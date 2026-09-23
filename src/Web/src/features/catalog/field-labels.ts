@@ -1,4 +1,7 @@
 export const labels: Record<string, string> = {
+  legacyBrand: "Επωνυμία παλαιών προτύπων (π.χ. METEORA)",
+  legacyReport: "Συγκεκριμένη παλαιά αναφορά",
+  postalCode: "Ταχυδρομικός κώδικας",
   tradeName: "Διακριτικός τίτλος",
   phone: "Τηλέφωνο",
   email: "Email",

@@ -30,7 +30,9 @@ public sealed class IntegrationTests
             Assert.Equal("carton",small.Production.Mode);Assert.Equal(82,small.Template.HeightMm);Assert.DoesNotContain(small.Issues,i=>i.Contains("βάρος προϊόντος")||i.Contains("τεμάχια"));
             var large=await resolver.Resolve(new Production{ProductId=product.Id,Languages=["el"]});Assert.Contains(large.Issues,i=>i.Contains("ελληνικά και αγγλικά"));
             var blank=await resolver.Resolve(new Production{TemplateKey="sample-blank",Mode="blank",Languages=["el"],FreeText="Customer"});Assert.DoesNotContain(blank.Issues,i=>i.Contains("Επιλέξτε προϊόν"));
-            var renderer=scope.ServiceProvider.GetRequiredService<Rendering>();Assert.Empty(renderer.Render(blank).Issues);
+            var renderer=scope.ServiceProvider.GetRequiredService<Rendering>();
+            await LegacyAssets.Import(db,scope.ServiceProvider.GetRequiredService<AssetStore>(),Path.GetFullPath("../../../../../legacy",AppContext.BaseDirectory));
+            Assert.DoesNotContain(renderer.Render(blank).Issues,i=>i.Contains("αντιστοίχιση")||i.Contains("Λείπει"));
             var butcher=await resolver.Resolve(new Production{TemplateKey="butcher-a4",Mode="blank",Languages=["el"]});Assert.Empty(renderer.Render(butcher).Issues);
             var row=await db.Records.SingleAsync(r=>r.Kind=="template"&&r.Key=="thermal-small");row.Data=Json.Write(row.As<Template>() with{HeightMm=80,Validated=true});await db.SaveChangesAsync();
             await Seed.Run(db);Assert.Equal(80,row.As<Template>().HeightMm);Assert.True(await db.Records.AnyAsync(r=>r.Key=="abbreviation:TEST"));

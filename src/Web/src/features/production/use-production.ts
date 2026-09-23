@@ -122,6 +122,7 @@ export function useProduction({
   const canPrint =
     !!preview &&
     preview.issues.length === 0 &&
+    (preview.pageCount || 1) === 1 &&
     !!printer &&
     !busy &&
     Number.isInteger(quantity) &&

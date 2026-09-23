@@ -6,7 +6,7 @@ using SkiaSharp.HarfBuzz;
 using ZXing;
 namespace Faethon;
 
-public sealed record Rendered(byte[] Pdf, byte[] Png, string[] Issues);
+public sealed record Rendered(byte[] Pdf, byte[] Png, string[] Issues,int PageCount=1);
 public sealed class Rendering(AssetStore assets)
 {
     public static bool ValidBarcode(string value,string format="code39")
@@ -21,15 +21,22 @@ public sealed class Rendering(AssetStore assets)
         var t=s.Template;
         if(t.WidthMm is < 20 or > 420||t.HeightMm is < 20 or > 420||t.FontSize is < 4 or > 24)throw new InvalidOperationException("Μη έγκυρες διαστάσεις ή μέγεθος γραμματοσειράς.");
         using var pdf=new MemoryStream();
-        using(var document=SKDocument.CreatePdf(pdf)){var canvas=document.BeginPage(t.WidthMm*72/25.4f,t.HeightMm*72/25.4f);canvas.Scale(72/25.4f);Draw(canvas,s,issues);document.EndPage();document.Close();}
+        var pages=Pages(s);
+        using(var document=SKDocument.CreatePdf(pdf)){foreach(var page in pages){var canvas=document.BeginPage(t.WidthMm*72/25.4f,t.HeightMm*72/25.4f);canvas.Scale(72/25.4f);Draw(canvas,page,issues);document.EndPage();}document.Close();}
         using var bitmap=new SKBitmap((int)Math.Ceiling(t.WidthMm*4),(int)Math.Ceiling(t.HeightMm*4));
-        using(var canvas=new SKCanvas(bitmap)){canvas.Scale(4);Draw(canvas,s,[]);}
+        using(var canvas=new SKCanvas(bitmap)){canvas.Scale(4);Draw(canvas,pages[0],[]);}
         using var image=SKImage.FromBitmap(bitmap);using var png=image.Encode(SKEncodedImageFormat.Png,100);
-        return new(pdf.ToArray(),png.ToArray(),issues.Distinct().ToArray());
+        return new(pdf.ToArray(),png.ToArray(),issues.Distinct().ToArray(),pages.Length);
     }
     private void Draw(SKCanvas c,Snapshot s,List<string> issues)
     {
-        if(!(s.Production.Mode=="blank"&&s.Template.Family is "butcher" or "sample")&&s.Template.GeometryKey.Length>0&&SharedLayout.Draw(c,s,assets,issues))return;
+        if(s.Certificate is not null){CertificateLayouts.Draw(c,s,assets,issues);return;}
+        if(s.Template.Family=="butcher"&&s.Template.Profile=="a4"&&s.Production.Mode!="blank"&&SharedLayout.LegacyLayouts.ContainsKey(s.Template.GeometryKey))
+        {
+            c.Clear(SKColors.White);
+            for(var i=0;i<4;i++){c.Save();c.Translate(5,i*72+2);SharedLayout.Draw(c,s,assets,issues,clear:false);c.Restore();}return;
+        }
+        if((SharedLayout.LegacyLayouts.ContainsKey(s.Template.GeometryKey)||!(s.Production.Mode=="blank"&&s.Template.Family is "butcher" or "sample"))&&s.Template.GeometryKey.Length>0&&SharedLayout.Draw(c,s,assets,issues))return;
         c.Clear(SKColors.White);var t=s.Template;float w=t.WidthMm,h=t.HeightMm,m=2;
         using var face=SKTypeface.FromFamilyName("Arial");using var boldFace=SKTypeface.FromFamilyName("Arial",SKFontStyle.Bold);
         using var paint=new SKPaint{Color=SKColors.Black,IsAntialias=true};
@@ -60,15 +67,16 @@ public sealed class Rendering(AssetStore assets)
         string Both(string key)=>string.Join(" / ",langs.Select(l=>H(key,l)));
         string Date(DateOnly? d)=>d?.ToString("d/M/yyyy",CultureInfo.InvariantCulture)??"";
         string Num(decimal? n)=>n?.ToString("0.###",CultureInfo.InvariantCulture)??"";
-        if(s.Certificate is {} cert)
+        if(t.Family=="reference-list")
         {
-            Text(Both("certificate"),m,10,w-2*m,15,16,true);
-            Text(s.Customer?.Name??"",m,27,w-2*m,10,12,true);
-            Text($"{s.Customer?.Address}  {s.Customer?.City}  {s.Customer?.Country}\nVAT: {s.Customer?.Vat}",m,39,w-2*m,15,9);
-            Text($"{Date(cert.ShipmentDate)}    {cert.Vehicle} / {cert.Trailer}",m,57,w-2*m,12,10);
-            float y=75;
-            foreach(var line in cert.Lines){var product=s.CertificateProducts.GetValueOrDefault(line.ProductId);var title=string.Join(" / ",langs.Select(l=>product?.Names.GetValueOrDefault(l)??""));Box(m,y,w-2*m,19);Text($"{title}\n{Num(line.Weight)} kg  LOT {line.Lot}  {Date(line.ProductionDate)} — {Date(line.ExpiryDate)}\n{(langs[0]=="bg"?"Кашони":"Cartons")}: {line.Cartons}  {(line.FreezeDate.HasValue?Both("freeze")+": "+Date(line.FreezeDate):"")}",m+2,y+1,w-2*m-4,17,8);y+=19;}
-            Text(cert.Notes,m,y+5,w-2*m,h-y-15,9);if(y>h-20)issues.Add("Οι γραμμές πιστοποιητικού υπερβαίνουν τη σελίδα.");return;
+            Text(t.Name,8,8,w-16,10,14,true);
+            if(s.ReferenceHeadings.Length==0){issues.Add("Επιλέξτε συγκεκριμένο κατάλογο αναφοράς.");return;}
+            int count=s.ReferenceHeadings.Length;float[] widths=count==4?[25,100,28,w-169]:[25,85,w-126];
+            float x=8;for(int col=0;col<count;col++){Text(s.ReferenceHeadings[col],x+1,23,widths[col]-2,13,8,true);x+=widths[col];}
+            float y=38;
+            foreach(var row in s.ReferenceRows){x=8;for(int col=0;col<count;col++){Box(x,y,widths[col],12);Text(row[col],x+1,y+1,widths[col]-2,10,8);x+=widths[col];}y+=12;}
+            if(s.ReferenceRows.Length==0)Text("Δεν υπάρχουν εγγραφές.",8,40,w-16,10,10);
+            Text($"{s.DocumentPage} / {s.DocumentPages}",8,h-10,w-16,6,9);return;
         }
         if(t.Family=="butcher"&&t.Profile=="a4")
         {
@@ -134,6 +142,7 @@ public sealed class Rendering(AssetStore assets)
     }
     public byte[] Raster(Snapshot s,Printer printer)
     {
+        if(Pages(s).Length>1)throw new InvalidOperationException("Το έγγραφο έχει πολλές σελίδες. Εκτυπώστε όλες τις σελίδες από το PDF.");
         var t=s.Template;var scale=printer.DotsPerMm;int width=(int)Math.Round(t.WidthMm*scale),height=(int)Math.Round(t.HeightMm*scale);
         using var bitmap=new SKBitmap(width,height);using(var canvas=new SKCanvas(bitmap)){canvas.Scale(scale);Draw(canvas,s,[]);}
         if(printer.Transport=="windows")
@@ -152,5 +161,13 @@ public sealed class Rendering(AssetStore assets)
         int stride=(output.Width+7)/8;var packed=new byte[stride*output.Height];
         for(var y=0;y<output.Height;y++)for(var x=0;x<output.Width;x++){var color=output.GetPixel(x,y);if((color.Red*299+color.Green*587+color.Blue*114)/1000<128)packed[y*stride+x/8]|=(byte)(0x80>>(x%8));}
         return Encoding.ASCII.GetBytes($"^XA^PW{(int)Math.Round(printer.PrintableWidthMm*scale)}^LL{(int)Math.Round(printer.HeightMm*scale)}^FO{printer.OffsetX},{printer.OffsetY}^GFA,{packed.Length},{packed.Length},{stride},{Convert.ToHexString(packed)}^FS^PQ1^XZ");
+    }
+    private static Snapshot[] Pages(Snapshot s)
+    {
+        if(s.Certificate is not null)return CertificateLayouts.Pages(s);
+        int capacity=s.Certificate is not null?Math.Max(1,(int)((s.Template.HeightMm-110)/19)):Math.Max(1,(int)((s.Template.HeightMm-55)/12));
+        int rows=s.Certificate?.Lines.Length??s.ReferenceRows.Length;
+        int count=Math.Max(1,(rows+capacity-1)/capacity);
+        return Enumerable.Range(0,count).Select(i=>s with{DocumentPage=i+1,DocumentPages=count,ReferenceRows=s.ReferenceRows.Skip(i*capacity).Take(capacity).ToArray(),Certificate=s.Certificate is {} c?c with{Lines=c.Lines.Skip(i*capacity).Take(capacity).ToArray()}:null}).ToArray();
     }
 }

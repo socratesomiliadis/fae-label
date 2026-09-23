@@ -23,8 +23,11 @@ public static class Seed
             ("certificate-conformance","Πιστοποιητικό συμμόρφωσης","certificate-conformance","a4",210,297),
             ("reference-list","Κατάλογος αναφοράς","reference-list","a4",210,297)];
         foreach(var t in templates)await Add("template",t.Key,new Template{Name=t.Name,Family=t.Family,Profile=t.Profile,GeometryKey=t.Key,WidthMm=t.W,HeightMm=t.Profile=="small"?82:t.H,FontSize=t.Profile=="small"?5.7f:7,ValidationNote="Απαιτείται σύγκριση με πρωτότυπο και δοκιμαστική εκτύπωση."});
-        await Add("template","butcher-a4",new Template{Name="Ταμπελάκια κρεοπωλείου Α4",Family="butcher",Profile="a4",WidthMm=210,HeightMm=297,FontSize=10});
-        await Add("template","sample-blank",new Template{Name="Δείγμα · στοιχεία πελάτη",Family="sample",Profile="small",WidthMm=100,HeightMm=82,FontSize=12});
+        await Add("template","butcher-a4",new Template{Name="Ταμπελάκια κρεοπωλείου Α4",GeometryKey="butcher-a4",Family="butcher",Profile="a4",WidthMm=210,HeightMm=297,FontSize=10});
+        await Add("template","sample-blank",new Template{Name="Δείγμα · στοιχεία πελάτη",GeometryKey="sample-blank",Family="sample",Profile="small",WidthMm=100,HeightMm=82,FontSize=12});
+        foreach(var size in new[]{"small","large"})await Add("template","custom-"+size+"-no-logo",new Template{Name="Ελεύθερο κείμενο · χωρίς λογότυπο · "+(size=="small"?"μικρή":"μεγάλη"),Family="custom",Profile=size,WidthMm=size=="small"?100:148,HeightMm=size=="small"?82:100,LegacyReport=size=="small"?"CUSTOM_ETIKETA_MIKRH_NOLOGO":"CUSTOM_MEGALH_ETIKETA_NOLOGO"});
+        foreach(var report in ReferenceReports.Definitions)
+            await Add("template",report.Key,new Template{Name=report.Title,Family="reference-list",Profile="a4",WidthMm=210,HeightMm=297,LegacyReport=report.Report});
         await Add("printer","zebra-large",new Printer{Name="Zebra ZT411 · Μεγάλη",Queue="ZDesigner ZT411-203dpi ZPL (Αντίγραφο 1)",WidthMm=108,HeightMm=148,Rotation=90,Dpi=203,DotsPerMm=8});
         await Add("printer","zebra-small",new Printer{Name="Zebra ZT230 · Μικρή",Queue="Zebra ZT230-Network",WidthMm=100,HeightMm=82,Rotation=0,Dpi=203,DotsPerMm=8});
         await Add("printer","kyocera-a4",new Printer{Name="Kyocera ECOSYS MA5500ifx · A4",Queue="ECOSYS MA5500ifx",WidthMm=210,HeightMm=297,Rotation=0,Dpi=300,DotsPerMm=300/25.4f,PrintableWidthMm=210,Transport="windows"});
@@ -43,6 +46,7 @@ public static class Seed
         // Preserve imported codes in selectable lists without inventing translations.
         foreach(var row in await db.Records.Where(r=>r.Kind=="template"||r.Kind=="printer").ToListAsync())
         {
+            if(row.Kind=="template"&&row.Key is "butcher-a4" or "sample-blank"&&row.As<Template>() is {Validated:false,GeometryKey:""} legacy){row.Data=Json.Write(legacy with{GeometryKey=row.Key});row.Version++;}
             if(row.Kind=="template"&&row.As<Template>() is {Validated:false,Profile:"small",HeightMm:80} t){row.Data=Json.Write(t with{HeightMm=82});row.Version++;}
             if(row.Kind=="printer"&&row.Key=="zebra-small"&&row.As<Printer>() is {Validated:false,HeightMm:80} p){row.Data=Json.Write(p with{HeightMm=82});row.Version++;}
         }

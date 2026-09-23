@@ -1,0 +1,90 @@
+[
+  {
+    "name": "certificate-conformance",
+    "pages": 1,
+    "textCharacters": [
+      3145
+    ],
+    "bytes": 1752028
+  },
+  {
+    "name": "certificate-conformance-30-lines",
+    "pages": 6,
+    "textCharacters": [
+      3603,
+      3617,
+      3603,
+      3617,
+      3603,
+      3617
+    ],
+    "bytes": 2582092
+  },
+  {
+    "name": "certificate-bg-fresh-and-frozen",
+    "pages": 4,
+    "textCharacters": [
+      2045,
+      3352,
+      2070,
+      3094
+    ],
+    "bytes": 2164629
+  },
+  {
+    "name": "private-label-1-large",
+    "pages": 1,
+    "textCharacters": [
+      4183
+    ],
+    "bytes": 1643069
+  },
+  {
+    "name": "private-label-1-small",
+    "pages": 1,
+    "textCharacters": [
+      2383
+    ],
+    "bytes": 1623986
+  },
+  {
+    "name": "private-label-1-custom",
+    "pages": 1,
+    "textCharacters": [
+      119
+    ],
+    "bytes": 1346710
+  },
+  {
+    "name": "private-label-2-large",
+    "pages": 1,
+    "textCharacters": [
+      4200
+    ],
+    "bytes": 1641011
+  },
+  {
+    "name": "private-label-2-small",
+    "pages": 1,
+    "textCharacters": [
+      2392
+    ],
+    "bytes": 1621970
+  },
+  {
+    "name": "private-label-2-custom",
+    "pages": 1,
+    "textCharacters": [
+      121
+    ],
+    "bytes": 1344677
+  },
+  {
+    "name": "private-label-customer-address",
+    "pages": 1,
+    "textCharacters": [
+      135
+    ],
+    "bytes": 1624021
+  }
+]

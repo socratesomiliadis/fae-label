@@ -350,6 +350,11 @@ export function Certificates() {
               <a href={preview.pdfUrl} target="_blank" rel="noreferrer">
                 Άνοιγμα PDF
               </a>
+              {(preview.pageCount ?? 1) > 1 && (
+                <p className="text-sm text-muted-foreground">
+                  Σελίδα 1 από {preview.pageCount}. Ανοίξτε το PDF για όλες τις σελίδες και εκτύπωση.
+                </p>
+              )}
               {preview.issues.map((i, n) => (
                 <Notice key={n} text={i} />
               ))}
@@ -376,7 +381,7 @@ export function Certificates() {
             variant="default"
             type="submit"
             className="h-auto min-h-10 gap-2 px-4 py-2.5 text-xs font-semibold w-full"
-            disabled={!preview || preview.issues.length > 0 || !printer}
+            disabled={!preview || preview.issues.length > 0 || !printer || (preview.pageCount ?? 1) > 1}
             onClick={async () => {
               try {
                 await post("/jobs", {

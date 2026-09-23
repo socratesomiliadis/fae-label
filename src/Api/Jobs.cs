@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 namespace Faethon;
 public sealed record PreviewData(Snapshot Snapshot,string PdfHash,string PngHash);
-public sealed record PreviewResult(Guid Id,string PdfUrl,string ImageUrl,string[] Issues,string Lot,string Expiry);
+public sealed record PreviewResult(Guid Id,string PdfUrl,string ImageUrl,string[] Issues,string Lot,string Expiry,string SourceReport="",int PageCount=1);
 public sealed record SubmitJob(Guid PreviewId,Guid PrinterId,int Quantity,string RequestKey);
 public sealed record Dispatch(Guid Id,string Queue,string Transport,int Quantity,string ArtifactUrl,string ArtifactHash,float WidthMm,float HeightMm,int Dpi,float PaperWidthMm,float PaperHeightMm,int Rotation,int OffsetX,int OffsetY,float DotsPerMm);
 public sealed class JobService(AppDb db,Rendering rendering,AssetStore assets)
@@ -12,7 +12,7 @@ public sealed class JobService(AppDb db,Rendering rendering,AssetStore assets)
         var pdf=await assets.Put(rendered.Pdf);var png=await assets.Put(rendered.Png);
         var row=new Record{Kind="preview",Key=Guid.NewGuid().ToString(),Data=Json.Write(new PreviewData(snapshot,pdf,png))};
         db.Records.Add(row);db.Audits.Add(new(){Actor=actor,Action="preview",RecordId=row.Id});await db.SaveChangesAsync();
-        return new(row.Id,$"/api/previews/{row.Id}/pdf",$"/api/previews/{row.Id}/image",snapshot.Issues,snapshot.Lot,snapshot.Production.Expiry.ToString("yyyy-MM-dd"));
+        return new(row.Id,$"/api/previews/{row.Id}/pdf",$"/api/previews/{row.Id}/image",snapshot.Issues,snapshot.Lot,snapshot.Production.Expiry.ToString("yyyy-MM-dd"),snapshot.Template.GeometryKey,rendered.PageCount);
     }
     public async Task<PrintJob> Submit(SubmitJob request,string actor)
     {

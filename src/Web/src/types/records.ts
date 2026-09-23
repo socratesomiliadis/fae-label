@@ -16,6 +16,8 @@ export type Preview = {
   issues: string[];
   lot: string;
   expiry: string;
+  pageCount?: number;
+  sourceReport?: string;
 };
 
 export type User = { name: string; role: string };
