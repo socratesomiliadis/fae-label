@@ -249,9 +249,9 @@ export function Certificates() {
                 ))}
               </div>
               <Button
-                variant="ghost"
+                variant="outline"
                 type="submit"
-                className="h-auto gap-1 px-0 py-1 text-xs text-primary"
+                className="h-9 gap-1 px-3 text-xs text-primary"
                 onClick={() =>
                   change({
                     ...data,
@@ -352,7 +352,8 @@ export function Certificates() {
               </a>
               {(preview.pageCount ?? 1) > 1 && (
                 <p className="text-sm text-muted-foreground">
-                  Σελίδα 1 από {preview.pageCount}. Ανοίξτε το PDF για όλες τις σελίδες και εκτύπωση.
+                  Σελίδα 1 από {preview.pageCount}. Ανοίξτε το PDF για όλες τις
+                  σελίδες και εκτύπωση.
                 </p>
               )}
               {preview.issues.map((i, n) => (
@@ -381,7 +382,12 @@ export function Certificates() {
             variant="default"
             type="submit"
             className="h-auto min-h-10 gap-2 px-4 py-2.5 text-xs font-semibold w-full"
-            disabled={!preview || preview.issues.length > 0 || !printer || (preview.pageCount ?? 1) > 1}
+            disabled={
+              !preview ||
+              preview.issues.length > 0 ||
+              !printer ||
+              (preview.pageCount ?? 1) > 1
+            }
             onClick={async () => {
               try {
                 await post("/jobs", {

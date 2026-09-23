@@ -51,7 +51,7 @@ export function SettingsPage({ admin }: { admin: boolean }) {
     <Tabs value={tab} onValueChange={(value) => setTab(String(value))}>
       <TabsList
         variant="line"
-        className="mb-7 h-auto w-full flex-wrap justify-start"
+        className="mb-5 h-auto w-full flex-wrap justify-start"
         aria-label="Ρυθμίσεις"
       >
         {[
@@ -67,7 +67,7 @@ export function SettingsPage({ admin }: { admin: boolean }) {
         ].map(([k, l]) => (
           <TabsTrigger
             value={k}
-            className="flex-none px-3 py-2 text-xs data-active:bg-secondary data-active:text-primary"
+            className="flex-none px-3 py-2 text-xs"
             key={k}
           >
             {l}

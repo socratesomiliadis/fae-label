@@ -9,18 +9,16 @@ import { ProductionForm } from "./production-form";
 import { useProduction } from "./use-production";
 import { OutputChooser } from "./output-chooser";
 import { SelectedProductDetails } from "./selected-product-details";
-import { LabelContentLinks } from "./label-content-links";
+import { ArrowLeft, Save } from "lucide-react";
 import { nameOf } from "@/lib/records";
 import type { Row } from "@/types/records";
 
 export function ProductionPage({
   initial,
   workflow = "production",
-  admin = false,
 }: {
   initial: Row | null;
   workflow?: string;
-  admin?: boolean;
 }) {
   const model = useProduction({ initial, workflow });
   const { draft, setSavedDraft, change, selected } = model;
@@ -30,7 +28,7 @@ export function ProductionPage({
     !draft.customerId &&
     draft.templateKey === "thermal-large";
   const preparations = (
-    <div className="mb-5 max-w-lg">
+    <div className="w-full min-w-0 [&>div]:mb-0">
       <Field label="Αποθηκευμένη προετοιμασία">
         <NativeSelect
           value={model.savedDraft?.id || ""}
@@ -62,7 +60,9 @@ export function ProductionPage({
   if (choosing)
     return (
       <>
-        {preparations}
+        {model.drafts.rows.length > 0 && (
+          <div className="mb-5 max-w-lg">{preparations}</div>
+        )}
         <Catalog
           kind="product"
           admin={false}
@@ -92,54 +92,70 @@ export function ProductionPage({
             } as Record<string, string>
           )[workflow]
         }
+      />
+      <section
+        aria-label="Προϊόν και προετοιμασία"
+        className="mb-5 flex flex-col gap-4 rounded-xl border bg-card p-4 lg:flex-row lg:items-center lg:justify-between"
       >
-        {selected && (
-          <Button
-            variant="outline"
-            onClick={() => {
-              change({
-                ...draftFor(null),
-                ...(workflow !== "production"
-                  ? {
-                      templateKey: draft.templateKey,
-                      mode: draft.mode,
-                      languages: draft.languages,
-                    }
-                  : {}),
-              });
-              setSavedDraft(null);
-            }}
-          >
-            Άλλο προϊόν
-          </Button>
+        {selected ? (
+          <div className="min-w-0 flex-1">
+            <h2 className="mb-1 text-lg">{nameOf(selected)}</h2>
+            <p className="text-xs">
+              <span className="font-mono">{selected.data.erpCode}</span> ·{" "}
+              {selected.data.frozen ? "Κατεψυγμένο" : "Νωπό"} ·{" "}
+              {selected.data.shelfLife} ημέρες ζωής
+            </p>
+          </div>
+        ) : (
+          <p className="text-sm">
+            {model.selectedTemplate?.data.name || "Νέα ετικέτα"}
+          </p>
         )}
-      </Heading>
-      {selected && (
-        <div className="mb-5 border-l-4 border-primary pl-4">
-          <p className="text-xs font-mono text-muted-foreground">
-            {selected.data.erpCode}
-          </p>
-          <h2 className="my-1 text-xl">{nameOf(selected)}</h2>
-          <p className="text-xs text-muted-foreground">
-            {selected.data.frozen ? "Κατεψυγμένο" : "Νωπό"} ·{" "}
-            {selected.data.shelfLife} ημέρες ζωής
-          </p>
+        <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-end lg:max-w-[60%]">
+          {model.drafts.rows.length > 0 && (
+            <div className="min-w-0 sm:w-64">{preparations}</div>
+          )}
+          <div className="flex flex-wrap gap-2">
+            <Button
+              variant="outline"
+              disabled={model.busy || !!model.formIssue}
+              onClick={model.saveDraft}
+            >
+              <Save size={16} /> Αποθήκευση
+            </Button>
+            {selected && (
+              <Button
+                variant="outline"
+                onClick={() => {
+                  change({
+                    ...draftFor(null),
+                    ...(workflow !== "production"
+                      ? {
+                          templateKey: draft.templateKey,
+                          mode: draft.mode,
+                          languages: draft.languages,
+                        }
+                      : {}),
+                  });
+                  setSavedDraft(null);
+                }}
+              >
+                <ArrowLeft size={16} /> Άλλο προϊόν
+              </Button>
+            )}
+          </div>
         </div>
-      )}
-      {model.drafts.rows.length > 0 && preparations}
-      <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.15fr)_minmax(350px,1fr)]">
-        <div className="xl:col-start-1 xl:row-start-1">
-          <ProductionForm model={model} />
-        </div>
-        <div className="space-y-5 xl:col-start-2 xl:row-start-1 xl:row-span-2">
+      </section>
+      <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+        <div className="space-y-4">
           <OutputChooser model={model} workflow={workflow} />
-          <PrintPreviewPanel model={model} />
-        </div>
-        <div className="space-y-5 xl:col-start-1">
+          <ProductionForm model={model} />
           {selected && model.productNeeded && (
             <SelectedProductDetails model={model} />
           )}
-          <LabelContentLinks model={model} admin={admin} />
+        </div>
+        <div className="min-w-0 xl:sticky xl:top-5">
+          <PrintPreviewPanel model={model} />
         </div>
       </div>
     </>

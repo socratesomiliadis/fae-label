@@ -26,7 +26,7 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
     selectedTemplate,
   } = model;
   return (
-    <section className="mb-6 min-w-0 overflow-hidden rounded-xl border bg-card ">
+    <section className="mb-6 min-w-0 overflow-hidden rounded-xl border bg-card">
       <div className="flex items-center justify-between gap-4 border-b px-5 py-4 [&_h2]:mb-0 [&_h2]:flex [&_h2]:items-center [&_h2]:gap-2 [&_h2]:text-base">
         <h2>Προεπισκόπηση & εκτύπωση</h2>
         <span className="ml-auto whitespace-nowrap text-xs text-muted-foreground">
@@ -34,7 +34,7 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
           mm
         </span>
       </div>
-      <div className="flex min-h-48 items-center justify-center bg-muted p-6 [&_img]:max-h-[520px] [&_img]:w-full [&_img]:object-contain [&_img]:shadow-md">
+      <div className="flex min-h-64 items-center justify-center bg-muted p-6 [&_img]:max-h-[520px] [&_img]:w-full [&_img]:object-contain [&_img]:shadow-md">
         {preview ? (
           <img src={preview.imageUrl} alt="Προεπισκόπηση ετικέτας" />
         ) : (
@@ -51,7 +51,7 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
           </p>
         )}
         <Button
-          className="mb-4 w-full"
+          className="mb-4 h-11 w-full text-sm font-semibold"
           variant={preview ? "outline" : "default"}
           disabled={model.busy || !!model.formIssue}
           onClick={model.makePreview}
@@ -71,7 +71,12 @@ export function PrintPreviewPanel({ model }: { model: ProductionModel }) {
               <span>
                 LOT <b>{preview.lot || "—"}</b>
               </span>
-              <a href={preview.pdfUrl} target="_blank" rel="noreferrer">
+              <a
+                className="rounded-lg border border-input bg-card px-3 py-2 font-medium no-underline hover:bg-secondary/50"
+                href={preview.pdfUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Άνοιγμα PDF <ArrowUpRight size={14} />
               </a>
             </div>

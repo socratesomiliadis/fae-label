@@ -668,14 +668,13 @@ test("blank samples hide product fields and cannot submit a retained product", a
   ).toBeVisible();
 });
 
-test("company content opens beside the draft and operators only get read access", async ({
+test("company content stays in the catalog and operators only get read access", async ({
   page,
 }) => {
-  await openProduct(page);
-  await page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }).fill("7.25");
   await page
-    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .getByRole("button", { name: "Εταιρείες & επωνυμίες", exact: true })
     .click();
+  await page.getByRole("button", { name: "Επεξεργασία", exact: true }).click();
   await expect(
     page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
   ).toBeVisible();
@@ -688,9 +687,6 @@ test("company content opens beside the draft and operators only get read access"
     fullPage: true,
   });
   await page.keyboard.press("Escape");
-  await expect(
-    page.getByLabel("Βάρος προϊόντος (kg)", { exact: true }),
-  ).toHaveValue("7.25");
   await page
     .getByRole("button", { name: "Περιεχόμενο ετικέτας", exact: true })
     .click();
@@ -705,10 +701,10 @@ test("company content opens beside the draft and operators only get read access"
     r.fulfill({ json: { name: "Operator", role: "operator" } }),
   );
   await page.reload();
-  await openProduct(page);
   await page
-    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .getByRole("button", { name: "Εταιρείες & επωνυμίες", exact: true })
     .click();
+  await page.getByRole("button", { name: "Προβολή", exact: true }).click();
   await expect(
     page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
   ).toBeDisabled();
@@ -858,7 +854,7 @@ test("invalid dates and fractional carton counts are explained before preview", 
   ).toBeEnabled();
 });
 
-test("product workspace and content drawer fit a narrow viewport", async ({
+test("product workspace and catalog editor fit a narrow viewport", async ({
   page,
 }) => {
   await allFormats(page);
@@ -872,13 +868,19 @@ test("product workspace and content drawer fit a narrow viewport", async ({
   await page
     .getByRole("button", { name: "Μικρή 100 × 80 mm", exact: true })
     .click();
+  await expect(
+    page
+      .getByRole("region", { name: "Μορφές ετικέτας" })
+      .getByRole("button", { pressed: true }),
+  ).toHaveCSS("background-color", "rgb(244, 229, 208)");
   await page.screenshot({
     path: "../../artifacts/ux-workspace-mobile.png",
     fullPage: true,
   });
   await page
-    .getByRole("button", { name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας" })
+    .getByRole("button", { name: "Εταιρείες & επωνυμίες", exact: true })
     .click();
+  await page.getByRole("button", { name: "Επεξεργασία", exact: true }).click();
   await expect(
     page.getByLabel("Περιγραφή εταιρείας & στοιχεία επικοινωνίας"),
   ).toBeVisible();
@@ -889,4 +891,80 @@ test("product workspace and content drawer fit a narrow viewport", async ({
     .toBe(true);
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
+});
+
+test("label workspace aligns format and preview and removes source-edit links", async ({
+  page,
+}) => {
+  await allFormats(page);
+  await page.route("**/api/records/draft", (r) =>
+    r.fulfill({
+      json: [
+        {
+          id: "saved",
+          key: "saved",
+          kind: "draft",
+          data: { name: "Προετοιμασία 24/09" },
+        },
+      ],
+    }),
+  );
+  await page.setViewportSize({ width: 2000, height: 1250 });
+  await openProduct(page);
+  await expect(page.getByText("Από πού έρχεται το κείμενο;")).toHaveCount(0);
+  await expect(
+    page.getByRole("button", {
+      name: "Εταιρεία, λογότυπο & κείμενα επωνυμίας",
+    }),
+  ).toHaveCount(0);
+  const format = await page
+    .getByRole("region", { name: "Μορφές ετικέτας" })
+    .boundingBox();
+  const preview = await page
+    .getByRole("heading", { name: "Προεπισκόπηση & εκτύπωση" })
+    .locator("..")
+    .locator("..")
+    .boundingBox();
+  expect(Math.abs(format!.y - preview!.y)).toBeLessThan(2);
+  expect(format!.y).toBeLessThan(320);
+  const choices = page
+    .getByRole("region", { name: "Μορφές ετικέτας" })
+    .getByRole("button");
+  await expect(choices.nth(0)).toHaveText(/Μεγάλη/);
+  await expect(choices.nth(1)).toHaveText(/Κιβώτιο/);
+  await expect(choices.nth(2)).toHaveText(/Μικρή/);
+  await page.screenshot({
+    path: "../../artifacts/ui-clean-production.png",
+    fullPage: true,
+  });
+});
+
+test("settings tabs have a visible selected state and work with keyboard navigation", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: "Ρυθμίσεις", exact: true }).click();
+  const printers = page.getByRole("tab", { name: "Εκτυπωτές", exact: true });
+  const languages = page.getByRole("tab", { name: "Γλώσσες", exact: true });
+  await expect(printers).toHaveCSS("background-color", "rgb(74, 29, 27)");
+  await expect(languages).not.toHaveCSS("background-color", "rgb(74, 29, 27)");
+  await expect(languages).toHaveCSS("cursor", "pointer");
+  await printers.focus();
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("Enter");
+  await expect(languages).toHaveAttribute("aria-selected", "true");
+  await expect(languages).toHaveCSS("background-color", "rgb(74, 29, 27)");
+  await page.screenshot({
+    path: "../../artifacts/ui-clean-settings.png",
+    fullPage: true,
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+  await page.screenshot({
+    path: "../../artifacts/ui-clean-settings-mobile.png",
+    fullPage: true,
+  });
 });

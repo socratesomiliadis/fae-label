@@ -33,3 +33,11 @@ The replacement now follows that arrangement: a persistent product heading, shar
 Browser workflow tests intercept API responses. Backend integration tests use isolated PostgreSQL databases. No production records or printer jobs were created for this review. Physical printer acceptance and the existing missing-translation/content checks remain necessary; this pass does not certify printed artwork. Three private-workbook tests are skipped when those input files are absent.
 
 The build used `npm run build -- --outDir ../../artifacts/ux-web` to avoid replacing static assets served by the existing development API. Restart/build through the normal local launcher to load the complete updated application.
+
+## Visual hierarchy follow-up
+
+The subsequent screenshot review led to a more compact product/preparation toolbar and a two-column working area. Format selection comes first, with a fixed order (large product, carton, small, pallet, sample, blank sample). Preview starts at the same vertical position; production inputs sit below the format choices. Company/product/recipe source-edit links have been removed from this workspace; their catalog navigation remains available.
+
+Shared tabs now use a bordered group and an explicit, high-contrast selected state. The prior line-tab rules overrode active backgrounds. Secondary table actions have visible button boundaries; ordinary links are underlined; disclosure rows have consistent chevrons and focus states. Desktop and mobile views were inspected, and 20 browser tests passed, including keyboard tab navigation and workspace alignment. No backend behavior changed in this follow-up.
+
+The verified frontend was then loaded into the existing local app without restarting the API. Assets were copied before atomically replacing the entry page; previous hashed assets were retained for already-open tabs. HTTP checks confirmed the running app serves the new entry page and its assets. Refreshing the app loads this visual follow-up.

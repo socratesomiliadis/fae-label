@@ -131,7 +131,7 @@ export function Daily() {
                 <TableRow key={p.id}>
                   <TableCell>
                     <Button
-                      variant="ghost"
+                      variant="outline"
                       type="submit"
                       className="size-9 p-2"
                       disabled={i === 0}
@@ -141,7 +141,7 @@ export function Daily() {
                       <ArrowUp size={15} />
                     </Button>
                     <Button
-                      variant="ghost"
+                      variant="outline"
                       type="submit"
                       className="size-9 p-2"
                       disabled={i === order.length - 1}

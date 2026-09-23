@@ -179,7 +179,7 @@ export function Catalog({
               <Button
                 variant="ghost"
                 type="submit"
-                className="h-auto gap-1 px-0 py-1 text-xs text-primary"
+                className="h-9 gap-1 px-3 text-xs text-primary"
                 onClick={() => setFilters({})}
               >
                 Καθαρισμός
@@ -280,7 +280,7 @@ export function Catalog({
                         {!labelMode &&
                           ["product", "customer"].includes(kind) && (
                             <Button
-                              variant="ghost"
+                              variant="outline"
                               type="submit"
                               className="size-9 p-2"
                               title="Έκδοση ετικέτας"
@@ -290,9 +290,9 @@ export function Catalog({
                             </Button>
                           )}
                         <Button
-                          variant="ghost"
+                          variant="outline"
                           type="submit"
-                          className="h-auto gap-1 px-0 py-1 text-xs text-primary"
+                          className="h-9 gap-1 px-3 text-xs text-primary"
                           onClick={() => (labelMode ? onPrint(r) : setEdit(r))}
                         >
                           {labelMode

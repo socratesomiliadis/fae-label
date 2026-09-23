@@ -7,7 +7,7 @@ export function SelectedProductDetails({ model }: { model: ProductionModel }) {
     model;
   return (
     selected && (
-      <details className="col-span-full my-2 mb-4 rounded-xl border bg-card p-5 [&>summary]:flex [&>summary]:cursor-pointer [&>summary]:justify-between [&>summary]:py-1 [&>summary]:text-sm [&>summary]:text-muted-foreground [&[open]>summary]:mb-4">
+      <details className="col-span-full rounded-xl border bg-card p-4 [&>summary]:flex [&>summary]:cursor-pointer [&>summary]:justify-between [&>summary]:py-1 [&>summary]:text-sm [&>summary]:text-muted-foreground [&[open]>summary]:mb-4">
         <summary>Καθημερινή λίστα & συνδεδεμένες επωνυμίες</summary>
         <p className="mb-3 text-xs text-muted-foreground">
           Οι επιλογές αποθηκεύονται στο προϊόν και ισχύουν και για τις επόμενες

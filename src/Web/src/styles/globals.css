@@ -74,7 +74,7 @@
     @apply text-xs text-muted-foreground;
   }
   a {
-    @apply text-primary;
+    @apply text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring;
   }
   hr {
     @apply my-6 border-t;
@@ -85,5 +85,22 @@
   button:not(:disabled),
   summary {
     @apply cursor-pointer;
+  }
+}
+
+/* Disclosure controls must remain visible when a parent uses flex layout. */
+@layer base {
+  summary {
+    @apply flex list-none items-center gap-3 rounded-md px-1 py-1 font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: "";
+    @apply ml-auto size-2 shrink-0 rotate-45 border-r-2 border-b-2 border-current transition-transform;
+  }
+  details[open] > summary::after {
+    transform: rotate(225deg);
   }
 }

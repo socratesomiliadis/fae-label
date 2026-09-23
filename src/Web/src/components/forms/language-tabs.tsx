@@ -16,11 +16,7 @@ export function LanguageTabs({
       className="my-4 h-auto flex-wrap justify-start"
     >
       {languages.map((language) => (
-        <TabsTrigger
-          key={language}
-          value={language}
-          className="px-3 py-2 data-active:bg-secondary data-active:text-primary"
-        >
+        <TabsTrigger key={language} value={language} className="px-3 py-2">
           {rows.find((row) => row.key === language)?.data.name ||
             language.toUpperCase()}
         </TabsTrigger>

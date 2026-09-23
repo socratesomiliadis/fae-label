@@ -27,7 +27,7 @@ export function AppSidebar({
           event.preventDefault();
           navigate("dashboard");
         }}
-        className="flex flex-col items-center gap-3 rounded-xl bg-primary px-2 py-4 md:py-5"
+        className="no-underline flex flex-col items-center gap-3 rounded-xl bg-primary px-2 py-4 md:py-5"
       >
         <FaethonLogo className="h-11 md:h-24" />
         <span className="hidden text-[10px] tracking-[0.25em] text-primary-foreground md:block">

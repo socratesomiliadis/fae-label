@@ -89,7 +89,6 @@ export function App() {
                   key={page + (selected?.id || "")}
                   initial={selected}
                   workflow={page}
-                  admin={user.role === "admin"}
                 />
               ) : page === "label-content" ? (
                 <LabelContentPage admin={user.role === "admin"} />

@@ -112,7 +112,7 @@ export function HistoryPage() {
                             j.status,
                           ) ? (
                             <Button
-                              variant="ghost"
+                              variant="outline"
                               type="submit"
                               className="h-auto gap-1 px-0 py-1 text-xs text-primary"
                               onClick={async () => {
@@ -140,7 +140,7 @@ export function HistoryPage() {
                           ) : (
                             !["claimed"].includes(j.status) && (
                               <Button
-                                variant="ghost"
+                                variant="outline"
                                 type="submit"
                                 className="h-auto gap-1 px-0 py-1 text-xs text-primary"
                                 onClick={async () => {

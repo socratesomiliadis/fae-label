@@ -24,7 +24,10 @@ export function ObjectFields({
       {Object.entries(data)
         .filter(([k]) => !["legacyProduction", "runs", "expiry"].includes(k))
         .map(([k, v]) => {
-          const label = k === "names" && data.group === "brand" ? "Επωνυμία ανά γλώσσα" : labels[k] || k;
+          const label =
+            k === "names" && data.group === "brand"
+              ? "Επωνυμία ανά γλώσσα"
+              : labels[k] || k;
           if (v !== null && typeof v === "object" && !Array.isArray(v))
             return (
               <details
@@ -44,9 +47,9 @@ export function ObjectFields({
                 />
                 {!disabled && (
                   <Button
-                    variant="ghost"
+                    variant="outline"
                     type="button"
-                    className="h-auto gap-1 px-0 py-1 text-xs text-primary"
+                    className="h-9 gap-1 px-3 text-xs text-primary"
                     onClick={() => {
                       const key = prompt("Κωδικός νέου πεδίου / γλώσσας");
                       if (key && !Object.hasOwn(v, key))

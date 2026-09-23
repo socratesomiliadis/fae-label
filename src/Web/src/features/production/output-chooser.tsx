@@ -2,6 +2,8 @@ import { Field } from "@/components/forms/field";
 import { NativeSelect } from "@/components/ui/native-select";
 import { labelOptions, languageTitle, outputTitle } from "./label-options";
 import type { ProductionModel } from "./use-production";
+import { Check } from "lucide-react";
+import { nameOf } from "@/lib/records";
 import { cn } from "@/lib/utils";
 
 export function OutputChooser({
@@ -24,6 +26,19 @@ export function OutputChooser({
       : ["thermal", "pallet", "sample"];
   const formats = templates.rows
     .filter((t) => families.includes(t.data.family))
+    .sort((a, b) => {
+      const order = [
+        "thermal-large",
+        "thermal-small",
+        "pallet-a4",
+        "sample-small",
+        "sample-blank",
+      ];
+      return (
+        (order.includes(a.key) ? order.indexOf(a.key) : 99) -
+        (order.includes(b.key) ? order.indexOf(b.key) : 99)
+      );
+    })
     .flatMap((template) => {
       const available = labelOptions(template, brand, languages.rows);
       const modes = [...new Set(available.map((o) => o.mode))];
@@ -39,12 +54,33 @@ export function OutputChooser({
       className="rounded-xl border bg-card p-5"
       aria-label="Μορφές ετικέτας"
     >
-      <h2 className="mb-1 text-base">Τι θέλετε να εκτυπώσετε;</h2>
-      <p className="mb-4 text-xs text-muted-foreground">
-        Οι μορφές ακολουθούν την επωνυμία. Οι ημερομηνίες και τα βάρη
-        διατηρούνται.
-      </p>
-      <div className="grid grid-cols-2 gap-2 mb-4">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <h2 className="mb-0 text-base">Μορφή ετικέτας</h2>
+        {model.productNeeded && (
+          <div className="w-full sm:max-w-60 [&>div]:mb-0">
+            <Field label="Επωνυμία στην ετικέτα">
+              <NativeSelect
+                value={draft.brandKey}
+                onChange={(e) => model.set("brandKey", e.target.value)}
+              >
+                {!draft.brandKey && (
+                  <option value="">Συνδέστε μια επωνυμία</option>
+                )}
+                {brands.rows
+                  .filter(
+                    (b) => !selected || selected.data.brands?.includes(b.key),
+                  )
+                  .map((b) => (
+                    <option key={b.id} value={b.key}>
+                      {nameOf(b)}
+                    </option>
+                  ))}
+              </NativeSelect>
+            </Field>
+          </div>
+        )}
+      </div>
+      <div className="grid grid-cols-2 gap-2 mb-4 sm:grid-cols-3">
         {formats.map(({ template, mode, available }) => (
           <button
             key={template.key + mode}
@@ -57,13 +93,20 @@ export function OutputChooser({
               change({ ...draft, templateKey: template.key, mode })
             }
             className={cn(
-              "rounded-lg border p-3 text-left transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-45 disabled:cursor-not-allowed",
+              "relative cursor-pointer rounded-lg border border-input bg-card p-3 text-left transition-colors hover:border-primary/50 hover:bg-secondary/40 focus-visible:outline-2 focus-visible:outline-primary disabled:opacity-45 disabled:cursor-not-allowed",
               draft.templateKey === template.key &&
                 draft.mode === mode &&
-                "border-primary bg-secondary ring-1 ring-primary",
+                "border-primary bg-secondary ring-1 ring-primary hover:border-primary hover:bg-secondary",
             )}
           >
-            <span className="block text-sm font-semibold">
+            {draft.templateKey === template.key && draft.mode === mode && (
+              <Check
+                aria-hidden="true"
+                size={14}
+                className="absolute right-2 top-2 text-primary"
+              />
+            )}
+            <span className="block pr-3 text-sm font-semibold">
               {outputTitle(template, mode)}
             </span>
             <span className="mt-1 block text-xs text-muted-foreground">
@@ -92,9 +135,6 @@ export function OutputChooser({
           <p className="text-sm">
             <span className="text-muted-foreground">Γλώσσα ετικέτας: </span>
             {languageTitle(currentOptions[0].languages, languages.rows)}
-            <span className="mt-1 block text-xs text-muted-foreground">
-              Σταθερή για αυτή τη μορφή.
-            </span>
           </p>
         )
       )}

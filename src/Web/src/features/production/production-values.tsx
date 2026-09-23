@@ -8,22 +8,6 @@ export function ProductionValues({ model }: { model: ProductionModel }) {
   return (
     productNeeded && (
       <>
-        <div className="my-3 flex flex-wrap gap-x-6 gap-y-3 rounded-lg bg-muted p-3.5 text-xs [&_b]:mt-1 [&_b]:block [&_b]:font-mono [&_b]:text-sm">
-          <span>
-            LOT{" "}
-            <b>
-              {lotOf(
-                draft,
-                selected,
-                recipes.rows.find((r) => r.key === selected?.data.recipeCode),
-              )}
-            </b>
-          </span>
-          <span>
-            Ανάλωση έως <b>{expiryOf(draft)}</b>
-          </span>
-        </div>
-        <h3>Ημερομηνίες & ποσότητες</h3>
         <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 2xl:grid-cols-3">
           {[
             ["productionDate", "Ημερομηνία παραγωγής"],
@@ -85,6 +69,21 @@ export function ProductionValues({ model }: { model: ProductionModel }) {
                 />
               </Field>
             ))}
+        </div>
+        <div className="mt-2 mb-4 flex flex-wrap gap-x-6 gap-y-3 rounded-lg bg-muted p-3.5 text-xs [&_b]:mt-1 [&_b]:block [&_b]:font-mono [&_b]:text-sm">
+          <span>
+            LOT{" "}
+            <b>
+              {lotOf(
+                draft,
+                selected,
+                recipes.rows.find((r) => r.key === selected?.data.recipeCode),
+              )}
+            </b>
+          </span>
+          <span>
+            Ανάλωση έως <b>{expiryOf(draft)}</b>
+          </span>
         </div>
         {draft.expiryOverride && (
           <p className="mt-3 text-xs text-muted-foreground">
