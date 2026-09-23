@@ -14,7 +14,7 @@ public static class LabelText
     public static string FormatValue(string text, LayoutNode node)
     {
         if(node.Format=="Fixed"&&decimal.TryParse(text,NumberStyles.Number,CultureInfo.InvariantCulture,out var number))
-            return number.ToString("F"+(node.DecimalPlaces==255?2:Math.Clamp(node.DecimalPlaces,0,10)),CultureInfo.InvariantCulture);
+            return number.ToString("F"+(node.DecimalPlaces==255?2:Math.Clamp(node.DecimalPlaces,0,10)),CultureInfo.GetCultureInfo("el-GR"));
         return text;
     }
     public static Run[] Parse(string text, LayoutNode node)

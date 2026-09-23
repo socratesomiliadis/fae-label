@@ -89,6 +89,6 @@ public sealed class ImportService(AppDb db)
         }
         batch.Committed=true;batch.Version++;
         db.Audits.Add(new(){Actor=actor,Action="import.commit",RecordId=id,Detail=batch.Payload});
-        await db.SaveChangesAsync();await tx.CommitAsync();
+        await db.SaveChangesAsync();await LegacyLabelSeed.ApplyRecipeEmphasis(db);await db.SaveChangesAsync();await tx.CommitAsync();
     }
 }

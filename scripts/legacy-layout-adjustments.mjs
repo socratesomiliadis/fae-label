@@ -1,5 +1,13 @@
 // Explicit compatibility repairs, kept separate from the untouched Access exports.
 export function adjustLegacyLayout(report, layout) {
+  // The printed GR/EN reference has a clear gap between header artwork and legends.
+  // Preserve image aspect ratios by reducing the available box, never cropping pixels.
+  const legends=layout.nodes.filter(n=>n.type==='Label'&&/^(Συστατικά:|Ingredients:)$/.test(n.caption));
+  if(legends.length) {
+    const headerBottom=Math.min(...legends.map(n=>n.y))-.5;
+    for(const image of layout.nodes.filter(n=>n.type==='Image'&&n.y<headerBottom&&n.y+n.height>headerBottom))
+      if(legends.some(n=>image.x<n.x+n.width&&image.x+image.width>n.x)) image.height=headerBottom-image.y;
+  }
   for (const node of layout.nodes) {
     // Access's format event hides translated captions with their conditional field.
     const target = layout.nodes.find(other =>

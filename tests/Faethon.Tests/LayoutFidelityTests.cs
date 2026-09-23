@@ -48,8 +48,8 @@ public sealed class LayoutFidelityTests
         =>Assert.Equal("< -18 °C",string.Concat(LabelText.Parse("< -18 °C",Node).Select(r=>r.Text)));
 
     [Theory]
-    [InlineData("5.125",2,"5.13")]
-    [InlineData("5",3,"5.000")]
+    [InlineData("5.125",2,"5,13")]
+    [InlineData("5",3,"5,000")]
     [InlineData("5.125",0,"5")]
     public void FixedNumbersHonorSourcePrecision(string value,int decimals,string expected)
         =>Assert.Equal(expected,LabelText.FormatValue(value,Node with{Format="Fixed",DecimalPlaces=decimals}));

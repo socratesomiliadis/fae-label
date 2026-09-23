@@ -31,10 +31,10 @@ public static class Seed
         await Add("printer","zebra-large",new Printer{Name="Zebra ZT411 · Μεγάλη",Queue="ZDesigner ZT411-203dpi ZPL (Αντίγραφο 1)",WidthMm=108,HeightMm=148,Rotation=90,Dpi=203,DotsPerMm=8});
         await Add("printer","zebra-small",new Printer{Name="Zebra ZT230 · Μικρή",Queue="Zebra ZT230-Network",WidthMm=100,HeightMm=80,Rotation=0,Dpi=203,DotsPerMm=8});
         await Add("printer","kyocera-a4",new Printer{Name="Kyocera ECOSYS MA5500ifx · A4",Queue="ECOSYS MA5500ifx",WidthMm=210,HeightMm=297,Rotation=0,Dpi=300,DotsPerMm=300/25.4f,PrintableWidthMm=210,Transport="windows"});
-        await Add("brand","1",new ReferenceData{Name="ΦΑΕΘΩΝ",Names=new(){{"el","ΦΑΕΘΩΝ"},{"en","FAETHON"}},Group="brand",Complete=false});
+        await Add("brand","1",new ReferenceData{Name="ΦΑΕΘΩΝ",Names=new(LegacyLabelSeed.CompanyNames),Group="brand",Complete=false});
         foreach(var family in new[]{"10","20","25","26","27","30","40","45","50","60"})await Add("reference","family:"+family,new ReferenceData{Name=family,Group="family"});
         foreach(var category in new[]{"Β1","Β2","Β4","ΠΚ","ΤΚ","ΧΠ"})await Add("reference","category:"+category,new ReferenceData{Name=category,Group="category"});
-        await Add("reference","condition:ΝΩΠΟ",new ReferenceData{Name="Νωπό",Group="condition",Texts=new(){{"el","ΝΩΠΟ"},{"en","FRESH"}}});
+        await Add("reference","condition:ΝΩΠΟ",new ReferenceData{Name="Νωπό",Group="condition",Texts=new(){{"el","ΝΩΠΟ"},{"en","RAW"}}});
         await Add("reference","condition:ΚΤΨ",new ReferenceData{Name="Κατεψυγμένο",Group="condition",Frozen=true,Texts=new(){{"el","ΚΤΨ"},{"en","FROZEN"}}});
         foreach(var (group,values) in new (string,string[])[]{
             ("abbreviation",["ΓΚ","ΓΜ","ΓΧ","ΕΜ","ΛΚ","ΜΠ","ΠΑ","ΠΚ","ΠΜ","ΠΠ","ΣΚ","ΣΥ","ΣΧ","ΤΚ"]),
@@ -50,18 +50,10 @@ public static class Seed
             if(row.Kind=="template"&&row.Key=="thermal-small"&&row.As<Template>() is {Validated:false,HeightMm:82} t){row.Data=Json.Write(t with{HeightMm=80});row.Version++;}
             if(row.Kind=="printer"&&row.Key=="zebra-small"&&row.As<Printer>() is {Validated:false,HeightMm:82} p){row.Data=Json.Write(p with{HeightMm=80});row.Version++;}
         }
-        // These two names are attested by the recovered Greek heading and English wordmark.
-        // Preserve entered translations, including deliberately customized brand records.
-        var faethon=await db.Records.SingleOrDefaultAsync(r=>r.Kind=="brand"&&r.Key=="1");
-        if(faethon?.As<ReferenceData>() is {Name:"ΦΑΕΘΩΝ"} brand)
-        {
-            var brandNames=new Dictionary<string,string>(brand.Names);
-            bool changed=brandNames.TryAdd("el","ΦΑΕΘΩΝ");changed=brandNames.TryAdd("en","FAETHON")||changed;
-            if(changed){faethon.Data=Json.Write(brand with{Names=brandNames});faethon.Version++;}
-        }
         var products=(await db.Records.Where(r=>r.Kind=="product"&&!r.Archived).ToListAsync()).Select(r=>r.As<Product>()).ToArray();
         foreach(var (field,group) in new[]{("Συντομογραφία","abbreviation"),("Συσκευασία Προϊόντος","packaging"),("Κατάσταση Συσκ.","packaging-state"),("Τμήμα Παραγωγής","department"),("Οδηγίες Χρήσης","instructions"),("ΕΛΟΓΑΚ","elogak"),("Προμηθευτής","supplier"),("Αρ.Εγκρ.Σφ.","slaughterhouse")})
             foreach(var value in products.Select(p=>p.Fields.GetValueOrDefault(field,"")).Where(v=>!string.IsNullOrWhiteSpace(v)).Distinct())await Add("reference",group+":"+value,new ReferenceData{Name=value,Group=group});
         await db.SaveChangesAsync();
+        await LegacyLabelSeed.Apply(db);
     }
 }
