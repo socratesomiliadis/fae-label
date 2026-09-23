@@ -1,0 +1,2062 @@
+[
+  {
+    "number": 1,
+    "report": "ETIKETA_PALETA_A4_SUFRO_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 2,
+    "report": "MEGALH_ETIKETA_FAETHON_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3176,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "bca56374711478cce692228a005423a820eeedf517924ca53aa0f7e37ed7e449",
+    "issueCount": 13,
+    "mappingIssues": []
+  },
+  {
+    "number": 3,
+    "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 4,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 5,
+    "report": "MEGALH_ETIKETA_IONIC_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand IONIC is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 6,
+    "report": "ETIKETA_PALETA_A4_MAVROUDIS_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 7,
+    "report": "ETIKETA_PALETA_A4_FAETHON_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3220,
+    "blank": false,
+    "inkBounds": [
+      8,
+      0,
+      1127,
+      780
+    ],
+    "sha256": "f41a444ffa6ca64e06bd0c3934a9cdb97c1897a0ef8b3511d61627520252fe77",
+    "issueCount": 21,
+    "mappingIssues": []
+  },
+  {
+    "number": 8,
+    "report": "ETIKETA_PALETA_A4_PAPADOPOULOS_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 9,
+    "report": "MEGALH_ETIKETA_PASSIAS_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand PASSIAS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 10,
+    "report": "LISTA_DIARKEIA_ZOHS_PROIONTON",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 11,
+    "report": "LISTA_ODHGIES_XRHSHS",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 12,
+    "report": "MEGALH_ETIKETA_METEORA_RO_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1796,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "d65599345d3e91521040e626160ba21f260aeeae49b0b5b3c18b564cf623d6b7",
+    "issueCount": 41,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 13,
+    "report": "CUSTOM_MEGALH_ETIKETA_LOGO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 75,
+    "blank": false,
+    "inkBounds": [
+      11,
+      7,
+      369,
+      94
+    ],
+    "sha256": "bd6456f29089d3e6a582bf88c3d378dfe1af82a135bd04577b994cee77c52f7e",
+    "issueCount": 1,
+    "mappingIssues": []
+  },
+  {
+    "number": 14,
+    "report": "MIKRH_ETIKETA_IONIC_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand IONIC is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 15,
+    "report": "DEIGMA_ETIKETA_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1742,
+    "blank": false,
+    "inkBounds": [
+      2,
+      0,
+      387,
+      298
+    ],
+    "sha256": "d0e915c8aef60b9e977042b636dff4c6ab3ecdb78d2f767acdfd47a53b403899",
+    "issueCount": 8,
+    "mappingIssues": []
+  },
+  {
+    "number": 16,
+    "report": "MIKRH_ETIKETA_FAETHON_HL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2143,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "a9b9690611dc2c50862e3b543af9d45c965c9712a3c364ccbce78ffb4f2b67a0",
+    "issueCount": 9,
+    "mappingIssues": []
+  },
+  {
+    "number": 17,
+    "report": "DEIGMA_KENO_ETIKETA_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 44,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      203,
+      155
+    ],
+    "sha256": "4340badc5353f8ee58ed6bb34a9f61c70d57360bc3035d1ce03bd11f94fffe8c",
+    "issueCount": 1,
+    "mappingIssues": []
+  },
+  {
+    "number": 18,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_PO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2183,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "1d9e2fae0feedfd245795e9a889d3bf796b45e9927944933ff3d7ce0765db07f",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 19,
+    "report": "MIKRH_ETIKETA_FAETHON_PL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2247,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "28b2022ccadcf7e2f5ed0bbc95d27ac5dbbff4c0235935936a2bb627e388e1fe",
+    "issueCount": 9,
+    "mappingIssues": []
+  },
+  {
+    "number": 20,
+    "report": "MIKRH_ETIKETA_FAETHON_PO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2195,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "3683e62d623b55c8e511770443565657e75410573b6d1f9ef4c31fa4929a2ee5",
+    "issueCount": 10,
+    "mappingIssues": []
+  },
+  {
+    "number": 21,
+    "report": "ETIKETA_PALETA_A4_METEORA_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 22,
+    "report": "MIKRH_ETIKETA_FAETHON_RO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2173,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "04cdfcef8b769b72f2723fcbe122317a9df346b3a55d272e64e1960bba578b44",
+    "issueCount": 9,
+    "mappingIssues": []
+  },
+  {
+    "number": 23,
+    "report": "MIKRH_ETIKETA_ZLATHS_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 24,
+    "report": "ETIKETES_PELATES",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      158,
+      4,
+      214,
+      71
+    ],
+    "sha256": "a5f3248681f84e7d01fbde45dbfc7d5c2699963369c2affb254cf2c07930cef0",
+    "issueCount": 6,
+    "mappingIssues": []
+  },
+  {
+    "number": 25,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_HU",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2138,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "6a3a940005ef7ddaef323ede9149c1e6a78daabf4d88d8ffde7cacbb5c3e06af",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 26,
+    "report": "MIKRH_ETIKETA_SUFRO_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 27,
+    "report": "TABELAKIA_EIDON_KREOPOLEIOY_KENO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "d74307ac047061a406e558af2aa9f723ab0c4d5860584ec1870b2b07c999a999",
+    "issueCount": 1,
+    "mappingIssues": [
+      "Legacy butcher reports require geometry/media verification; live template is 100x80 mm."
+    ]
+  },
+  {
+    "number": 28,
+    "report": "ETIKETA_PALETA_A4_PASSIAS_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand PASSIAS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 29,
+    "report": "LISTA_SYNTOMOGRAFIES",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 30,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 31,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_CR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2154,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "71a601881c7e40a8a084337d233e5693ad221567a6e07abfe23e081a32f8a911",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 32,
+    "report": "MIKRH_ETIKETA_SUFRO_RO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2161,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "a4b7bbe61f2b5761a70ddf11b1d4e2288705ffb9505f7a48419968201ee003b1",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 33,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 34,
+    "report": "MEGALH_ETIKETA_SUFRO_RO_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1799,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "9a04e75f1dbbe6bf4174c704744cbb6b5e01dc48dbfedd86fd05aaef0f9d3224",
+    "issueCount": 44,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 35,
+    "report": "MEGALH_ETIKETA_SUFRO_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3163,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "03969c264c321976652dda006e66fc37f83bb51391e1d6bd53215ae0c1c50884",
+    "issueCount": 15,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 36,
+    "report": "MEGALH_ETIKETA_PAPADOPOULOS_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3163,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "03969c264c321976652dda006e66fc37f83bb51391e1d6bd53215ae0c1c50884",
+    "issueCount": 15,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 37,
+    "report": "MEGALH_ETIKETA_METEORA_RO_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1799,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "9a04e75f1dbbe6bf4174c704744cbb6b5e01dc48dbfedd86fd05aaef0f9d3224",
+    "issueCount": 44,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 38,
+    "report": "MEGALH_ETIKETA_METEORA_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3163,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "03969c264c321976652dda006e66fc37f83bb51391e1d6bd53215ae0c1c50884",
+    "issueCount": 15,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 39,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1833,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "8e188b1357bdb948a995cc3dd542e291b22d95009297265698977c26d50a42ce",
+    "issueCount": 44,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 40,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3163,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "03969c264c321976652dda006e66fc37f83bb51391e1d6bd53215ae0c1c50884",
+    "issueCount": 15,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 41,
+    "report": "MEGALH_ETIKETA_IONIC_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3163,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "03969c264c321976652dda006e66fc37f83bb51391e1d6bd53215ae0c1c50884",
+    "issueCount": 15,
+    "mappingIssues": [
+      "Brand IONIC is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 42,
+    "report": "MEGALH_ETIKETA_FAETHON_GR_EN_KIBOTIO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3187,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "02fd931571196aac1a4242aa61c2889b1012c5012daabc9ca8ccb186af16807b",
+    "issueCount": 14,
+    "mappingIssues": []
+  },
+  {
+    "number": 43,
+    "report": "CUSTOM_ETIKETA_MIKRH_NOLOGO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 76,
+    "blank": false,
+    "inkBounds": [
+      3,
+      0,
+      311,
+      97
+    ],
+    "sha256": "9b012f69d05231fee927864d6c55424b76b1c1b028a040d47074a984484ceedb",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No-logo variant cannot be selected in Production API; existing shared template used."
+    ]
+  },
+  {
+    "number": 44,
+    "report": "MIKRH_ETIKETA_ZLATHS_FR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2204,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "dcce1432237cd25620d16016f643c5afd5af69a5b7d330173d0b0220cc2a95ec",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 45,
+    "report": "LISTA_KATHGORION",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 46,
+    "report": "MEGALH_ETIKETA_METEORA_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 47,
+    "report": "MIKRH_ETIKETA_ZLATHS_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 48,
+    "report": "MIKRH_ETIKETA_ZLATHS_HL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2131,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "595af1dc1d69c89a934d293fc8a3783e0c155111371e975129842a5898be0acc",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 49,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_AL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2173,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "72b8acda012005841b2aace176319ab51c072ec85fad731d750ddb6aae8e6a87",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 50,
+    "report": "MIKRH_ETIKETA_METEORA_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 51,
+    "report": "MIKRH_ETIKETA_ZLATHS_PL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2235,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "57557c8e30226a517c1521b9ca03f310e8cb76203cf2d5837a69ea3e625890e5",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 52,
+    "report": "MIKRH_ETIKETA_ZLATHS_RO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2161,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "a4b7bbe61f2b5761a70ddf11b1d4e2288705ffb9505f7a48419968201ee003b1",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 53,
+    "report": "LISTA_SYNTAGON",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 54,
+    "report": "MIKRH_ETIKETA_ZLATHS_PO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2183,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "1d9e2fae0feedfd245795e9a889d3bf796b45e9927944933ff3d7ce0765db07f",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 55,
+    "report": "LISTA_OIKOGENEIES",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 0,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      56,
+      67
+    ],
+    "sha256": "3b4aa1ac696a45f5cb0a9b9d6182b5aa2eb45877b90d06ad9c8e04f910f629ca",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No report-specific reference-list dataset or selector; shared template only."
+    ]
+  },
+  {
+    "number": 56,
+    "report": "PISTOPOIHTIKA_BG",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 313,
+    "blank": false,
+    "inkBounds": [
+      7,
+      44,
+      820,
+      403
+    ],
+    "sha256": "6b2418141e2ca8993bd46dcd4f24c765695c4463075d94ebc70ff5c81caa9862",
+    "issueCount": 3,
+    "mappingIssues": []
+  },
+  {
+    "number": 57,
+    "report": "ETIKETES_KENES_PROS_PARAGOGH",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 46,
+    "blank": false,
+    "inkBounds": [
+      8,
+      12,
+      382,
+      277
+    ],
+    "sha256": "f49c80ac8e53737af01fedab1da0ba1319dfea1ae8d2443e756975003a19e077",
+    "issueCount": 2,
+    "mappingIssues": []
+  },
+  {
+    "number": 58,
+    "report": "MIKRH_ETIKETA_ZLATHS_GE",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2199,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "7b5edcda1490a70ba972ab21960d315ce6d6c609b5bd307acfb93267c3deb9dd",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 59,
+    "report": "MIKRH_ETIKETA_ZLATHS_BG",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2133,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "bf6e758f4a27a08e57a0af875625d9eb580118b21d4664ebf9a73ed214a1eecd",
+    "issueCount": 13,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 60,
+    "report": "MIKRH_ETIKETA_ZLATHS_IT",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2179,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "d7b990f6012a83de31bc540a342d2e9b1cb87e86fdd50b11aeae6263c4cc2322",
+    "issueCount": 12,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 61,
+    "report": "MIKRH_ETIKETA_ZLATHS_ES",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2197,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "f780211f1540b022059d61b1875d07908cddecce4fb969e6696a4e5934d7e300",
+    "issueCount": 12,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 62,
+    "report": "MIKRH_ETIKETA_ZLATHS_CH",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2121,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "f157142fea1943fc242aba71a59fbcc9c85577eabd3649a7bc58601012b235eb",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 63,
+    "report": "MIKRH_ETIKETA_ZLATHS_SW",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2093,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "d5e99234341edfb1c05d15473cb42f767fc70330fab88670fc44e0931e34b1e5",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 64,
+    "report": "TABELAKIA_EIDON_KREOPOLEIOY",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 42,
+    "blank": false,
+    "inkBounds": [
+      8,
+      20,
+      383,
+      269
+    ],
+    "sha256": "8941904bdea4d1e14d443945a26a11a14ad9108c7cf98f60d8a02c31b4144760",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Legacy butcher reports require geometry/media verification; live template is 100x80 mm."
+    ]
+  },
+  {
+    "number": 65,
+    "report": "MIKRH_ETIKETA_ZLATHS_HU",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2138,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "6a3a940005ef7ddaef323ede9149c1e6a78daabf4d88d8ffde7cacbb5c3e06af",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 66,
+    "report": "MIKRH_ETIKETA_FAETHON_CR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2166,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "4c08d20b41bd603823a5d0c3fd17cc8dd6071643dfaf410f83d7b5aee0f6f47f",
+    "issueCount": 10,
+    "mappingIssues": []
+  },
+  {
+    "number": 67,
+    "report": "ETIKETA_PALETA_A4_IONIC_GR_EN",
+    "pages": 1,
+    "widthMm": 297.04,
+    "heightMm": 209.9,
+    "textCharacters": 3196,
+    "blank": false,
+    "inkBounds": [
+      8,
+      8,
+      1127,
+      780
+    ],
+    "sha256": "e1eca57511f38a69d4303377322d60f8e64a4f6b1cec0ae21cf62a6e526ac37b",
+    "issueCount": 23,
+    "mappingIssues": [
+      "Brand IONIC is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 68,
+    "report": "DEIGMA_KENO_ETIKETA_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 45,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      203,
+      155
+    ],
+    "sha256": "fa1c28c0610daf93c6e3937cc5ab24e1081bb032342055c50017512a21419ced",
+    "issueCount": 1,
+    "mappingIssues": []
+  },
+  {
+    "number": 69,
+    "report": "DEIGMA_KENO_ETIKETA_GE",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 49,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      203,
+      155
+    ],
+    "sha256": "579b13ff559f662595da977c82d56c20fa2736e7268265918048cd646d725e06",
+    "issueCount": 2,
+    "mappingIssues": []
+  },
+  {
+    "number": 70,
+    "report": "DEIGMA_KENO_ETIKETA_BG",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 49,
+    "blank": false,
+    "inkBounds": [
+      7,
+      7,
+      203,
+      155
+    ],
+    "sha256": "579b13ff559f662595da977c82d56c20fa2736e7268265918048cd646d725e06",
+    "issueCount": 2,
+    "mappingIssues": []
+  },
+  {
+    "number": 71,
+    "report": "CUSTOM_ETIKETA_MIKRH_LOGO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 76,
+    "blank": false,
+    "inkBounds": [
+      3,
+      0,
+      311,
+      97
+    ],
+    "sha256": "9b012f69d05231fee927864d6c55424b76b1c1b028a040d47074a984484ceedb",
+    "issueCount": 1,
+    "mappingIssues": []
+  },
+  {
+    "number": 72,
+    "report": "CUSTOM_MEGALH_ETIKETA_NOLOGO",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 75,
+    "blank": false,
+    "inkBounds": [
+      11,
+      7,
+      369,
+      94
+    ],
+    "sha256": "bd6456f29089d3e6a582bf88c3d378dfe1af82a135bd04577b994cee77c52f7e",
+    "issueCount": 1,
+    "mappingIssues": [
+      "No-logo variant cannot be selected in Production API; existing shared template used."
+    ]
+  },
+  {
+    "number": 73,
+    "report": "MIKRH_ETIKETA_ZLATHS_CR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2154,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "71a601881c7e40a8a084337d233e5693ad221567a6e07abfe23e081a32f8a911",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 74,
+    "report": "MIKRH_ETIKETA_ZLATHS_AL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2173,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "72b8acda012005841b2aace176319ab51c072ec85fad731d750ddb6aae8e6a87",
+    "issueCount": 11,
+    "mappingIssues": [
+      "Brand ZLATHS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 75,
+    "report": "MEGALH_ETIKETA_MAVROUDIS_GE_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1830,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "9c31269feafbb00dda3223f348f885a21427e03fcd29bd60581b0b3826e3ef05",
+    "issueCount": 41,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 76,
+    "report": "MEGALH_ETIKETA_SUFRO_GR_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 3152,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "dfddaa37a03bd5f9e345d5030ef29c36365be43294e85876fe4722b4ccadbbef",
+    "issueCount": 14,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 77,
+    "report": "MEGALH_ETIKETA_SUFRO_RO_EN",
+    "pages": 1,
+    "widthMm": 148.17,
+    "heightMm": 99.84,
+    "textCharacters": 1796,
+    "blank": false,
+    "inkBounds": [
+      10,
+      1,
+      579,
+      392
+    ],
+    "sha256": "d65599345d3e91521040e626160ba21f260aeeae49b0b5b3c18b564cf623d6b7",
+    "issueCount": 41,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 78,
+    "report": "MIKRH_ETIKETA_FAETHON_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2217,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "79a8722d467574da14784f67a94729530d3738401a159384966f1af476e8604f",
+    "issueCount": 7,
+    "mappingIssues": []
+  },
+  {
+    "number": 79,
+    "report": "MIKRH_ETIKETA_FAETHON_AL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2185,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "51affa46c930923758e45e3bddb8909dbc65935b07c4cd298144e51dce95a217",
+    "issueCount": 10,
+    "mappingIssues": []
+  },
+  {
+    "number": 80,
+    "report": "MIKRH_ETIKETA_FAETHON_BG",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2145,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "bf20d80c66259f8d897458c2cf8166bd513e46169a3afe4488cdab776b1157af",
+    "issueCount": 12,
+    "mappingIssues": []
+  },
+  {
+    "number": 81,
+    "report": "MIKRH_ETIKETA_FAETHON_CH",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2133,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "81de61e7cbab05903ad83e208f0a6ebdef8da4958a99fb364ccf811e95a7e439",
+    "issueCount": 9,
+    "mappingIssues": []
+  },
+  {
+    "number": 82,
+    "report": "MIKRH_ETIKETA_FAETHON_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1760,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "254cb9e1f96c53908daea461e4c00a28edd425bbb431afdb87fdffe64d66df7a",
+    "issueCount": 7,
+    "mappingIssues": []
+  },
+  {
+    "number": 83,
+    "report": "MIKRH_ETIKETA_FAETHON_ES",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2209,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "69194867d2946edd78ffff8354d61f8293410b816443c7e6bc8c16f1e75a70fa",
+    "issueCount": 11,
+    "mappingIssues": []
+  },
+  {
+    "number": 84,
+    "report": "MIKRH_ETIKETA_FAETHON_FR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2216,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "b13e5db6ac2bc9ebbf15da4c9bcb90d48651fee9684de067667d3a63b2041baa",
+    "issueCount": 8,
+    "mappingIssues": []
+  },
+  {
+    "number": 85,
+    "report": "MIKRH_ETIKETA_FAETHON_GE",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2211,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "99b5c29515f6cbe38de68b05b48dfff8a9f1a280ad711caf72a5049a045b4a4c",
+    "issueCount": 8,
+    "mappingIssues": []
+  },
+  {
+    "number": 86,
+    "report": "MIKRH_ETIKETA_FAETHON_HU",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2150,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "d094eff054a6717ca4953186a42759607618ea38d6e88256018f116546e91906",
+    "issueCount": 10,
+    "mappingIssues": []
+  },
+  {
+    "number": 87,
+    "report": "MIKRH_ETIKETA_FAETHON_IT",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2191,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "8670a40f58bd5ce6f9ecb1c10b55670fb25549389d303b6eda38cc2280e81df7",
+    "issueCount": 11,
+    "mappingIssues": []
+  },
+  {
+    "number": 88,
+    "report": "MIKRH_ETIKETA_FAETHON_SW",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2105,
+    "blank": false,
+    "inkBounds": [
+      4,
+      1,
+      391,
+      314
+    ],
+    "sha256": "9f4e94670e609d5eb0bf7b57a04a679fb538647e1a4c7764b698c6145a9ba96e",
+    "issueCount": 8,
+    "mappingIssues": []
+  },
+  {
+    "number": 89,
+    "report": "MIKRH_ETIKETA_IONIC_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand IONIC is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 90,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 91,
+    "report": "MIKRH_ETIKETA_MAVROUDIS_GE",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2199,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "7b5edcda1490a70ba972ab21960d315ce6d6c609b5bd307acfb93267c3deb9dd",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand MAVROUDIS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 92,
+    "report": "MIKRH_ETIKETA_METEORA_GR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2205,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "b566f21ace12a13bfd493284ae660877ab83547579336b05d968ce30ecd88009",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 93,
+    "report": "MIKRH_ETIKETA_METEORA_RO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2161,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "a4b7bbe61f2b5761a70ddf11b1d4e2288705ffb9505f7a48419968201ee003b1",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand METEORA is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 94,
+    "report": "MIKRH_ETIKETA_SUFRO_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand SUFRO is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 95,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_BG",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2133,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "bf6e758f4a27a08e57a0af875625d9eb580118b21d4664ebf9a73ed214a1eecd",
+    "issueCount": 13,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 96,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_CH",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2121,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "f157142fea1943fc242aba71a59fbcc9c85577eabd3649a7bc58601012b235eb",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 97,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_EN",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 1748,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "acd56887315a6340225d68b29f1c81cf5ca9fcdd4753f40391a8df9c72cc84fa",
+    "issueCount": 8,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 98,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_ES",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2197,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "f780211f1540b022059d61b1875d07908cddecce4fb969e6696a4e5934d7e300",
+    "issueCount": 12,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 99,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_FR",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2204,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "dcce1432237cd25620d16016f643c5afd5af69a5b7d330173d0b0220cc2a95ec",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 100,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_GE",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2199,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "7b5edcda1490a70ba972ab21960d315ce6d6c609b5bd307acfb93267c3deb9dd",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 101,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_HL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2131,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "595af1dc1d69c89a934d293fc8a3783e0c155111371e975129842a5898be0acc",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 102,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_IT",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2179,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "d7b990f6012a83de31bc540a342d2e9b1cb87e86fdd50b11aeae6263c4cc2322",
+    "issueCount": 12,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 103,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_PL",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2235,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "57557c8e30226a517c1521b9ca03f310e8cb76203cf2d5837a69ea3e625890e5",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 104,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_RO",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2161,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "a4b7bbe61f2b5761a70ddf11b1d4e2288705ffb9505f7a48419968201ee003b1",
+    "issueCount": 10,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 105,
+    "report": "MIKRH_ETIKETA_PAPADOPOULOS_SW",
+    "pages": 1,
+    "widthMm": 99.84,
+    "heightMm": 80.08,
+    "textCharacters": 2093,
+    "blank": false,
+    "inkBounds": [
+      3,
+      5,
+      391,
+      314
+    ],
+    "sha256": "d5e99234341edfb1c05d15473cb42f767fc70330fab88670fc44e0931e34b1e5",
+    "issueCount": 9,
+    "mappingIssues": [
+      "Brand PAPADOPOULOS is not configured; requested unresolved brand, no substitution."
+    ]
+  },
+  {
+    "number": 106,
+    "report": "CERTIFICATE_OF_CONFORMANCE_FULL",
+    "pages": 1,
+    "widthMm": 209.9,
+    "heightMm": 297.04,
+    "textCharacters": 305,
+    "blank": false,
+    "inkBounds": [
+      7,
+      44,
+      820,
+      403
+    ],
+    "sha256": "5667939063bffacdc6705ca66ece34d1d43e316d991d60f10ca083762665a939",
+    "issueCount": 2,
+    "mappingIssues": []
+  }
+]

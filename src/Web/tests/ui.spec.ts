@@ -129,7 +129,9 @@ test.beforeEach(async ({ page }) => {
         ? "application/javascript"
         : file.endsWith(".css")
           ? "text/css"
-          : "text/html",
+          : file.endsWith(".svg")
+            ? "image/svg+xml"
+            : "text/html",
       body: fs.readFileSync(file),
     });
   });
@@ -342,4 +344,111 @@ test("label size selects its configured printer", async ({ page }) => {
   await expect(
     page.getByRole("combobox", { name: "Εκτυπωτής", exact: true }),
   ).toHaveValue("small-printer");
+});
+
+test("official branding loads and mobile navigation stays usable", async ({
+  page,
+}) => {
+  const logo = page.getByRole("img", { name: "ΦΑΕΘΩΝ", exact: true });
+  await expect(logo).toBeVisible();
+  await expect
+    .poll(() =>
+      logo.evaluate((image) => (image as HTMLImageElement).naturalWidth),
+    )
+    .toBe(202);
+  await expect(
+    page.getByRole("link", { name: "ΦΑΕΘΩΝ — Επισκόπηση" }),
+  ).toHaveCSS("background-color", "rgb(74, 29, 27)");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+  await page.getByRole("button", { name: "Προϊόντα", exact: true }).click();
+  await expect(
+    page.getByPlaceholder("Αναζήτηση με περιγραφή ή κωδικό…"),
+  ).toBeVisible();
+  await page.screenshot({
+    path: "../../artifacts/ui-mobile.png",
+    fullPage: true,
+  });
+});
+
+test("editor traps focus, supports keyboard language tabs, and restores focus on Escape", async ({
+  page,
+}) => {
+  await page.getByRole("button", { name: "Προϊόντα", exact: true }).click();
+  const edit = page.getByRole("button", { name: "Επεξεργασία", exact: true });
+  await edit.click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
+  await expect
+    .poll(() =>
+      dialog.evaluate((element) => element.contains(document.activeElement)),
+    )
+    .toBe(true);
+  const code = page.getByLabel("Κωδικός ERP", { exact: true });
+  await expect
+    .poll(async () => (await code.boundingBox())?.width ?? 0)
+    .toBeGreaterThan(200);
+  await page.getByRole("tab", { name: "Ελληνικά", exact: true }).focus();
+  await page.keyboard.press("ArrowRight");
+  await expect(
+    page.getByRole("tab", { name: "English", exact: true }),
+  ).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByLabel("Περιγραφή (EN)", { exact: true })).toHaveValue(
+    "PORK RIND, FROZEN",
+  );
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  await expect(edit).toBeFocused();
+});
+
+test("late preview responses cannot enable printing an edited draft", async ({
+  page,
+}) => {
+  await page.route("**/api/records/printer", (route) =>
+    route.fulfill({
+      json: [{ id: "printer", key: "zebra-large", data: { name: "Zebra" } }],
+    }),
+  );
+  let releasePreview: () => void = () => {};
+  let requested = false;
+  const pending = new Promise<void>((resolve) => {
+    releasePreview = resolve;
+  });
+  await page.route("**/api/preview", async (route) => {
+    requested = true;
+    await pending;
+    await route.fulfill({
+      json: {
+        id: "old-preview",
+        issues: [],
+        lot: "old",
+        pdfUrl: "/test.pdf",
+        imageUrl: "/brand/faethon-logo.svg",
+      },
+    });
+  });
+  await page
+    .getByRole("button", { name: "Έκδοση ετικετών", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Έκδοση ετικέτας", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Προεπισκόπηση", exact: true })
+    .click();
+  await expect.poll(() => requested).toBe(true);
+  await page
+    .getByLabel("Ημερομηνία παραγωγής", { exact: true })
+    .fill("2026-10-01");
+  releasePreview();
+  await expect(
+    page.getByRole("button", { name: "Προεπισκόπηση", exact: true }),
+  ).toBeEnabled();
+  await expect(
+    page.getByRole("button", { name: "Αποστολή για εκτύπωση" }),
+  ).toBeDisabled();
 });

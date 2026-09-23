@@ -1,0 +1,299 @@
+{
+  "status": 200,
+  "request": {
+    "templateKey": "certificate-conformance",
+    "languages": [
+      "en"
+    ],
+    "customerId": "00000000-0000-0000-0000-000000000000",
+    "vehicle": "QA-VEHICLE",
+    "trailer": "QA-TRAILER",
+    "shipmentDate": "2026-09-23",
+    "notes": "QA SAMPLE - NOT FOR PRODUCTION",
+    "lines": [
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      },
+      {
+        "productId": "74ac2f70-76a9-48d9-940d-02c882920e5a",
+        "weight": 10,
+        "cartons": 2,
+        "lot": "QA-20260923",
+        "productionDate": "2026-09-23",
+        "expiryDate": "2026-09-26",
+        "freezeDate": null
+      }
+    ]
+  },
+  "response": {
+    "id": "68de7de4-5748-40a9-8d39-5ee6b1337c69",
+    "pdfUrl": "/api/previews/68de7de4-5748-40a9-8d39-5ee6b1337c69/pdf",
+    "imageUrl": "/api/previews/68de7de4-5748-40a9-8d39-5ee6b1337c69/image",
+    "issues": [
+      "Το πρότυπο δεν έχει επικυρωθεί σε εκτυπωτή.",
+      "Λείπει πελάτης πιστοποιητικού.",
+      "Το κείμενο υπερβαίνει το διαθέσιμο πλαίσιο. Απαιτείται προσαρμογή προτύπου.",
+      "Οι γραμμές πιστοποιητικού υπερβαίνουν τη σελίδα."
+    ],
+    "lot": "",
+    "expiry": "2026-09-23"
+  }
+}

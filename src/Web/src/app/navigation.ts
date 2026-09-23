@@ -1,0 +1,29 @@
+import {
+  BookOpen,
+  CalendarDays,
+  FileCheck,
+  History,
+  Layers,
+  LayoutDashboard,
+  Package,
+  Printer,
+  Settings,
+  Tags,
+  Upload,
+  Users,
+} from "lucide-react";
+
+export const menus = [
+  ["dashboard", "Επισκόπηση", LayoutDashboard],
+  ["production", "Έκδοση ετικετών", Printer],
+  ["daily", "Καθημερινή παραγωγή", CalendarDays],
+  ["product", "Προϊόντα", Tags],
+  ["recipe", "Συστάσεις", BookOpen],
+  ["customer", "Πελάτες", Users],
+  ["brand", "Ιδιωτική ετικέτα", Package],
+  ["certificate", "Πιστοποιητικά", FileCheck],
+  ["template", "Πρότυπα", Layers],
+  ["history", "Ιστορικό εκτυπώσεων", History],
+  ["imports", "Εισαγωγή δεδομένων", Upload],
+  ["settings", "Ρυθμίσεις", Settings],
+] as const;
