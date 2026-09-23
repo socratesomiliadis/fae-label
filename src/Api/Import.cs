@@ -85,7 +85,7 @@ public sealed class ImportService(AppDb db)
         {
             var existing=await db.Records.SingleOrDefaultAsync(r=>r.Kind==row.Kind&&r.Key==row.Key);
             if(existing is null)db.Records.Add(new(){Kind=row.Kind,Key=row.Key,Data=row.Data});
-            else {existing.Data=row.Data;existing.Version++;existing.UpdatedAt=DateTimeOffset.UtcNow;}
+            else {existing.Data=row.Kind=="product"?Json.Write(Json.Read<Product>(row.Data) with{Butcher=existing.As<Product>().Butcher,SmallLabelWeight=existing.As<Product>().SmallLabelWeight}):row.Data;existing.Version++;existing.UpdatedAt=DateTimeOffset.UtcNow;}
         }
         batch.Committed=true;batch.Version++;
         db.Audits.Add(new(){Actor=actor,Action="import.commit",RecordId=id,Detail=batch.Payload});

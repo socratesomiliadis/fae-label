@@ -11,6 +11,101 @@
   --line: #e7e3df;
   --green: #387361;
 }
+.quick-links.workflow-links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.catalog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 22px;
+  border-bottom: 1px solid var(--line);
+  background: #fcfbfa;
+}
+.catalog-filters .field {
+  flex: 1 1 130px;
+  margin: 0;
+}
+.catalog-filters select {
+  padding: 8px;
+}
+.language-tabs {
+  gap: 4px;
+  margin: 16px 0;
+}
+.language-tabs button {
+  padding: 8px 10px;
+}
+.brand-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+.nutrition-table {
+  margin-bottom: 20px;
+}
+.nutrition-table td {
+  padding: 5px 8px;
+}
+.nutrition-table input {
+  min-height: 32px;
+  padding: 5px 8px;
+}
+.field > label {
+  display: block;
+  font-size: 12px;
+  color: #65545e;
+  margin-bottom: 7px;
+}
+.production-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 14px;
+  margin: 12px 0;
+  background: #f4f1ec;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.production-summary b {
+  display: block;
+  margin-top: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+.print-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.print-presets button {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.print-presets button.active {
+  border-color: var(--wine);
+  background: #f4ecee;
+  color: var(--wine);
+}
+@media (min-width: 1150px) {
+  .preview-panel {
+    position: sticky;
+    top: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .quick-links.workflow-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1300px) {
+  .production-form .production-values {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -62,8 +157,8 @@ p {
 }
 h1 {
   font-weight: 600;
-  font-size: 32px;
-  letter-spacing: -1.1px;
+  font-size: 26px;
+  letter-spacing: -0.5px;
   margin-bottom: 9px;
 }
 h2 {
@@ -189,6 +284,8 @@ aside {
 }
 nav {
   flex: 1;
+  margin-top: 28px;
+  overflow-y: auto;
 }
 nav button {
   width: 100%;
@@ -314,7 +411,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   gap: 20px;
 }
 .page-heading p {
@@ -525,7 +622,7 @@ header {
   margin-bottom: 22px;
 }
 .section-heading {
-  padding: 22px 24px;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -603,14 +700,14 @@ th {
   font-weight: 600;
 }
 td {
-  padding: 17px 20px;
-  font-size: 11px;
+  padding: 11px 14px;
+  font-size: 12px;
   border-bottom: 1px solid #efebe8;
   color: #665d62;
 }
 td b {
   color: #443b41;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }
 td small {
@@ -850,12 +947,12 @@ tbody tr:hover {
   gap: 12px;
 }
 .pad {
-  padding: 24px;
+  padding: 20px;
 }
 .production-grid {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 20px;
   align-items: start;
 }
 .step {

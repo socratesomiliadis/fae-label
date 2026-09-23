@@ -5,6 +5,16 @@ using Xunit;
 namespace Faethon.Tests;
 public sealed class DomainTests
 {
+    [Fact]public void ProductRequiredFieldsAndIntrastatAreValidated()
+    {
+        var p=new Product{ErpCode="1-111-1-111",Barcode="123",CartonBarcode="456",RecipeCode="1",Brands=["1"],Names=new(){{"el","Προϊόν"}},Fields=new(){{"Συντομογραφία","ΓΚ"},{"Συσκευασία Προϊόντος","HOR"},{"Κατάσταση Συσκ.","Χύμα"},{"Τμήμα Παραγωγής","Κρέατα"},{"Οδηγίες Χρήσης","1"},{"Κωδ. Intrastat","02032959"},{"ΕΛΟΓΑΚ","0102004"}}};
+        string Check(Product value)=>Validation.Check("product",System.Text.Json.JsonSerializer.SerializeToElement(value,Json.Options));
+        Assert.NotEmpty(Check(p));
+        Assert.Throws<InvalidOperationException>(()=>Check(p with{Barcode=""}));
+        Assert.Throws<InvalidOperationException>(()=>Check(p with{Fields=[]}));
+        Assert.Throws<InvalidOperationException>(()=>Check(p with{SmallLabelWeight="unknown"}));
+        Assert.Throws<InvalidOperationException>(()=>Check(p with{Fields=p.Fields.ToDictionary(k=>k.Key,k=>k.Key=="Κωδ. Intrastat"?"letters":k.Value)}));
+    }
     [Theory]
     [InlineData("2026-01-01","01/26/10/11091000/5")]
     [InlineData("2026-01-04","02/26/10/11091000/1")]

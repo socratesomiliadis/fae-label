@@ -365,6 +365,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/products/{id}/label-brands": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": components["schemas"]["LabelBrands"];
+                };
+            };
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/records/{id}": {
         parameters: {
             query?: never;
@@ -1036,6 +1075,58 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/backup": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["AnonymousTypeOfbooleanAndintAndintAndListOfAnonymousTypeOfDateTimeOffsetAndstring"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description OK */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content?: never;
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/agents": {
         parameters: {
             query?: never;
@@ -1107,6 +1198,19 @@ export interface components {
         };
         AnonymousTypeOfboolean: {
             required: boolean;
+        };
+        AnonymousTypeOfbooleanAndintAndintAndListOfAnonymousTypeOfDateTimeOffsetAndstring: {
+            enabled: boolean;
+            /** Format: int32 */
+            hour: number | string;
+            /** Format: int32 */
+            retentionDays: number | string;
+            recent: null | components["schemas"]["AnonymousTypeOfDateTimeOffsetAndstring"][];
+        };
+        AnonymousTypeOfDateTimeOffsetAndstring: {
+            /** Format: date-time */
+            at: string;
+            action: null | string;
         };
         AnonymousTypeOfGuidAndDateTimeOffsetAndbooleanAndstring: {
             /** Format: uuid */
@@ -1212,6 +1316,8 @@ export interface components {
             expiryDate: string;
             /** Format: date */
             freezeDate: null | string;
+            /** Format: int32 */
+            cartons?: null | number | string;
         };
         DailyUpdate: {
             /** Format: uuid */
@@ -1247,6 +1353,11 @@ export interface components {
             note: string;
         };
         JsonElement: unknown;
+        LabelBrands: {
+            /** Format: int64 */
+            version: number | string;
+            brands: string[];
+        };
         Login: {
             name: string;
             password: string;

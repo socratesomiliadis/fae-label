@@ -41,6 +41,14 @@ import {
   type User,
 } from "./api";
 import "./style.css";
+import { BusinessFields } from "./BusinessFields";
+import {
+  productValue,
+  groupNames,
+  lotOf,
+  expiryOf,
+  defaultWeight,
+} from "./product";
 
 const menus = [
   ["dashboard", "Επισκόπηση", LayoutDashboard],
@@ -63,7 +71,7 @@ function useRows(kind: string) {
   const reload = useCallback(async () => {
     setLoading(true);
     try {
-      setRows(await api(`/records/${kind}`));
+      setRows(kind ? await api(`/records/${kind}`) : []);
       setError("");
     } catch (e) {
       setError(String(e));
@@ -142,25 +150,25 @@ function App() {
             ΦΑΕΘΩΝ<small>LABEL STUDIO</small>
           </div>
         </a>
-        <div className="workspace">
-          <span className="dot" /> Εργαστήριο παραγωγής
-          <small>Τοπικό δίκτυο · Windows</small>
-        </div>
         <nav>
-          {menus.map(([key, label, Icon], i) => (
-            <React.Fragment key={key}>
-              {i === 3 && <div className="nav-label">ΒΙΒΛΙΟΘΗΚΗ</div>}
-              {i === 9 && <div className="nav-label">ΔΙΑΧΕΙΡΙΣΗ</div>}
-              <button
-                className={page === key ? "active" : ""}
-                onClick={() => nav(key)}
-              >
-                <Icon size={18} />
-                {label}
-                {page === key && <span className="nav-indicator" />}
-              </button>
-            </React.Fragment>
-          ))}
+          {menus
+            .filter(
+              ([key]) =>
+                user.role === "admin" ||
+                !["settings", "imports", "template"].includes(key),
+            )
+            .map(([key, label, Icon]) => (
+              <React.Fragment key={key}>
+                <button
+                  className={page === key ? "active" : ""}
+                  onClick={() => nav(key)}
+                >
+                  <Icon size={18} />
+                  {label}
+                  {page === key && <span className="nav-indicator" />}
+                </button>
+              </React.Fragment>
+            ))}
         </nav>
         <div className="sidebar-foot">
           <div className="avatar">{user.name[0]?.toUpperCase()}</div>
@@ -184,8 +192,17 @@ function App() {
       <main>
         <header>
           <div className="breadcrumb">
-            Χώρος εργασίας <ChevronRight size={14} />{" "}
-            <b>{menus.find((m) => m[0] === page)?.[1]}</b>
+            <b>
+              {menus.find((m) => m[0] === page)?.[1] ||
+                (
+                  {
+                    sample: "Δείγμα",
+                    custom: "Ελεύθερη ετικέτα",
+                    butcher: "Κρεοπωλείο",
+                    "production-label": "Προς παραγωγή",
+                  } as Record<string, string>
+                )[page]}
+            </b>
           </div>
           <div className="header-right">
             <span className={offline ? "connection bad" : "connection"}>
@@ -205,8 +222,14 @@ function App() {
           )}
           {page === "dashboard" ? (
             <Dashboard navigate={nav} />
-          ) : page === "production" ? (
-            <ProductionPage initial={selected} />
+          ) : [
+              "production",
+              "sample",
+              "custom",
+              "butcher",
+              "production-label",
+            ].includes(page) ? (
+            <ProductionPage key={page} initial={selected} workflow={page} />
           ) : page === "daily" ? (
             <Daily />
           ) : page === "history" ? (
@@ -228,10 +251,6 @@ function App() {
             />
           )}
         </div>
-        <footer>
-          ΦΑΕΘΩΝ <span>Παραγωγή με ακρίβεια.</span>
-          <span className="footer-end">Label Studio · 1.0</span>
-        </footer>
       </main>
     </div>
   );
@@ -253,13 +272,6 @@ function Login({ onLogin }: { onLogin: (u: User) => void }) {
       <div className="login-story">
         <div className="brand-mark">Φ</div>
         <span>ΦΑΕΘΩΝ / LABEL STUDIO</span>
-        <h1>
-          Κάθε προϊόν.
-          <br />Η σωστή ετικέτα.
-        </h1>
-        <p>
-          Ο χώρος σας για την παραγωγή, τη διαχείριση και την εκτύπωση ετικετών.
-        </p>
       </div>
       <form
         onSubmit={async (e) => {
@@ -281,9 +293,7 @@ function Login({ onLogin }: { onLogin: (u: User) => void }) {
           }
         }}
       >
-        <span className="eyebrow">ΚΑΛΩΣ ΗΡΘΑΤΕ</span>
         <h2>{setup ? "Αρχική εγκατάσταση" : "Σύνδεση στο εργαστήριο"}</h2>
-        <p>Χρησιμοποιήστε τον προσωπικό σας λογαριασμό.</p>
         <Field label="Όνομα χρήστη">
           <input
             autoComplete="username"
@@ -322,22 +332,16 @@ function Login({ onLogin }: { onLogin: (u: User) => void }) {
   );
 }
 function Heading({
-  eyebrow,
   title,
-  subtitle,
   children,
 }: {
-  eyebrow: string;
   title: string;
-  subtitle: string;
   children?: React.ReactNode;
 }) {
   return (
     <div className="page-heading">
       <div>
-        <span className="eyebrow">{eyebrow}</span>
         <h1>{title}</h1>
-        <p>{subtitle}</p>
       </div>
       <div className="heading-actions">{children}</div>
     </div>
@@ -353,49 +357,32 @@ function Dashboard({ navigate }: { navigate: (p: string) => void }) {
   }, []);
   return (
     <>
-      <Heading
-        eyebrow="Η ΠΑΡΑΓΩΓΗ ΣΗΜΕΡΑ"
-        title="Όλα στη θέση τους."
-        subtitle="Από τη σύσταση μέχρι την τελική ετικέτα, σε έναν χώρο."
-      >
+      <Heading title="Επισκόπηση">
         <button className="primary" onClick={() => navigate("production")}>
           <Plus size={18} />
           Νέα εκτύπωση
         </button>
       </Heading>
       <Notice text={error} />
-      <section className="hero">
-        <div>
-          <span className="hero-kicker">FAETHON · PRODUCTION WORKSPACE</span>
-          <h2>
-            Έτοιμοι για την
-            <br />
-            επόμενη παραγωγή;
-          </h2>
-          <p>
-            Επιλέξτε τα καθημερινά σας είδη, ελέγξτε
-            <br />
-            τα στοιχεία και εκτυπώστε με σιγουριά.
-          </p>
-          <button onClick={() => navigate("daily")}>
-            Καθημερινή παραγωγή <ArrowUpRight size={18} />
-          </button>
-        </div>
-        <div className="label-illustration" aria-hidden="true">
-          <div className="mock-label">
-            <b>ΦΑΕΘΩΝ</b>
-            <small>PREMIUM MEAT PRODUCTS</small>
-            <hr />
-            <strong>ΕΤΙΚΕΤΑ ΠΑΡΑΓΩΓΗΣ</strong>
-            <div className="label-lines" />
-            <div className="barcode" />
-            <small>ΠΡΟΕΠΙΣΚΟΠΗΣΗ · ΕΛΕΓΧΟΣ · ΕΚΤΥΠΩΣΗ</small>
-          </div>
-          <div className="floating-check">
-            <Check size={16} /> Σχεδιασμένο για τη ροή σας
-          </div>
-        </div>
-      </section>
+      <div className="quick-links workflow-links">
+        {[
+          ["production", "Ετικέτες προϊόντων", Printer],
+          ["daily", "Καθημερινή παραγωγή", CalendarDays],
+          ["sample", "Δείγμα", Tags],
+          ["custom", "Ελεύθερη ετικέτα", Plus],
+          ["butcher", "Κρεοπωλείο", Package],
+          ["production-label", "Προς παραγωγή", BookOpen],
+        ].map(([key, label, Icon]) => {
+          const I = Icon as typeof Tags;
+          return (
+            <button key={String(key)} onClick={() => navigate(String(key))}>
+              <I size={20} />
+              <b>{String(label)}</b>
+              <ChevronRight size={16} />
+            </button>
+          );
+        })}
+      </div>
       <div className="stats">
         {[
           ["Προϊόντα", data?.products, Tags, "product"],
@@ -426,7 +413,6 @@ function Dashboard({ navigate }: { navigate: (p: string) => void }) {
         <div className="section-heading">
           <div>
             <h2>Πρόσφατες εκτυπώσεις</h2>
-            <p>Η τελευταία δραστηριότητα του εργαστηρίου.</p>
           </div>
           <button className="text-button" onClick={() => navigate("history")}>
             Όλο το ιστορικό <ChevronRight size={16} />
@@ -435,10 +421,7 @@ function Dashboard({ navigate }: { navigate: (p: string) => void }) {
         {!data ? (
           <Busy />
         ) : data.recent.length === 0 ? (
-          <Empty>
-            Δεν υπάρχουν εκτυπώσεις ακόμα. Ξεκινήστε με την εισαγωγή των
-            προϊόντων σας.
-          </Empty>
+          <Empty>Δεν υπάρχουν εκτυπώσεις ακόμα.</Empty>
         ) : (
           <table>
             <thead>
@@ -464,24 +447,6 @@ function Dashboard({ navigate }: { navigate: (p: string) => void }) {
           </table>
         )}
       </section>
-      <div className="quick-links">
-        <button onClick={() => navigate("imports")}>
-          <Upload />
-          <div>
-            <b>Εισαγωγή από Excel</b>
-            <p>Προϊόντα και συστάσεις, με έλεγχο πριν την αποθήκευση.</p>
-          </div>
-          <ChevronRight />
-        </button>
-        <button onClick={() => navigate("template")}>
-          <Layers />
-          <div>
-            <b>Ένα πρότυπο, πολλές γλώσσες</b>
-            <p>Κοινή διάταξη με τη γλώσσα και την επωνυμία που χρειάζεστε.</p>
-          </div>
-          <ChevronRight />
-        </button>
-      </div>
     </>
   );
 }
@@ -496,6 +461,35 @@ function Badge({ status }: { status: string }) {
   );
 }
 const defaults: Record<string, Data> = {
+  template: {
+    name: "",
+    family: "thermal",
+    profile: "small",
+    geometryKey: "",
+    barcodeFormat: "code39",
+    widthMm: 100,
+    heightMm: 82,
+    fontSize: 7,
+    validated: false,
+    validationNote: "",
+    approvalAssets: [],
+    qrPayload: "",
+  },
+  printer: {
+    name: "",
+    queue: "",
+    agentId: "00000000-0000-0000-0000-000000000000",
+    transport: "windows",
+    dpi: 203,
+    dotsPerMm: 8,
+    widthMm: 100,
+    heightMm: 82,
+    printableWidthMm: 100,
+    rotation: 0,
+    offsetX: 0,
+    offsetY: 0,
+    validated: false,
+  },
   product: {
     sourceId: "",
     erpCode: "",
@@ -542,6 +536,9 @@ const defaults: Record<string, Data> = {
   },
   customer: {
     name: "",
+    tradeName: "",
+    phone: "",
+    email: "",
     address: "",
     vat: "",
     city: "",
@@ -571,21 +568,27 @@ function Catalog({
   kind,
   admin,
   onPrint,
+  labelMode = false,
 }: {
   kind: string;
   admin: boolean;
   onPrint: (r: Row) => void;
+  labelMode?: boolean;
 }) {
   const { rows, error, loading, reload } = useRows(kind),
+    recipes = useRows(kind === "product" ? "recipe" : ""),
+    [filters, setFilters] = useState<Record<string, string>>({}),
     [search, setSearch] = useState(""),
     [edit, setEdit] = useState<Row | null>(null),
     [create, setCreate] = useState(false),
-    [filter, setFilter] = useState("all");
+    [filter, setFilter] = useState(labelMode ? "active" : "all");
   useEffect(() => {
     setSearch("");
     setEdit(null);
     setCreate(false);
-  }, [kind]);
+    setFilter(labelMode ? "active" : "all");
+    setFilters({});
+  }, [kind, labelMode]);
   const filtered = useMemo(
     () =>
       rows.filter(
@@ -599,29 +602,54 @@ function Catalog({
             " " +
             (r.data.family || "") +
             " " +
-            JSON.stringify(r.data.fields || {})
+            JSON.stringify(r.data.fields || {}) +
+            " " +
+            [
+              r.data.vat,
+              r.data.city,
+              r.data.country,
+              r.data.tradeName,
+              r.data.category,
+            ].join(" ")
           )
             .toLocaleLowerCase("el")
             .includes(search.toLocaleLowerCase("el")) &&
           (filter === "all" ||
             (filter === "active" && r.data.active) ||
-            (filter === "daily" && r.data.daily)),
+            (filter === "daily" && r.data.daily) ||
+            (filter === "inactive" && !r.data.active) ||
+            (filter === "butcher" && r.data.butcher) ||
+            (filter === "private" &&
+              r.data.brands?.some((b: string) => b !== "1"))) &&
+          (!labelMode ||
+            (r.data.active &&
+              (filter === "butcher" ? r.data.butcher : !r.data.butcher))) &&
+          Object.entries(filters).every(
+            ([k, v]) =>
+              !v ||
+              (kind === "product"
+                ? productValue(r, k, recipes.rows)
+                : String(r.data[k] || "")) === v,
+          ),
       ),
-    [rows, search, filter],
+    [rows, search, filter, filters, kind, recipes.rows, labelMode],
   );
-  const title = menus.find((m) => m[0] === kind)?.[1] || kind;
-  const canEdit = admin || kind === "customer";
+  const title =
+    menus.find((m) => m[0] === kind)?.[1] ||
+    (
+      {
+        reference: "Λίστες",
+        language: "Γλώσσες",
+        printer: "Εκτυπωτές",
+        vehicle: "Οχήματα",
+        "certificate-customer": "Πελάτες εξωτερικού",
+      } as Record<string, string>
+    )[kind] ||
+    kind;
+  const canEdit = !labelMode && (admin || kind === "customer");
   return (
     <>
-      <Heading
-        eyebrow="ΒΙΒΛΙΟΘΗΚΗ"
-        title={title}
-        subtitle={
-          kind === "template"
-            ? "Επαναχρησιμοποιούμενες διατάξεις. Η γλώσσα και η επωνυμία επιλέγονται στην εκτύπωση."
-            : "Οργανώστε, αναζητήστε και διαχειριστείτε τα στοιχεία σας."
-        }
-      >
+      <Heading title={labelMode ? "Έκδοση ετικετών" : title}>
         {canEdit && (
           <button className="primary" onClick={() => setCreate(true)}>
             <Plus size={17} />
@@ -642,13 +670,73 @@ function Catalog({
           </div>
           {kind === "product" && (
             <select value={filter} onChange={(e) => setFilter(e.target.value)}>
-              <option value="all">Όλα τα προϊόντα</option>
+              {!labelMode && <option value="all">Όλα τα προϊόντα</option>}
               <option value="active">Ενεργά</option>
               <option value="daily">Καθημερινά</option>
+              {!labelMode && <option value="inactive">Ανενεργά</option>}
+              <option value="private">Private label</option>
+              <option value="butcher">Κρεοπωλείου</option>
             </select>
           )}
           <span className="count">{filtered.length} εγγραφές</span>
         </div>
+        {["product", "recipe", "customer", "reference"].includes(kind) && (
+          <div className="catalog-filters">
+            {(kind === "product"
+              ? [
+                  ["Συντομογραφία", "Συντομογραφία"],
+                  ["family", "Οικογένεια"],
+                  ["Τμήμα Παραγωγής", "Τμήμα παραγωγής"],
+                  ["condition", "Κατάσταση"],
+                  ["Συσκευασία Προϊόντος", "Συσκευασία"],
+                ]
+              : kind === "recipe"
+                ? [
+                    ["category", "Κατηγορία"],
+                    ["family", "Οικογένεια"],
+                  ]
+                : kind === "reference"
+                  ? [["group", "Λίστα"]]
+                  : [
+                      ["city", "Πόλη"],
+                      ["country", "Χώρα"],
+                    ]
+            ).map(([key, label]) => (
+              <Field key={key} label={label}>
+                <select
+                  value={filters[key] || ""}
+                  onChange={(e) =>
+                    setFilters({ ...filters, [key]: e.target.value })
+                  }
+                >
+                  <option value="">Όλες</option>
+                  {[
+                    ...new Set(
+                      rows
+                        .map((r) =>
+                          kind === "product"
+                            ? productValue(r, key, recipes.rows)
+                            : String(r.data[key] || ""),
+                        )
+                        .filter(Boolean),
+                    ),
+                  ]
+                    .sort((a, b) => a.localeCompare(b, "el"))
+                    .map((value) => (
+                      <option key={value} value={value}>
+                        {key === "group" ? groupNames[value] || value : value}
+                      </option>
+                    ))}
+                </select>
+              </Field>
+            ))}
+            {Object.values(filters).some(Boolean) && (
+              <button className="text-button" onClick={() => setFilters({})}>
+                Καθαρισμός
+              </button>
+            )}
+          </div>
+        )}
         {loading ? (
           <Busy />
         ) : filtered.length === 0 ? (
@@ -662,6 +750,12 @@ function Catalog({
                   <th>ΠΕΡΙΓΡΑΦΗ</th>
                   <th>{kind === "product" ? "ΣΥΣΤΑΣΗ" : "ΣΤΟΙΧΕΙΑ"}</th>
                   <th>ΚΑΤΑΣΤΑΣΗ</th>
+                  {kind === "product" && (
+                    <>
+                      <th>ΟΙΚΟΓΕΝΕΙΑ</th>
+                      <th>ΣΥΣΚΕΥΑΣΙΑ</th>
+                    </>
+                  )}
                   <th />
                 </tr>
               </thead>
@@ -708,23 +802,40 @@ function Catalog({
                               ? "Προς συμπλήρωση"
                               : "Καταχωρημένο"}
                       </span>
+                      {kind === "product" && r.data.daily && (
+                        <small>Καθημερινό</small>
+                      )}
                     </td>
+                    {kind === "product" && (
+                      <>
+                        <td>
+                          {productValue(r, "family", recipes.rows)}
+                          <small>{productValue(r, "condition")}</small>
+                        </td>
+                        <td>{productValue(r, "Συσκευασία Προϊόντος")}</td>
+                      </>
+                    )}
                     <td>
                       <div className="row-actions">
-                        {kind === "product" && (
-                          <button
-                            className="icon-button"
-                            title="Έκδοση ετικέτας"
-                            onClick={() => onPrint(r)}
-                          >
-                            <Printer size={17} />
-                          </button>
-                        )}
+                        {!labelMode &&
+                          ["product", "customer"].includes(kind) && (
+                            <button
+                              className="icon-button"
+                              title="Έκδοση ετικέτας"
+                              onClick={() => onPrint(r)}
+                            >
+                              <Printer size={17} />
+                            </button>
+                          )}
                         <button
                           className="text-button"
-                          onClick={() => setEdit(r)}
+                          onClick={() => (labelMode ? onPrint(r) : setEdit(r))}
                         >
-                          {canEdit ? "Επεξεργασία" : "Προβολή"}
+                          {labelMode
+                            ? "Έκδοση ετικέτας"
+                            : canEdit
+                              ? "Επεξεργασία"
+                              : "Προβολή"}
                           <ChevronRight size={15} />
                         </button>
                       </div>
@@ -766,6 +877,11 @@ function Field({
   );
 }
 const labels: Record<string, string> = {
+  tradeName: "Διακριτικός τίτλος",
+  phone: "Τηλέφωνο",
+  email: "Email",
+  geometryKey: "Διάταξη",
+  barcodeFormat: "Τύπος barcode",
   sourceId: "Ταυτότητα πηγής",
   erpCode: "Κωδικός ERP",
   secondaryCode: "Δευτερεύων κωδικός",
@@ -993,7 +1109,7 @@ function RecordEditor({
   onSaved: () => void;
 }) {
   const [data, setData] = useState<Data>(
-      structuredClone(row?.data || defaults[kind] || {}),
+      structuredClone({ ...defaults[kind], ...row?.data }),
     ),
     [key, setKey] = useState(row?.key || ""),
     [error, setError] = useState(""),
@@ -1008,9 +1124,6 @@ function RecordEditor({
       >
         <div className="drawer-header">
           <div>
-            <span className="eyebrow">
-              {row ? "ΣΤΟΙΧΕΙΑ ΕΓΓΡΑΦΗΣ" : "ΝΕΑ ΕΓΓΡΑΦΗ"}
-            </span>
             <h2>{row ? nameOf(row) : "Νέα καταχώρηση"}</h2>
           </div>
           <button
@@ -1028,7 +1141,16 @@ function RecordEditor({
             try {
               await api(row ? `/records/${row.id}` : `/records/${kind}`, {
                 method: row ? "PUT" : "POST",
-                body: JSON.stringify({ key, version: row?.version || 0, data }),
+                body: JSON.stringify({
+                  key:
+                    kind === "recipe"
+                      ? data.code
+                      : kind === "reference" && !row
+                        ? `${data.group}:${key}`
+                        : key,
+                  version: row?.version || 0,
+                  data,
+                }),
               });
               onSaved();
               onClose();
@@ -1041,15 +1163,37 @@ function RecordEditor({
         >
           <div className="drawer-body">
             <Notice text={error} />
-            <Field label="Μοναδικός κωδικός εγγραφής">
-              <input
-                required
-                value={key}
-                disabled={!!row || !editable}
-                onChange={(e) => setKey(e.target.value)}
+            {!["product", "recipe"].includes(kind) && (
+              <Field label="Κωδικός">
+                <input
+                  required
+                  value={key}
+                  disabled={!!row || !editable}
+                  onChange={(e) => setKey(e.target.value)}
+                />
+              </Field>
+            )}
+            {["product", "recipe", "reference"].includes(kind) ? (
+              <BusinessFields
+                kind={kind}
+                data={data}
+                onChange={setData}
+                disabled={!editable}
+                extra={(d, change) => (
+                  <ObjectFields
+                    data={d}
+                    onChange={change}
+                    disabled={!editable}
+                  />
+                )}
               />
-            </Field>
-            <ObjectFields data={data} onChange={setData} disabled={!editable} />
+            ) : (
+              <ObjectFields
+                data={data}
+                onChange={setData}
+                disabled={!editable}
+              />
+            )}
           </div>
           <div className="drawer-footer">
             <button type="button" className="secondary" onClick={onClose}>
@@ -1076,13 +1220,13 @@ function draftFor(product: Row | null, offset = 0): Data {
     freezeDate: product?.data.frozen ? today(offset) : null,
     shelfLife: product?.data.shelfLife || 0,
     expiryOverride: null,
-    weight: null,
-    pieces: null,
-    cartonWeight: null,
+    weight: defaultWeight(product, "Βάρος Προϊόντος"),
+    pieces: defaultWeight(product, "Τεμ./Κιβ."),
+    cartonWeight: defaultWeight(product, "Βάρος Κιβωτίου"),
     palletWeight: null,
     animalCode: "",
-    slaughterhouse: "",
-    supplier: "",
+    slaughterhouse: product?.data.fields?.["Αρ.Εγκρ.Σφ."] || "",
+    supplier: product?.data.fields?.["Προμηθευτής"] || "",
     brandKey: product?.data.brands?.[0] || "1",
     mode: "product",
     languages: ["el", "en"],
@@ -1091,22 +1235,50 @@ function draftFor(product: Row | null, offset = 0): Data {
     customerId: null,
   };
 }
-function ProductionPage({ initial }: { initial: Row | null }) {
+function ProductionPage({
+  initial,
+  workflow = "production",
+}: {
+  initial: Row | null;
+  workflow?: string;
+}) {
   const products = useRows("product"),
     templates = useRows("template"),
     brands = useRows("brand"),
     printers = useRows("printer"),
     languages = useRows("language"),
     customers = useRows("customer"),
-    drafts = useRows("draft");
-  const [draft, setDraft] = useState<Data>(() => draftFor(initial)),
+    drafts = useRows("draft"),
+    recipes = useRows("recipe"),
+    references = useRows("reference");
+  const [draft, setDraft] = useState<Data>(() => ({
+      ...draftFor(initial?.kind === "product" ? initial : null),
+      templateKey:
+        initial?.kind === "customer"
+          ? "address-small"
+          : (
+              {
+                sample: "sample-small",
+                custom: "custom-small",
+                butcher: "butcher-small",
+                "production-label": "production-small",
+              } as Record<string, string>
+            )[workflow] || "thermal-large",
+      languages:
+        workflow === "production" && initial?.kind !== "customer"
+          ? ["el", "en"]
+          : ["el"],
+      customerId: initial?.kind === "customer" ? initial.id : null,
+    })),
     [preview, setPreview] = useState<Preview | null>(null),
     [printer, setPrinter] = useState(""),
     [quantity, setQuantity] = useState(1),
     [error, setError] = useState(""),
     [busy, setBusy] = useState(false),
     [message, setMessage] = useState(""),
-    [savedDraft, setSavedDraft] = useState<Row | null>(null);
+    [savedDraft, setSavedDraft] = useState<Row | null>(null),
+    [productSearch, setProductSearch] = useState(""),
+    [scope, setScope] = useState(workflow === "butcher" ? "butcher" : "active");
   const change = (next: Data) => {
     setDraft(next);
     setPreview(null);
@@ -1118,9 +1290,20 @@ function ProductionPage({ initial }: { initial: Row | null }) {
   const selectedTemplate = templates.rows.find(
     (t) => t.key === draft.templateKey,
   );
-  const productNeeded = ["thermal", "pallet", "sample", "butcher"].includes(
-    selectedTemplate?.data.family,
-  );
+  const printerProfile = selectedTemplate?.data.profile;
+  useEffect(() => {
+    const key =
+      printerProfile === "a4"
+        ? "kyocera-a4"
+        : printerProfile === "small"
+          ? "zebra-small"
+          : "zebra-large";
+    setPrinter(printers.rows.find((p) => p.key === key)?.id || "");
+  }, [printerProfile, printers.rows]);
+  const productNeeded =
+    ["thermal", "pallet", "sample", "butcher"].includes(
+      selectedTemplate?.data.family,
+    ) && draft.mode !== "blank";
   async function makePreview() {
     setBusy(true);
     setError("");
@@ -1132,22 +1315,91 @@ function ProductionPage({ initial }: { initial: Row | null }) {
       setBusy(false);
     }
   }
+  if (
+    workflow === "production" &&
+    !draft.productId &&
+    !draft.customerId &&
+    draft.templateKey === "thermal-large"
+  )
+    return (
+      <Catalog
+        kind="product"
+        admin={false}
+        labelMode
+        onPrint={(p) => change(draftFor(p))}
+      />
+    );
   return (
     <>
       <Heading
-        eyebrow="ΠΑΡΑΓΩΓΗ"
-        title="Η επόμενη ετικέτα σας."
-        subtitle="Επιλέξτε προϊόν και μορφή, συμπληρώστε τα στοιχεία και ελέγξτε την προεπισκόπηση."
-      />
+        title={
+          workflow === "production"
+            ? "Έκδοση ετικετών"
+            : (
+                {
+                  sample: "Δείγμα",
+                  custom: "Ελεύθερη ετικέτα",
+                  butcher: "Κρεοπωλείο",
+                  "production-label": "Προς παραγωγή",
+                } as Record<string, string>
+              )[workflow]
+        }
+      >
+        {workflow === "production" && selected && (
+          <button
+            className="secondary"
+            onClick={() => {
+              change(draftFor(null));
+              setSavedDraft(null);
+            }}
+          >
+            Άλλο προϊόν
+          </button>
+        )}
+      </Heading>
       <div className="production-grid">
         <section className="panel production-form">
           <div className="section-heading">
-            <h2>
-              <span className="step">1</span> Στοιχεία εκτύπωσης
-            </h2>
+            <h2>Στοιχεία παραγωγής</h2>
           </div>
           <div className="pad">
             <Notice text={error || products.error || templates.error} />
+            <div className="print-presets" aria-label="Μορφές ετικέτας">
+              {[
+                ["thermal-large", "product", "Μεγάλη GR/EN"],
+                ["thermal-large", "carton", "Κιβώτιο GR/EN"],
+                ["thermal-small", "product", "Μικρή"],
+                ["pallet-a4", "product", "Παλέτα Α4"],
+                ["sample-small", "product", "Δείγμα"],
+                ["sample-blank", "blank", "Κενό δείγμα"],
+                ["butcher-a4", "product", "Ταμπελάκια Α4"],
+                ["butcher-a4", "blank", "Κενά ταμπελάκια"],
+              ]
+                .filter(([key]) => templates.rows.some((t) => t.key === key))
+                .map(([key, mode, label]) => (
+                  <button
+                    key={key + mode}
+                    className={
+                      draft.templateKey === key && draft.mode === mode
+                        ? "active"
+                        : ""
+                    }
+                    onClick={() => {
+                      change({
+                        ...draft,
+                        templateKey: key,
+                        mode,
+                        languages: ["thermal-large", "pallet-a4"].includes(key)
+                          ? ["el", "en"]
+                          : [draft.languages[0]],
+                      });
+                      if (key.startsWith("butcher")) setScope("butcher");
+                    }}
+                  >
+                    {label}
+                  </button>
+                ))}
+            </div>
             <div className="form-grid">
               <Field label="Πρότυπο">
                 <select
@@ -1162,7 +1414,9 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                       languages:
                         t?.data.profile === "small"
                           ? [draft.languages[0]]
-                          : draft.languages,
+                          : t?.data.family === "thermal"
+                            ? ["el", "en"]
+                            : draft.languages,
                     });
                   }}
                 >
@@ -1183,6 +1437,13 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                     if (r) {
                       change(r.data);
                       setSavedDraft(r);
+                    } else {
+                      setSavedDraft(null);
+                      change({
+                        ...draftFor(selected || null),
+                        templateKey: draft.templateKey,
+                        languages: draft.languages,
+                      });
                     }
                   }}
                 >
@@ -1195,7 +1456,30 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                 </select>
               </Field>
             </div>
-            {productNeeded && (
+            {productNeeded && (!selected || workflow !== "production") && (
+              <div className="product-picker">
+                <div className="form-grid">
+                  <Field label="Λίστα προϊόντων">
+                    <select
+                      value={scope}
+                      onChange={(e) => setScope(e.target.value)}
+                    >
+                      <option value="active">Ενεργές ετικέτες</option>
+                      <option value="private">Private label</option>
+                      <option value="butcher">Κρεοπωλείου</option>
+                    </select>
+                  </Field>
+                  <Field label="Αναζήτηση προϊόντος">
+                    <input
+                      placeholder="Κωδικός ή περιγραφή"
+                      value={productSearch}
+                      onChange={(e) => setProductSearch(e.target.value)}
+                    />
+                  </Field>
+                </div>
+              </div>
+            )}
+            {productNeeded && (!selected || workflow !== "production") && (
               <Field label="Προϊόν">
                 <select
                   value={draft.productId || ""}
@@ -1213,7 +1497,19 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                 >
                   <option value="">Επιλέξτε προϊόν…</option>
                   {products.rows
-                    .filter((p) => p.data.active)
+                    .filter(
+                      (p) =>
+                        p.data.active &&
+                        (scope === "butcher"
+                          ? p.data.butcher
+                          : !p.data.butcher) &&
+                        (scope !== "private" ||
+                          p.data.brands?.some((b: string) => b !== "1")) &&
+                        (p.id === draft.productId ||
+                          (p.data.erpCode + " " + nameOf(p))
+                            .toLocaleLowerCase("el")
+                            .includes(productSearch.toLocaleLowerCase("el"))),
+                    )
                     .map((p) => (
                       <option key={p.id} value={p.id}>
                         {p.data.erpCode} · {p.data.secondaryCode} · {nameOf(p)}
@@ -1221,6 +1517,81 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                     ))}
                 </select>
               </Field>
+            )}
+            {selected && (
+              <details className="field-group">
+                <summary>{nameOf(selected)}</summary>
+                <p>
+                  {recipes.rows.find((r) => r.key === selected.data.recipeCode)
+                    ?.data.translations?.[draft.languages[0]]?.ingredients ||
+                    "—"}
+                </p>
+                <p>
+                  {
+                    recipes.rows.find((r) => r.key === selected.data.recipeCode)
+                      ?.data.translations?.[draft.languages[0]]?.allergens
+                  }
+                </p>
+                <label className="check-field">
+                  <input
+                    type="checkbox"
+                    checked={!!selected.data.daily}
+                    onChange={async (e) => {
+                      try {
+                        await post("/daily", [
+                          {
+                            id: selected.id,
+                            version: selected.version,
+                            daily: e.target.checked,
+                            order: selected.data.dailyOrder || 0,
+                          },
+                        ]);
+                        await products.reload();
+                      } catch (e) {
+                        setError((e as Error).message);
+                      }
+                    }}
+                  />
+                  Καθημερινό
+                </label>
+                <div className="brand-options">
+                  {brands.rows.map((brand) => (
+                    <label className="check-field" key={brand.id}>
+                      <input
+                        type="checkbox"
+                        disabled={busy}
+                        checked={selected.data.brands.includes(brand.key)}
+                        onChange={async (e) => {
+                          const next = e.target.checked
+                            ? [...selected.data.brands, brand.key]
+                            : selected.data.brands.filter(
+                                (key: string) => key !== brand.key,
+                              );
+                          setBusy(true);
+                          try {
+                            await post(
+                              `/products/${selected.id}/label-brands`,
+                              { version: selected.version, brands: next },
+                            );
+                            await products.reload();
+                            change({
+                              ...draft,
+                              brandKey: next.includes(draft.brandKey)
+                                ? draft.brandKey
+                                : next[0],
+                            });
+                          } catch (e) {
+                            setError((e as Error).message);
+                          } finally {
+                            setBusy(false);
+                          }
+                        }}
+                      />
+                      {nameOf(brand)}
+                    </label>
+                  ))}
+                </div>
+              </details>
             )}
             <div className="form-grid">
               <Field label="Επωνυμία">
@@ -1246,11 +1617,17 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                 >
                   <option value="product">Προϊόν</option>
                   <option value="carton">Κιβώτιο</option>
-                  <option value="blank">Κενό / ελεύθερο</option>
+                  {["butcher", "sample", "custom", "production"].includes(
+                    selectedTemplate?.data.family,
+                  ) && <option value="blank">Κενό / ελεύθερο</option>}
                 </select>
               </Field>
               <Field label="Γλώσσα">
                 <select
+                  disabled={
+                    selectedTemplate?.data.family === "thermal" &&
+                    selectedTemplate?.data.profile === "large"
+                  }
                   value={draft.languages[0]}
                   onChange={(e) =>
                     set("languages", [
@@ -1269,6 +1646,10 @@ function ProductionPage({ initial }: { initial: Row | null }) {
               {selectedTemplate?.data.profile !== "small" && (
                 <Field label="Δεύτερη γλώσσα">
                   <select
+                    disabled={
+                      selectedTemplate?.data.family === "thermal" &&
+                      selectedTemplate?.data.profile === "large"
+                    }
                     value={draft.languages[1] || ""}
                     onChange={(e) =>
                       set(
@@ -1291,54 +1672,105 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                 </Field>
               )}
             </div>
-            <hr />
-            <h3>Ημερομηνίες & ποσότητες</h3>
-            <div className="form-grid">
-              {[
-                ["productionDate", "Ημερομηνία παραγωγής"],
-                ["freezeDate", "Ημερομηνία κατάψυξης"],
-                ["expiryOverride", "Χειροκίνητη ημερομηνία λήξης"],
-              ].map(([k, l]) => (
-                <Field key={k} label={l}>
-                  <input
-                    type="date"
-                    value={draft[k] || ""}
-                    onChange={(e) => set(k, e.target.value || null)}
-                  />
-                </Field>
-              ))}
-              {[
-                ["shelfLife", "Ημέρες λήξης"],
-                ["weight", "Βάρος προϊόντος (kg)"],
-                ["pieces", "Τεμάχια / κιβώτιο"],
-                ["cartonWeight", "Βάρος κιβωτίου (kg)"],
-                ["palletWeight", "Βάρος παλέτας (kg)"],
-              ].map(([k, l]) => (
-                <Field key={k} label={l}>
-                  <input
-                    type="number"
-                    min="0"
-                    max={k === "shelfLife" ? 9999 : undefined}
-                    step={["shelfLife", "pieces"].includes(k) ? 1 : "0.001"}
-                    value={draft[k] ?? ""}
-                    onChange={(e) =>
-                      set(
-                        k,
-                        e.target.value === "" ? null : Number(e.target.value),
-                      )
-                    }
-                  />
-                </Field>
-              ))}
-            </div>
-            {draft.expiryOverride && (
-              <p className="hint">
-                Η λήξη έχει οριστεί χειροκίνητα και δεν υπολογίζεται από τις
-                ημέρες ζωής.
-              </p>
+            {productNeeded && (
+              <>
+                <div className="production-summary">
+                  <span>
+                    LOT{" "}
+                    <b>
+                      {lotOf(
+                        draft,
+                        selected,
+                        recipes.rows.find(
+                          (r) => r.key === selected?.data.recipeCode,
+                        ),
+                      )}
+                    </b>
+                  </span>
+                  <span>
+                    Ανάλωση έως <b>{expiryOf(draft)}</b>
+                  </span>
+                </div>
+                <h3>Ημερομηνίες & ποσότητες</h3>
+                <div className="form-grid production-values">
+                  {[
+                    ["productionDate", "Ημερομηνία παραγωγής"],
+                    ["freezeDate", "Ημερομηνία κατάψυξης"],
+                    ["expiryOverride", "Χειροκίνητη ημερομηνία λήξης"],
+                  ]
+                    .filter(
+                      ([k]) => k !== "freezeDate" || selected?.data.frozen,
+                    )
+                    .map(([k, l]) => (
+                      <Field key={k} label={l}>
+                        <input
+                          type="date"
+                          value={draft[k] || ""}
+                          onChange={(e) => set(k, e.target.value || null)}
+                        />
+                      </Field>
+                    ))}
+                  {[
+                    ["shelfLife", "Ημέρες λήξης"],
+                    ["weight", "Βάρος προϊόντος (kg)"],
+                    ["pieces", "Τεμάχια / κιβώτιο"],
+                    ["cartonWeight", "Βάρος κιβωτίου (kg)"],
+                    ["palletWeight", "Βάρος παλέτας (kg)"],
+                  ]
+                    .filter(
+                      ([k]) =>
+                        k === "shelfLife" ||
+                        k === "weight" ||
+                        (k === "palletWeight" &&
+                          selectedTemplate?.data.family === "pallet") ||
+                        (["pieces", "cartonWeight"].includes(k) &&
+                          (draft.mode === "carton" ||
+                            selected?.data.smallLabelWeight === "carton" ||
+                            selectedTemplate?.data.family === "pallet")),
+                    )
+                    .map(([k, l]) => (
+                      <Field key={k} label={l}>
+                        <input
+                          type="number"
+                          min="0"
+                          max={k === "shelfLife" ? 9999 : undefined}
+                          step={
+                            ["shelfLife", "pieces"].includes(k) ? 1 : "0.001"
+                          }
+                          value={draft[k] ?? ""}
+                          onChange={(e) =>
+                            set(
+                              k,
+                              e.target.value === ""
+                                ? null
+                                : Number(e.target.value),
+                            )
+                          }
+                        />
+                      </Field>
+                    ))}
+                </div>
+                {draft.expiryOverride && (
+                  <p className="hint">
+                    Η λήξη έχει οριστεί χειροκίνητα και δεν υπολογίζεται από τις
+                    ημέρες ζωής.
+                  </p>
+                )}
+              </>
             )}
-            <details className="field-group">
-              <summary>Ιχνηλασιμότητα & πρόσθετα στοιχεία</summary>
+            <details
+              className="field-group"
+              open={
+                !productNeeded ||
+                ["20", "25", "26", "27"].includes(
+                  recipes.rows.find((r) => r.key === selected?.data.recipeCode)
+                    ?.data.family,
+                )
+              }
+            >
+              <summary>
+                {productNeeded ? "Ιχνηλασιμότητα" : "Περιεχόμενο ετικέτας"}
+              </summary>
               <div className="form-grid">
                 {[
                   ["animalCode", "Κωδικός ζώου"],
@@ -1347,10 +1779,28 @@ function ProductionPage({ initial }: { initial: Row | null }) {
                 ].map(([k, l]) => (
                   <Field key={k} label={l}>
                     <input
+                      list={k + "-options"}
                       value={draft[k]}
                       onChange={(e) => set(k, e.target.value)}
                     />
                   </Field>
+                ))}
+                {[
+                  ["slaughterhouse", "slaughterhouse"],
+                  ["supplier", "supplier"],
+                ].map(([key, group]) => (
+                  <datalist key={key} id={key + "-options"}>
+                    {references.rows
+                      .filter((r) => r.data.group === group)
+                      .map((r) => (
+                        <option
+                          key={r.id}
+                          value={r.key.replace(group + ":", "")}
+                        >
+                          {nameOf(r)}
+                        </option>
+                      ))}
+                  </datalist>
                 ))}
                 <Field label="Πελάτης">
                   <select
@@ -1418,9 +1868,7 @@ function ProductionPage({ initial }: { initial: Row | null }) {
         </section>
         <section className="panel preview-panel">
           <div className="section-heading">
-            <h2>
-              <span className="step">2</span> Έλεγχος & εκτύπωση
-            </h2>
+            <h2>Εκτύπωση</h2>
             <span className="count">
               {selectedTemplate?.data.widthMm} ×{" "}
               {selectedTemplate?.data.heightMm} mm
@@ -1432,8 +1880,7 @@ function ProductionPage({ initial }: { initial: Row | null }) {
             ) : (
               <div className="preview-placeholder">
                 <Tags size={40} />
-                <h3>Εδώ εμφανίζεται η ετικέτα σας</h3>
-                <p>Συμπληρώστε τα στοιχεία και επιλέξτε προεπισκόπηση.</p>
+                <p>Επιλέξτε «Προεπισκόπηση».</p>
               </div>
             )}
           </div>
@@ -1533,6 +1980,7 @@ function Daily() {
     printers = useRows("printer");
   const [date, setDate] = useState(today(1)),
     [order, setOrder] = useState<Row[]>([]),
+    [weights, setWeights] = useState<Record<string, number>>({}),
     [quantities, setQuantities] = useState<Record<string, number>>({}),
     [printer, setPrinter] = useState(""),
     [reviews, setReviews] = useState<
@@ -1550,7 +1998,7 @@ function Daily() {
     () =>
       setOrder(
         products.rows
-          .filter((p) => p.data.daily)
+          .filter((p) => p.data.daily && p.data.active && !p.data.butcher)
           .sort((a, b) => a.data.dailyOrder - b.data.dailyOrder),
       ),
     [products.rows],
@@ -1563,11 +2011,7 @@ function Daily() {
   }
   return (
     <>
-      <Heading
-        eyebrow="ΚΑΘΗΜΕΡΙΝΗ ΠΑΡΑΓΩΓΗ"
-        title="Η σειρά της ημέρας."
-        subtitle="Η δική σας σειρά προϊόντων. Ένα συγκεντρωτικό βήμα ελέγχου πριν από την εκτύπωση."
-      />
+      <Heading title="Καθημερινή παραγωγή" />
       <Notice text={error} />
       <section className="panel">
         <div className="toolbar">
@@ -1627,6 +2071,7 @@ function Daily() {
               <tr>
                 <th>ΣΕΙΡΑ</th>
                 <th>ΠΡΟΪΟΝ</th>
+                <th>ΒΑΡΟΣ (kg)</th>
                 <th>ΑΝΤΙΤΥΠΑ</th>
                 <th>ΕΛΕΓΧΟΣ</th>
               </tr>
@@ -1657,6 +2102,27 @@ function Daily() {
                     <small>
                       {p.data.erpCode} · {p.data.secondaryCode}
                     </small>
+                  </td>
+                  <td>
+                    <input
+                      aria-label={`Βάρος ${nameOf(p)}`}
+                      className="quantity"
+                      type="number"
+                      min="0"
+                      step="0.001"
+                      value={
+                        weights[p.id] ??
+                        defaultWeight(p, "Βάρος Προϊόντος") ??
+                        ""
+                      }
+                      onChange={(e) => {
+                        setWeights({
+                          ...weights,
+                          [p.id]: Number(e.target.value),
+                        });
+                        setReviews([]);
+                      }}
+                    />
                   </td>
                   <td>
                     <input
@@ -1700,6 +2166,8 @@ function Daily() {
                   const draft = {
                     ...draftFor(p),
                     productionDate: date,
+                    weight:
+                      weights[p.id] ?? defaultWeight(p, "Βάρος Προϊόντος"),
                     freezeDate: p.data.frozen ? date : null,
                   };
                   const preview = await post<Preview>("/preview", draft);
@@ -1777,11 +2245,7 @@ function Imports({ admin }: { admin: boolean }) {
     [done, setDone] = useState(false);
   return (
     <>
-      <Heading
-        eyebrow="ΔΙΑΧΕΙΡΙΣΗ ΔΕΔΟΜΕΝΩΝ"
-        title="Από το Excel στο εργαστήριο."
-        subtitle="Τα αρχικά δεδομένα διατηρούν την ταυτότητά τους. Ελέγξτε τις προειδοποιήσεις πριν την εισαγωγή."
-      />
+      <Heading title="Από το Excel στο εργαστήριο." />
       {!admin ? (
         <Notice text="Η εισαγωγή δεδομένων είναι διαθέσιμη μόνο σε διαχειριστές." />
       ) : (
@@ -1922,11 +2386,7 @@ function HistoryPage() {
   }, [reload]);
   return (
     <>
-      <Heading
-        eyebrow="ΙΧΝΗΛΑΣΙΜΟΤΗΤΑ"
-        title="Κάθε εκτύπωση, καταγεγραμμένη."
-        subtitle="Αναζητήστε LOT, δείτε το αρχικό PDF και διαχειριστείτε τις εργασίες που χρειάζονται έλεγχο."
-      >
+      <Heading title="Κάθε εκτύπωση, καταγεγραμμένη.">
         <button className="secondary" onClick={reload}>
           <RefreshCw size={16} />
           Ανανέωση
@@ -2064,7 +2524,10 @@ function Certificates() {
   const records = useRows("certificate"),
     customers = useRows("certificate-customer"),
     products = useRows("product"),
-    printers = useRows("printer");
+    printers = useRows("printer"),
+    vehicles = useRows("vehicle"),
+    recipes = useRows("recipe");
+  const [savedDate, setSavedDate] = useState("");
   const [edit, setEdit] = useState<Row | null>(null),
     [data, setData] = useState<Data>({
       name: "",
@@ -2086,14 +2549,17 @@ function Certificates() {
   }
   return (
     <>
-      <Heading
-        eyebrow="ΠΙΣΤΟΠΟΙΗΤΙΚΑ"
-        title="Έτοιμα για την αποστολή."
-        subtitle="Αποθήκευση, έλεγχος PDF και εκτύπωση στον Kyocera."
-      />
+      <Heading title="Πιστοποιητικά" />
       <Notice text={error} />
       <div className="production-grid">
         <section className="panel pad">
+          <Field label="Ημερομηνία αποθηκευμένων πιστοποιητικών">
+            <input
+              type="date"
+              value={savedDate}
+              onChange={(e) => setSavedDate(e.target.value)}
+            />
+          </Field>
           <Field label="Αποθηκευμένο πιστοποιητικό">
             <select
               value={edit?.id || ""}
@@ -2102,15 +2568,32 @@ function Certificates() {
                 if (r) {
                   setEdit(r);
                   change(r.data);
+                } else {
+                  setEdit(null);
+                  change({
+                    name: "",
+                    customerId: "",
+                    vehicle: "",
+                    trailer: "",
+                    shipmentDate: today(),
+                    templateKey: "certificate-bg",
+                    languages: ["bg"],
+                    lines: [],
+                    notes: "",
+                  });
                 }
               }}
             >
               <option value="">Νέο πιστοποιητικό</option>
-              {records.rows.map((r) => (
-                <option key={r.id} value={r.id}>
-                  {r.data.shipmentDate} · {nameOf(r)}
-                </option>
-              ))}
+              {records.rows
+                .filter(
+                  (r) => !savedDate || r.updatedAt.slice(0, 10) === savedDate,
+                )
+                .map((r) => (
+                  <option key={r.id} value={r.id}>
+                    {r.data.shipmentDate} · {nameOf(r)}
+                  </option>
+                ))}
             </select>
           </Field>
           <div className="form-grid">
@@ -2166,11 +2649,19 @@ function Certificates() {
             ].map(([k, l]) => (
               <Field key={k} label={l}>
                 <input
+                  list={k === "vehicle" ? "certificate-vehicles" : undefined}
                   value={data[k]}
                   onChange={(e) => change({ ...data, [k]: e.target.value })}
                 />
               </Field>
             ))}
+            <datalist id="certificate-vehicles">
+              {vehicles.rows.map((v) => (
+                <option key={v.id} value={v.data.name}>
+                  {v.key}
+                </option>
+              ))}
+            </datalist>
           </div>
           <h3>Προϊόντα αποστολής</h3>
           {data.lines.map((line: Data, i: number) => (
@@ -2183,7 +2674,33 @@ function Certificates() {
                       change({
                         ...data,
                         lines: data.lines.map((r: Data, n: number) =>
-                          n === i ? { ...r, productId: e.target.value } : r,
+                          n === i
+                            ? (() => {
+                                const p = products.rows.find(
+                                  (p) => p.id === e.target.value,
+                                );
+                                const d = {
+                                  ...draftFor(p || null),
+                                  productionDate: r.productionDate,
+                                };
+                                return {
+                                  ...r,
+                                  productId: e.target.value,
+                                  expiryDate: expiryOf(d),
+                                  freezeDate: p?.data.frozen
+                                    ? r.productionDate
+                                    : null,
+                                  lot: lotOf(
+                                    d,
+                                    p,
+                                    recipes.rows.find(
+                                      (recipe) =>
+                                        recipe.key === p?.data.recipeCode,
+                                    ),
+                                  ),
+                                };
+                              })()
+                            : r,
                         ),
                       })
                     }
@@ -2198,6 +2715,7 @@ function Certificates() {
                 </Field>
                 {[
                   ["weight", "Καθαρό βάρος (kg)", "number"],
+                  ["cartons", "Πλήθος κιβωτίων", "number"],
                   ["lot", "LOT", "text"],
                   ["productionDate", "Παραγωγή", "date"],
                   ["expiryDate", "Λήξη", "date"],
@@ -2206,7 +2724,13 @@ function Certificates() {
                   <Field key={k} label={l}>
                     <input
                       type={type}
-                      step={type === "number" ? "0.001" : undefined}
+                      step={
+                        k === "cartons"
+                          ? "1"
+                          : type === "number"
+                            ? "0.001"
+                            : undefined
+                      }
                       value={line[k] || ""}
                       onChange={(e) =>
                         change({
@@ -2376,17 +2900,21 @@ function SettingsPage({ admin }: { admin: boolean }) {
     [audit, setAudit] = useState<Data[]>([]),
     [error, setError] = useState(""),
     [token, setToken] = useState("");
+  const [backup, setBackup] = useState<Data | null>(null),
+    [backingUp, setBackingUp] = useState(false);
   useEffect(() => {
     if (admin) {
       Promise.all([
         api<Data[]>("/users"),
         api<Data[]>("/agents"),
         api<Data[]>("/audit"),
+        api<Data>("/backup"),
       ])
-        .then(([u, a, log]) => {
+        .then(([u, a, log, backup]) => {
           setUsers(u);
           setAgents(a);
           setAudit(log);
+          setBackup(backup);
         })
         .catch((e) => setError(e.message));
     }
@@ -2405,6 +2933,7 @@ function SettingsPage({ admin }: { admin: boolean }) {
           ["users", "Χρήστες"],
           ["agents", "Βοηθοί εκτύπωσης"],
           ["audit", "Καταγραφή ενεργειών"],
+          ["backup", "Αντίγραφα ασφαλείας"],
         ].map(([k, l]) => (
           <button
             className={tab === k ? "active" : ""}
@@ -2416,7 +2945,59 @@ function SettingsPage({ admin }: { admin: boolean }) {
         ))}
       </div>
       <Notice text={error} />
-      {!["users", "agents", "audit"].includes(tab) ? (
+      {tab === "backup" ? (
+        <section className="panel pad">
+          <h2>Αντίγραφα ασφαλείας</h2>
+          <p>
+            {backup?.enabled
+              ? `Αυτόματο αντίγραφο στις ${backup.hour}:00 · Διατήρηση ${backup.retentionDays} ημέρες`
+              : "Τα αυτόματα αντίγραφα δεν είναι ενεργοποιημένα."}
+          </p>
+          <button
+            className="primary"
+            disabled={backingUp}
+            onClick={async () => {
+              setBackingUp(true);
+              setError("");
+              try {
+                const response = await fetch("/api/backup", {
+                  method: "POST",
+                  headers: { "X-Faethon-Request": "1" },
+                });
+                if (!response.ok)
+                  throw new Error(
+                    "Το αντίγραφο απέτυχε. Ελέγξτε τη ρύθμιση pg_dump στον διακομιστή.",
+                  );
+                const url = URL.createObjectURL(await response.blob());
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `faethon-${today()}.zip`;
+                a.click();
+                setTimeout(() => URL.revokeObjectURL(url), 60000);
+                setBackup(await api("/backup"));
+              } catch (e) {
+                setError((e as Error).message);
+              } finally {
+                setBackingUp(false);
+              }
+            }}
+          >
+            {backingUp
+              ? "Δημιουργία αντιγράφου…"
+              : "Δημιουργία και λήψη αντιγράφου"}
+          </button>
+          {backup?.recent?.map((item: Data, i: number) => (
+            <div className="setting-row" key={i}>
+              <span>{new Date(item.at).toLocaleString("el")}</span>
+              <b>
+                {item.action === "backup.completed"
+                  ? "Ολοκληρώθηκε"
+                  : "Απέτυχε"}
+              </b>
+            </div>
+          ))}
+        </section>
+      ) : !["users", "agents", "audit"].includes(tab) ? (
         <Catalog kind={tab} admin onPrint={() => {}} />
       ) : tab === "users" ? (
         <section className="panel pad">

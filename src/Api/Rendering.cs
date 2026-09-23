@@ -29,7 +29,7 @@ public sealed class Rendering(AssetStore assets)
     }
     private void Draw(SKCanvas c,Snapshot s,List<string> issues)
     {
-        if(s.Template.GeometryKey.Length>0&&SharedLayout.Draw(c,s,assets,issues))return;
+        if(!(s.Production.Mode=="blank"&&s.Template.Family is "butcher" or "sample")&&s.Template.GeometryKey.Length>0&&SharedLayout.Draw(c,s,assets,issues))return;
         c.Clear(SKColors.White);var t=s.Template;float w=t.WidthMm,h=t.HeightMm,m=2;
         using var face=SKTypeface.FromFamilyName("Arial");using var boldFace=SKTypeface.FromFamilyName("Arial",SKFontStyle.Bold);
         using var paint=new SKPaint{Color=SKColors.Black,IsAntialias=true};
@@ -67,8 +67,28 @@ public sealed class Rendering(AssetStore assets)
             Text($"{s.Customer?.Address}  {s.Customer?.City}  {s.Customer?.Country}\nVAT: {s.Customer?.Vat}",m,39,w-2*m,15,9);
             Text($"{Date(cert.ShipmentDate)}    {cert.Vehicle} / {cert.Trailer}",m,57,w-2*m,12,10);
             float y=75;
-            foreach(var line in cert.Lines){var product=s.CertificateProducts.GetValueOrDefault(line.ProductId);var title=string.Join(" / ",langs.Select(l=>product?.Names.GetValueOrDefault(l)??""));Box(m,y,w-2*m,14);Text($"{title}\n{Num(line.Weight)} kg  LOT {line.Lot}  {Date(line.ProductionDate)} — {Date(line.ExpiryDate)}",m+2,y+1,w-2*m-4,12,8);y+=14;}
+            foreach(var line in cert.Lines){var product=s.CertificateProducts.GetValueOrDefault(line.ProductId);var title=string.Join(" / ",langs.Select(l=>product?.Names.GetValueOrDefault(l)??""));Box(m,y,w-2*m,19);Text($"{title}\n{Num(line.Weight)} kg  LOT {line.Lot}  {Date(line.ProductionDate)} — {Date(line.ExpiryDate)}\n{(langs[0]=="bg"?"Кашони":"Cartons")}: {line.Cartons}  {(line.FreezeDate.HasValue?Both("freeze")+": "+Date(line.FreezeDate):"")}",m+2,y+1,w-2*m-4,17,8);y+=19;}
             Text(cert.Notes,m,y+5,w-2*m,h-y-15,9);if(y>h-20)issues.Add("Οι γραμμές πιστοποιητικού υπερβαίνουν τη σελίδα.");return;
+        }
+        if(t.Family=="butcher"&&t.Profile=="a4")
+        {
+            for(int index=0;index<8;index++)
+            {
+                float x=5+index%2*100,y=5+index/2*71;
+                Box(x,y,98,69);Asset(s.Brand?.LogoAsset??"",x+3,y+3,30,14);
+                var title=p.FreeText.Length>0?p.FreeText:p.Mode=="blank"?"":s.Product?.Names.GetValueOrDefault(langs[0])??"";
+                Text(title,x+3,y+23,92,22,12,true);
+                Text("€/kg",x+73,y+4,22,8,12,true);
+                Text(H("origin")+": "+(p.Mode=="blank"?"":s.Origins.GetValueOrDefault(langs[0])??""),x+3,y+49,92,10,8);
+                Text(H("animal")+": "+p.AnimalCode,x+3,y+60,92,7,8);
+            }
+            return;
+        }
+        if(t.Family=="sample"&&p.Mode=="blank")
+        {
+            Asset(s.Brand?.LogoAsset??"",m,m,25,15);
+            Text(Both("sample"),m,20,w-2*m,12,16,true);
+            Text(p.FreeText,m,35,w-2*m,h-37,12);return;
         }
         if(t.Family is "custom" or "production" or "address" or "reference-list" || t.Family=="butcher"&&p.Mode=="blank")
         {

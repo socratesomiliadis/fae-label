@@ -7,6 +7,7 @@ namespace Faethon;
 public sealed class BackupService(IServiceScopeFactory scopes,IConfiguration config,AssetStore assets,ILogger<BackupService> logger):BackgroundService
 {
     private DateOnly? last;
+    private readonly SemaphoreSlim gate=new(1,1);
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while(!stoppingToken.IsCancellationRequested)
@@ -24,6 +25,12 @@ public sealed class BackupService(IServiceScopeFactory scopes,IConfiguration con
         }
     }
     public async Task<string> Backup(CancellationToken ct)
+    {
+        await gate.WaitAsync(ct);
+        try{return await CreateBackup(ct);}
+        finally{gate.Release();}
+    }
+    private async Task<string> CreateBackup(CancellationToken ct)
     {
         var dir=Path.GetFullPath(config["Backup:Directory"]??"backups");Directory.CreateDirectory(dir);
         var work=Path.Combine(dir,"pending-"+Guid.NewGuid());Directory.CreateDirectory(work);

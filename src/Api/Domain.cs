@@ -114,6 +114,8 @@ public sealed record Product
     public int DailyOrder { get; init; }
     public int ShelfLife { get; init; }
     public bool Frozen { get; init; }
+    public bool Butcher { get; init; }
+    public string SmallLabelWeight { get; init; } = "product";
 }
 public sealed record Recipe
 {
@@ -131,6 +133,10 @@ public sealed record ReferenceData
 {
     public string Name { get; init; } = "";
     public string Group { get; init; } = "";
+    public bool Frozen { get; init; }
+    public string TradeName { get; init; } = "";
+    public string Phone { get; init; } = "";
+    public string Email { get; init; } = "";
     public Dictionary<string, string> Texts { get; init; } = [];
     public Dictionary<string, string> Manufacturer { get; init; } = [];
     public Dictionary<string, string> Origins { get; init; } = [];
@@ -209,7 +215,7 @@ public sealed record Certificate
     public CertificateLine[] Lines { get; init; } = [];
     public string Notes { get; init; } = "";
 }
-public sealed record CertificateLine(Guid ProductId, decimal Weight, string Lot, DateOnly ProductionDate, DateOnly ExpiryDate, DateOnly? FreezeDate);
+public sealed record CertificateLine(Guid ProductId, decimal Weight, string Lot, DateOnly ProductionDate, DateOnly ExpiryDate, DateOnly? FreezeDate, int? Cartons = null);
 public static partial class Rules
 {
     public static DateOnly Today() => DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTimeOffset.UtcNow, "Europe/Athens").DateTime);

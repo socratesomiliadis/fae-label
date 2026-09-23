@@ -22,7 +22,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 });
 builder.Services.AddAuthorization(o=>o.AddPolicy("admin",p=>p.RequireRole("admin")));
 builder.Services.AddRateLimiter(o=>{o.RejectionStatusCode=429;o.AddPolicy("login",ctx=>RateLimitPartition.GetFixedWindowLimiter(ctx.Connection.RemoteIpAddress?.ToString()??"local",_=>new(){PermitLimit=10,Window=TimeSpan.FromMinutes(1),QueueLimit=0}));});
-builder.Services.AddHostedService<BackupService>();
+builder.Services.AddSingleton<BackupService>();
+builder.Services.AddHostedService<BackupService>(sp=>sp.GetRequiredService<BackupService>());
 var app=builder.Build();
 if(args.Contains("--initialize")||args.Contains("--import")||args.Contains("--legacy-assets"))
 {
@@ -59,13 +60,24 @@ var api=app.MapGroup("/api").RequireAuthorization();
 api.MapGet("/me",(HttpContext c)=>new{name=Actor(c),role=c.User.FindFirstValue(ClaimTypes.Role)});
 api.MapGet("/dashboard",async(AppDb db)=>new{products=await db.Records.CountAsync(r=>r.Kind=="product"&&!r.Archived),recipes=await db.Records.CountAsync(r=>r.Kind=="recipe"&&!r.Archived),queued=await db.Jobs.CountAsync(j=>j.Status=="queued"),attention=await db.Jobs.CountAsync(j=>j.Status=="uncertain"||j.Status=="failed"),recent=await db.Jobs.OrderByDescending(j=>j.CreatedAt).Take(6).Select(j=>new{j.Id,j.CreatedAt,j.Status,j.Quantity,j.Actor}).ToListAsync()});
 api.MapGet("/records/{kind}",async(string kind,AppDb db)=>{if(!Validation.Kinds.Contains(kind))return Results.NotFound();var rows=await db.Records.Where(r=>r.Kind==kind&&!r.Archived).OrderBy(r=>r.Key).AsNoTracking().ToListAsync();return Results.Ok(rows.Select(ToRecord));});
+api.MapPost("/products/{id:guid}/label-brands",async(Guid id,LabelBrands input,AppDb db,HttpContext c)=>{
+    var row=await db.Records.SingleOrDefaultAsync(r=>r.Id==id&&r.Kind=="product"&&!r.Archived);if(row is null)return Results.NotFound();if(row.Version!=input.Version)return Results.Conflict();
+    var brands=input.Brands.Distinct().ToArray();if(brands.Length==0||await db.Records.CountAsync(r=>r.Kind=="brand"&&!r.Archived&&brands.Contains(r.Key))!=brands.Length)throw new InvalidOperationException("Επιλέξτε τουλάχιστον μία υπάρχουσα επωνυμία.");
+    row.Data=Json.Write(row.As<Product>() with{Brands=brands});row.Version++;row.UpdatedAt=DateTimeOffset.UtcNow;db.Audits.Add(new(){Actor=Actor(c),Action="product.label-brands",RecordId=id,Detail=Json.Write(brands)});await db.SaveChangesAsync();return Results.Ok(ToRecord(row));
+});
 api.MapPost("/records/{kind}",async(string kind,RecordInput input,AppDb db,HttpContext c)=>{
-    if(!CanEdit(c,kind))return Results.Forbid();if(string.IsNullOrWhiteSpace(input.Key))throw new InvalidOperationException("Απαιτείται μοναδική ταυτότητα.");
-    var row=new Record{Kind=kind,Key=input.Key.Trim(),Data=Validation.Check(kind,input.Data)};db.Records.Add(row);db.Audits.Add(new(){Actor=Actor(c),Action="record.create",RecordId=row.Id,Detail=row.Data});await db.SaveChangesAsync();return Results.Ok(ToRecord(row));
+    if(!CanEdit(c,kind))return Results.Forbid();
+    var key=kind=="product"&&string.IsNullOrWhiteSpace(input.Key)?Guid.NewGuid().ToString("N"):input.Key.Trim();
+    if(string.IsNullOrWhiteSpace(key))throw new InvalidOperationException("Απαιτείται μοναδική ταυτότητα.");
+    var data=Validation.Check(kind,input.Data);
+    if(kind=="recipe"&&Json.Read<Recipe>(data).Code!=key)throw new InvalidOperationException("Ο κωδικός σύστασης πρέπει να συμφωνεί με την ταυτότητα.");
+    var row=new Record{Kind=kind,Key=key,Data=data};db.Records.Add(row);db.Audits.Add(new(){Actor=Actor(c),Action="record.create",RecordId=row.Id,Detail=row.Data});await db.SaveChangesAsync();return Results.Ok(ToRecord(row));
 });
 api.MapPut("/records/{id:guid}",async(Guid id,RecordInput input,AppDb db,HttpContext c)=>{
     var row=await db.Records.FindAsync(id);if(row is null)return Results.NotFound();if(!CanEdit(c,row.Kind))return Results.Forbid();if(row.Version!=input.Version)return Results.Conflict(new{message="Η εγγραφή άλλαξε. Ανανεώστε τη σελίδα."});
-    var data=Validation.Check(row.Kind,input.Data);db.Audits.Add(new(){Actor=Actor(c),Action="record.update",RecordId=id,Detail=Json.Write(new{before=row.Data,after=data})});row.Data=data;row.Version++;row.UpdatedAt=DateTimeOffset.UtcNow;await db.SaveChangesAsync();return Results.Ok(ToRecord(row));
+    var data=Validation.Check(row.Kind,input.Data);
+    if(row.Kind=="recipe"&&Json.Read<Recipe>(data).Code!=row.Key)throw new InvalidOperationException("Ο κωδικός σύστασης δεν αλλάζει αφού καταχωρηθεί.");
+    db.Audits.Add(new(){Actor=Actor(c),Action="record.update",RecordId=id,Detail=Json.Write(new{before=row.Data,after=data})});row.Data=data;row.Version++;row.UpdatedAt=DateTimeOffset.UtcNow;await db.SaveChangesAsync();return Results.Ok(ToRecord(row));
 });
 api.MapDelete("/records/{id:guid}",async(Guid id,long version,AppDb db,HttpContext c)=>{var row=await db.Records.FindAsync(id);if(row is null)return Results.NotFound();if(!Validation.Kinds.Contains(row.Kind))return Results.BadRequest();if(row.Version!=version)return Results.Conflict();row.Archived=true;row.Version++;db.Audits.Add(new(){Actor=Actor(c),Action="record.archive",RecordId=id});await db.SaveChangesAsync();return Results.Ok();}).RequireAuthorization("admin");
 api.MapPost("/daily",async(DailyUpdate[] items,AppDb db,HttpContext c)=>{await using var tx=await db.Database.BeginTransactionAsync();foreach(var item in items){var row=await db.Records.SingleAsync(r=>r.Id==item.Id&&r.Kind=="product");if(row.Version!=item.Version)return Results.Conflict();row.Data=Json.Write(row.As<Product>() with{Daily=item.Daily,DailyOrder=item.Order});row.Version++;}db.Audits.Add(new(){Actor=Actor(c),Action="daily.update",Detail=Json.Write(items)});await db.SaveChangesAsync();await tx.CommitAsync();return Results.Ok();});
@@ -88,6 +100,8 @@ api.MapGet("/users",async(AppDb db)=>await db.Users.Select(u=>new{u.Id,u.Name,u.
 api.MapPost("/users",async(UserInput input,AppDb db)=>{if(input.Password.Length<12||input.Role is not ("admin" or "operator"))throw new InvalidOperationException("Ελέγξτε κωδικό (12+ χαρακτήρες) και ρόλο.");var u=new User{Name=input.Name.Trim().ToLowerInvariant(),Role=input.Role};u.PasswordHash=new PasswordHasher<User>().HashPassword(u,input.Password);db.Users.Add(u);await db.SaveChangesAsync();return Results.Ok(new{u.Id});}).RequireAuthorization("admin");
 api.MapPut("/users/{id:guid}",async(Guid id,UserChange input,AppDb db,HttpContext c)=>{var u=await db.Users.FindAsync(id);if(u is null)return Results.NotFound();if(u.Id.ToString()==c.User.FindFirstValue(ClaimTypes.NameIdentifier)&&input.Disabled)throw new InvalidOperationException("Δεν μπορείτε να απενεργοποιήσετε τον εαυτό σας.");u.Disabled=input.Disabled;if(!string.IsNullOrWhiteSpace(input.Password)){if(input.Password.Length<12)throw new InvalidOperationException("Ελάχιστο μήκος 12 χαρακτήρες.");u.PasswordHash=new PasswordHasher<User>().HashPassword(u,input.Password);}u.SessionVersion++;await db.SaveChangesAsync();return Results.Ok();}).RequireAuthorization("admin");
 api.MapGet("/audit",async(AppDb db)=>await db.Audits.OrderByDescending(a=>a.At).Take(500).Select(a=>new{a.Id,a.At,a.Actor,a.Action,a.RecordId}).ToListAsync()).RequireAuthorization("admin");
+api.MapGet("/backup",async(AppDb db,IConfiguration config)=>new{enabled=config.GetValue<bool>("Backup:Enabled"),hour=config.GetValue("Backup:Hour",2),retentionDays=config.GetValue("Backup:RetentionDays",30),recent=await db.Audits.Where(a=>a.Action=="backup.completed"||a.Action=="backup.failed").OrderByDescending(a=>a.At).Take(10).Select(a=>new{a.At,a.Action}).ToListAsync()}).RequireAuthorization("admin");
+api.MapPost("/backup",async(BackupService backups,HttpContext c)=>{var file=await backups.Backup(c.RequestAborted);return Results.File(file,"application/zip",Path.GetFileName(file));}).RequireAuthorization("admin");
 api.MapPost("/agents",async(AgentInput input,AppDb db)=>{var token=Convert.ToHexString(RandomNumberGenerator.GetBytes(32));var agent=new Agent{Name=input.Name,TokenHash=AssetStore.Hash(Encoding.UTF8.GetBytes(token))};db.Agents.Add(agent);await db.SaveChangesAsync();return new{agent.Id,token};}).RequireAuthorization("admin");
 api.MapGet("/agents",async(AppDb db)=>await db.Agents.Select(a=>new{a.Id,a.Name,a.Disabled,a.LastSeen}).ToListAsync()).RequireAuthorization("admin");
 app.MapGet("/api/agent/claim",async(HttpContext c,AppDb db,JobService jobs)=>{var agent=await AuthenticateAgent(c,db);if(agent is null)return Results.Unauthorized();var job=await jobs.Claim(agent);return job is null?Results.NoContent():Results.Ok(job);});
@@ -102,6 +116,7 @@ static async Task<Agent?> AuthenticateAgent(HttpContext c,AppDb db){var token=c.
 public sealed record Login(string Name,string Password);
 public sealed record RecordInput(string Key,long Version,JsonElement Data);
 public sealed record DailyUpdate(Guid Id,long Version,bool Daily,int Order);
+public sealed record LabelBrands(long Version,string[] Brands);
 public sealed record JobResolution(long Version,string Status,string Note);
 public sealed record ReprintRequest(string RequestKey,int Quantity);
 public sealed record UserInput(string Name,string Password,string Role);

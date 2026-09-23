@@ -13,7 +13,7 @@ foreach ($file in @($dotnet, "$pgBin/pg_ctl.exe", "$pgData/PG_VERSION")) {
     if (!(Test-Path -LiteralPath $file)) { throw "Missing local prerequisite: $file. This launcher is for the prepared development PC." }
 }
 New-Item -ItemType Directory -Force -Path $state | Out-Null
-$names = @('PATH','DOTNET_ROOT','ConnectionStrings__Database','Storage','Urls','SetupToken','Logging__LogLevel__Microsoft','Backup__Enabled')
+$names = @('PATH','DOTNET_ROOT','ConnectionStrings__Database','Storage','Urls','SetupToken','Logging__LogLevel__Microsoft','Backup__Enabled','Backup__PgDump','Backup__Directory')
 $saved = @{}
 foreach ($name in $names) { $saved[$name] = [Environment]::GetEnvironmentVariable($name, 'Process') }
 try {
@@ -23,6 +23,8 @@ try {
     $env:Storage = Join-Path $state 'storage'
     $env:Urls = 'http://localhost:5080'
     $env:Backup__Enabled = 'false'
+    $env:Backup__PgDump = Join-Path $pgBin 'pg_dump.exe'
+    $env:Backup__Directory = Join-Path $state 'backups'
     $env:Logging__LogLevel__Microsoft = 'Warning'
     $env:SetupToken = [Guid]::NewGuid().ToString('N')
 
