@@ -12,5 +12,5 @@
     <PackageReference Include="SkiaSharp.HarfBuzz" Version="3.119.1" />
     <PackageReference Include="ZXing.Net" Version="0.16.11" />
   </ItemGroup>
-  <ItemGroup><EmbeddedResource Include="Templates/*.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Templates/*.json" /><EmbeddedResource Include="Fonts/*.ttf" /><Content Include="Fonts/OFL.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" /></ItemGroup>
 </Project>

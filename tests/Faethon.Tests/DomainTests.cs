@@ -26,9 +26,9 @@ public sealed class DomainTests
     [Fact]public void InvalidDatesFail(){Assert.Throws<InvalidOperationException>(()=>Rules.ValidateProduction(new(){ProductionDate=new(2026,2,1),ExpiryOverride=new(2026,1,1)}));Assert.Throws<InvalidOperationException>(()=>Rules.ValidateProduction(new(){ShelfLife=10000}));}
     [Fact]public void ExplicitExpiryWins(){var draft=new Production{ProductionDate=new(2026,1,1),ShelfLife=10,ExpiryOverride=new(2026,1,20)};Assert.Equal(new DateOnly(2026,1,20),draft.Expiry);}
     [Fact]public void BarcodeUsesLegacyCode39(){Assert.True(Rendering.ValidBarcode("5212006800040"));Assert.True(Rendering.ValidBarcode("ABC123"));Assert.False(Rendering.ValidBarcode("lowercase"));Assert.True(Rendering.ValidBarcode("5212006800040","ean13"));Assert.False(Rendering.ValidBarcode("5212006800041","ean13"));}
-    [Fact]public void RealWorkbookRowsRemainDistinct()
+    [WorkbookFact]public void RealWorkbookRowsRemainDistinct()
     {
-        var dir=Environment.GetEnvironmentVariable("FAETHON_IMPORT_SOURCE")??"C:/Users/Socrates/Downloads/faethonfiles";
+        var dir=TestEnvironment.ImportDirectory;
         using var p=File.OpenRead(Path.Combine(dir,"PROIONTA.xlsx"));using var r=File.OpenRead(Path.Combine(dir,"SYNTAGES.xlsx"));
         var products=WorkbookReader.Parse(p,"product");var recipes=WorkbookReader.Parse(r,"recipe");Assert.Equal(779,products.Count);Assert.Equal(172,recipes.Count);Assert.Equal(779,products.Select(p=>p.Key).Distinct().Count());
         Assert.Equal(4,products.Count(p=>Json.Read<Product>(p.Data).ErpCode=="1-111-2-002"));Assert.Contains(recipes,r=>r.Key=="0100p");Assert.Contains(recipes,r=>r.Key=="0001");Assert.Contains(products,p=>Json.Read<Product>(p.Data).Brands.Length>1);

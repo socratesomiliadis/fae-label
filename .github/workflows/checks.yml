@@ -1,0 +1,28 @@
+name: Cross-platform checks
+on: [push, pull_request]
+jobs:
+  checks:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: src/Web/package-lock.json
+      - run: npm ci
+        working-directory: src/Web
+      - run: node scripts/dev.mjs build
+      - name: Backend tests without external database
+        run: dotnet test tests/Faethon.Tests --no-build --filter "FullyQualifiedName!~Faethon.Tests.IntegrationTests"
+      - run: npx playwright install chromium
+        working-directory: src/Web
+      - run: npm test
+        working-directory: src/Web

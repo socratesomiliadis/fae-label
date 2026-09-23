@@ -3,6 +3,8 @@ import concurrent.futures
 import csv
 import hashlib
 import json
+import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -18,8 +20,13 @@ manifest = json.loads((OUT / 'manifest.json').read_text(encoding='utf-8'))
 reports = manifest['results']
 render_dir = OUT / 'pdf-renders'
 render_dir.mkdir(exist_ok=True)
-font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 16)
-poppler = Path('C:/Users/Socrates/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/pdftoppm.exe')
+font_paths = [os.environ.get('FAETHON_QA_FONT'), 'C:/Windows/Fonts/arial.ttf',
+              '/System/Library/Fonts/Supplemental/Arial.ttf']
+font_path = next((p for p in font_paths if p and Path(p).is_file()), None)
+font = ImageFont.truetype(font_path, 16) if font_path else ImageFont.load_default()
+poppler = os.environ.get('FAETHON_PDFTOPPM') or shutil.which('pdftoppm')
+if not poppler:
+    raise SystemExit('Install Poppler and add pdftoppm to PATH, or set FAETHON_PDFTOPPM.')
 
 def inspect(report):
     source = OUT / report['pdf']

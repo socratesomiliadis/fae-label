@@ -17,3 +17,9 @@ output/**/*.jpg
 output/**/*.jpeg
 output/**/*.zip
 tmp/
+
+# Cross-platform build and browser-test output
+**/*.tsbuildinfo
+**/test-results/
+**/playwright-report/
+**/__pycache__/

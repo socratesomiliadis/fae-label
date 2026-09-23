@@ -1,8 +1,12 @@
 param(
     [switch]$PrepareOnly,
-    [string]$ImportDirectory = 'C:\Users\Socrates\Downloads\faethonfiles'
+    [string]$ImportDirectory = (Join-Path $HOME 'Downloads/faethonfiles')
 )
 $ErrorActionPreference = 'Stop'
+$probe = New-Object System.Net.Sockets.TcpClient
+$portBusy = $false
+try { $probe.Connect('127.0.0.1', 5080); $portBusy = $true } catch { } finally { $probe.Dispose() }
+if ($portBusy) { throw 'Port 5080 is already in use. Reuse the running app or stop it before preparing another instance.' }
 $root = Split-Path $PSScriptRoot -Parent
 $dotnet = Join-Path $root '.tools/dotnet/dotnet.exe'
 $pgBin = Join-Path $root '.tools/postgres/pgsql/bin'

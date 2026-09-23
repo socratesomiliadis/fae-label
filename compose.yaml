@@ -1,0 +1,19 @@
+name: faethon-dev
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: faethon_test
+      POSTGRES_PASSWORD: faethon_local_dev
+      POSTGRES_DB: faethon_local
+    ports:
+      - "127.0.0.1:${FAETHON_DB_PORT:-55440}:5432"
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U faethon_test -d faethon_local"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+volumes:
+  database:

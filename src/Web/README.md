@@ -24,3 +24,5 @@ Colors were read from the [website stylesheet](https://www.faethon.eu/faethon/cs
 ## Checks
 
 Run `npm run build` then `npm test`. Playwright serves the built files through request interception with mocked API responses, so these checks do not start a dev server. Tests cover existing Greek workflows, permissions, accessible dialogs/tabs, branding, mobile layout, and stale preview rejection. Physical printing and backend integration require their existing separate checks.
+
+For Windows and macOS setup, database configuration and shared build/test commands, see [running locally](../../docs/running-locally.md). Browser tests use Playwright Chromium; install it with `npx playwright install chromium`.

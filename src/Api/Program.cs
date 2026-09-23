@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 
 var builder=WebApplication.CreateBuilder(args);
-builder.Host.UseWindowsService(o=>o.ServiceName="Faethon Labeller");
+if(OperatingSystem.IsWindows())builder.Host.UseWindowsService(o=>o.ServiceName="Faethon Labeller");
 builder.Services.AddDbContext<AppDb>(o=>o.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 builder.Services.AddSingleton<AssetStore>();builder.Services.AddScoped<ImportService>();builder.Services.AddScoped<Resolver>();builder.Services.AddScoped<JobService>();builder.Services.AddSingleton<Rendering>();
 builder.Services.AddOpenApi();builder.Services.AddProblemDetails();

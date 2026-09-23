@@ -13,7 +13,7 @@ export async function runCertificateQa(api, playwright, directory) {
     for(const [suffix,link] of [['pdf',response.pdfUrl],['png',response.imageUrl]]) {const file=await api.get(link);if(!file.ok())throw Error(link);await fs.writeFile(path.join(directory,`${name}.${suffix}`),await file.body());}
     results.push({name,request,...response});
   }
-  const browser=await playwright.chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+  const browser=await playwright.chromium.launch({headless:true});
   try {
     const customerData={name:'QA DEMO Northstar Foods',tradeName:'NORTHSTAR QA',address:'10 Fictional Avenue',city:'Sofia',country:'Bulgaria',postalCode:'00000',vat:'QA-NOT-A-VALID-VAT',phone:'+000 000 000',email:'qa@example.invalid',complete:true};
     const customer=await record('certificate-customer','certificate-customer',customerData);

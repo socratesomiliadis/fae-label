@@ -11,8 +11,8 @@ using Xunit;
 namespace Faethon.Tests;
 public sealed class TestApp:WebApplicationFactory<Program>
 {
-    public string Connection {get;}=(Environment.GetEnvironmentVariable("FAETHON_TEST_DATABASE")??"Host=127.0.0.1;Port=55439;Username=faethon_test")+";Database=faethon_suite_"+Guid.NewGuid().ToString("N");
-    protected override void ConfigureWebHost(IWebHostBuilder builder){builder.UseSetting("ConnectionStrings:Database",Connection);builder.UseSetting("SetupToken","test-bootstrap-token");builder.UseSetting("Storage",Path.Combine(Path.GetTempPath(),"faethon-api-"+Guid.NewGuid()));builder.UseSetting("Logging:LogLevel:Default","Warning");builder.UseSetting("Backup:Enabled","false");builder.UseSetting("Backup:Directory",Path.Combine(Path.GetTempPath(),"faethon-backup-test-"+Guid.NewGuid()));builder.UseSetting("Backup:PgDump",Path.GetFullPath("../../../../../.tools/postgres/pgsql/bin/pg_dump.exe",AppContext.BaseDirectory));}
+    public string Connection {get;}=(Environment.GetEnvironmentVariable("FAETHON_TEST_DATABASE")??"Host=127.0.0.1;Port=55440;Username=faethon_test;Password=faethon_local_dev")+";Database=faethon_suite_"+Guid.NewGuid().ToString("N");
+    protected override void ConfigureWebHost(IWebHostBuilder builder){builder.UseSetting("ConnectionStrings:Database",Connection);builder.UseSetting("SetupToken","test-bootstrap-token");builder.UseSetting("Storage",Path.Combine(Path.GetTempPath(),"faethon-api-"+Guid.NewGuid()));builder.UseSetting("Logging:LogLevel:Default","Warning");builder.UseSetting("Backup:Enabled","false");builder.UseSetting("Backup:Directory",Path.Combine(Path.GetTempPath(),"faethon-backup-test-"+Guid.NewGuid()));builder.UseSetting("Backup:PgDump",TestEnvironment.PgDump);}
     public async Task Initialize(){using var scope=Services.CreateScope();var db=scope.ServiceProvider.GetRequiredService<AppDb>();await db.Database.MigrateAsync();await Seed.Run(db);}
     public async Task Drop(){using var scope=Services.CreateScope();await scope.ServiceProvider.GetRequiredService<AppDb>().Database.EnsureDeletedAsync();}
 }
@@ -69,8 +69,13 @@ public sealed class IntegrationTests
         (await client.DeleteAsync($"/api/records/{manualId}?version=2")).EnsureSuccessStatusCode();
         var previewResponse=await op.PostAsJsonAsync("/api/preview",new Production{TemplateKey="custom-small",Languages=["el"],FreeText="ΔΟΚΙΜΗ"});previewResponse.EnsureSuccessStatusCode();var preview=(await previewResponse.Content.ReadFromJsonAsync<PreviewResult>())!;Assert.NotEmpty(preview.Issues);
         Assert.Equal(HttpStatusCode.BadRequest,(await op.PostAsJsonAsync("/api/jobs",new SubmitJob(preview.Id,Guid.NewGuid(),1,Guid.NewGuid().ToString()))).StatusCode);
+        await app.Drop();
+    }
+    [WorkbookFact]public async Task RealWorkbookImportsAreIdempotent()
+    {
+        await using var app=new TestApp();await app.Initialize();
         using var scope=app.Services.CreateScope();var db=scope.ServiceProvider.GetRequiredService<AppDb>();var imports=scope.ServiceProvider.GetRequiredService<ImportService>();
-        using var p=File.OpenRead("C:/Users/Socrates/Downloads/faethonfiles/PROIONTA.xlsx");using var r=File.OpenRead("C:/Users/Socrates/Downloads/faethonfiles/SYNTAGES.xlsx");var rows=WorkbookReader.Parse(r,"recipe").Concat(WorkbookReader.Parse(p,"product")).ToList();var batch=await imports.Stage(rows,"test");await imports.Commit(batch.Id,"test");await imports.Commit(batch.Id,"test");Assert.Equal(779,await db.Records.CountAsync(r=>r.Kind=="product"&&!r.Archived));Assert.Equal(172,await db.Records.CountAsync(r=>r.Kind=="recipe"));
+        using var p=File.OpenRead(Path.Combine(TestEnvironment.ImportDirectory,"PROIONTA.xlsx"));using var r=File.OpenRead(Path.Combine(TestEnvironment.ImportDirectory,"SYNTAGES.xlsx"));var rows=WorkbookReader.Parse(r,"recipe").Concat(WorkbookReader.Parse(p,"product")).ToList();var batch=await imports.Stage(rows,"test");await imports.Commit(batch.Id,"test");await imports.Commit(batch.Id,"test");Assert.Equal(779,await db.Records.CountAsync(r=>r.Kind=="product"&&!r.Archived));Assert.Equal(172,await db.Records.CountAsync(r=>r.Kind=="recipe"));
         var second=await imports.Stage(rows,"test");await imports.Commit(second.Id,"test");Assert.Equal(779,await db.Records.CountAsync(r=>r.Kind=="product"&&!r.Archived));
         var bad=await imports.Stage([rows[0],rows[0]],"test");await Assert.ThrowsAsync<InvalidOperationException>(()=>imports.Commit(bad.Id,"test"));Assert.Equal(172,await db.Records.CountAsync(r=>r.Kind=="recipe"));
         await app.Drop();

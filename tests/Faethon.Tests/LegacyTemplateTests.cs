@@ -7,10 +7,22 @@ using Xunit;
 namespace Faethon.Tests;
 public sealed class LegacyTemplateTests
 {
+    [Theory]
+    [InlineData("Regular")]
+    [InlineData("Bold")]
+    public void BundledFallbackContainsGreekAndCyrillicGlyphs(string style)
+    {
+        using var stream=typeof(LabelFonts).Assembly.GetManifestResourceStream($"Faethon.Api.Fonts.Carlito-{style}.ttf");
+        Assert.NotNull(stream);
+        using var face=SkiaSharp.SKTypeface.FromStream(stream);
+        Assert.Equal("Carlito",face.FamilyName);
+        using var font=new SkiaSharp.SKFont(face,12);
+        Assert.True(font.ContainsGlyphs("ΦΑΕΘΩΝ άέήίόύώ ϊϋΐΰ Продукт СЪХРАНЕНИЕ 0123456789"));
+    }
     [Fact]public void MillimetreFontMetricsFitLegacyDateBox()
     {
         var node=SharedLayout.LegacyLayouts["MEGALH_ETIKETA_FAETHON_GR_EN"].Nodes.Single(n=>n.Name=="PROIONTA.HMER_PARAGOGHS");
-        using var face=SkiaSharp.SKTypeface.FromFamilyName(node.Font,SkiaSharp.SKFontStyle.Bold);
+        using var face=LabelFonts.Resolve(node.Font,true);
         using var font=new SkiaSharp.SKFont(face,node.FontSize*25.4f/72*100){Subpixel=true,LinearMetrics=true,Hinting=SkiaSharp.SKFontHinting.None};
         var width=font.MeasureText("23/9/2026",out var bounds)/100;
         Assert.True(width<node.Width&&bounds.Height/100<node.Height,$"width={width}, bounds={bounds}, box={node.Width}x{node.Height}");
@@ -84,9 +96,9 @@ public sealed class LegacyTemplateTests
         using var r=SkiaSharp.SKBitmap.Decode(red.Png);using var b=SkiaSharp.SKBitmap.Decode(blue.Png);
         Assert.Equal(SkiaSharp.SKColors.Red,r.GetPixel(40,40));Assert.Equal(SkiaSharp.SKColors.Blue,b.GetPixel(40,40));
     }
-    [Fact]public async Task RealProductFitsEveryRecoveredLabelVariant()
+    [WorkbookFact]public async Task RealProductFitsEveryRecoveredLabelVariant()
     {
-        var directory=Environment.GetEnvironmentVariable("FAETHON_IMPORT_SOURCE")??"C:/Users/Socrates/Downloads/faethonfiles";
+        var directory=TestEnvironment.ImportDirectory;
         using var products=File.OpenRead(Path.Combine(directory,"PROIONTA.xlsx"));
         var product=Json.Read<Product>(WorkbookReader.Parse(products,"product").Single(r=>r.Key=="100").Data);
         using var recipes=File.OpenRead(Path.Combine(directory,"SYNTAGES.xlsx"));

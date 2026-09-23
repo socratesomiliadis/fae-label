@@ -152,7 +152,7 @@ public static class SharedLayout
     private static void Text(SKCanvas canvas,string text,LayoutNode n,SKPaint paint,List<string> issues)
     {
         if(string.IsNullOrEmpty(text))return;
-        using var typeface=SKTypeface.FromFamilyName(n.Font,n.Bold?SKFontStyle.Bold:SKFontStyle.Normal);
+        using var typeface=LabelFonts.Resolve(n.Font,n.Bold);
         // Coordinates are millimetres. Pixel hinting rounds these tiny logical sizes
         // before the canvas scale, making perfectly fitting source captions disappear.
         using var font=new SKFont(typeface,n.FontSize*25.4f/72){Subpixel=true,LinearMetrics=true,Hinting=SKFontHinting.None};using var shaper=new SKShaper(typeface);
