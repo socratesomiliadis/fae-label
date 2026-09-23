@@ -102,7 +102,13 @@ export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
         </Field>
       )}
       {["custom", "production", "butcher"].includes(family) && (
-        <Field label="Ελεύθερο κείμενο / τίτλος">
+        <Field
+          label={
+            family === "production"
+              ? "Περιγραφή ετικέτας"
+              : "Ελεύθερο κείμενο / τίτλος"
+          }
+        >
           <Textarea
             rows={5}
             value={draft.freeText}
@@ -111,13 +117,10 @@ export function AdditionalLabelFields({ model }: { model: ProductionModel }) {
         </Field>
       )}
       {family === "production" && (
-        <Field label="Ημερομηνία παραγωγής">
-          <Input
-            type="date"
-            value={draft.productionDate}
-            onChange={(e) => set("productionDate", e.target.value)}
-          />
-        </Field>
+        <p className="text-sm text-muted-foreground">
+          Τα πεδία «ΗΜΕΡΟΜΗΝΙΑ» και «ΠΡΟΣ ΠΑΡΑΓΩΓΗ» παραμένουν κενά για
+          χειρόγραφη συμπλήρωση μετά την εκτύπωση.
+        </p>
       )}
     </>
   );
