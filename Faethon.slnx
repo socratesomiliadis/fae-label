@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Api/">
+    <Project Path="src/Api/Faethon.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/PrintAgent/">
+    <Project Path="src/PrintAgent/Faethon.PrintAgent.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Faethon.Tests/Faethon.Tests.csproj" />
+  </Folder>
+</Solution>

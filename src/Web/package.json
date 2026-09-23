@@ -1,0 +1,28 @@
+{
+  "name": "faethon-labeller",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "generate:api": "openapi-typescript ../../artifacts/openapi/Faethon.Api.json -o src/generated/api.d.ts",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.468.0",
+    "openapi-fetch": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0",
+    "openapi-typescript": "^7.10.1",
+    "@playwright/test": "^1.56.0",
+    "prettier": "^3.6.2"
+  }
+}
