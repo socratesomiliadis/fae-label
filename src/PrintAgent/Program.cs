@@ -10,10 +10,23 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-var builder=Host.CreateApplicationBuilder(args);builder.Services.AddWindowsService(o=>o.ServiceName="Faethon Print Helper");builder.Services.AddHostedService<PrintWorker>();await builder.Build().RunAsync();
+var builder=Host.CreateApplicationBuilder(args);
+var desktopData=Environment.GetEnvironmentVariable("FAETHON_DATA_DIR");
+if(!string.IsNullOrWhiteSpace(desktopData))builder.Configuration.AddJsonFile(Path.Combine(desktopData,"agent.json"),optional:false,reloadOnChange:false);
+var remoteBackend=Environment.GetEnvironmentVariable("FAETHON_REMOTE_BACKEND");
+if(!string.IsNullOrWhiteSpace(remoteBackend))builder.Configuration["Backend"]=remoteBackend;
+builder.Services.AddWindowsService(o=>o.ServiceName="Faethon Print Helper");builder.Services.AddSingleton<PrintControl>();builder.Services.AddHostedService<PrintWorker>();
+using var host=builder.Build();
+if(args.Contains("--desktop-managed"))_ = Task.Run(async()=>{
+    var control=host.Services.GetRequiredService<PrintControl>();
+    try{string? line;while((line=await Console.In.ReadLineAsync()) is not null){if(line=="pause"){await control.Gate.WaitAsync();Console.WriteLine("FAETHON_AGENT_PAUSED");}}}
+    catch(IOException){}host.Services.GetRequiredService<IHostApplicationLifetime>().StopApplication();
+});
+await host.RunAsync();
+public sealed class PrintControl { public SemaphoreSlim Gate {get;}=new(1,1); }
 public sealed record Dispatch(Guid Id,string Queue,string Transport,int Quantity,string ArtifactUrl,string ArtifactHash,float WidthMm,float HeightMm,int Dpi,float PaperWidthMm,float PaperHeightMm,int Rotation,int OffsetX,int OffsetY,float DotsPerMm);
 public sealed record LedgerEntry(Guid Id,string Status,string Detail,bool Acknowledged=false);
-public sealed class PrintWorker(IConfiguration config,ILogger<PrintWorker> logger):BackgroundService
+public sealed class PrintWorker(IConfiguration config,ILogger<PrintWorker> logger,PrintControl control):BackgroundService
 {
     private readonly JsonSerializerOptions json=new(JsonSerializerDefaults.Web);
     protected override async Task ExecuteAsync(CancellationToken stop)
@@ -24,6 +37,7 @@ public sealed class PrintWorker(IConfiguration config,ILogger<PrintWorker> logge
         var queues=config.GetSection("AllowedQueues").Get<string[]>()??[];
         while(!stop.IsCancellationRequested)
         {
+            await control.Gate.WaitAsync(stop);
             try
             {
                 foreach(var file in Directory.GetFiles(root,"*.json"))
@@ -49,6 +63,7 @@ public sealed class PrintWorker(IConfiguration config,ILogger<PrintWorker> logge
                 catch(Exception e){await Save(root,new(job.Id,"uncertain",e.Message),CancellationToken.None);logger.LogError(e,"Submission uncertain for {JobId}",job.Id);}
             }
             catch(Exception e) when(e is not OperationCanceledException){logger.LogError(e,"Print helper polling failed");}
+            finally{control.Gate.Release();}
             await Task.Delay(2000,stop);
         }
     }

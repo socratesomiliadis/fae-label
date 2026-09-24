@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Set up Faethon</title><link rel="stylesheet" href="desktop.css"></head>
+<body><main>
+  <h1>Set up Faethon</h1>
+  <p>Set up this Windows PC for Faethon. PostgreSQL will keep the data on this PC. You can connect to a server instead when that deployment is ready.</p>
+  <div class="card">
+    <label for="mode">Connection</label><select id="mode"><option value="local">This PC</option><option value="remote">Remote server</option></select>
+    <div id="local">
+      <h2>1. Install PostgreSQL 17</h2><p>Install PostgreSQL 17 with command-line tools on port 5432. Its installer may request administrator approval.</p>
+      <button class="secondary" id="postgres-link">Get PostgreSQL</button>
+      <h2>2. Connect and initialize</h2>
+      <label for="pg-bin">PostgreSQL bin folder</label><input id="pg-bin" value="C:\Program Files\PostgreSQL\17\bin" autocomplete="off">
+      <label for="pg-password">postgres administrator password</label><input id="pg-password" type="password" autocomplete="off">
+      <label for="import-dir">Optional spreadsheet folder</label><div class="row"><input id="import-dir" readonly placeholder="Choose folder containing PROIONTA.xlsx and SYNTAGES.xlsx"><button class="secondary" id="choose-import">Browse</button></div>
+      <p class="muted">Fresh installation only. Existing databases are never overwritten.</p>
+    </div>
+    <div id="remote" class="hidden"><label for="backend-url">Backend HTTPS URL</label><input id="backend-url" type="url" placeholder="https://faethon.example.com"><p class="muted">The server must already be running Faethon and have its own database and backups.</p></div>
+    <label class="check"><input id="login" type="checkbox" checked> Start Faethon when I sign in to Windows</label>
+    <p id="error" class="error" role="alert"></p>
+    <div class="actions"><button id="submit">Set up Faethon</button></div>
+  </div>
+  <div id="done" class="card hidden"><h2>Faethon is ready</h2><p id="key-intro">Use this setup key to create the first administrator account. Keep it until the account is created.</p><code id="setup-key"></code><div class="actions"><button id="open">Open Faethon</button></div></div>
+</main><script src="setup.js"></script></body></html>

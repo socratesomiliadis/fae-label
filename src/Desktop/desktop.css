@@ -1,0 +1,23 @@
+:root { font-family: 'Segoe UI', Arial, sans-serif; color: #17231f; background: #f4f6f3; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 760px; margin: 0 auto; padding: 30px; }
+h1 { margin: 0 0 8px; font-size: 27px; }
+h2 { font-size: 18px; margin: 24px 0 10px; }
+p { color: #4b5a54; line-height: 1.45; }
+label { display: block; margin: 14px 0 6px; font-weight: 600; }
+input, textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #b9c7bd; border-radius: 7px; font: inherit; background: white; }
+textarea { min-height: 100px; resize: vertical; }
+input[type='checkbox'] { width: auto; margin-right: 8px; }
+.check { display: flex; align-items: center; font-weight: 400; }
+button { cursor: pointer; padding: 10px 16px; border: 0; border-radius: 7px; background: #1c6652; color: white; font: inherit; }
+button:disabled { opacity: .55; cursor: wait; }
+button.secondary { background: #e0e9e2; color: #173528; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row input { flex: 1; }
+.card { background: white; border: 1px solid #dbe4dd; border-radius: 11px; padding: 20px; margin: 18px 0; }
+.actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+.error { color: #9f2020; white-space: pre-wrap; }
+.muted { color: #5b6a62; font-size: 13px; }
+.hidden { display: none; }
+code { font: 15px Consolas, monospace; user-select: all; word-break: break-all; }

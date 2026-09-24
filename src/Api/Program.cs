@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 
 var builder=WebApplication.CreateBuilder(args);
+var desktopData=Environment.GetEnvironmentVariable("FAETHON_DATA_DIR");
+if(!string.IsNullOrWhiteSpace(desktopData))builder.Configuration.AddJsonFile(Path.Combine(desktopData,"api.json"),optional:false,reloadOnChange:false);
 if(OperatingSystem.IsWindows())builder.Host.UseWindowsService(o=>o.ServiceName="Faethon Labeller");
 builder.Services.AddDbContext<AppDb>(o=>o.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 builder.Services.AddSingleton<AssetStore>();builder.Services.AddScoped<ImportService>();builder.Services.AddScoped<Resolver>();builder.Services.AddScoped<JobService>();builder.Services.AddSingleton<Rendering>();
@@ -25,13 +27,16 @@ builder.Services.AddRateLimiter(o=>{o.RejectionStatusCode=429;o.AddPolicy("login
 builder.Services.AddSingleton<BackupService>();
 builder.Services.AddHostedService<BackupService>(sp=>sp.GetRequiredService<BackupService>());
 var app=builder.Build();
-if(args.Contains("--initialize")||args.Contains("--import")||args.Contains("--legacy-assets"))
+if(args.Contains("--initialize")||args.Contains("--import")||args.Contains("--legacy-assets")||args.Contains("--backup")||args.Contains("--update-readiness"))
 {
     using var scope=app.Services.CreateScope();var db=scope.ServiceProvider.GetRequiredService<AppDb>();await db.Database.MigrateAsync();await Seed.Run(db);
+    if(args.Contains("--update-readiness")){var active=await db.Jobs.CountAsync(j=>j.Status=="claimed");Console.WriteLine($"ACTIVE_PRINT_JOBS:{active}");return;}
+    if(args.Contains("--backup")){var backup=await app.Services.GetRequiredService<BackupService>().Backup(CancellationToken.None);Console.WriteLine($"BACKUP_PATH:{backup}");return;}
     if(args.Contains("--legacy-assets")){var index=Array.IndexOf(args,"--legacy-assets");await LegacyAssets.Import(db,scope.ServiceProvider.GetRequiredService<AssetStore>(),args[index+1]);}
     if(args.Contains("--import")){var index=Array.IndexOf(args,"--import");var dir=args[index+1];var rows=new List<ImportRow>();foreach(var pair in new[]{("SYNTAGES.xlsx","recipe"),("PROIONTA.xlsx","product")}){using var f=File.OpenRead(Path.Combine(dir,pair.Item1));rows.AddRange(WorkbookReader.Parse(f,pair.Item2));}var service=scope.ServiceProvider.GetRequiredService<ImportService>();var review=await service.Stage(rows,"initial-import");await service.Commit(review.Id,"initial-import");Console.WriteLine($"Imported {review.Products} products and {review.Recipes} recipes; {review.Issues.Length} review issues.");}
     Console.WriteLine("Database initialized. No web server started.");return;
 }
+if(args.Contains("--desktop-managed"))_ = Task.Run(async()=>{try{while(await Console.In.ReadLineAsync() is not null){} }catch(IOException){}app.Lifetime.StopApplication();});
 app.Use(async(ctx,next)=>{
     ctx.Response.Headers["X-Content-Type-Options"]="nosniff";ctx.Response.Headers["Referrer-Policy"]="same-origin";
     if(ctx.Request.Path.StartsWithSegments("/api")&&ctx.Request.Method is not ("GET" or "HEAD")&&!ctx.Request.Path.StartsWithSegments("/api/agent")&&ctx.Request.Headers["X-Faethon-Request"]!="1"){ctx.Response.StatusCode=400;return;}

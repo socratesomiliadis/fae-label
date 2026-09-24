@@ -14,3 +14,5 @@ node scripts/dev.mjs test
 Physical printing and new Microsoft Access extraction require Windows.
 
 For a single Windows PC with a desktop shortcut and no Docker, see [Windows deployment](docs/windows-deployment.md). Build its self-contained release folder with `node scripts/package-windows.mjs`.
+
+For the Electron installer and Coolify update feed, see [desktop deployment](docs/desktop-deployment.md). Build with `node scripts/package-desktop.mjs` on Windows after setting `FAETHON_UPDATE_URL`.

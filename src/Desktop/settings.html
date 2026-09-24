@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Faethon desktop settings</title><link rel="stylesheet" href="desktop.css"></head>
+<body><main><h1>Desktop settings</h1><p>These settings belong to this Windows PC.</p><div class="card">
+<label for="mode">Connection</label><select id="mode"><option value="local">API and database on this PC</option><option value="remote">Remote HTTPS backend</option></select>
+<div id="remote" class="hidden"><label for="backend-url">Backend URL</label><input id="backend-url" type="url" placeholder="https://faethon.example.com"></div>
+<h2>Print helper</h2><p>In Faethon, create a print helper and copy its token here. Enter each allowed Windows printer queue on a separate line.</p>
+<label for="token">Pairing token</label><input id="token" type="password" autocomplete="off">
+<label for="queues">Allowed printer queues</label><textarea id="queues"></textarea>
+<label class="check"><input id="dispatch" type="checkbox"> Enable print dispatch on this PC</label>
+<label class="check"><input id="login" type="checkbox"> Start Faethon when I sign in</label>
+<p id="error" class="error" role="alert"></p><div class="actions"><button id="save">Save and restart Faethon</button></div>
+</div></main><script src="settings.js"></script></body></html>

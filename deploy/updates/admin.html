@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Faethon release publisher</title><style>
+body{font:16px system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#17231f}input{display:block;width:100%;padding:10px;margin:8px 0 18px}button{padding:10px 16px;background:#1c6652;color:#fff;border:0;border-radius:6px;cursor:pointer}pre{white-space:pre-wrap;background:#f2f6f2;padding:15px;border-radius:8px}p{line-height:1.5}
+</style></head><body><h1>Faethon release publisher</h1><p>Upload the installer, blockmap, and latest.yml from one reviewed Windows build. Files stay staged until you select Publish. The publishing token is kept only in this page while it is open.</p>
+<label>Publishing token<input id="token" type="password" autocomplete="off"></label><label>Release files<input id="files" type="file" multiple accept=".exe,.blockmap,.yml"></label>
+<button id="upload">Upload selected files</button> <button id="publish">Publish reviewed release</button><pre id="status" role="status"></pre><script src="/admin.js"></script></body></html>

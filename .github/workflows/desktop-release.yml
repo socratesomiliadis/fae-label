@@ -1,0 +1,46 @@
+name: Build Windows desktop release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            src/Web/package-lock.json
+            src/Desktop/package-lock.json
+      - name: Validate release tag
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        run: |
+          $version = (Get-Content src/Desktop/package.json -Raw | ConvertFrom-Json).version
+          if ('v' + $version -ne '${{ github.ref_name }}') { throw 'Tag does not match desktop package version.' }
+      - name: Build and test backend
+        run: dotnet test tests/Faethon.Tests -c Release --filter "FullyQualifiedName!~Faethon.Tests.IntegrationTests&FullyQualifiedName!~Faethon.Tests.LegacyLabelSeedTests"
+      - name: Test update publisher
+        run: node --test deploy/updates/server.test.cjs
+      - name: Package installer and update files
+        env:
+          FAETHON_RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
+        run: node scripts/package-desktop.mjs
+      - name: Smoke test packaged setup
+        run: node --test tests/desktop-smoke.cjs
+      - name: Verify print helper pause
+        run: node --test tests/print-agent-pause.test.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: faethon-windows-release
+          path: |
+            artifacts/desktop-release/Faethon-Setup-*.exe
+            artifacts/desktop-release/Faethon-Setup-*.exe.blockmap
+            artifacts/desktop-release/latest.yml
+          if-no-files-found: error

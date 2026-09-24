@@ -21,7 +21,7 @@ jobs:
         working-directory: src/Web
       - run: node scripts/dev.mjs build
       - name: Backend tests without external database
-        run: dotnet test tests/Faethon.Tests --no-build --filter "FullyQualifiedName!~Faethon.Tests.IntegrationTests"
+        run: dotnet test tests/Faethon.Tests --no-build --filter "FullyQualifiedName!~Faethon.Tests.IntegrationTests&FullyQualifiedName!~Faethon.Tests.LegacyLabelSeedTests"
       - run: npx playwright install chromium
         working-directory: src/Web
       - run: npm test
