@@ -1,5 +1,12 @@
 # Run once, as the Windows account that will operate the app.
-param([string]$ImportDirectory = '')
+param(
+    [string]$ImportDirectory = '',
+    [string]$PgDump = '',
+    [string]$Database = '',
+    [string]$Username = '',
+    [Security.SecureString]$Password,
+    [switch]$StartAtLogin
+)
 $ErrorActionPreference = 'Stop'
 $env:DOTNET_ENVIRONMENT = 'Production'
 $env:ASPNETCORE_ENVIRONMENT = 'Production'
@@ -9,11 +16,11 @@ $probe = New-Object System.Net.Sockets.TcpClient
 $busy = $false
 try { $probe.Connect('127.0.0.1', 5080); $busy = $true } catch {} finally { $probe.Dispose() }
 if ($busy) { throw 'Close the running Faethon app before initial configuration.' }
-$pgDump = Read-Host 'Full path to pg_dump.exe (for example C:\Program Files\PostgreSQL\17\bin\pg_dump.exe)'
+if (!$pgDump) { $pgDump = Read-Host 'Full path to pg_dump.exe (for example C:\Program Files\PostgreSQL\17\bin\pg_dump.exe)' }
 if (!(Test-Path -LiteralPath $pgDump)) { throw 'pg_dump.exe was not found.' }
-$database = Read-Host 'Database name (created during PostgreSQL setup)'
-$username = Read-Host 'Database owner/user name'
-$password = Read-Host 'Database password' -AsSecureString
+if (!$database) { $database = Read-Host 'Database name (created during PostgreSQL setup)' }
+if (!$username) { $username = Read-Host 'Database owner/user name' }
+if (!$password) { $password = Read-Host 'Database password' -AsSecureString }
 $pointer = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($password)
 try { $plain = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($pointer) } finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($pointer) }
 # Connection-string quoting supports semicolons, quotes and spaces in passwords.
@@ -60,6 +67,9 @@ $shortcut.Arguments = '"' + "$root\Launch.vbs" + '"'
 $shortcut.WorkingDirectory = $root
 $shortcut.Description = 'Open Faethon Labeller'
 $shortcut.Save()
+if ($StartAtLogin) {
+    Copy-Item (Join-Path ([Environment]::GetFolderPath('Desktop')) 'Faethon.lnk') (Join-Path ([Environment]::GetFolderPath('Startup')) 'Faethon.lnk') -Force
+}
 'Configured' | Set-Content "$root\configured"
 Write-Host "Setup complete. First-run setup key: $($settings.SetupToken)"
 Write-Host 'Double-click the Faethon desktop shortcut and create your administrator account.'

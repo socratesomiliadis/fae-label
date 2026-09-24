@@ -10,6 +10,20 @@ This is a folder deployment, not an MSI installer. No private database, credenti
 
 ## One-time setup by the installer
 
+### Double-click wizard (fresh installation)
+
+Extract the complete package into its final location (for example `C:\FaethonLabel`), sign in as the Windows account that will use it, and double-click **Setup.cmd**. No PowerShell commands or pgAdmin database creation are needed.
+
+If PostgreSQL 17 is not installed, click **Get PostgreSQL**, finish its official Windows installer with command-line tools on the default port 5432, then return to the wizard. Remember the `postgres` password selected in that installer. PostgreSQL installation may request Windows administrator approval; the Faethon wizard should run as the everyday Windows user.
+
+The wizard detects the usual PostgreSQL folder and lets you browse if different. Enter the `postgres` password, optionally select the folder containing both source spreadsheets, and click **Set up Faethon**. It creates a dedicated `faethon_label` role/database with a generated application password, initializes the app/artwork, enables backups, and creates the desktop shortcut. An optional checkbox opens the app automatically at Windows sign-in. The final window shows a selectable setup key and an **Open Faethon** button.
+
+Existing databases/roles are not overwritten. Failed setup can resume using a local `setup-pending.json` file whose password is encrypted for the current Windows account. Do not delete that file during an incomplete setup. Do not use this fresh-install wizard to migrate an existing application database; use the manual route below for restoring existing data/accounts/configuration.
+
+This wizard does not silently install PostgreSQL or printer drivers. Those use their vendor installers. Printer pairing and physical output acceptance remain necessary.
+
+### Manual setup or restoring an existing database
+
 1. Install PostgreSQL **17** with its Windows installer, including command-line tools and pgAdmin. Keep its service configured for automatic startup. Use local connections on port 5432; this PC does not need inbound firewall access. In pgAdmin, create a login role named `faethon` with a strong password and a database named `faethon` owned by that role. It does not need superuser permissions. The PostgreSQL administrator credentials are for setup, not the application.
 2. Sign in as the Windows account that will operate the app. Place the release in a local folder that account can write, outside OneDrive and Program Files. The setup restricts that folder to this user, administrators and SYSTEM. This workflow is intended for one Windows account; application accounts can still distinguish operators.
 3. Choose the data source before starting. To retain existing records, accounts, configuration and history, restore the app backup's `database.dump` into the database using pgAdmin Restore with **No owner** and **No privileges** selected; the target objects must be owned by `faethon`. Copy the backup's `assets` directory to `C:\Faethon\state\storage\assets`. Keep the source backup unchanged. Restore while the app and helper are stopped. Do not also import the initial spreadsheets after restoring. For a fresh setup, put `PROIONTA.xlsx` and `SYNTAGES.xlsx` in a separate import folder instead.
